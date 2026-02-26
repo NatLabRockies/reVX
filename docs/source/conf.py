@@ -23,8 +23,8 @@ sys.path.insert(0, os.path.abspath('../../'))
 # -- Project information -----------------------------------------------------
 
 project = 'reVX'
-copyright = '2020, Alliance for Sustainable Energy, LLC'
-author = 'NLR: Michael Rossol, Grant Buster'
+copyright = '2026, Alliance for Energy Innovation, LLC'
+author = 'NLR: Michael Rossol, Grant Buster, Paul Pinchuk'
 
 pkg = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
 pkg = os.path.dirname(pkg)
@@ -64,6 +64,30 @@ extensions = [
 
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3/", None),
+    "affine": ("https://affine.readthedocs.io/en/latest/", None),
+    "cartopy": ("https://cartopy.readthedocs.io/stable/", None),
+    "dask": ("https://docs.dask.org/en/latest/", None),
+    "distributed": ("https://distributed.dask.org/en/stable/", None),
+    "elm": ("https://natlabrockies.github.io/elm", None),
+    "gaps": ("https://natlabrockies.github.io/gaps/", None),
+    "geopandas": ("https://geopandas.org/en/stable/", None),
+    "geoplot": ("https://residentmario.github.io/geoplot", None),
+    "matplotlib": ("https://matplotlib.org/stable", None),
+    "networkx": ("https://networkx.org/documentation/stable", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "odc-geo": ("https://odc-geo.readthedocs.io/en/latest/", None),
+    "pandas": ("https://pandas.pydata.org/pandas-docs/stable", None),
+    "plotly": ("https://plotly.com/python-api-reference", None),
+    "psycopg": ("https://www.psycopg.org/psycopg3/docs", None),
+    "pyproj": ("https://pyproj4.github.io/pyproj/stable/", None),
+    'PySAM': ('https://nrel-pysam.readthedocs.io/en/latest/', None),
+    "rasterio": ("https://rasterio.readthedocs.io/en/stable/", None),
+    'rex': ('https://natlabrockies.github.io/rex/', None),
+    'reV': ('https://natlabrockies.github.io/reV/', None),
+    "rioxarray": ("https://corteva.github.io/rioxarray/stable/", None),
+    "shapely": ("https://shapely.readthedocs.io/en/stable/", None),
+    "sqlalchemy": ("https://docs.sqlalchemy.org/en/20/", None),
+    "xarray": ("https://docs.xarray.dev/en/stable/", None),
 }
 
 # Add any paths that contain templates here, relative to this directory.
@@ -100,13 +124,18 @@ exclude_patterns = [
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
+# Avoid errors with self-signed certificates
+tls_verify = False
+
+# Avoid warning about api.rst not in TOC
+suppress_warnings = ["toc.not_included"]
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -117,7 +146,7 @@ html_css_file = ["custom.css"]
 
 html_context = {
     "display_github": True,
-    "github_user": "nlr",
+    "github_user": "NatLabRockies",
     "github_repo": "reVX",
     "github_version": "main",
     "conf_py_path": "/docs/source/",
@@ -170,7 +199,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'reVX.tex', 'reVX Documentation',
-     'Michael Rossol, Grant Buster', 'manual'),
+     'Michael Rossol, Grant Buster', 'Paul Pinchuk', 'manual'),
 ]
 
 # -- Options for manual page output ------------------------------------------
