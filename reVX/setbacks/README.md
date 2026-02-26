@@ -9,8 +9,7 @@ This guide is supplemental to the [setbacks documentation](https://natlabrockies
 ## Computing setbacks for CONUS
 ### Ordinance database
 The first step to computing setbacks is to obtain an up-to-date copy of the wind and/or solar local ordinance database
-(csv file) from [``reVXOrdinances``](https://github.com/NatLabRockies/reVXOrdinances) (see the
-[usage guide](https://github.com/NREL/reVXOrdinances/blob/main/docs/USAGE.md) for instructions).
+(csv file) from [``Siting Lab``](https://data.openei.org/submissions/8519).
 You can skip this step if you only care about generic setbacks applied across the entire nation.
 
 ### Config file setup
