@@ -12,7 +12,7 @@ import geopandas as gpd
 
 from reVX import TESTDATADIR
 from reVX.utilities.utilities import to_geo
-from reVX.utilities.reeds_cols import (add_nrel_regions, add_extra_data,
+from reVX.utilities.reeds_cols import (add_nlr_regions, add_extra_data,
                                        add_reeds_columns)
 
 
@@ -36,14 +36,14 @@ def test_to_geo_missing_cols():
         to_geo(pd.DataFrame())
 
 
-def test_add_nrel_regions():
-    """Test that the `add_nrel_regions` function properly adds regions."""
+def test_add_nlr_regions():
+    """Test that the `add_nlr_regions` function properly adds regions."""
     test_df = pd.DataFrame(data={"state": [" COLORADO!! 122", "ala_bama"]})
 
-    test_df = add_nrel_regions(test_df)
+    test_df = add_nlr_regions(test_df)
     assert isinstance(test_df, pd.DataFrame)
-    assert "nrel_region" in test_df
-    assert (test_df["nrel_region"].values == ["Mountain", "Southeast"]).all()
+    assert "nlr_region" in test_df
+    assert (test_df["nlr_region"].values == ["Mountain", "Southeast"]).all()
 
 
 def test_add_extra_data():

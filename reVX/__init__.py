@@ -13,7 +13,7 @@ import reVX.rpm as reV_rpm
 from reVX.version import __version__
 
 __author__ = """Michael Rossol"""
-__email__ = "michael.rossol@nrel.gov"
+__email__ = "michael.rossol@nlr.gov"
 
 
 REVXDIR = os.path.dirname(os.path.realpath(__file__))

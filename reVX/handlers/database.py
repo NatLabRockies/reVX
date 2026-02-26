@@ -14,7 +14,7 @@ import time
 class Database:
     """Framework to interact with the reV/reVX database."""
 
-    def __init__(self, db_name, db_host='gds_edit.nrel.gov', db_user=None,
+    def __init__(self, db_name, db_host='gds_edit.nlr.gov', db_user=None,
                  db_pass=None, db_port=5432):
         """
         Parameters
@@ -57,7 +57,7 @@ class Database:
 
     @classmethod
     def get_table(cls, table, schema, db_name, wait=300,
-                  db_host='gds_edit.nrel.gov', db_user=None, db_pass=None,
+                  db_host='gds_edit.nlr.gov', db_user=None, db_pass=None,
                   db_port=5432):
         """Get a table using a database query.
 

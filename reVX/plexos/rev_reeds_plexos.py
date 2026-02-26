@@ -828,7 +828,7 @@ class RevReedsPlexosManager:
     """rev-reeds-plexos job manager."""
 
     def __init__(self, plexos_nodes, rev_sc, reeds_build, cf_fpath,
-                 forecast_fpath=None, wait=300, db_host='gds_edit.nrel.gov',
+                 forecast_fpath=None, wait=300, db_host='gds_edit.nlr.gov',
                  db_user=None, db_pass=None, db_port=5432):
         """
         Parameters
@@ -906,7 +906,7 @@ class RevReedsPlexosManager:
     @classmethod
     def main(cls, plexos_nodes, rev_sc, reeds_build, cf_fpath,
              forecast_fpath=None, agg_kwargs=None, wait=300,
-             db_host='gds_edit.nrel.gov', db_user=None, db_pass=None,
+             db_host='gds_edit.nlr.gov', db_user=None, db_pass=None,
              db_port=5432):
         """Run the Plexos pipeline for a single extent.
 

@@ -64,7 +64,7 @@ def _lowercase_alpha_only(in_str):
     return ''.join(filter(str.isalpha, in_str.casefold()))
 
 
-def add_nrel_regions(data_frame):
+def add_nlr_regions(data_frame):
     """Add NLR Regions info to a Pandas DataFrame with coordinates.
 
     The input DataFrame must have a "state" column containing the state
@@ -78,19 +78,19 @@ def add_nrel_regions(data_frame):
     Returns
     -------
     pandas.DataFrame
-        A pandas data frame with an extra "nrel_region" column.
+        A pandas data frame with an extra "nlr_region" column.
     """
     if "state" not in data_frame:
         raise KeyError("Input DataFrame missing required column 'state'")
 
-    with open(os.path.join(CONFIG_DIR, "nrel_regions.json")) as fh:
-        nrel_regions = json.load(fh)
+    with open(os.path.join(CONFIG_DIR, "nlr_regions.json")) as fh:
+        nlr_regions = json.load(fh)
 
     regions = {_lowercase_alpha_only(key): val
-               for key, val in nrel_regions.items()}
+               for key, val in nlr_regions.items()}
 
     states = data_frame["state"].apply(_lowercase_alpha_only)
-    data_frame["nrel_region"] = states.map(regions)
+    data_frame["nlr_region"] = states.map(regions)
     return data_frame
 
 
@@ -163,7 +163,7 @@ def add_reeds_columns(supply_curve_fpath, out_fp=None, capacity_col="capacity",
     """Add columns to supply curve required by ReEDS.
 
     This method will add columns like "cnty_fips", "state", "county",
-    "nrel_region", "eos_mult", and "reg_mult". This method also allows
+    "nlr_region", "eos_mult", and "reg_mult". This method also allows
     you to add extra columns from H5 or JSON files.
 
     Parameters
@@ -226,7 +226,7 @@ def add_reeds_columns(supply_curve_fpath, out_fp=None, capacity_col="capacity",
     sc = pd.read_csv(supply_curve_fpath)
     if regions is not None:
         sc = add_county_info(sc, regions)
-        sc = add_nrel_regions(sc)
+        sc = add_nlr_regions(sc)
 
     if extra_data:
         sc = add_extra_data(sc, extra_data, merge_col=merge_col)

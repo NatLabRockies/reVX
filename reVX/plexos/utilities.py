@@ -38,7 +38,7 @@ def get_coord_labels(df):
     return df_coord_labels
 
 
-def parse_table_name(name, wait=300, db_host='gds_edit.nrel.gov',
+def parse_table_name(name, wait=300, db_host='gds_edit.nlr.gov',
                      db_user=None, db_pass=None, db_port=5432):
     """Parse a dataframe from an input name.
 
@@ -101,7 +101,7 @@ class DataCleaner:
                     'sq_km': 'area_sq_km',
                     'capacity_mw_ac': 'potential_capacity',
                     'capacity_mw': 'potential_capacity',
-                    'capacity_ac': 'potential_capacity', 
+                    'capacity_ac': 'potential_capacity',
                     'capacity': 'potential_capacity',
                     'resource_ids': 'res_gids',
                     'resource_ids_cnts': 'gid_counts'}
@@ -413,7 +413,7 @@ class ProjectGidHandler:
 
     @staticmethod
     def get_resource_gids(sc_table, reeds_build, wait=300,
-                          db_host='gds_edit.nrel.gov',
+                          db_host='gds_edit.nlr.gov',
                           db_user=None, db_pass=None, db_port=5432):
         """Get resource gids from a  single reeds supply curve build
 
