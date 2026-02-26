@@ -24,8 +24,8 @@ jobs:
     - name: Install conda dependencies
       shell: bash -l {0}
       run: |
-        conda install rtree pip pytest h3-py
-        pip install --upgrade setuptools poetry-core cffi scikit-build-core
+        conda install rtree pip pytest cython cmake ninja setuptools wheel
+        pip install --upgrade setuptools poetry-core cffi scikit-build-core h3
         pip install --no-build-isolation -e .[flicker]
     - name: Run pytest and Generate coverage report
       shell: bash -l {0}
