@@ -145,7 +145,7 @@ def _assert_matches_railroad_baseline(test, regs):
     with ExclusionLayers(EXCL_H5) as exc:
         fips = exc['cnty_fips']
 
-    inds = np.in1d(fips.flatten(), regs.df.FIPS.unique())
+    inds = np.isin(fips.flatten(), regs.df.FIPS.unique())
     assert np.allclose(test.flatten()[inds], baseline.flatten()[inds])
 
 

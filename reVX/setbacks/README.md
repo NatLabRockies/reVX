@@ -1,7 +1,7 @@
 # reVX Setbacks
-The ``reVX`` setbacks module allows modeling of both local and national-level wind and solar siting ordinances as exclusions (for [``reV``](https://github.com/NREL/reV) and beyond).
+The ``reVX`` setbacks module allows modeling of both local and national-level wind and solar siting ordinances as exclusions (for [``reV``](https://github.com/NatLabRockies/reV) and beyond).
 
-This guide is supplemental to the [setbacks documentation](https://nrel.github.io/reVX/_cli/setbacks.html#setbacks) - please consult the latter for detailed explanations of all inputs.
+This guide is supplemental to the [setbacks documentation](https://natlabrockies.github.io/reVX/_cli/setbacks.html#setbacks) - please consult the latter for detailed explanations of all inputs.
 
 
 <br>
@@ -9,8 +9,7 @@ This guide is supplemental to the [setbacks documentation](https://nrel.github.i
 ## Computing setbacks for CONUS
 ### Ordinance database
 The first step to computing setbacks is to obtain an up-to-date copy of the wind and/or solar local ordinance database
-(csv file) from [``reVXOrdinances``](https://github.com/NREL/reVXOrdinances) (see the
-[usage guide](https://github.com/NREL/reVXOrdinances/blob/main/docs/USAGE.md) for instructions).
+(csv file) from [``Siting Lab``](https://data.openei.org/submissions/8519).
 You can skip this step if you only care about generic setbacks applied across the entire nation.
 
 ### Config file setup
@@ -102,7 +101,7 @@ using HSDS to access it (``hsds: true``).
 
 The ``features`` inputs points ``reVX`` to the feature data from which setbacks should be computed. The value for this
 key should always be another dictionary. The keys in the new dictionary are the names of the setbacks you are computing
-(see the keys of [``SETBACK_SPECS``](https://github.com/NREL/reVX/tree/main/reVX/setbacks/setbacks.py) for all possible
+(see the keys of [``SETBACK_SPECS``](https://github.com/NatLabRockies/reVX/tree/main/reVX/setbacks/setbacks.py) for all possible
 options - you may have to scroll down after clicking the link), and the values should point to the data on disk.
 There are several ways to point to a data file (though all files must be ``GeoPackages``):
 * If the features for a particular setback calculation are contained within a single file, just set the value to the path
@@ -222,7 +221,7 @@ Congratulations, you have now computed setbacks using ``reVX``!
 
 If you need to move the output data into an HDF5 file
 to be as ``reV`` exclusion layers, you can use the
-[``reVX exclusions layers-to-h5`` command](https://nrel.github.io/reVX/_cli/reVX.html#revx-exclusions-layers-to-h5).
+[``reVX exclusions layers-to-h5`` command](https://natlabrockies.github.io/reVX/_cli/reVX.html#revx-exclusions-layers-to-h5).
 
 <br>
 
@@ -288,7 +287,7 @@ does not provide explicit support for calculating setbacks from pipelines, even 
 
 In order to compute such setbacks, users can create their own "feature types" using the ``feature_specs`` input.
 This input must be a dictionary where keys are the names of the new setback types, and the values are also dictionaries
-containing keyword-value pairs for the [``setbacks_calculator``](https://nrel.github.io/reVX/_autosummary/reVX.setbacks.setbacks.setbacks_calculator.html#reVX.setbacks.setbacks.setbacks_calculator) function. For example, the input:
+containing keyword-value pairs for the [``setbacks_calculator``](https://natlabrockies.github.io/reVX/_autosummary/reVX.setbacks.setbacks.setbacks_calculator.html#reVX.setbacks.setbacks.setbacks_calculator) function. For example, the input:
 ```json
 "feature_specs": {
     "oil_and_gas": {
@@ -306,7 +305,7 @@ inner-most dictionary (default values are provided by the function for all other
 the ``feature_filter_type`` to ``"clip"`` instead of centroid, because we want pipelines ot be clipped to the county
 for which setbacks are being computed (as opposed to requiring the centroid to be within the county - the centroid
 may be quite far away depending on the shape of the pipeline). For more details on the input keys for each new
-feature type, please see the documentation for the [``setbacks_calculator``](https://nrel.github.io/reVX/_autosummary/reVX.setbacks.setbacks.setbacks_calculator.html#reVX.setbacks.setbacks.setbacks_calculator) function.
+feature type, please see the documentation for the [``setbacks_calculator``](https://natlabrockies.github.io/reVX/_autosummary/reVX.setbacks.setbacks.setbacks_calculator.html#reVX.setbacks.setbacks.setbacks_calculator) function.
 
 After adding the above input to the ``config_compute.json`` config file, you can use ``"oil_and_gas"`` just like any of
 the "standard" feature types. In particular, you can specify this feature in the ``features`` input:
