@@ -162,11 +162,9 @@ def preprocess_setbacks_config(config, features,
     config["node_feature_type"] = feature_type
     config["node_file_path"] = file_path
     config["node_multiplier"] = multiplier
-    validate_setback_regulations_input(
-        base_setback_dist=config.get("base_setback_dist"),
-        hub_height=config.get("hub_height"),
-        rotor_diameter=config.get("rotor_diameter"),
-    )
+    validate_setback_regulations_input(config.get("base_setback_dist"),
+                                       config.get("hub_height"),
+                                       config.get("rotor_diameter"))
     _update_setbacks_calculators(feature_specs)  # test for errors
     return config
 
@@ -487,13 +485,9 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                          replace,
                          weights_calculation_upscale_factor, out_layers))
 
-    regulations = select_setback_regulations(
-        base_setback_dist=base_setback_dist,
-        hub_height=hub_height,
-        rotor_diameter=rotor_diameter,
-        regulations_fpath=regulations_fpath,
-        multiplier=node_multiplier,
-    )
+    regulations = select_setback_regulations(base_setback_dist, hub_height,
+                                             rotor_diameter, regulations_fpath,
+                                             node_multiplier)
     setbacks_class = SETBACKS[node_feature_type]
     wcuf = weights_calculation_upscale_factor
     fn = ("setbacks_{}_{}{}.tif"
@@ -501,8 +495,8 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
     out_fn = os.path.join(out_dir, fn)
     setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
                        weights_calculation_upscale_factor=wcuf,
-                       max_workers=max_workers, replace=replace,
-                       hsds=hsds, out_layers=out_layers)
+                       max_workers=max_workers, replace=replace, hsds=hsds,
+                       out_layers=out_layers)
     logger.info('Setbacks computed and written to {}'.format(out_fn))
     return out_fn
 
@@ -581,7 +575,7 @@ def merge_setbacks(node_out_path, node_pattern, are_partial_inclusions=None,
 
 
 PRIVATE_SETBACKS_KEYS = ("node_feature_type", "node_file_path",
-                        "node_multiplier")
+                         "node_multiplier")
 PRIVATE_MERGE_KEYS = ("node_out_path", "node_pattern")
 setbacks_command = CLICommandFromFunction(
     function=compute_setbacks, name="setbacks",
