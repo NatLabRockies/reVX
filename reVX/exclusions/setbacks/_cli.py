@@ -332,8 +332,8 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
               in which case this label can match the
               `feature_subtypes_to_exclude` input you used for that
               function call.
-            - ``Value Type``: Specifies wether the value is a multiplier
-              or static height.  See
+            - ``Value Type``: Specifies whether the value is a
+              multiplier or static height.  See
               :obj:`~reVX.exclusions.setbacks.regulations.SetbackRegulations`
               (if using only ``base_setback_dist`` input) or
               :obj:`~reVX.exclusions.setbacks.regulations.WindSetbackRegulations`
@@ -489,12 +489,12 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                                              rotor_diameter, regulations_fpath,
                                              node_multiplier)
     setbacks_class = SETBACKS[node_feature_type]
-    wcuf = weights_calculation_upscale_factor
+    uf = weights_calculation_upscale_factor
     fn = ("setbacks_{}_{}{}.tif"
           .format(node_feature_type, os.path.basename(out_dir), tag))
     out_fn = os.path.join(out_dir, fn)
     setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
-                       weights_calculation_upscale_factor=wcuf,
+                       weights_calculation_upscale_factor=uf,
                        max_workers=max_workers, replace=replace, hsds=hsds,
                        out_layers=out_layers)
     logger.info('Setbacks computed and written to {}'.format(out_fn))
@@ -512,12 +512,12 @@ def merge_setbacks(node_out_path, node_pattern, are_partial_inclusions=None,
     node_pattern : str
         Input GeoTIFF file pattern.
     are_partial_inclusions : bool, optional
-        Flag indicating wether the inputs are partial inclusion values
+        Flag indicating whether the inputs are partial inclusion values
         or boolean exclusions. If ``None``, will try to infer
         automatically from the input file's GeoTIFF profile
         (``dtype != uint8``). By default, ``None``.
     purge_chunks : bool, optional
-        Flag indicating wether individual "chunk" files should be
+        Flag indicating whether individual "chunk" files should be
         deleted after a successful merge (``True``), or if they should
         be stored in a "chunk_files" directory (``False``).
         By default, ``False``.
