@@ -1,4 +1,5 @@
 # reVX Turbine Flicker
+
 The ``reVX`` turbine flicker module computes shadow-flicker inclusion masks for wind siting workflows.
 It can apply:
 
@@ -12,7 +13,9 @@ used by other ``reVX`` exclusions tools.
 <br>
 
 ## Computing turbine flicker exclusions
+
 ### Inputs and prerequisites
+
 Before running turbine flicker, make sure you have:
 
 1. A template exclusions HDF5 file (``excl_fpath``) that defines the output grid and contains:
@@ -29,6 +32,7 @@ Before running turbine flicker, make sure you have:
    ```
 
 ### Config file setup
+
 Each turbine flicker project should be run from its own directory.
 
 Create a new directory, move into it, and generate template config files:
@@ -64,6 +68,7 @@ Then create or edit your turbine flicker config and include at least the require
 ```
 
 #### Key input notes
+
 - ``flicker_threshold`` is the generic max allowable flicker in hours/year.
 - ``regulations_fpath`` may point to CSV or GeoPackage local regulations.
 - If both are provided, local county values are used where available and ``flicker_threshold`` is used elsewhere.
@@ -73,6 +78,7 @@ Then create or edit your turbine flicker config and include at least the require
 - ``out_layer`` is optional. If provided, results are also written to ``excl_fpath`` in addition to GeoTIFF output.
 
 ### Local regulations format
+
 Local regulations must include, at minimum:
 
 - ``Feature Type``
@@ -90,6 +96,7 @@ If your regulations are provided as a GeoPackage with valid geometries, county m
 If regulations are tabular, ``cnty_fips`` in ``excl_fpath`` is required for county matching.
 
 ### Execution
+
 When ready, run turbine flicker from the project directory:
 ```console
 $ exclusions turbine-flicker -c config_turbine_flicker.json
@@ -109,10 +116,12 @@ Output values are inclusion-style mask values:
 <br>
 
 ## Pipeline, batch, and status workflows
+
 You can orchestrate turbine flicker runs using the generic exclusions CLI workflow commands.
 As with other exclusions projects, this is typically done by driving job steps from a pipeline config.
 
 ### Pipeline
+
 From the project directory:
 ```console
 $ exclusions pipeline
@@ -121,6 +130,7 @@ $ exclusions pipeline
 Repeat as needed to submit the next pending step or re-run incomplete steps.
 
 ### Batch
+
 To execute multiple turbine/scenario combinations, prepare a batch CSV that parameterizes turbine flicker
 inputs (for example ``hub_height``, ``rotor_diameter``, ``flicker_threshold``, and regulation file path), then run:
 ```console
@@ -128,6 +138,7 @@ $ exclusions batch -c config_batch.csv
 ```
 
 ### Job status
+
 Check project job states with:
 ```console
 $ exclusions status
@@ -141,6 +152,7 @@ $ exclusions status -i node_file_path
 <br>
 
 ## Advanced topics
+
 ### Generic-only vs local-only vs hybrid regulations
 - Generic-only: set ``flicker_threshold`` and leave ``regulations_fpath`` as ``null``.
 - Local-only: set ``regulations_fpath`` and set ``flicker_threshold`` to ``null``.
@@ -161,6 +173,7 @@ Start with defaults (for example ``"10x"``) and increase only as needed.
 <br>
 
 ## Common troubleshooting
+
 - **Missing wind-direction dataset**
   - Ensure ``res_fpath`` contains ``winddirection_{hub_height}m``.
 - **Layer shape mismatch**
