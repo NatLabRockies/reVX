@@ -122,6 +122,44 @@ def preprocess_setbacks_config(config, features,
         raise ValueError("`features` key must be a dictionary, got {}"
                          .format(features))
     feature_specs = config.get("feature_specs", {})
+    feature_types = set(features)
+    is_height_mode = 'height_restriction' in feature_types
+    if is_height_mode and feature_types != {'height_restriction'}:
+        msg = ('`height_restriction` mode cannot be run with other '
+               'feature types in the same config.')
+        logger.error(msg)
+        raise RuntimeError(msg)
+
+    if is_height_mode and generic_setback_multiplier is not None:
+        msg = ('`generic_setback_multiplier` is not allowed for '
+               'local-only `height_restriction` mode.')
+        logger.error(msg)
+        raise RuntimeError(msg)
+
+    if is_height_mode:
+        height_features = features.get('height_restriction')
+        if height_features not in (None, '', [], [None]):
+            msg = ('`features["height_restriction"]` must be null/empty. '
+                   'This mode computes exclusions directly from '
+                   'regulation geometries.')
+            logger.error(msg)
+            raise RuntimeError(msg)
+
+        config["node_feature_type"] = ('height_restriction',)
+        config["node_file_path"] = ('',)
+        config["node_multiplier"] = (None,)
+        validate_setback_regulations_input(
+            base_setback_dist=config.get("base_setback_dist"),
+            hub_height=config.get("hub_height"),
+            rotor_diameter=config.get("rotor_diameter"),
+            system_height=config.get("system_height"),
+            feature_type='height_restriction',
+            regulations_fpath=config.get("regulations_fpath"),
+            generic_setback_multiplier=generic_setback_multiplier,
+        )
+        _update_setbacks_calculators(feature_specs)
+        return config
+
     combos_to_run = []
     multipliers = _validate_multipliers(features, generic_setback_multiplier)
     for feature_type, features_fpath in features.items():
@@ -160,9 +198,15 @@ def preprocess_setbacks_config(config, features,
     config["node_feature_type"] = feature_type
     config["node_file_path"] = file_path
     config["node_multiplier"] = multiplier
-    validate_setback_regulations_input(config.get("base_setback_dist"),
-                                       config.get("hub_height"),
-                                       config.get("rotor_diameter"))
+    validate_setback_regulations_input(
+        base_setback_dist=config.get("base_setback_dist"),
+        hub_height=config.get("hub_height"),
+        rotor_diameter=config.get("rotor_diameter"),
+        system_height=config.get("system_height"),
+        feature_type=None,
+        regulations_fpath=config.get("regulations_fpath"),
+        generic_setback_multiplier=generic_setback_multiplier,
+    )
     _update_setbacks_calculators(feature_specs)  # test for errors
     return config
 
@@ -226,6 +270,7 @@ def _update_setbacks_calculators(feature_specs=None):
 def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                      node_multiplier, out_dir, tag, hub_height=None,
                      rotor_diameter=None, base_setback_dist=None,
+                     system_height=None,
                      regulations_fpath=None,
                      weights_calculation_upscale_factor=None,
                      replace=False, hsds=False, out_layers=None,
@@ -471,6 +516,7 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                  '- base_setback_dist = {}\n'
                  '- hub_height = {}\n'
                  '- rotor_diameter = {}\n'
+                 '- system_height = {}\n'
                  '- regulations_fpath = {}\n'
                  '- generic_setback_multiplier = {}\n'
                  '- using max_workers = {}\n'
@@ -478,22 +524,34 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                  '- weights calculation upscale factor = {}\n'
                  '- out_layers = {}\n'
                  .format(base_setback_dist, hub_height, rotor_diameter,
+                         system_height,
                          regulations_fpath, node_multiplier, max_workers,
                          replace,
                          weights_calculation_upscale_factor, out_layers))
 
-    regulations = select_setback_regulations(base_setback_dist, hub_height,
-                                             rotor_diameter, regulations_fpath,
-                                             node_multiplier)
+    regulations = select_setback_regulations(
+        base_setback_dist=base_setback_dist,
+        hub_height=hub_height,
+        rotor_diameter=rotor_diameter,
+        regulations_fpath=regulations_fpath,
+        multiplier=node_multiplier,
+        system_height=system_height,
+        feature_type=node_feature_type,
+    )
     setbacks_class = SETBACKS[node_feature_type]
     wcuf = weights_calculation_upscale_factor
     fn = ("setbacks_{}_{}{}.tif"
           .format(node_feature_type, os.path.basename(out_dir), tag))
     out_fn = os.path.join(out_dir, fn)
-    setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
-                       weights_calculation_upscale_factor=wcuf,
-                       max_workers=max_workers, replace=replace, hsds=hsds,
-                       out_layers=out_layers)
+    if node_feature_type == 'height_restriction':
+        setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
+                           max_workers=max_workers, replace=replace,
+                           hsds=hsds, out_layers=out_layers)
+    else:
+        setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
+                           weights_calculation_upscale_factor=wcuf,
+                           max_workers=max_workers, replace=replace,
+                           hsds=hsds, out_layers=out_layers)
     logger.info('Setbacks computed and written to {}'.format(out_fn))
     return out_fn
 
@@ -571,18 +629,18 @@ def merge_setbacks(node_out_path, node_pattern, are_partial_inclusions=None,
                     .format(out_file.parent, chunk_dir))
 
 
-PRIVATE_COMPUTE_KEYS = ("node_feature_type", "node_file_path",
+PRIVATE_SETBACKS_KEYS = ("node_feature_type", "node_file_path",
                         "node_multiplier")
 PRIVATE_MERGE_KEYS = ("node_out_path", "node_pattern")
 commands = [
     CLICommandFromFunction(
-        function=compute_setbacks, name="compute",
-        split_keys=[PRIVATE_COMPUTE_KEYS],
+        function=compute_setbacks, name="setbacks",
+        split_keys=[PRIVATE_SETBACKS_KEYS],
         config_preprocessor=preprocess_setbacks_config,
-        skip_doc_params=PRIVATE_COMPUTE_KEYS,
+        skip_doc_params=PRIVATE_SETBACKS_KEYS,
     ),
     CLICommandFromFunction(
-        function=merge_setbacks, name="merge",
+        function=merge_setbacks, name="merge-setbacks",
         split_keys=[PRIVATE_MERGE_KEYS],
         config_preprocessor=preprocess_merge_config,
         skip_doc_params=PRIVATE_MERGE_KEYS,
