@@ -113,7 +113,7 @@ class Rasterizer:
 
     @property
     def inclusions(self):
-        """Flag indicating wether or not the output raster represents
+        """Flag indicating whether or not the output raster represents
         inclusion values.
 
         Returns
