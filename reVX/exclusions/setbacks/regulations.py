@@ -303,11 +303,7 @@ class WindSetbackRegulations(SetbackRegulations):
 
 
 def validate_setback_regulations_input(base_setback_dist=None, hub_height=None,
-                                       rotor_diameter=None,
-                                       system_height=None,
-                                       feature_type=None,
-                                       regulations_fpath=None,
-                                       generic_setback_multiplier=None):
+                                       rotor_diameter=None):
     """Validate the setback regulations initialization input.
 
     Specifically, this function raises an error unless exactly one of
@@ -340,9 +336,6 @@ def validate_setback_regulations_input(base_setback_dist=None, hub_height=None,
         If not enough info is provided (all inputs are ``None``), or too
         much info is given (all inputs are not ``None``).
     """
-    if system_height is not None:
-        raise RuntimeError('`system_height` is only valid when '
-                           '`feature_type` is "height_restriction".')
 
     no_base_setback = base_setback_dist is None
     invalid_turbine_specs = rotor_diameter is None or hub_height is None
@@ -357,8 +350,7 @@ def validate_setback_regulations_input(base_setback_dist=None, hub_height=None,
 
 def select_setback_regulations(base_setback_dist=None, hub_height=None,
                                rotor_diameter=None, regulations_fpath=None,
-                               multiplier=None, system_height=None,
-                               feature_type=None):
+                               multiplier=None):
     """Select appropriate setback regulations based on input.
 
     Parameters
@@ -412,11 +404,7 @@ def select_setback_regulations(base_setback_dist=None, hub_height=None,
     validate_setback_regulations_input(
         base_setback_dist=base_setback_dist,
         hub_height=hub_height,
-        rotor_diameter=rotor_diameter,
-        system_height=system_height,
-        feature_type=feature_type,
-        regulations_fpath=regulations_fpath,
-        generic_setback_multiplier=multiplier,
+        rotor_diameter=rotor_diameter
     )
 
     if base_setback_dist is None:
