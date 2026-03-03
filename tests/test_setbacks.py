@@ -24,13 +24,13 @@ from rex.utilities.loggers import LOGGERS
 
 from reVX import TESTDATADIR
 from reVX.handlers.geotiff import Geotiff
-from reVX.setbacks.regulations import (SetbackRegulations,
+from reVX.exclusions.setbacks.regulations import (SetbackRegulations,
                                        WindSetbackRegulations,
                                        validate_setback_regulations_input,
                                        select_setback_regulations)
-from reVX.setbacks import SETBACKS
-from reVX.setbacks.base import Rasterizer
-from reVX.setbacks.setbacks_cli import cli
+from reVX.exclusions.setbacks import SETBACKS
+from reVX.exclusions.setbacks.base import Rasterizer
+from reVX.exclusions._cli import cli
 
 
 EXCL_H5 = os.path.join(TESTDATADIR, 'setbacks', 'ri_setbacks.h5')

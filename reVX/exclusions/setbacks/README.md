@@ -288,7 +288,7 @@ does not provide explicit support for calculating setbacks from pipelines, even 
 
 In order to compute such setbacks, users can create their own "feature types" using the ``feature_specs`` input.
 This input must be a dictionary where keys are the names of the new setback types, and the values are also dictionaries
-containing keyword-value pairs for the [``setbacks_calculator``](https://nrel.github.io/reVX/_autosummary/reVX.setbacks.setbacks.setbacks_calculator.html#reVX.setbacks.setbacks.setbacks_calculator) function. For example, the input:
+containing keyword-value pairs for the [``setbacks_calculator``](https://nrel.github.io/reVX/_autosummary/reVX.exclusions.setbacks.setbacks.setbacks_calculator.html#reVX.exclusions.setbacks.setbacks.setbacks_calculator) function. For example, the input:
 ```json
 "feature_specs": {
     "oil_and_gas": {
@@ -306,7 +306,7 @@ inner-most dictionary (default values are provided by the function for all other
 the ``feature_filter_type`` to ``"clip"`` instead of centroid, because we want pipelines ot be clipped to the county
 for which setbacks are being computed (as opposed to requiring the centroid to be within the county - the centroid
 may be quite far away depending on the shape of the pipeline). For more details on the input keys for each new
-feature type, please see the documentation for the [``setbacks_calculator``](https://nrel.github.io/reVX/_autosummary/reVX.setbacks.setbacks.setbacks_calculator.html#reVX.setbacks.setbacks.setbacks_calculator) function.
+feature type, please see the documentation for the [``setbacks_calculator``](https://nrel.github.io/reVX/_autosummary/reVX.exclusions.setbacks.setbacks.setbacks_calculator.html#reVX.exclusions.setbacks.setbacks.setbacks_calculator) function.
 
 After adding the above input to the ``config_compute.json`` config file, you can use ``"oil_and_gas"`` just like any of
 the "standard" feature types. In particular, you can specify this feature in the ``features`` input:

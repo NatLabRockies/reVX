@@ -22,10 +22,10 @@ from rex.utilities import log_mem
 from rex.utilities.execution import SpawnProcessPool
 from reV.handlers.exclusions import ExclusionLayers
 from reVX.handlers.geopackage import GPKGMeta
-from reVX.utilities.exclusions import AbstractBaseExclusionsMerger
-from reVX.setbacks.functions import (parcel_buffer, positive_buffer,
-                                     features_clipped_to_county,
-                                     features_with_centroid_in_county)
+from reVX.exclusions.base import AbstractBaseExclusionsMerger
+from reVX.exclusions.setbacks.functions import (
+    parcel_buffer, positive_buffer, features_clipped_to_county,
+    features_with_centroid_in_county)
 
 logger = logging.getLogger(__name__)
 
@@ -234,7 +234,7 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
         excl_fpath : str
             Path to .h5 file containing exclusion layers, will also be
             the location of any new setback layers
-        regulations : `~reVX.setbacks.regulations.SetbackRegulations`
+        regulations : `~reVX.exclusions.setbacks.regulations.SetbackRegulations`
             A `SetbackRegulations` object used to extract setback
             distances.
         features : str
