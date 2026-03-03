@@ -14,7 +14,7 @@ from reV.supply_curve.extent import SupplyCurveExtent
 from reV.supply_curve.tech_mapping import TechMapping
 from reVX.handlers.geotiff import Geotiff
 from reVX.wind_dirs.mean_wind_dirs_point import MeanWindDirectionsPoint
-from reVX.utilities.exclusions import AbstractBaseExclusionsMerger
+from reVX.exclusions.base import AbstractBaseExclusionsMerger
 from rex.resource_extraction.resource_extraction import WindX
 from rex.utilities.execution import SpawnProcessPool
 from rex.utilities.loggers import log_mem
