@@ -124,44 +124,6 @@ def preprocess_setbacks_config(config, features,
         raise ValueError("`features` key must be a dictionary, got {}"
                          .format(features))
     feature_specs = config.get("feature_specs", {})
-    feature_types = set(features)
-    is_height_mode = 'height_restriction' in feature_types
-    if is_height_mode and feature_types != {'height_restriction'}:
-        msg = ('`height_restriction` mode cannot be run with other '
-               'feature types in the same config.')
-        logger.error(msg)
-        raise RuntimeError(msg)
-
-    if is_height_mode and generic_setback_multiplier is not None:
-        msg = ('`generic_setback_multiplier` is not allowed for '
-               'local-only `height_restriction` mode.')
-        logger.error(msg)
-        raise RuntimeError(msg)
-
-    if is_height_mode:
-        height_features = features.get('height_restriction')
-        if height_features not in (None, '', [], [None]):
-            msg = ('`features["height_restriction"]` must be null/empty. '
-                   'This mode computes exclusions directly from '
-                   'regulation geometries.')
-            logger.error(msg)
-            raise RuntimeError(msg)
-
-        config["node_feature_type"] = ('height_restriction',)
-        config["node_file_path"] = ('',)
-        config["node_multiplier"] = (None,)
-        validate_setback_regulations_input(
-            base_setback_dist=config.get("base_setback_dist"),
-            hub_height=config.get("hub_height"),
-            rotor_diameter=config.get("rotor_diameter"),
-            system_height=config.get("system_height"),
-            feature_type='height_restriction',
-            regulations_fpath=config.get("regulations_fpath"),
-            generic_setback_multiplier=generic_setback_multiplier,
-        )
-        _update_setbacks_calculators(feature_specs)
-        return config
-
     combos_to_run = []
     multipliers = _validate_multipliers(features, generic_setback_multiplier)
     for feature_type, features_fpath in features.items():
@@ -204,10 +166,6 @@ def preprocess_setbacks_config(config, features,
         base_setback_dist=config.get("base_setback_dist"),
         hub_height=config.get("hub_height"),
         rotor_diameter=config.get("rotor_diameter"),
-        system_height=config.get("system_height"),
-        feature_type=None,
-        regulations_fpath=config.get("regulations_fpath"),
-        generic_setback_multiplier=generic_setback_multiplier,
     )
     _update_setbacks_calculators(feature_specs)  # test for errors
     return config
@@ -272,12 +230,11 @@ def _update_setbacks_calculators(feature_specs=None):
 def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                      node_multiplier, out_dir, tag, hub_height=None,
                      rotor_diameter=None, base_setback_dist=None,
-                     system_height=None,
                      regulations_fpath=None,
                      weights_calculation_upscale_factor=None,
                      replace=False, hsds=False, out_layers=None,
                      feature_specs=None, max_workers=None):
-    """Compute Setbacks.
+    """Compute Setbacks
 
     Setbacks can be computed for a specific turbine (hub height and
     rotor diameter) or more generally using a base setback distance.
@@ -519,7 +476,6 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                  '- base_setback_dist = {}\n'
                  '- hub_height = {}\n'
                  '- rotor_diameter = {}\n'
-                 '- system_height = {}\n'
                  '- regulations_fpath = {}\n'
                  '- generic_setback_multiplier = {}\n'
                  '- using max_workers = {}\n'
@@ -527,7 +483,6 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                  '- weights calculation upscale factor = {}\n'
                  '- out_layers = {}\n'
                  .format(base_setback_dist, hub_height, rotor_diameter,
-                         system_height,
                          regulations_fpath, node_multiplier, max_workers,
                          replace,
                          weights_calculation_upscale_factor, out_layers))
@@ -538,23 +493,16 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
         rotor_diameter=rotor_diameter,
         regulations_fpath=regulations_fpath,
         multiplier=node_multiplier,
-        system_height=system_height,
-        feature_type=node_feature_type,
     )
     setbacks_class = SETBACKS[node_feature_type]
     wcuf = weights_calculation_upscale_factor
     fn = ("setbacks_{}_{}{}.tif"
           .format(node_feature_type, os.path.basename(out_dir), tag))
     out_fn = os.path.join(out_dir, fn)
-    if node_feature_type == 'height_restriction':
-        setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
-                           max_workers=max_workers, replace=replace,
-                           hsds=hsds, out_layers=out_layers)
-    else:
-        setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
-                           weights_calculation_upscale_factor=wcuf,
-                           max_workers=max_workers, replace=replace,
-                           hsds=hsds, out_layers=out_layers)
+    setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
+                       weights_calculation_upscale_factor=wcuf,
+                       max_workers=max_workers, replace=replace,
+                       hsds=hsds, out_layers=out_layers)
     logger.info('Setbacks computed and written to {}'.format(out_fn))
     return out_fn
 
