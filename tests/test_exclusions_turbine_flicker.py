@@ -501,6 +501,7 @@ def test_cli_max_flicker_exclusion_range(runner):
         assert result.exit_code == 0, msg
         shutil.move(os.path.join(td, def_tiff_name),
                     os.path.join(td, out_tiff_def))
+        shutil.rmtree(os.path.join(td, '.gaps'))
 
         out_tiff_5k = f"{BLD_LAYER}_{HUB_HEIGHT}hh_{ROTOR_DIAMETER}rd_5k.tiff"
         config["max_flicker_exclusion_range"] = 5_000
@@ -515,6 +516,7 @@ def test_cli_max_flicker_exclusion_range(runner):
         assert result.exit_code == 0, msg
         shutil.move(os.path.join(td, def_tiff_name),
                     os.path.join(td, out_tiff_5k))
+        shutil.rmtree(os.path.join(td, '.gaps'))
 
         out_tiff_20d = f"{BLD_LAYER}_{HUB_HEIGHT}hh_{ROTOR_DIAMETER}rd_5d.tiff"
         config["max_flicker_exclusion_range"] = "20x"
