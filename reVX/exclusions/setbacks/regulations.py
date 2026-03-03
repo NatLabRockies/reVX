@@ -336,7 +336,6 @@ def validate_setback_regulations_input(base_setback_dist=None, hub_height=None,
         If not enough info is provided (all inputs are ``None``), or too
         much info is given (all inputs are not ``None``).
     """
-
     no_base_setback = base_setback_dist is None
     invalid_turbine_specs = rotor_diameter is None or hub_height is None
 
@@ -401,11 +400,9 @@ def select_setback_regulations(base_setback_dist=None, hub_height=None,
         setback distance.
     """
 
-    validate_setback_regulations_input(
-        base_setback_dist=base_setback_dist,
-        hub_height=hub_height,
-        rotor_diameter=rotor_diameter
-    )
+    validate_setback_regulations_input(base_setback_dist=base_setback_dist,
+                                       hub_height=hub_height,
+                                       rotor_diameter=rotor_diameter)
 
     if base_setback_dist is None:
         return WindSetbackRegulations(hub_height=hub_height,
