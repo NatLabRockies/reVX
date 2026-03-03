@@ -24,8 +24,7 @@ from reVX.exclusions.turbine_flicker.turbine_flicker import (
     _invert_shadow_flicker_arr
 )
 from reVX.exclusions.turbine_flicker.regulations import FlickerRegulations
-from reVX.exclusions.turbine_flicker.turbine_flicker_cli import (
-    main, flicker_fn_out)
+from reVX.exclusions._cli import cli as main
 from reVX.handlers.geotiff import Geotiff
 from reVX.handlers.layered_h5 import LayeredH5
 
@@ -353,7 +352,7 @@ def test_cli(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(main, ['from-config', '-c', config_path])
+        result = runner.invoke(main, ['turbine-flicker', '-c', config_path])
         msg = 'Failed with error {}'.format(
             traceback.print_exception(*result.exc_info)
         )
@@ -376,7 +375,7 @@ def test_cli_tiff(runner):
     with tempfile.TemporaryDirectory() as td:
         excl_h5 = os.path.join(td, os.path.basename(EXCL_H5))
         shutil.copy(EXCL_H5, excl_h5)
-        out_tiff = flicker_fn_out(HUB_HEIGHT, ROTOR_DIAMETER)
+        out_tiff = "flicker_{}hh_{}rd.tif".format(HUB_HEIGHT, ROTOR_DIAMETER)
         config = {
             "log_directory": td,
             "excl_fpath": excl_h5,
@@ -396,7 +395,7 @@ def test_cli_tiff(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(main, ['from-config', '-c', config_path])
+        result = runner.invoke(main, ['turbine-flicker', '-c', config_path])
         msg = 'Failed with error {}'.format(
             traceback.print_exception(*result.exc_info)
         )
@@ -431,7 +430,7 @@ def test_cli_tiff_input(runner):
 
         excl_h5 = os.path.join(td, os.path.basename(EXCL_H5))
         shutil.copy(EXCL_H5, excl_h5)
-        out_tiff = flicker_fn_out(HUB_HEIGHT, ROTOR_DIAMETER)
+        out_tiff = "flicker_{}hh_{}rd.tif".format(HUB_HEIGHT, ROTOR_DIAMETER)
         config = {
             "log_directory": td,
             "excl_fpath": excl_h5,
@@ -451,7 +450,7 @@ def test_cli_tiff_input(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(main, ['from-config', '-c', config_path])
+        result = runner.invoke(main, ['turbine-flicker', '-c', config_path])
         msg = 'Failed with error {}'.format(
             traceback.print_exception(*result.exc_info)
         )
@@ -471,7 +470,7 @@ def test_cli_tiff_input(runner):
 
 def test_cli_max_flicker_exclusion_range(runner):
     """Test Turbine Flicker CLI with max_flicker_exclusion_range value. """
-    def_tiff_name = flicker_fn_out(HUB_HEIGHT, ROTOR_DIAMETER)
+    def_tiff_name = "flicker_{}hh_{}rd.tif".format(HUB_HEIGHT, ROTOR_DIAMETER)
     with tempfile.TemporaryDirectory() as td:
         excl_h5 = os.path.join(td, os.path.basename(EXCL_H5))
         shutil.copy(EXCL_H5, excl_h5)
@@ -495,7 +494,7 @@ def test_cli_max_flicker_exclusion_range(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(main, ['from-config', '-c', config_path])
+        result = runner.invoke(main, ['turbine-flicker', '-c', config_path])
         msg = 'Failed with error {}'.format(
             traceback.print_exception(*result.exc_info)
         )
@@ -509,7 +508,7 @@ def test_cli_max_flicker_exclusion_range(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(main, ['from-config', '-c', config_path])
+        result = runner.invoke(main, ['turbine-flicker', '-c', config_path])
         msg = 'Failed with error {}'.format(
             traceback.print_exception(*result.exc_info)
         )
@@ -523,7 +522,7 @@ def test_cli_max_flicker_exclusion_range(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(main, ['from-config', '-c', config_path])
+        result = runner.invoke(main, ['turbine-flicker', '-c', config_path])
         msg = 'Failed with error {}'.format(
             traceback.print_exception(*result.exc_info)
         )
