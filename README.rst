@@ -60,7 +60,7 @@ as your package/environment manager.
 #. Install reVX:
     1) Follow the installation commands installation process that we use for our automated test suite `here <https://github.com/NatLabRockies/reVX/blob/main/.github/workflows/pull_request_tests.yml#L33-L36>`_. Make sure that you call ``pip install --no-build-isolation -e .`` from within the cloned repository directory e.g. ``/home/{user}/reVX/``. Don't forget to run ``pip install --upgrade setuptools``, especially if you run into any build errors.
 
-        - NOTE: If you install using pip and want to run `exclusion setbacks <https://natlabrockies.github.io/reVX/_cli/reVX.setbacks.setbacks.html>`_ you will need to install rtree manually:
+        - NOTE: If you install using pip and want to run `exclusion setbacks <https://natlabrockies.github.io/reVX/_cli/reVX.exclusions.setbacks.setbacks.html>`_ you will need to install rtree manually:
             * ``conda install rtree``
             * `pip installation instructions <https://pypi.org/project/Rtree/#:~:text=Rtree%20is%20a%20ctypes%20Python,Multi%2Ddimensional%20indexes>`_
         - NOTE: If you install using pip and want to run shadow flicker exclusions, make sure you:

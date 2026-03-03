@@ -15,7 +15,6 @@ Command Line Interfaces (CLIs)
    reV-plexos
    reV-rpm
    reVX
-   setbacks
+   exclusions
    simple-plant-builder
    transmission-layer-creator
-   turbine-flicker
