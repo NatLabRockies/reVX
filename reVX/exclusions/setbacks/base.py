@@ -50,6 +50,7 @@ class Rasterizer:
     def __init__(self, excl_fpath, weights_calculation_upscale_factor,
                  hsds=False):
         """
+
         Parameters
         ----------
         excl_fpath : str
@@ -229,6 +230,7 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
     def __init__(self, excl_fpath, regulations, features, hsds=False,
                  weights_calculation_upscale_factor=None):
         """
+
         Parameters
         ----------
         excl_fpath : str

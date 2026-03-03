@@ -17,6 +17,7 @@ class SetbackRegulations(AbstractBaseRegulations):
     def __init__(self, base_setback_dist, regulations_fpath=None,
                  multiplier=None):
         """
+
         Parameters
         ----------
         base_setback_dist : float | int
@@ -160,6 +161,7 @@ class WindSetbackRegulations(SetbackRegulations):
     def __init__(self, hub_height, rotor_diameter, regulations_fpath=None,
                  multiplier=None):
         """
+
         Parameters
         ----------
         hub_height : float | int
