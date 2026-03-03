@@ -985,7 +985,7 @@ def test_cli_structures(runner, config_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1038,7 +1038,7 @@ def test_cli_railroads(runner, config_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1082,7 +1082,7 @@ def test_cli_parcels(runner, config_input, regs):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1129,7 +1129,7 @@ def test_cli_water(runner, config_input, regs):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1167,7 +1167,7 @@ def test_cli_partial_setbacks(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1219,7 +1219,7 @@ def test_cli_multiple_generic_multipliers(runner, as_file):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1312,7 +1312,7 @@ def test_cli_merged_layers(runner, setbacks_type, out_fn, features_path,
             with open(config_path, 'w') as f:
                 json.dump(config, f)
 
-            result = runner.invoke(cli, ['compute', '-c', config_path])
+            result = runner.invoke(cli, ['setbacks', '-c', config_path])
             msg = ('Failed with error {}'
                    .format(traceback.print_exception(*result.exc_info)))
             assert result.exit_code == 0, msg
@@ -1351,7 +1351,7 @@ def test_cli_invalid_config_missing_height(runner):
             with open(config_path, 'w') as f:
                 json.dump(config, f)
 
-            result = runner.invoke(cli, ['compute', '-c', config_path])
+            result = runner.invoke(cli, ['setbacks', '-c', config_path])
 
             assert result.exit_code == 1
 
@@ -1382,7 +1382,7 @@ def test_cli_invalid_config_tmi(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
         assert result.exc_info
         assert result.exc_info[0] == RuntimeError
@@ -1415,7 +1415,7 @@ def test_cli_invalid_input_gpkg_dne(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
         assert result.exc_info
         assert result.exc_info[0] == FileNotFoundError
@@ -1452,7 +1452,7 @@ def test_cli_invalid_input_not_gpkg(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
         assert result.exc_info
         assert result.exc_info[0] == FileNotFoundError
@@ -1492,7 +1492,7 @@ def test_cli_saving(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1533,13 +1533,13 @@ def test_cli_merge_setbacks(runner, return_to_main_test_dir, inclusions):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['merge', '-c', config_path])
+        result = runner.invoke(cli, ['merge-setbacks', '-c', config_path])
         assert result.exit_code == 1
 
         Geotiff.write(tiff_1, profile, arr1)
         Geotiff.write(tiff_2, profile, arr2)
 
-        runner.invoke(cli, ['merge', '-c', config_path])
+        runner.invoke(cli, ['merge-setbacks', '-c', config_path])
         with Geotiff(out_fp) as tif:
             assert np.allclose(tif.values, 0 if inclusions else 1)
 
@@ -1567,7 +1567,7 @@ def test_custom_features_0_setback(runner, setback_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
 
         rail_specs = {"feature_type": "railroads",
@@ -1579,7 +1579,7 @@ def test_custom_features_0_setback(runner, setback_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1635,8 +1635,8 @@ def test_integrated_setbacks_run(runner, county_wind_regulations):
         with open(merge_config_path, 'w') as f:
             json.dump(merge_config, f)
 
-        pipe_config = {"pipeline": [{"compute": "./config_compute.json"},
-                                    {"merge": "./config_merge.json"}]}
+        pipe_config = {"pipeline": [{"setbacks": "./config_compute.json"},
+                                    {"merge-setbacks": "./config_merge.json"}]}
         pipe_config_path = os.path.join(td, 'config_pipeline.json')
         with open(pipe_config_path, 'w') as f:
             json.dump(pipe_config, f)
@@ -1708,8 +1708,8 @@ def test_integrated_partial_setbacks_run(runner):
         with open(merge_config_path, 'w') as f:
             json.dump(merge_config, f)
 
-        pipe_config = {"pipeline": [{"compute": "./config_compute.json"},
-                                    {"merge": "./config_merge.json"}]}
+        pipe_config = {"pipeline": [{"setbacks": "./config_compute.json"},
+                                    {"merge-setbacks": "./config_merge.json"}]}
         pipe_config_path = os.path.join(td, 'config_pipeline.json')
         with open(pipe_config_path, 'w') as f:
             json.dump(pipe_config, f)
