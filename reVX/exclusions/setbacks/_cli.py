@@ -497,7 +497,7 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                        weights_calculation_upscale_factor=uf,
                        max_workers=max_workers, replace=replace, hsds=hsds,
                        out_layers=out_layers)
-    logger.info('Setbacks computed and written to {}'.format(out_fn))
+    logger.info('Flicker exclusions computed and written to %r', out_fn)
     return out_fn
 
 
