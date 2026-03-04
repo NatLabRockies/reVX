@@ -27,7 +27,7 @@ from reVX.exclusions.setbacks.regulations import (
     SetbackRegulations, WindSetbackRegulations,
     validate_setback_regulations_input, select_setback_regulations)
 from reVX.exclusions.setbacks import SETBACKS
-from reVX.exclusions.setbacks.base import Rasterizer
+from reVX.exclusions.base import Rasterizer
 from reVX.exclusions._cli import cli
 
 
@@ -1501,7 +1501,14 @@ def test_custom_features_0_setback(runner, setback_input):
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
 
-        rasterizer = Rasterizer(EXCL_H5, weights_calculation_upscale_factor=1)
+        with ExclusionLayers(EXCL_H5) as excl:
+            shape = excl.shape
+            profile = excl.profile
+
+        if len(shape) < 3:
+            shape = (1, *shape)
+
+        rasterizer = Rasterizer(shape, profile)
         truth = rasterizer.rasterize(list(railroads["geometry"]))
 
         test_fp = _find_out_tiff_file(td)

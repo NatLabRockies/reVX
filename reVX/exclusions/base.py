@@ -147,7 +147,7 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         self._regulations = regulations
         self._features = features
         self._hsds = hsds
-        self._profile = self.shape = None
+        self._profile = self._shape = None
         self._process_regulations(regulations.df)
 
     def __repr__(self):
