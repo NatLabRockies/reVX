@@ -127,8 +127,8 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
 
         self._regulations.df = (self.regulations_table[mask]
                                 .reset_index(drop=True))
-        logger.debug('Loaded and processed setback regulations for {} counties'
-                     .format(len(self.regulations_table)))
+        logger.debug('Loaded and pre-processed setback regulations '
+                     'for %d jurisdictions', len(self.regulations_table))
 
     def _local_exclusions_arguments(self, regulation_value, county):
         """Compile and return arguments to `compute_local_exclusions`. """

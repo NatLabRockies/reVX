@@ -49,7 +49,10 @@ class BladeClearanceExclusions(AbstractBaseExclusionsMerger):
             warn(msg)
 
         self._regulations.df = (self.regulations_table[mask]
-                                .reset_index(drop=True))
+                                .reset_index(drop=True)
+                                .to_crs(crs=self.profile['crs']))
+        logger.debug('Loaded and pre-processed blade clearance regulations '
+                     'for %d jurisdictions', len(self.regulations_table))
 
     def _local_exclusions_arguments(self, *__, **___):
         """Yield args needed for local blade clearance exclusions."""
