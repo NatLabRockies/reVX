@@ -146,18 +146,26 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         self._regulations = regulations
         self._features = features
         self._hsds = hsds
-        self._profile = None
-        self._set_profile()
+        self._profile = self.shape = None
         self._process_regulations(regulations.df)
 
     def __repr__(self):
         msg = "{} for {}".format(self.__class__.__name__, self._excl_fpath)
         return msg
 
-    def _set_profile(self):
-        """Extract profile from excl h5."""
-        with ExclusionLayers(self._excl_fpath, hsds=self._hsds) as f:
-            self._profile = f.profile
+    def _parse_excl_properties(self):
+        """Parse shape, chunk size, and profile from exclusions file"""
+        with ExclusionLayers(self._excl_fpath, hsds=self._hsds) as exc:
+            self._shape = exc.shape
+            self._profile = exc.profile
+
+        if len(self._shape) < 3:
+            self._shape = (1, *self._shape)
+
+        logger.debug('Exclusions properties:\n'
+                     'shape : {}\n'
+                     'profile : {}\n'
+                     .format(self._shape, self._profile))
 
     def _process_regulations(self, regulations_df):
         """Parse the county regulations.
@@ -253,7 +261,16 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
     @property
     def profile(self):
         """dict: Geotiff profile. """
+        if self._profile is None:
+            self._parse_excl_properties()
         return self._profile
+
+    @property
+    def shape(self):
+        """tuple: Geotiff shape. """
+        if self._shape is None:
+            self._parse_excl_properties()
+        return self._shape
 
     @property
     def regulations_table(self):
@@ -659,7 +676,6 @@ class Rasterizer:
             ``None`` (or a value <= 1), this process is skipped and the
             output is a boolean exclusion mask. By default ``None``.
         """
-        # props = _parse_excl_properties(excl_fpath, hsds=hsds)
         self._shape, self._profile = shape, profile
         self.scale_factor = weights_calculation_upscale_factor
 
@@ -855,20 +871,3 @@ def _cropped_window(bounds, raster_transform, shape):
     return windows.Window(col_off=col_start, row_off=row_start,
                           width=max(col_stop - col_start, 1),
                           height=max(row_stop - row_start, 1))
-
-
-def _parse_excl_properties(excl_fpath, hsds=False):
-    """Parse shape, chunk size, and profile from exclusions file"""
-    with ExclusionLayers(excl_fpath, hsds=hsds) as exc:
-        shape = exc.shape
-        profile = exc.profile
-
-    if len(shape) < 3:
-        shape = (1, *shape)
-
-    logger.debug('Exclusions properties:\n'
-                 'shape : {}\n'
-                 'profile : {}\n'
-                 .format(shape, profile))
-
-    return shape, profile
