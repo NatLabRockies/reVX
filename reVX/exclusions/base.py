@@ -619,19 +619,21 @@ def _error_or_warn(name, replace):
     warn(msg)
 
 
-
 class Rasterizer:
     """Helper class to rasterize shapes."""
 
-    def __init__(self, excl_fpath, weights_calculation_upscale_factor=None,
-                 hsds=False):
+    def __init__(self, shape, profile,
+                 weights_calculation_upscale_factor=None):
         """
 
         Parameters
         ----------
-        excl_fpath : str
-            Path to .h5 file containing template layers. The raster will
-            match the shape and profile of these layers.
+        shape : tuple
+            Shape of the output (i.e. exclusion) array. Should contain
+            a band dimension as the first dimension.
+        profile : dict
+            Geotiff profile containing the transform and CRS information
+            necessary for rasterization.
         weights_calculation_upscale_factor : int, optional
             If this value is an int > 1, the output will be a layer with
             **inclusion** weight values (floats ranging from 0 to 1).
@@ -656,12 +658,9 @@ class Rasterizer:
             factor results in more accurate percentage values. If
             ``None`` (or a value <= 1), this process is skipped and the
             output is a boolean exclusion mask. By default ``None``.
-        hsds : bool, optional
-            Boolean flag to use h5pyd to handle .h5 'files' hosted on
-            AWS behind HSDS. By default `False`.
         """
-        props = _parse_excl_properties(excl_fpath, hsds=hsds)
-        self._shape, self._profile = props
+        # props = _parse_excl_properties(excl_fpath, hsds=hsds)
+        self._shape, self._profile = shape, profile
         self.scale_factor = weights_calculation_upscale_factor
 
     @property
@@ -707,7 +706,7 @@ class Rasterizer:
         -------
         bool
         """
-        return self._scale_factor > 1
+        return self.scale_factor > 1
 
     def _no_exclusions_array(self, multiplier=1, window=None):
         """Get an array of the correct shape representing no exclusions.
@@ -802,16 +801,16 @@ class Rasterizer:
             return ((1 - self._no_exclusions_array(window=window))
                     .astype(np.float32))
 
-        hr_arr = self._no_exclusions_array(multiplier=self._scale_factor,
+        hr_arr = self._no_exclusions_array(multiplier=self.scale_factor,
                                            window=window)
         transform = self._window_transform(window)
-        transform *= transform.scale(1 / self._scale_factor)
+        transform *= transform.scale(1 / self.scale_factor)
 
         rio_features.rasterize(shapes=shapes, out=hr_arr, fill=0,
                                transform=transform)
 
         arr = self._aggregate_high_res(hr_arr, window)
-        return 1 - (arr / self._scale_factor ** 2)
+        return 1 - (arr / self.scale_factor ** 2)
 
     def _rasterize_to_mask(self, shapes, window):
         """Rasterize features with to an exclusion mask."""
@@ -828,9 +827,9 @@ class Rasterizer:
         """Aggregate the high resolution exclusions array to output shape. """
 
         arr = self._no_exclusions_array(window=window).astype(np.float32)
-        for i, j in product(range(self._scale_factor),
-                            range(self._scale_factor)):
-            arr += hr_arr[i::self._scale_factor, j::self._scale_factor]
+        for i, j in product(range(self.scale_factor),
+                            range(self.scale_factor)):
+            arr += hr_arr[i::self.scale_factor, j::self.scale_factor]
         return arr
 
     def _window_transform(self, window):
@@ -861,15 +860,15 @@ def _cropped_window(bounds, raster_transform, shape):
 def _parse_excl_properties(excl_fpath, hsds=False):
     """Parse shape, chunk size, and profile from exclusions file"""
     with ExclusionLayers(excl_fpath, hsds=hsds) as exc:
-        dset_shape = exc.shape
+        shape = exc.shape
         profile = exc.profile
 
-    if len(dset_shape) < 3:
-        dset_shape = (1, ) + dset_shape
+    if len(shape) < 3:
+        shape = (1, *shape)
 
     logger.debug('Exclusions properties:\n'
                  'shape : {}\n'
                  'profile : {}\n'
-                 .format(dset_shape, profile))
+                 .format(shape, profile))
 
-    return dset_shape, profile
+    return shape, profile
