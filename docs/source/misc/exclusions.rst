@@ -4,3 +4,4 @@ reVX Exclusion Generation
 
    exclusions.setbacks
    exclusions.turbine_flicker
+   exclusions.max_height

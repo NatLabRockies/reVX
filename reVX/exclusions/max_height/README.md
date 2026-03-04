@@ -13,7 +13,7 @@ For rows that should drive this calculation:
 * ``Value Type`` should be ``"meters"`` (case-insensitive)
 * ``Value`` is the allowed maximum system height in meters
 
-## Height input modes (exactly one required)
+## Height input modes
 You must provide **exactly one** of the following:
 * ``system_height`` (directly)
 * Both ``hub_height`` and ``rotor_diameter`` (tip-height computed as ``hub_height + rotor_diameter / 2``)
