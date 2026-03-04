@@ -132,14 +132,15 @@ def test_blade_clearance_regulations_conversion():
             assert bc._county_regulation_value(county_regs.loc[44007]) is None
 
 
-def test_blade_clearance_exclusions():
+@pytest.mark.parametrize('max_workers', [1, 4])
+def test_blade_clearance_exclusions(max_workers):
     """Test local-only county exclusions for blade clearance restrictions."""
     with ExclusionLayers(EXCL_H5) as exc:
         fips = exc['cnty_fips']
         all_fips = sorted(set(np.unique(fips[fips > 0])))
 
-    restricted = {all_fips[0]}
-    unrestricted = {all_fips[1]}
+    restricted = {all_fips[0], all_fips[3]}
+    unrestricted = {all_fips[1], all_fips[10]}
     with tempfile.TemporaryDirectory() as td:
         regs_fpath = os.path.join(td, 'blade_regs.csv')
         _make_blade_clearance_regs(regs_fpath, restricted, unrestricted,
@@ -154,7 +155,7 @@ def test_blade_clearance_exclusions():
             rotor_diameter=80,
         )
         bc = BladeClearanceExclusions(EXCL_H5, regs, features=None)
-        out = bc.compute_exclusions(max_workers=1)
+        out = bc.compute_exclusions(max_workers=max_workers)
 
         truth = np.isin(fips, list(restricted)).astype(np.uint8)
         assert np.allclose(out, truth)
@@ -220,8 +221,8 @@ def test_cli_blade_clearance(runner):
         fips = exc['cnty_fips']
         all_fips = sorted(set(np.unique(fips[fips > 0])))
 
-    restricted = {all_fips[0]}
-    unrestricted = {all_fips[1]}
+    restricted = {all_fips[0], all_fips[3]}
+    unrestricted = {all_fips[1], all_fips[10]}
     with tempfile.TemporaryDirectory() as td:
         regs_fpath = os.path.join(td, 'blade_regs.csv')
         _make_blade_clearance_regs(regs_fpath, restricted, unrestricted,

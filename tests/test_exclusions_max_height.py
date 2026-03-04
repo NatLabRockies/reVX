@@ -110,14 +110,15 @@ def test_select_height_restriction_regulations():
     assert np.isclose(regs.system_height, 150)
 
 
-def test_height_restriction_exclusions():
+@pytest.mark.parametrize('max_workers', [1, 4])
+def test_height_restriction_exclusions(max_workers):
     """Test local-only county exclusions for height restrictions."""
     with ExclusionLayers(EXCL_H5) as exc:
         fips = exc['cnty_fips']
         all_fips = sorted(set(np.unique(fips[fips > 0])))
 
-    restricted = {all_fips[0]}
-    unrestricted = {all_fips[1]}
+    restricted = {all_fips[0], all_fips[3]}
+    unrestricted = {all_fips[1], all_fips[10]}
     with tempfile.TemporaryDirectory() as td:
         regs_fpath = os.path.join(td, 'height_regs.csv')
         _make_height_restriction_regs(regs_fpath, restricted, unrestricted,
@@ -129,7 +130,7 @@ def test_height_restriction_exclusions():
             system_height=150,
         )
         hr = HeightRestrictionExclusions(EXCL_H5, regs, features=None)
-        out = hr.compute_exclusions(max_workers=1)
+        out = hr.compute_exclusions(max_workers=max_workers)
 
         truth = np.isin(fips, list(restricted)).astype(np.uint8)
         assert np.allclose(out, truth)
@@ -141,8 +142,8 @@ def test_cli_height_restriction(runner):
         fips = exc['cnty_fips']
         all_fips = sorted(set(np.unique(fips[fips > 0])))
 
-    restricted = {all_fips[0]}
-    unrestricted = {all_fips[1]}
+    restricted = {all_fips[0], all_fips[3]}
+    unrestricted = {all_fips[1], all_fips[10]}
     with tempfile.TemporaryDirectory() as td:
         regs_fpath = os.path.join(td, 'height_regs.csv')
         _make_height_restriction_regs(regs_fpath, restricted, unrestricted,
