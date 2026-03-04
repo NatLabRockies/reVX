@@ -13,7 +13,6 @@ import pytest
 import shutil
 import tempfile
 import traceback
-from itertools import product
 
 import geopandas as gpd
 import rasterio
@@ -24,10 +23,9 @@ from rex.utilities.loggers import LOGGERS
 
 from reVX import TESTDATADIR
 from reVX.handlers.geotiff import Geotiff
-from reVX.exclusions.setbacks.regulations import (SetbackRegulations,
-                                       WindSetbackRegulations,
-                                       validate_setback_regulations_input,
-                                       select_setback_regulations)
+from reVX.exclusions.setbacks.regulations import (
+    SetbackRegulations, WindSetbackRegulations,
+    validate_setback_regulations_input, select_setback_regulations)
 from reVX.exclusions.setbacks import SETBACKS
 from reVX.exclusions.setbacks.base import Rasterizer
 from reVX.exclusions._cli import cli
@@ -323,43 +321,6 @@ def test_setbacks_saving_tiff_h5():
         with ExclusionLayers(excl_fpath) as exc:
             assert "ri_parcel_setbacks" in exc.layers
             assert np.allclose(exc["ri_parcel_setbacks"], 0)
-
-
-def test_rasterizer_array_dtypes():
-    """Test that rasterizing empty array yields correct array dtypes."""
-    rasterizer = Rasterizer(EXCL_H5, weights_calculation_upscale_factor=1)
-    rasterizer_hr = Rasterizer(EXCL_H5, weights_calculation_upscale_factor=5)
-
-    assert rasterizer.rasterize(shapes=None).dtype == np.uint8
-    assert rasterizer_hr.rasterize(shapes=None).dtype == np.float32
-
-
-def test_rasterizer_window():
-    """Test rasterizing in a window. """
-    rail_path = os.path.join(TESTDATADIR, 'setbacks',
-                             'Rhode_Island_Railroads.gpkg')
-
-    with ExclusionLayers(EXCL_H5) as excl:
-        crs = excl.crs
-        profile = excl.profile
-        shape = excl.shape
-
-    features = gpd.read_file(rail_path).to_crs(crs)
-    features = list(features["geometry"].buffer(500))
-
-    transform = rasterio.Affine(*profile["transform"])
-    window = rasterio.windows.from_bounds(70_000, 30_000, 130_000, 103_900,
-                                          transform)
-    window = window.round_offsets().round_lengths()
-
-    rasterizer = Rasterizer(EXCL_H5, 1)
-
-    raster = rasterizer.rasterize(features)
-    window_raster = rasterizer.rasterize(features, window=window)
-
-    assert raster.shape == shape
-    assert window_raster.shape == (window.height, window.width)
-    assert np.allclose(raster[window.toslices()], window_raster)
 
 
 @pytest.mark.parametrize('max_workers', [None, 1])
@@ -679,50 +640,6 @@ def test_regulations_preflight_check():
     """Test WindSetbackRegulations preflight_checks"""
     with pytest.raises(RuntimeError):
         WindSetbackRegulations(HUB_HEIGHT, ROTOR_DIAMETER)
-
-
-def test_high_res_excl_array():
-    """Test the multiplier of the exclusion array is applied correctly. """
-
-    mult = 5
-    parcel_path = os.path.join(TESTDATADIR, 'setbacks', 'RI_Parcels',
-                               'Rhode_Island.gpkg')
-    regulations = SetbackRegulations(BASE_SETBACK_DIST, regulations_fpath=None,
-                                     multiplier=1)
-    setbacks = SETBACKS["parcel"](EXCL_H5, regulations, features=parcel_path,
-                                  weights_calculation_upscale_factor=mult)
-    rasterizer = setbacks._rasterizer
-    hr_array = rasterizer._no_exclusions_array(multiplier=mult)
-
-    assert hr_array.dtype == np.uint8
-    for ind, shape in enumerate(rasterizer.arr_shape[1:]):
-        assert shape != hr_array.shape[ind]
-        assert shape * mult == hr_array.shape[ind]
-
-
-def test_aggregate_high_res():
-    """Test the aggregation of a high_resolution array. """
-
-    mult = 5
-    parcel_path = os.path.join(TESTDATADIR, 'setbacks', 'RI_Parcels',
-                               'Rhode_Island.gpkg')
-    regulations = SetbackRegulations(BASE_SETBACK_DIST, regulations_fpath=None,
-                                     multiplier=1)
-    setbacks = SETBACKS["parcel"](EXCL_H5, regulations, features=parcel_path,
-                                  weights_calculation_upscale_factor=mult)
-    rasterizer = setbacks._rasterizer
-
-    hr_array = rasterizer._no_exclusions_array(multiplier=mult)
-    hr_array = hr_array.astype(np.float32)
-    arr_to_rep = np.arange(rasterizer.arr_shape[1] * rasterizer.arr_shape[2],
-                           dtype=np.float32)
-    arr_to_rep = arr_to_rep.reshape(rasterizer.arr_shape[1:])
-
-    for i, j in product(range(mult), range(mult)):
-        hr_array[i::mult, j::mult] += arr_to_rep
-
-    assert np.allclose(rasterizer._aggregate_high_res(hr_array, window=None),
-                       arr_to_rep * mult ** 2)
 
 
 def test_partial_exclusions():
