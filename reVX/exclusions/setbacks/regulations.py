@@ -139,16 +139,19 @@ class SetbackRegulations(AbstractBaseRegulations):
         """Retrieve county regulation setback. """
         setback_type = county_regulations["Value Type"]
         setback = float(county_regulations["Value"])
+
         if setback_type == "structure height multiplier":
-            setback *= self.base_setback_dist
-        elif setback_type != "meters":
+            return setback * self.base_setback_dist
+
+        if setback_type != "meters":
             msg = ("Cannot create setback for {}, expecting "
                    '"Structure Height Multiplier", or '
                    '"Meters", but got {!r}'
                    .format(county_regulations["County"], setback_type))
             logger.warning(msg)
             warn(msg)
-            return
+            return None
+
         return setback
 
 
