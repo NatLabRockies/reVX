@@ -597,7 +597,9 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         else:
             logger.info("Computing exclusions from {} and saving "
                         "to {}".format(features_path, out_fn))
-            out_layer = out_layers.get(os.path.basename(features_path))
+            out_layer = None
+            if out_layers and features_path:
+                out_layer = out_layers.get(os.path.basename(features_path))
             exclusions = cls(excl_fpath=excl_fpath, regulations=regulations,
                              features=features_path, hsds=hsds, **kwargs)
             exclusions.compute_exclusions(out_tiff=out_fn, out_layer=out_layer,
