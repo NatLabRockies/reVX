@@ -10,6 +10,7 @@ from reVX.exclusions.setbacks._cli import (setbacks_command,
                                            merge_setbacks_command)
 from reVX.exclusions.turbine_flicker._cli import flicker_command
 from reVX.exclusions.max_height._cli import height_restriction_command
+from reVX.exclusions.blade_clearance._cli import blade_clearance_command
 from reVX import __version__
 
 
@@ -20,6 +21,7 @@ commands = [
     merge_setbacks_command,
     flicker_command,
     height_restriction_command,
+    blade_clearance_command,
 ]
 
 cli = make_cli(commands)
