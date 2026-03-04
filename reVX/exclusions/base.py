@@ -8,6 +8,7 @@ import logging
 from copy import deepcopy
 from math import floor, ceil
 from itertools import product
+from functools import cached_property
 from abc import ABC, abstractmethod
 from concurrent.futures import as_completed
 from warnings import warn
@@ -285,6 +286,11 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
     @regulations_table.setter
     def regulations_table(self, regulations_table):
         self._process_regulations(regulations_table)
+
+    @cached_property
+    def rasterizer(self):
+        """Rasterizer: Rasterizer instance, if needed"""
+        return Rasterizer(self.shape, self.profile)
 
     def _write_exclusions(self, geotiff, exclusions, replace=False):
         """

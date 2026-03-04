@@ -17,7 +17,7 @@ from rasterio import transform, coords
 from rex.utilities import log_mem
 from rex.utilities.execution import SpawnProcessPool
 from reVX.handlers.geopackage import GPKGMeta
-from reVX.exclusions.base import AbstractBaseExclusionsMerger, Rasterizer
+from reVX.exclusions.base import AbstractBaseExclusionsMerger
 from reVX.exclusions.setbacks.functions import (
     parcel_buffer, positive_buffer, features_clipped_to_county,
     features_with_centroid_in_county)
@@ -81,9 +81,8 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
             (or a value <= 1), this process is skipped and the output is
             a boolean exclusion mask. By default `None`.
         """
-        self._rasterizer = Rasterizer(excl_fpath,
-                                      weights_calculation_upscale_factor, hsds)
         super().__init__(excl_fpath, regulations, features, hsds)
+        self.rasterizer.scale_factor = weights_calculation_upscale_factor
         self._features_meta = GPKGMeta(self._features)
 
     def __repr__(self):
@@ -104,12 +103,12 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
     @property
     def no_exclusions_array(self):
         """np.array: Array representing no exclusions. """
-        return self._rasterizer.rasterize(shapes=None)
+        return self.rasterizer.rasterize(shapes=None)
 
     @property
     def exclusion_merge_func(self):
         """callable: Function to merge overlapping exclusion layers. """
-        return np.minimum if self._rasterizer.inclusions else np.maximum
+        return np.minimum if self.rasterizer.inclusions else np.maximum
 
     def pre_process_regulations(self):
         """Reduce regulations to state corresponding to features."""
@@ -146,7 +145,7 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
             yield (ids[start:end], self._features,
                    self._features_meta.primary_key_column, self.profile['crs'],
                    self.FEATURE_FILTER_TYPE, self.BUFFER_TYPE,
-                   self._rasterizer)
+                   self.rasterizer)
 
     @staticmethod
     def compute_local_exclusions(regulation_value, county, *args):
@@ -261,7 +260,7 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
                 out = _compute_exclusions(ids[start:end], self._features, pk,
                                           crs, self.BUFFER_TYPE,
                                           self._regulations.generic,
-                                          self._rasterizer)
+                                          self.rasterizer)
                 new_exclusions, slices = out
                 exclusions = self._combine_exclusions(exclusions,
                                                       new_exclusions,
@@ -288,7 +287,7 @@ class AbstractBaseSetbacks(AbstractBaseExclusionsMerger):
                                 self._features, pk, crs,
                                 self.BUFFER_TYPE,
                                 self._regulations.generic,
-                                self._rasterizer)
+                                self.rasterizer)
             futures.append(future)
             if ind % max_submissions == 0:
                 exclusions = self._collect_ge_futures(futures, exclusions)
