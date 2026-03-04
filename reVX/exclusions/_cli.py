@@ -9,6 +9,7 @@ from gaps.cli import make_cli
 from reVX.exclusions.setbacks._cli import (setbacks_command,
                                            merge_setbacks_command)
 from reVX.exclusions.turbine_flicker._cli import flicker_command
+from reVX.exclusions.max_height._cli import height_restriction_command
 from reVX import __version__
 
 
@@ -18,6 +19,7 @@ commands = [
     setbacks_command,
     merge_setbacks_command,
     flicker_command,
+    height_restriction_command,
 ]
 
 cli = make_cli(commands)
