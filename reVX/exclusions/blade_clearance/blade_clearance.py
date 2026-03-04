@@ -6,8 +6,6 @@ import logging
 from warnings import warn
 
 import numpy as np
-from affine import Affine
-from rasterio import features as rio_features
 
 from reVX.exclusions.base import AbstractBaseExclusionsMerger
 
@@ -29,9 +27,8 @@ class BladeClearanceExclusions(AbstractBaseExclusionsMerger):
 
     @property
     def no_exclusions_array(self):
-        """np.ndarray: Array representing no exclusions."""
-        shape = (self.profile['height'], self.profile['width'])
-        return np.zeros(shape, dtype=np.uint8)
+        """np.array: Array representing no exclusions. """
+        return self.rasterizer.rasterize(shapes=None)
 
     @property
     def exclusion_merge_func(self):
@@ -56,7 +53,7 @@ class BladeClearanceExclusions(AbstractBaseExclusionsMerger):
 
     def _local_exclusions_arguments(self, *__, **___):
         """Yield args needed for local blade clearance exclusions."""
-        yield (self._regulations.blade_clearance, self.profile)
+        yield (self._regulations.blade_clearance, self.rasterizer)
 
     @staticmethod
     def compute_local_exclusions(regulation_value, county, *args):
@@ -70,38 +67,19 @@ class BladeClearanceExclusions(AbstractBaseExclusionsMerger):
             Regulations for a single county.
         blade_clearance :  float | int
             Blade clearance of the turbine in meters.
-        profile : dict
-            Rasterio profile for the output exclusion raster. This is
-            needed to ensure the output raster is properly georeferenced
-            and aligned with the input data. The profile should contain
-            at least the following keys: 'height', 'width', and
-            'transform'. The 'height' and 'width' keys specify the
-            dimensions of the output raster, while the 'transform' key
-            provides the affine transformation needed to map pixel
-            coordinates to geographic coordinates. The 'transform' can
-            be provided as an Affine object or as a list/tuple of 6
-            values that can be converted to an Affine object.
+        rasterizer : Rasterizer
+            Rasterizer object used to rasterize the exclusion features.
         """
-        blade_clearance, profile = args
-        shape = (profile['height'], profile['width'])
+        blade_clearance, rasterizer = args
 
-        meets_requirement = blade_clearance >= regulation_value
-        if meets_requirement:
-            return np.zeros(shape, dtype=np.uint8), (slice(None), slice(None))
+        features = []
+        if blade_clearance < regulation_value:
+            features = [geom for geom in county.geometry
+                        if geom is not None and not geom.is_empty]
 
-        transform = profile['transform']
-        if not isinstance(transform, Affine):
-            transform = Affine(*transform)
-
-        geometry = ((geom, 1) for geom in county.geometry
-                    if geom is not None and not geom.is_empty)
-
-        exclusions = rio_features.rasterize(geometry,
-                                            out_shape=shape,
-                                            transform=transform,
-                                            fill=0,
-                                            dtype=np.uint8)
-        return exclusions, (slice(None), slice(None))
+        return rasterizer.rasterize_within_window(
+            features, county.total_bounds
+        )
 
     def compute_generic_exclusions(self, *__, **___):
         """Return no exclusions because this mode is local-only"""
