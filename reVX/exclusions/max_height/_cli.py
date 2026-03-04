@@ -119,7 +119,7 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath,
         regulations_fpath=regulations_fpath,
     )
 
-    fn = "height_restrictions_{}m.tif".format(regulations.system_height)
+    fn = "height_restrictions_{}m.tif".format(int(regulations.system_height))
     out_fn = os.path.join(out_dir, fn)
     HeightRestrictionExclusions.run(excl_fpath, None, out_fn, regulations,
                                     max_workers=max_workers, replace=replace,

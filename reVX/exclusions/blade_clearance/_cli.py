@@ -113,8 +113,8 @@ def compute_blade_clearance_exclusions(excl_fpath, out_dir, regulations_fpath,
         regulations_fpath=regulations_fpath,
     )
 
-    fn = ("blade_clearance_restrictions_{}m.tif"
-          .format(regulations.blade_clearance))
+    fn = ("blade_clearance_restrictions_{}hh_{}rd.tif"
+          .format(hub_height, rotor_diameter))
     out_fn = os.path.join(out_dir, fn)
     BladeClearanceExclusions.run(excl_fpath, None, out_fn, regulations,
                                  max_workers=max_workers, replace=replace,
