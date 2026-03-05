@@ -1,0 +1,6 @@
+reVX.exclusions.setbacks.regulations.select\_setback\_regulations
+=================================================================
+
+.. currentmodule:: reVX.exclusions.setbacks.regulations
+
+.. autofunction:: select_setback_regulations

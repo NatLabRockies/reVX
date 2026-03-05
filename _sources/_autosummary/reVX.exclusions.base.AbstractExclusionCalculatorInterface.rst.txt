@@ -1,0 +1,33 @@
+reVX.exclusions.base.AbstractExclusionCalculatorInterface
+=========================================================
+
+.. currentmodule:: reVX.exclusions.base
+
+.. autoclass:: AbstractExclusionCalculatorInterface
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~AbstractExclusionCalculatorInterface.compute_generic_exclusions
+      ~AbstractExclusionCalculatorInterface.compute_local_exclusions
+      ~AbstractExclusionCalculatorInterface.pre_process_regulations
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~AbstractExclusionCalculatorInterface.exclusion_merge_func
+      ~AbstractExclusionCalculatorInterface.no_exclusions_array
+   
+   

@@ -1,0 +1,38 @@
+reVX.exclusions.max\_height.regulations
+=======================================
+
+.. automodule:: reVX.exclusions.max_height.regulations
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      validate_height_regulations_input
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+   
+      HeightRestrictionRegulations
+   
+   
+
+   
+   
+   
+
+
+

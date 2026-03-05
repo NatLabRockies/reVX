@@ -1,0 +1,31 @@
+reVX.exclusions.turbine\_flicker
+================================
+
+.. automodule:: reVX.exclusions.turbine_flicker
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst
+   :recursive:
+
+   regulations
+   turbine_flicker
+

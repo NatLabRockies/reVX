@@ -1,0 +1,6 @@
+reVX.utilities.reeds\_cols.add\_nlr\_regions
+============================================
+
+.. currentmodule:: reVX.utilities.reeds_cols
+
+.. autofunction:: add_nlr_regions

@@ -1,0 +1,38 @@
+reVX.exclusions.blade\_clearance.regulations
+============================================
+
+.. automodule:: reVX.exclusions.blade_clearance.regulations
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      validate_blade_clearance_regulations_input
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+   
+      BladeClearanceRegulations
+   
+   
+
+   
+   
+   
+
+
+

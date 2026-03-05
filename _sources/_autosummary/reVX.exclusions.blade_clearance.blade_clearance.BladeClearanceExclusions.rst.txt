@@ -1,0 +1,42 @@
+reVX.exclusions.blade\_clearance.blade\_clearance.BladeClearanceExclusions
+==========================================================================
+
+.. currentmodule:: reVX.exclusions.blade_clearance.blade_clearance
+
+.. autoclass:: BladeClearanceExclusions
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~BladeClearanceExclusions.compute_all_local_exclusions
+      ~BladeClearanceExclusions.compute_exclusions
+      ~BladeClearanceExclusions.compute_generic_exclusions
+      ~BladeClearanceExclusions.compute_local_exclusions
+      ~BladeClearanceExclusions.pre_process_regulations
+      ~BladeClearanceExclusions.run
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~BladeClearanceExclusions.FEATURE_TYPES
+      ~BladeClearanceExclusions.description
+      ~BladeClearanceExclusions.exclusion_merge_func
+      ~BladeClearanceExclusions.no_exclusions_array
+      ~BladeClearanceExclusions.profile
+      ~BladeClearanceExclusions.rasterizer
+      ~BladeClearanceExclusions.regulations_table
+      ~BladeClearanceExclusions.shape
+   
+   

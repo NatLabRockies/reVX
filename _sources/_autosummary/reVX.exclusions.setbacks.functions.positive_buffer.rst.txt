@@ -1,0 +1,6 @@
+reVX.exclusions.setbacks.functions.positive\_buffer
+===================================================
+
+.. currentmodule:: reVX.exclusions.setbacks.functions
+
+.. autofunction:: positive_buffer

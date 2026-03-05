@@ -1,0 +1,6 @@
+reVX.exclusions.setbacks.functions.parcel\_buffer
+=================================================
+
+.. currentmodule:: reVX.exclusions.setbacks.functions
+
+.. autofunction:: parcel_buffer

@@ -1,0 +1,36 @@
+reVX.exclusions.blade\_clearance.regulations.BladeClearanceRegulations
+======================================================================
+
+.. currentmodule:: reVX.exclusions.blade_clearance.regulations
+
+.. autoclass:: BladeClearanceRegulations
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~BladeClearanceRegulations.blade_clearance
+      ~BladeClearanceRegulations.df
+      ~BladeClearanceRegulations.generic
+      ~BladeClearanceRegulations.generic_exists
+      ~BladeClearanceRegulations.geometry_provided
+      ~BladeClearanceRegulations.locals_exist
+      ~BladeClearanceRegulations.required_columns
+      ~BladeClearanceRegulations.tip_height
+   
+   

@@ -1,0 +1,6 @@
+reVX.exclusions.max\_height.regulations.validate\_height\_regulations\_input
+============================================================================
+
+.. currentmodule:: reVX.exclusions.max_height.regulations
+
+.. autofunction:: validate_height_regulations_input

@@ -1,0 +1,35 @@
+reVX.exclusions.base.Rasterizer
+===============================
+
+.. currentmodule:: reVX.exclusions.base
+
+.. autoclass:: Rasterizer
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Rasterizer.rasterize
+      ~Rasterizer.rasterize_within_window
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Rasterizer.arr_shape
+      ~Rasterizer.inclusions
+      ~Rasterizer.profile
+      ~Rasterizer.scale_factor
+      ~Rasterizer.transform
+   
+   

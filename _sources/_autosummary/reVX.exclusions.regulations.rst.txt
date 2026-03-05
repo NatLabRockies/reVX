@@ -1,0 +1,31 @@
+reVX.exclusions.regulations
+===========================
+
+.. automodule:: reVX.exclusions.regulations
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+   
+      AbstractBaseRegulations
+   
+   
+
+   
+   
+   
+
+
+

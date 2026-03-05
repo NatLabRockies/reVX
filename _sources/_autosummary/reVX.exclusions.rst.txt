@@ -1,0 +1,35 @@
+reVX.exclusions
+===============
+
+.. automodule:: reVX.exclusions
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+
+.. autosummary::
+   :toctree:
+   :template: custom-module-template.rst
+   :recursive:
+
+   base
+   blade_clearance
+   max_height
+   regulations
+   setbacks
+   turbine_flicker
+
