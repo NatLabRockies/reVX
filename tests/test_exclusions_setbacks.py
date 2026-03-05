@@ -13,7 +13,6 @@ import pytest
 import shutil
 import tempfile
 import traceback
-from itertools import product
 
 import geopandas as gpd
 import rasterio
@@ -24,13 +23,12 @@ from rex.utilities.loggers import LOGGERS
 
 from reVX import TESTDATADIR
 from reVX.handlers.geotiff import Geotiff
-from reVX.setbacks.regulations import (SetbackRegulations,
-                                       WindSetbackRegulations,
-                                       validate_setback_regulations_input,
-                                       select_setback_regulations)
-from reVX.setbacks import SETBACKS
-from reVX.setbacks.base import Rasterizer
-from reVX.setbacks.setbacks_cli import cli
+from reVX.exclusions.setbacks.regulations import (
+    SetbackRegulations, WindSetbackRegulations,
+    validate_setback_regulations_input, select_setback_regulations)
+from reVX.exclusions.setbacks import SETBACKS
+from reVX.exclusions.base import Rasterizer
+from reVX.exclusions._cli import cli
 
 
 EXCL_H5 = os.path.join(TESTDATADIR, 'setbacks', 'ri_setbacks.h5')
@@ -323,43 +321,6 @@ def test_setbacks_saving_tiff_h5():
         with ExclusionLayers(excl_fpath) as exc:
             assert "ri_parcel_setbacks" in exc.layers
             assert np.allclose(exc["ri_parcel_setbacks"], 0)
-
-
-def test_rasterizer_array_dtypes():
-    """Test that rasterizing empty array yields correct array dtypes."""
-    rasterizer = Rasterizer(EXCL_H5, weights_calculation_upscale_factor=1)
-    rasterizer_hr = Rasterizer(EXCL_H5, weights_calculation_upscale_factor=5)
-
-    assert rasterizer.rasterize(shapes=None).dtype == np.uint8
-    assert rasterizer_hr.rasterize(shapes=None).dtype == np.float32
-
-
-def test_rasterizer_window():
-    """Test rasterizing in a window. """
-    rail_path = os.path.join(TESTDATADIR, 'setbacks',
-                             'Rhode_Island_Railroads.gpkg')
-
-    with ExclusionLayers(EXCL_H5) as excl:
-        crs = excl.crs
-        profile = excl.profile
-        shape = excl.shape
-
-    features = gpd.read_file(rail_path).to_crs(crs)
-    features = list(features["geometry"].buffer(500))
-
-    transform = rasterio.Affine(*profile["transform"])
-    window = rasterio.windows.from_bounds(70_000, 30_000, 130_000, 103_900,
-                                          transform)
-    window = window.round_offsets().round_lengths()
-
-    rasterizer = Rasterizer(EXCL_H5, 1)
-
-    raster = rasterizer.rasterize(features)
-    window_raster = rasterizer.rasterize(features, window=window)
-
-    assert raster.shape == shape
-    assert window_raster.shape == (window.height, window.width)
-    assert np.allclose(raster[window.toslices()], window_raster)
 
 
 @pytest.mark.parametrize('max_workers', [None, 1])
@@ -681,50 +642,6 @@ def test_regulations_preflight_check():
         WindSetbackRegulations(HUB_HEIGHT, ROTOR_DIAMETER)
 
 
-def test_high_res_excl_array():
-    """Test the multiplier of the exclusion array is applied correctly. """
-
-    mult = 5
-    parcel_path = os.path.join(TESTDATADIR, 'setbacks', 'RI_Parcels',
-                               'Rhode_Island.gpkg')
-    regulations = SetbackRegulations(BASE_SETBACK_DIST, regulations_fpath=None,
-                                     multiplier=1)
-    setbacks = SETBACKS["parcel"](EXCL_H5, regulations, features=parcel_path,
-                                  weights_calculation_upscale_factor=mult)
-    rasterizer = setbacks._rasterizer
-    hr_array = rasterizer._no_exclusions_array(multiplier=mult)
-
-    assert hr_array.dtype == np.uint8
-    for ind, shape in enumerate(rasterizer.arr_shape[1:]):
-        assert shape != hr_array.shape[ind]
-        assert shape * mult == hr_array.shape[ind]
-
-
-def test_aggregate_high_res():
-    """Test the aggregation of a high_resolution array. """
-
-    mult = 5
-    parcel_path = os.path.join(TESTDATADIR, 'setbacks', 'RI_Parcels',
-                               'Rhode_Island.gpkg')
-    regulations = SetbackRegulations(BASE_SETBACK_DIST, regulations_fpath=None,
-                                     multiplier=1)
-    setbacks = SETBACKS["parcel"](EXCL_H5, regulations, features=parcel_path,
-                                  weights_calculation_upscale_factor=mult)
-    rasterizer = setbacks._rasterizer
-
-    hr_array = rasterizer._no_exclusions_array(multiplier=mult)
-    hr_array = hr_array.astype(np.float32)
-    arr_to_rep = np.arange(rasterizer.arr_shape[1] * rasterizer.arr_shape[2],
-                           dtype=np.float32)
-    arr_to_rep = arr_to_rep.reshape(rasterizer.arr_shape[1:])
-
-    for i, j in product(range(mult), range(mult)):
-        hr_array[i::mult, j::mult] += arr_to_rep
-
-    assert np.allclose(rasterizer._aggregate_high_res(hr_array, window=None),
-                       arr_to_rep * mult ** 2)
-
-
 def test_partial_exclusions():
     """Test the aggregation of a high_resolution array. """
     parcel_path = os.path.join(TESTDATADIR, 'setbacks', 'RI_Parcels',
@@ -985,7 +902,7 @@ def test_cli_structures(runner, config_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1038,7 +955,7 @@ def test_cli_railroads(runner, config_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1082,7 +999,7 @@ def test_cli_parcels(runner, config_input, regs):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1129,7 +1046,7 @@ def test_cli_water(runner, config_input, regs):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1167,7 +1084,7 @@ def test_cli_partial_setbacks(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1219,7 +1136,7 @@ def test_cli_multiple_generic_multipliers(runner, as_file):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1312,7 +1229,7 @@ def test_cli_merged_layers(runner, setbacks_type, out_fn, features_path,
             with open(config_path, 'w') as f:
                 json.dump(config, f)
 
-            result = runner.invoke(cli, ['compute', '-c', config_path])
+            result = runner.invoke(cli, ['setbacks', '-c', config_path])
             msg = ('Failed with error {}'
                    .format(traceback.print_exception(*result.exc_info)))
             assert result.exit_code == 0, msg
@@ -1351,7 +1268,7 @@ def test_cli_invalid_config_missing_height(runner):
             with open(config_path, 'w') as f:
                 json.dump(config, f)
 
-            result = runner.invoke(cli, ['compute', '-c', config_path])
+            result = runner.invoke(cli, ['setbacks', '-c', config_path])
 
             assert result.exit_code == 1
 
@@ -1382,7 +1299,7 @@ def test_cli_invalid_config_tmi(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
         assert result.exc_info
         assert result.exc_info[0] == RuntimeError
@@ -1415,7 +1332,7 @@ def test_cli_invalid_input_gpkg_dne(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
         assert result.exc_info
         assert result.exc_info[0] == FileNotFoundError
@@ -1452,7 +1369,7 @@ def test_cli_invalid_input_not_gpkg(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
         assert result.exc_info
         assert result.exc_info[0] == FileNotFoundError
@@ -1492,7 +1409,7 @@ def test_cli_saving(runner):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
@@ -1533,13 +1450,13 @@ def test_cli_merge_setbacks(runner, return_to_main_test_dir, inclusions):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['merge', '-c', config_path])
+        result = runner.invoke(cli, ['merge-setbacks', '-c', config_path])
         assert result.exit_code == 1
 
         Geotiff.write(tiff_1, profile, arr1)
         Geotiff.write(tiff_2, profile, arr2)
 
-        runner.invoke(cli, ['merge', '-c', config_path])
+        runner.invoke(cli, ['merge-setbacks', '-c', config_path])
         with Geotiff(out_fp) as tif:
             assert np.allclose(tif.values, 0 if inclusions else 1)
 
@@ -1567,7 +1484,7 @@ def test_custom_features_0_setback(runner, setback_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         assert result.exit_code == 1
 
         rail_specs = {"feature_type": "railroads",
@@ -1579,12 +1496,19 @@ def test_custom_features_0_setback(runner, setback_input):
         with open(config_path, 'w') as f:
             json.dump(config, f)
 
-        result = runner.invoke(cli, ['compute', '-c', config_path])
+        result = runner.invoke(cli, ['setbacks', '-c', config_path])
         msg = ('Failed with error {}'
                .format(traceback.print_exception(*result.exc_info)))
         assert result.exit_code == 0, msg
 
-        rasterizer = Rasterizer(EXCL_H5, weights_calculation_upscale_factor=1)
+        with ExclusionLayers(EXCL_H5) as excl:
+            shape = excl.shape
+            profile = excl.profile
+
+        if len(shape) < 3:
+            shape = (1, *shape)
+
+        rasterizer = Rasterizer(shape, profile)
         truth = rasterizer.rasterize(list(railroads["geometry"]))
 
         test_fp = _find_out_tiff_file(td)
@@ -1635,8 +1559,8 @@ def test_integrated_setbacks_run(runner, county_wind_regulations):
         with open(merge_config_path, 'w') as f:
             json.dump(merge_config, f)
 
-        pipe_config = {"pipeline": [{"compute": "./config_compute.json"},
-                                    {"merge": "./config_merge.json"}]}
+        pipe_config = {"pipeline": [{"setbacks": "./config_compute.json"},
+                                    {"merge-setbacks": "./config_merge.json"}]}
         pipe_config_path = os.path.join(td, 'config_pipeline.json')
         with open(pipe_config_path, 'w') as f:
             json.dump(pipe_config, f)
@@ -1708,8 +1632,8 @@ def test_integrated_partial_setbacks_run(runner):
         with open(merge_config_path, 'w') as f:
             json.dump(merge_config, f)
 
-        pipe_config = {"pipeline": [{"compute": "./config_compute.json"},
-                                    {"merge": "./config_merge.json"}]}
+        pipe_config = {"pipeline": [{"setbacks": "./config_compute.json"},
+                                    {"merge-setbacks": "./config_merge.json"}]}
         pipe_config_path = os.path.join(td, 'config_pipeline.json')
         with open(pipe_config_path, 'w') as f:
             json.dump(pipe_config, f)

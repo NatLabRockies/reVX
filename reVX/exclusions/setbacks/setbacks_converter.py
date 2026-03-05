@@ -5,11 +5,11 @@ Convert setback geotiff to .h5 exclusion layers
 import logging
 import numpy as np
 import os
-from warnings import warn
 
 from reVX.handlers.geotiff import Geotiff
 from reVX.handlers.layered_h5 import LayeredH5, check_geotiff
 from reVX.handlers.outputs import Outputs
+
 
 logger = logging.getLogger(__name__)
 

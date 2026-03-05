@@ -5,7 +5,7 @@ Compute setbacks exclusions
 from warnings import warn
 import logging
 
-from reVX.utilities.regulations import AbstractBaseRegulations
+from reVX.exclusions.regulations import AbstractBaseRegulations
 
 
 logger = logging.getLogger(__name__)

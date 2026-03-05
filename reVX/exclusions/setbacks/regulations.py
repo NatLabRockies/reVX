@@ -5,7 +5,7 @@ Compute setbacks exclusions
 from warnings import warn
 import logging
 
-from reVX.utilities.regulations import AbstractBaseRegulations
+from reVX.exclusions.regulations import AbstractBaseRegulations
 
 
 logger = logging.getLogger(__name__)
@@ -17,6 +17,7 @@ class SetbackRegulations(AbstractBaseRegulations):
     def __init__(self, base_setback_dist, regulations_fpath=None,
                  multiplier=None):
         """
+
         Parameters
         ----------
         base_setback_dist : float | int
@@ -32,11 +33,11 @@ class SetbackRegulations(AbstractBaseRegulations):
                 - ``Feature Type``: Contains labels for the type of
                   setback that each row represents. This should be a
                   `"feature_type"` label that can be found in the
-                  :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS`
+                  :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS`
                   dictionary (e.g. ``"structures"``, ``"roads"``,
                   ``"water"``, etc.), unless you have created your own
                   setback calculator using
-                  :func:`~reVX.setbacks.setbacks.setbacks_calculator`,
+                  :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`,
                   in which case this label can match the `feature_type`
                   input you used for that function call.
                 - ``Feature Subtype``: Contains labels for feature
@@ -47,10 +48,10 @@ class SetbackRegulations(AbstractBaseRegulations):
                   specify this value, it should be a
                   `"feature_subtypes_to_exclude"` label that can be
                   found in the
-                  :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS`
-                  dictionary,  unless you have created your own setback
+                  :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS`
+                  dictionary, unless you have created your own setback
                   calculator using
-                  :func:`~reVX.setbacks.setbacks.setbacks_calculator`,
+                  :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`,
                   in which case this label can match the
                   `feature_subtypes_to_exclude` input you used for that
                   function call.
@@ -138,16 +139,19 @@ class SetbackRegulations(AbstractBaseRegulations):
         """Retrieve county regulation setback. """
         setback_type = county_regulations["Value Type"]
         setback = float(county_regulations["Value"])
+
         if setback_type == "structure height multiplier":
-            setback *= self.base_setback_dist
-        elif setback_type != "meters":
+            return setback * self.base_setback_dist
+
+        if setback_type != "meters":
             msg = ("Cannot create setback for {}, expecting "
                    '"Structure Height Multiplier", or '
                    '"Meters", but got {!r}'
                    .format(county_regulations["County"], setback_type))
             logger.warning(msg)
             warn(msg)
-            return
+            return None
+
         return setback
 
 
@@ -160,6 +164,7 @@ class WindSetbackRegulations(SetbackRegulations):
     def __init__(self, hub_height, rotor_diameter, regulations_fpath=None,
                  multiplier=None):
         """
+
         Parameters
         ----------
         hub_height : float | int
@@ -177,11 +182,11 @@ class WindSetbackRegulations(SetbackRegulations):
                 - ``Feature Type``: Contains labels for the type of
                   setback that each row represents. This should be a
                   `"feature_type"` label that can be found in the
-                  :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS`
+                  :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS`
                   dictionary (e.g. ``"structures"``, ``"roads"``,
                   ``"water"``, etc.), unless you have created your own
                   setback calculator using
-                  :func:`~reVX.setbacks.setbacks.setbacks_calculator`,
+                  :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`,
                   in which case this label can match the `feature_type`
                   input you used for that function call.
                 - ``Feature Subtype``: Contains labels for feature
@@ -192,10 +197,10 @@ class WindSetbackRegulations(SetbackRegulations):
                   specify this value, it should be a
                   `"feature_subtypes_to_exclude"` label that can be
                   found in the
-                  :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS`
-                  dictionary,  unless you have created your own setback
+                  :attr:`~reVX.exclusions.exclusions.setbacks.setbacks.SETBACK_SPECS`
+                  dictionary, unless you have created your own setback
                   calculator using
-                  :func:`~reVX.setbacks.setbacks.setbacks_calculator`,
+                  :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`,
                   in which case this label can match the
                   `feature_subtypes_to_exclude` input you used for that
                   function call.

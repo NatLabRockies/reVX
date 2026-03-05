@@ -30,4 +30,4 @@ jobs:
     - name: Run pytest and Generate coverage report
       shell: bash -l {0}
       run: |
-        pytest -v -ra -rs tests/test_turbine_flicker.py
+        pytest -v -ra -rs tests/test_exclusions_turbine_flicker.py

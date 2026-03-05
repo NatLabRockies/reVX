@@ -10,15 +10,17 @@ from pathlib import Path
 from warnings import warn
 
 from gaps.config import load_config
-from gaps.cli import CLICommandFromFunction, make_cli
+from gaps.cli import CLICommandFromFunction
 from gaps.cli.preprocessing import preprocess_collect_config
-from reVX.setbacks import SETBACKS
-from reVX.setbacks.regulations import (validate_setback_regulations_input,
-                                       select_setback_regulations)
-from reVX.setbacks.setbacks_converter import parse_setbacks
+
+from reVX.exclusions.setbacks import SETBACKS
+from reVX.exclusions.setbacks.regulations import (
+    validate_setback_regulations_input, select_setback_regulations)
+from reVX.exclusions.setbacks.setbacks_converter import parse_setbacks
 from reVX.handlers.geotiff import Geotiff
 from reVX import __version__
-from reVX.setbacks.setbacks import SETBACK_SPECS, setbacks_calculator
+from reVX.exclusions.setbacks.setbacks import (SETBACK_SPECS,
+                                               setbacks_calculator)
 
 
 logger = logging.getLogger(__name__)
@@ -61,13 +63,13 @@ def preprocess_setbacks_config(config, features,
     features : dict
         Dictionary specifying which features/data to process. The keys
         of this dictionary must be the a key from the
-        :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS` dictionary or the
-        ``feature_specs`` input dictionary specifying the feature type
-        to run setbacks for. The value of each key must be a path or a
-        list of paths to calculate that particular setback for.
-        The path(s) can contain unix-style file-pattern matching syntax
-        to point to multiple files. The paths may be specified relative
-        to the config file. For example::
+        :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS`
+        dictionary or the ``feature_specs`` input dictionary specifying
+        the feature type to run setbacks for. The value of each key must
+        be a path or a list of paths to calculate that particular
+        setback for. The path(s) can contain unix-style file-pattern
+        matching syntax to point to multiple files. The paths may be
+        specified relative to the config file. For example::
 
             features: {
                 "parcel": "../relative/path/to/parcel_colorado.gpkg",
@@ -230,7 +232,7 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                      weights_calculation_upscale_factor=None,
                      replace=False, hsds=False, out_layers=None,
                      feature_specs=None, max_workers=None):
-    """Compute Setbacks.
+    """Compute Setbacks
 
     Setbacks can be computed for a specific turbine (hub height and
     rotor diameter) or more generally using a base setback distance.
@@ -311,12 +313,12 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
             - ``Feature Type``: Contains labels for the type of setback
               that each row represents. This should be a
               `"feature_type"` label that can be found in the
-              :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS` dictionary
+              :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS` dictionary
               (e.g. ``"structures"``, ``"roads"``, ``"water"``, etc.),
               unless you have created your own setback calculator using
-              :func:`~reVX.setbacks.setbacks.setbacks_calculator`, in
-              which case this label can match the `feature_type` input
-              you used for that function call.
+              :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`,
+              in which case this label can match the `feature_type`
+              input you used for that function call.
             - ``Feature Subtype``: Contains labels for feature subtypes.
               The feature subtypes are only used for down-selecting the
               local regulations that should be applied for a particular
@@ -324,17 +326,17 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
               ``None``. If you do specify this value, it should be a
               `"feature_subtypes_to_exclude"` label that can be found in
               the
-              :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS` dictionary,
+              :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS` dictionary,
               unless you have created your own setback calculator using
-              :func:`~reVX.setbacks.setbacks.setbacks_calculator`, in
-              which case this label can match the
+              :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`,
+              in which case this label can match the
               `feature_subtypes_to_exclude` input you used for that
               function call.
-            - ``Value Type``: Specifies wether the value is a multiplier
-              or static height.  See
-              :obj:`~reVX.setbacks.regulations.SetbackRegulations` (if
-              using only ``base_setback_dist`` input) or
-              :obj:`~reVX.setbacks.regulations.WindSetbackRegulations`
+            - ``Value Type``: Specifies whether the value is a
+              multiplier or static height.  See
+              :obj:`~reVX.exclusions.setbacks.regulations.SetbackRegulations`
+              (if using only ``base_setback_dist`` input) or
+              :obj:`~reVX.exclusions.setbacks.regulations.WindSetbackRegulations`
               (if using ``hub_height`` + ``rotor_diameter`` input) for
               more info.
             - ``Value``: Numeric value of the setback or multiplier.
@@ -392,12 +394,13 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
         or updates to existing ones. The keys of this dictionary should
         be names of the features for which a specification is being
         provided. If the name is already a key in
-        :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS`, the corresponding
-        specifications wil be updated for that feature. Otherwise, the
-        name will represent a new feature type, which can be used as a
-        key in the ``features`` input. The values of the feature-type
-        keys should be dictionaries, where the keys are parameters of
-        the :func:`~reVX.setbacks.setbacks.setbacks_calculator`
+        :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS`, the
+        corresponding specifications wil be updated for that feature.
+        Otherwise, the name will represent a new feature type, which can
+        be used as a key in the ``features`` input. The values of the
+        feature-type keys should be dictionaries, where the keys are
+        parameters of the
+        :func:`~reVX.exclusions.setbacks.setbacks.setbacks_calculator`
         function. Required parameters in that function are required keys
         of these dictionaries. Values should be the updated value.
         For example, the input
@@ -449,8 +452,8 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
 
         By default, ``None``, which does not add any new setback
         calculators (the default ones defined in
-        :attr:`~reVX.setbacks.setbacks.SETBACK_SPECS` are still
-        available).
+        :attr:`~reVX.exclusions.setbacks.setbacks.SETBACK_SPECS` are
+        still available).
     max_workers : int, optional
         Number of workers to use for setback exclusion computation. If
         this value is 1, the computation runs in serial. If this value
@@ -486,15 +489,15 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                                              rotor_diameter, regulations_fpath,
                                              node_multiplier)
     setbacks_class = SETBACKS[node_feature_type]
-    wcuf = weights_calculation_upscale_factor
+    uf = weights_calculation_upscale_factor
     fn = ("setbacks_{}_{}{}.tif"
           .format(node_feature_type, os.path.basename(out_dir), tag))
     out_fn = os.path.join(out_dir, fn)
     setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
-                       weights_calculation_upscale_factor=wcuf,
+                       weights_calculation_upscale_factor=uf,
                        max_workers=max_workers, replace=replace, hsds=hsds,
                        out_layers=out_layers)
-    logger.info('Setbacks computed and written to {}'.format(out_fn))
+    logger.info('Flicker exclusions computed and written to %r', out_fn)
     return out_fn
 
 
@@ -509,12 +512,12 @@ def merge_setbacks(node_out_path, node_pattern, are_partial_inclusions=None,
     node_pattern : str
         Input GeoTIFF file pattern.
     are_partial_inclusions : bool, optional
-        Flag indicating wether the inputs are partial inclusion values
+        Flag indicating whether the inputs are partial inclusion values
         or boolean exclusions. If ``None``, will try to infer
         automatically from the input file's GeoTIFF profile
         (``dtype != uint8``). By default, ``None``.
     purge_chunks : bool, optional
-        Flag indicating wether individual "chunk" files should be
+        Flag indicating whether individual "chunk" files should be
         deleted after a successful merge (``True``), or if they should
         be stored in a "chunk_files" directory (``False``).
         By default, ``False``.
@@ -571,30 +574,18 @@ def merge_setbacks(node_out_path, node_pattern, are_partial_inclusions=None,
                     .format(out_file.parent, chunk_dir))
 
 
-PRIVATE_COMPUTE_KEYS = ("node_feature_type", "node_file_path",
-                        "node_multiplier")
+PRIVATE_SETBACKS_KEYS = ("node_feature_type", "node_file_path",
+                         "node_multiplier")
 PRIVATE_MERGE_KEYS = ("node_out_path", "node_pattern")
-commands = [
-    CLICommandFromFunction(
-        function=compute_setbacks, name="compute",
-        split_keys=[PRIVATE_COMPUTE_KEYS],
-        config_preprocessor=preprocess_setbacks_config,
-        skip_doc_params=PRIVATE_COMPUTE_KEYS,
-    ),
-    CLICommandFromFunction(
-        function=merge_setbacks, name="merge",
-        split_keys=[PRIVATE_MERGE_KEYS],
-        config_preprocessor=preprocess_merge_config,
-        skip_doc_params=PRIVATE_MERGE_KEYS,
-    ),
-]
-
-cli = make_cli(commands)
-
-
-if __name__ == '__main__':
-    try:
-        cli(obj={})
-    except Exception:
-        logger.exception('Error running Setbacks CLI')
-        raise
+setbacks_command = CLICommandFromFunction(
+    function=compute_setbacks, name="setbacks",
+    split_keys=[PRIVATE_SETBACKS_KEYS],
+    config_preprocessor=preprocess_setbacks_config,
+    skip_doc_params=PRIVATE_SETBACKS_KEYS,
+)
+merge_setbacks_command = CLICommandFromFunction(
+    function=merge_setbacks, name="merge-setbacks",
+    split_keys=[PRIVATE_MERGE_KEYS],
+    config_preprocessor=preprocess_merge_config,
+    skip_doc_params=PRIVATE_MERGE_KEYS,
+)

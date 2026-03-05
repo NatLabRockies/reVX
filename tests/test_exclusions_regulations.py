@@ -10,7 +10,7 @@ import pytest
 import tempfile
 
 from reVX import TESTDATADIR
-from reVX.utilities.regulations import AbstractBaseRegulations
+from reVX.exclusions.regulations import AbstractBaseRegulations
 
 
 GENERIC_REG_VAL = 10

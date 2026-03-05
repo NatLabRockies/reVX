@@ -23,7 +23,7 @@ from reVX.utilities.forecasts import FcstUtils
 from reVX.utilities.output_extractor import output_extractor
 from reVX.utilities.region_classifier import RegionClassifier
 from reVX.utilities.reeds_cols import add_reeds_columns
-from reVX.setbacks.setbacks_converter import SetbacksConverter
+from reVX.exclusions.setbacks.setbacks_converter import SetbacksConverter
 from reVX.utilities.fix_sc_lat_lons import fix_sc_lat_lon
 from reVX.utilities.utilities import rev_sc_to_geotiff_arr
 

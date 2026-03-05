@@ -13,12 +13,17 @@ logger = logging.getLogger(__name__)
 
 
 class AbstractBaseRegulations(ABC):
-    """ABC for county regulation values. """
+    """ABC for county regulation values
+
+    The "Feature Type" and "Value Type" values are pre-processed to be
+    case-insensitive and to ignore dashes and underscores.
+    """
 
     _BASE_REQUIRED_COLUMNS = ["Feature Type", "Value Type", "Value"]
 
     def __init__(self, generic_regulation_value=None, regulations_fpath=None):
         """
+
         Parameters
         ----------
         generic_regulation_value : float | int | None, optional

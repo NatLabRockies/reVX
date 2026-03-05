@@ -3,5 +3,5 @@ Examples
 .. toctree::
 
    examples.rpm
-   examples.setbacks
+   exclusions
    examples.transmission

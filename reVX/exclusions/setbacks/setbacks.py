@@ -4,7 +4,8 @@ Setback exclusion computation classes
 """
 import logging
 
-from reVX.setbacks.base import AbstractBaseSetbacks, BUFFERS, FEATURE_FILTERS
+from reVX.exclusions.setbacks.base import (AbstractBaseSetbacks, BUFFERS,
+                                           FEATURE_FILTERS)
 
 
 logger = logging.getLogger(__name__)
@@ -43,9 +44,9 @@ def setbacks_calculator(feature_type, buffer_type="default",
         "property-line" are all equivalent).
     buffer_type : str, optional
         Name of the buffer type to use for this setback calculation. See
-        :attr:`~reVX.setbacks.base.BUFFERS` for all available options -
-        this input must be a key from that dictionary. In most cases,
-        the default positive buffer is suitable.
+        :attr:`~reVX.exclusions.setbacks.base.BUFFERS` for all available
+        options - this input must be a key from that dictionary. In most
+        cases, the default positive buffer is suitable.
         By default, ``"default"``.
     feature_filter_type : str, optional
         Name of the feature filter type to use for this setback
@@ -56,8 +57,8 @@ def setbacks_calculator(feature_type, buffer_type="default",
         railroads transmission lines, etc., are filtered using "clip",
         which clips the feature to the county boundaries before applying
         a setback. This value must be a key in the
-        :attr:`~reVX.setbacks.base.FEATURE_FILTERS` dictionary.
-        By default, ``"centroid"``.
+        :attr:`~reVX.exclusions.setbacks.base.FEATURE_FILTERS`
+        dictionary. By default, ``"centroid"``.
     feature_subtypes_to_exclude : list | set, optional
         A list of strings specifying the feature subtypes that should be
         excluded from the local regulations calculation.
@@ -71,7 +72,7 @@ def setbacks_calculator(feature_type, buffer_type="default",
     class
         A class object that can be used to instantiate the setbacks
         calculator. The initializer parameters are identical to that of
-        :class:`~reVX.setbacks.base.AbstractBaseSetbacks`.
+        :class:`~reVX.exclusions.setbacks.base.AbstractBaseSetbacks`.
     """
     if isinstance(feature_type, str):
         feature_type = [feature_type]

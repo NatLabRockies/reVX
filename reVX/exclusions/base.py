@@ -2,10 +2,13 @@
 """
 Driver class to compute exclusions
 """
-import h5py
-import json
+
 import os
 import logging
+from copy import deepcopy
+from math import floor, ceil
+from itertools import product
+from functools import cached_property
 from abc import ABC, abstractmethod
 from concurrent.futures import as_completed
 from warnings import warn
@@ -13,18 +16,16 @@ from warnings import warn
 import numpy as np
 import geopandas as gpd
 import pandas as pd
-from pyproj.crs import CRS
-from rasterio import features as rio_features
-from rasterio import windows as rio_windows
-from affine import Affine
+from rasterio import (windows, transform, Affine,
+                      features as rio_features)
 from shapely.geometry import shape
 
-from rex import Outputs
 from rex.utilities import SpawnProcessPool, log_mem
 from reV.handlers.exclusions import ExclusionLayers
 from reVX.handlers.geotiff import Geotiff
 from reVX.handlers.layered_h5 import LayeredH5
 from reVX.utilities.utilities import log_versions
+
 
 logger = logging.getLogger(__name__)
 
@@ -146,18 +147,26 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         self._regulations = regulations
         self._features = features
         self._hsds = hsds
-        self._profile = None
-        self._set_profile()
+        self._profile = self._shape = None
         self._process_regulations(regulations.df)
 
     def __repr__(self):
         msg = "{} for {}".format(self.__class__.__name__, self._excl_fpath)
         return msg
 
-    def _set_profile(self):
-        """Extract profile from excl h5."""
-        with ExclusionLayers(self._excl_fpath, hsds=self._hsds) as f:
-            self._profile = f.profile
+    def _parse_excl_properties(self):
+        """Parse shape, chunk size, and profile from exclusions file"""
+        with ExclusionLayers(self._excl_fpath, hsds=self._hsds) as exc:
+            self._shape = exc.shape
+            self._profile = exc.profile
+
+        if len(self._shape) < 3:
+            self._shape = (1, *self._shape)
+
+        logger.debug('Exclusions properties:\n'
+                     'shape : {}\n'
+                     'profile : {}\n'
+                     .format(self._shape, self._profile))
 
     def _process_regulations(self, regulations_df):
         """Parse the county regulations.
@@ -253,7 +262,16 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
     @property
     def profile(self):
         """dict: Geotiff profile. """
+        if self._profile is None:
+            self._parse_excl_properties()
         return self._profile
+
+    @property
+    def shape(self):
+        """tuple: Geotiff shape. """
+        if self._shape is None:
+            self._parse_excl_properties()
+        return self._shape
 
     @property
     def regulations_table(self):
@@ -268,6 +286,11 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
     @regulations_table.setter
     def regulations_table(self, regulations_table):
         self._process_regulations(regulations_table)
+
+    @cached_property
+    def rasterizer(self):
+        """Rasterizer: Rasterizer instance, if needed"""
+        return Rasterizer(self.shape, self.profile)
 
     def _write_exclusions(self, geotiff, exclusions, replace=False):
         """
@@ -516,14 +539,14 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
 
         array_shape = (self.profile['height'], self.profile['width'])
         row_slice, col_slice = slices
-        window = rio_windows.Window.from_slices(row_slice, col_slice,
-                                                height=array_shape[0],
-                                                width=array_shape[1])
+        window = windows.Window.from_slices(row_slice, col_slice,
+                                            height=array_shape[0],
+                                            width=array_shape[1])
         base_transform = self.profile['transform']
         if not isinstance(base_transform, Affine):
             base_transform = Affine(*base_transform)
 
-        transform = rio_windows.transform(window, base_transform)
+        transform = windows.transform(window, base_transform)
         mask = rio_features.rasterize(((geom, 1) for geom in geoms),
                                       out_shape=target_shape,
                                       transform=transform,
@@ -596,7 +619,9 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         else:
             logger.info("Computing exclusions from {} and saving "
                         "to {}".format(features_path, out_fn))
-            out_layer = out_layers.get(os.path.basename(features_path))
+            out_layer = None
+            if out_layers and features_path:
+                out_layer = out_layers.get(os.path.basename(features_path))
             exclusions = cls(excl_fpath=excl_fpath, regulations=regulations,
                              features=features_path, hsds=hsds, **kwargs)
             exclusions.compute_exclusions(out_tiff=out_fn, out_layer=out_layer,
@@ -615,3 +640,240 @@ def _error_or_warn(name, replace):
     msg = ('{} already exists and will be replaced!'.format(name))
     logger.warning(msg)
     warn(msg)
+
+
+class Rasterizer:
+    """Helper class to rasterize shapes."""
+
+    def __init__(self, shape, profile,
+                 weights_calculation_upscale_factor=None):
+        """
+
+        Parameters
+        ----------
+        shape : tuple
+            Shape of the output (i.e. exclusion) array. Should contain
+            a band dimension as the first dimension.
+        profile : dict
+            Geotiff profile containing the transform and CRS information
+            necessary for rasterization.
+        weights_calculation_upscale_factor : int, optional
+            If this value is an int > 1, the output will be a layer with
+            **inclusion** weight values (floats ranging from 0 to 1).
+            Note that this is backwards w.r.t the typical output of
+            exclusion integer values (1 for excluded, 0 otherwise).
+            Values <= 1 will still return a standard exclusion mask.
+            For example, a cell that was previously excluded with a
+            a boolean mask (value of 1) may instead be converted to an
+            inclusion weight value of 0.75, meaning that 75% of the area
+            corresponding to that point should be included (i.e. the
+            exclusion feature only intersected a small portion - 25% -
+            of the cell). This percentage inclusion value is calculated
+            by upscaling the output array using this input value,
+            rasterizing the exclusion features onto it, and counting the
+            number of resulting sub-cells excluded by the feature. For
+            example, setting the value to 3 would split each output
+            cell into nine sub-cells - 3 divisions in each dimension.
+            After the feature is rasterized on this high-resolution
+            sub-grid, the area of the non-excluded sub-cells is totaled
+            and divided by the area of the original cell to obtain the
+            final inclusion percentage. Therefore, a larger upscale
+            factor results in more accurate percentage values. If
+            ``None`` (or a value <= 1), this process is skipped and the
+            output is a boolean exclusion mask. By default ``None``.
+        """
+        self._shape, self._profile = shape, profile
+        self.scale_factor = weights_calculation_upscale_factor
+
+    @property
+    def scale_factor(self):
+        """Integer upscale factor used to calculate inclusion weights"""
+        return self._scale_factor
+
+    @scale_factor.setter
+    def scale_factor(self, sf):
+        self._scale_factor = int((sf or 1) // 1)
+
+    @property
+    def profile(self):
+        """Geotiff profile.
+
+        Returns
+        -------
+        dict
+        """
+        return self._profile
+
+    @property
+    def transform(self):
+        """rasterio.Affine: Affine transform for exclusion layer. """
+        return Affine(*self.profile["transform"])
+
+    @property
+    def arr_shape(self):
+        """Rasterize array shape.
+
+        Returns
+        -------
+        tuple
+        """
+        return self._shape
+
+    @property
+    def inclusions(self):
+        """Flag indicating whether or not the output raster represents
+        inclusion values.
+
+        Returns
+        -------
+        bool
+        """
+        return self.scale_factor > 1
+
+    def _no_exclusions_array(self, multiplier=1, window=None):
+        """Get an array of the correct shape representing no exclusions.
+
+        The array contains all zeros, and a new one is created
+        for every function call.
+
+        Parameters
+        ----------
+        multiplier : int, optional
+            Integer multiplier value used to scale up the dimensions of
+            the array exclusions array (e.g. multiplier of 3 turns an
+            array of shape (10, 20) into an array of shape (30, 60)).
+        window : :cls:`rasterio.windows.Window`
+            A ``rasterio`` window defining the area of the raster. Can
+            be used to speed up computation and decrease memory
+            requirements if features are localized to a small portion of
+            the raster array.
+
+        Returns
+        -------
+        np.array
+            Array of zeros representing no exclusions.
+        """
+        if window is None:
+            shape = tuple(x * multiplier for x in self.arr_shape[1:])
+        else:
+            shape = (window.height * multiplier, window.width * multiplier)
+        return np.zeros(shape, dtype='uint8')
+
+    def rasterize(self, shapes, window=None):
+        """Convert geometries into exclusions array.
+
+        Parameters
+        ----------
+        shapes : list, optional
+            List of geometries to rasterize (i.e. list(gdf["geometry"])).
+            If `None` or empty list, returns array of zeros.
+        window : :obj:`rasterio.windows.Window`
+            A ``rasterio`` window defining the area of the raster. Can
+            be used to speed up computation and decrease memory
+            requirements if features are localized to a small portion of
+            the raster array.
+
+        Returns
+        -------
+        arr : ndarray
+            Rasterized array of shapes.
+        """
+
+        shapes = shapes or []
+        shapes = [(geom, 1) for geom in shapes if geom is not None]
+
+        if self.inclusions:
+            return self._rasterize_to_weights(shapes, window)
+
+        return self._rasterize_to_mask(shapes, window)
+
+    def rasterize_within_window(self, features, bounds):
+        """Rasterize the features using the GeoSeries bounding box
+
+        Parameters
+        ----------
+        features : list
+            List of geometries to rasterize
+            (i.e. list(gdf["geometry"])).
+        bounds : tuple
+            Bounding box to rasterize within, in the form (left, bottom,
+            right, top).
+
+        Returns
+        -------
+        arr : ndarray
+            Rasterized array of shapes within the bounding box.
+        slices : 2-tuple of `slice`
+            X and Y slice objects defining where in the original array
+            the exclusion data should go.
+        """
+        window = _cropped_window(bounds, self.transform, self.arr_shape[1:])
+        if len(features):
+            logger.debug("Rasterizing %d features using %r",
+                         len(features), window)
+        exclusions = self.rasterize(features, window=window)
+        log_mem(logger)
+        logger.debug("Exclusion mem size: %.2fMB", exclusions.nbytes / 1048576)
+        return exclusions, window.toslices()
+
+    def _rasterize_to_weights(self, shapes, window):
+        """Rasterize features to weights using a high-resolution array."""
+
+        if not shapes:
+            return ((1 - self._no_exclusions_array(window=window))
+                    .astype(np.float32))
+
+        hr_arr = self._no_exclusions_array(multiplier=self.scale_factor,
+                                           window=window)
+        transform = self._window_transform(window)
+        transform *= transform.scale(1 / self.scale_factor)
+
+        rio_features.rasterize(shapes=shapes, out=hr_arr, fill=0,
+                               transform=transform)
+
+        arr = self._aggregate_high_res(hr_arr, window)
+        return 1 - (arr / self.scale_factor ** 2)
+
+    def _rasterize_to_mask(self, shapes, window):
+        """Rasterize features with to an exclusion mask."""
+
+        arr = self._no_exclusions_array(window=window)
+        if shapes:
+            transform = self._window_transform(window)
+            rio_features.rasterize(shapes=shapes, out=arr, fill=0,
+                                   transform=transform)
+
+        return arr
+
+    def _aggregate_high_res(self, hr_arr, window):
+        """Aggregate the high resolution exclusions array to output shape. """
+
+        arr = self._no_exclusions_array(window=window).astype(np.float32)
+        for i, j in product(range(self.scale_factor),
+                            range(self.scale_factor)):
+            arr += hr_arr[i::self.scale_factor, j::self.scale_factor]
+        return arr
+
+    def _window_transform(self, window):
+        """Calculate the transform for a given window, if any. """
+        if window is None:
+            return deepcopy(self.transform)
+        return windows.transform(window, self.transform)
+
+
+def _cropped_window(bounds, raster_transform, shape):
+    """Calculate the raster array window corresponding to the bounding box."""
+    left, bottom, right, top = bounds
+
+    rows, cols = transform.rowcol(raster_transform,
+                                  [left, right, right, left],
+                                  [top, top, bottom, bottom],
+                                  op=float)
+
+    row_start = max(floor(min(rows)), 0)
+    col_start = max(floor(min(cols)), 0)
+    row_stop = min(ceil(max(rows)), shape[0])
+    col_stop = min(ceil(max(cols)), shape[1])
+    return windows.Window(col_off=col_start, row_off=row_start,
+                          width=max(col_stop - col_start, 1),
+                          height=max(row_stop - row_start, 1))
