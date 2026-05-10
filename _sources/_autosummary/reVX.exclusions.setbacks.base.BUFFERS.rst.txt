@@ -1,0 +1,6 @@
+reVX.exclusions.setbacks.base.BUFFERS
+=====================================
+
+.. currentmodule:: reVX.exclusions.setbacks.base
+
+.. autodata:: BUFFERS

@@ -1,0 +1,42 @@
+reVX.exclusions.max\_height.max\_height.HeightRestrictionExclusions
+===================================================================
+
+.. currentmodule:: reVX.exclusions.max_height.max_height
+
+.. autoclass:: HeightRestrictionExclusions
+   :members:
+   :show-inheritance:
+   :inherited-members:
+   :special-members: __call__, __add__, __mul__
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~HeightRestrictionExclusions.compute_all_local_exclusions
+      ~HeightRestrictionExclusions.compute_exclusions
+      ~HeightRestrictionExclusions.compute_generic_exclusions
+      ~HeightRestrictionExclusions.compute_local_exclusions
+      ~HeightRestrictionExclusions.pre_process_regulations
+      ~HeightRestrictionExclusions.run
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~HeightRestrictionExclusions.FEATURE_TYPES
+      ~HeightRestrictionExclusions.description
+      ~HeightRestrictionExclusions.exclusion_merge_func
+      ~HeightRestrictionExclusions.no_exclusions_array
+      ~HeightRestrictionExclusions.profile
+      ~HeightRestrictionExclusions.rasterizer
+      ~HeightRestrictionExclusions.regulations_table
+      ~HeightRestrictionExclusions.shape
+   
+   

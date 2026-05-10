@@ -1,0 +1,6 @@
+reVX.exclusions.blade\_clearance.regulations.validate\_blade\_clearance\_regulations\_input
+===========================================================================================
+
+.. currentmodule:: reVX.exclusions.blade_clearance.regulations
+
+.. autofunction:: validate_blade_clearance_regulations_input

@@ -1,0 +1,6 @@
+reVX.exclusions.setbacks.setbacks.SETBACK\_SPECS
+================================================
+
+.. currentmodule:: reVX.exclusions.setbacks.setbacks
+
+.. autodata:: SETBACK_SPECS

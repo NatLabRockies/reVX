@@ -1,0 +1,39 @@
+reVX.exclusions.setbacks.base
+=============================
+
+.. automodule:: reVX.exclusions.setbacks.base
+
+   
+   
+   .. rubric:: Module attributes
+
+   .. autosummary::
+      :toctree:
+   
+      BUFFERS
+      FEATURE_FILTERS
+   
+   
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+      :toctree:
+      :template: custom-class-template.rst
+   
+      AbstractBaseSetbacks
+   
+   
+
+   
+   
+   
+
+
+

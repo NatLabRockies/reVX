@@ -1,0 +1,33 @@
+reVX.exclusions.setbacks.functions
+==================================
+
+.. automodule:: reVX.exclusions.setbacks.functions
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+      :toctree:
+   
+      features_clipped_to_county
+      features_with_centroid_in_county
+      parcel_buffer
+      positive_buffer
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

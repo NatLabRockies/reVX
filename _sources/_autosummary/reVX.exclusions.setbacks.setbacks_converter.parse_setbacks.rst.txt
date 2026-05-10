@@ -1,0 +1,6 @@
+reVX.exclusions.setbacks.setbacks\_converter.parse\_setbacks
+============================================================
+
+.. currentmodule:: reVX.exclusions.setbacks.setbacks_converter
+
+.. autofunction:: parse_setbacks
