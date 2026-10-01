@@ -1,5 +1,9 @@
 name: Codecov
 
+concurrency:
+  group: codecov-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 on:
   push:
     branches: [main, master]
@@ -9,13 +13,16 @@ on:
 jobs:
   run:
     name: Codecov
+    environment:
+      name: codecov
+      url: https://app.codecov.io/gh/NatLabRockies/reVX
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v7.0.1
       with:
         fetch-depth: 0
     - name: Set up Python
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v4.0.1
       with:
         auto-update-conda: true
         python-version: 3.11
@@ -29,12 +36,11 @@ jobs:
     - name: Run pytest and Generate coverage report
       shell: bash -l {0}
       run: |
-        pytest -v --cov=./ --cov-branch --cov-report=xml:coverage.xml
+        pytest --disable-warnings --cov=./ --cov-branch --cov-report=xml:coverage.xml
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v7.1.0
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        file: ./coverage.xml
         flags: unittests
         env_vars: OS,PYTHON
         name: codecov-umbrella
