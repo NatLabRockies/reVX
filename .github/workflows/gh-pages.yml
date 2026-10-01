@@ -11,6 +11,8 @@ concurrency:
 on:
   push:
     branches: [main, master]
+  release:
+    types: [created, published]
   workflow_dispatch:
 
 jobs:
