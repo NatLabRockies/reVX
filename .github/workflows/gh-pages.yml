@@ -1,13 +1,17 @@
 name: Documentation
 
+permissions:
+  id-token: write
+  contents: write
+
+concurrency:
+  group: docs-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 on:
   push:
     branches: [main, master]
   workflow_dispatch:
-
-permissions:
-  id-token: write
-  contents: write
 
 jobs:
   make-pages:
