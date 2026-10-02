@@ -232,14 +232,14 @@ def test_geotiff_write_dtype_override(tmp_path, output_profile):
 
 
 def test_geotiff_write_default_nodata(tmp_path, output_profile):
-    """Missing nodata still defaults to the output dtype's maximum value."""
+    """Missing nodata remains unset in the output GeoTIFF."""
     out_fp = tmp_path / 'output.tif'
     values = np.ones((2, 2), dtype='int16')
 
     Geotiff.write(out_fp, output_profile, values)
 
     with rasterio.open(out_fp) as src:
-        assert src.nodata == np.iinfo('int16').max
+        assert src.nodata is None
         np.testing.assert_array_equal(src.read(1), values)
 
 
