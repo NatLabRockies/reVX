@@ -535,11 +535,10 @@ class HybridStats:
                                                 list(statistics))
         out_stats = pd.DataFrame(columns=col_names, index=sites,
                                  dtype=np.float32)
-        for grp_name, solar_grp in solar_data:
 
-            print(grp_name, wind_data)
-            grp_name = grp_name[0] if len(grp_name) == 1 else grp_name
+        for grp_name, solar_grp in solar_data:
             wind_grp = wind_data.get_group(grp_name)
+            grp_name = grp_name[0] if len(grp_name) == 1 else grp_name
             msg = ('solar and wind data shapes do not match! {} != {}'
                    .format(solar_grp.shape, wind_grp.shape))
             assert solar_grp.shape == wind_grp.shape, msg
@@ -550,7 +549,8 @@ class HybridStats:
                     col = cols_map[name][grp_name]
                     func = stat['func']
                     kwargs = stat.get('kwargs', {})
-                    out_stats.at[i, col] = func(solar_ts, wind_ts, **kwargs)
+                    out_stats.at[i, col] = np.float32(
+                        func(solar_ts, wind_ts, **kwargs))
 
         return out_stats
 
@@ -1496,9 +1496,9 @@ class HybridStabilityCoefficient(HybridStats):
                                         ['stability'])
         out_stats = {}
         for grp_name, mix_grp in mix:
+            ref_grp = ref.get_group(grp_name)
             grp_name = grp_name[0] if len(grp_name) == 1 else grp_name
             col = cols_map['stability'][grp_name]
-            ref_grp = ref.get_group(grp_name)
             msg = ('mixed and reference data shapes do not match! {} != {}'
                    .format(mix_grp.shape, ref_grp.shape))
             assert mix_grp.shape == ref_grp.shape, msg
