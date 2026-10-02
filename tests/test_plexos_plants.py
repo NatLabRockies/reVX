@@ -50,7 +50,7 @@ def test_plant_builds():
     # make sure total built capacity at supply curve points doesnt exceed the
     # original available SC point capacity
     built_cap = sc_table[['sc_gid', 'capacity']].copy()
-    built_cap['built_cap'] = 0
+    built_cap['built_cap'] = 0.0
     for pid, sc_builds in plx_plants.plants.items():
         for point_build in sc_builds:
             loc = np.where(built_cap['sc_gid'].values

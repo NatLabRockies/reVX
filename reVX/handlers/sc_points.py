@@ -486,8 +486,7 @@ class SupplyCurvePoints:
 
         for col in ('res_gids', 'gen_gids', 'gid_counts'):
             if isinstance(sc_table.iloc[0][col], str):
-                sc_table.loc[:, col] = \
-                    sc_table[col].apply(json.loads).values
+                sc_table[col] = sc_table[col].apply(json.loads)
 
         return sc_table
 
