@@ -245,7 +245,7 @@ def test_geotiff_write_default_nodata(tmp_path, output_profile):
 
 @pytest.mark.parametrize('existing', [False, True])
 def test_geotiff_write_failure_cleanup(tmp_path, output_profile, existing):
-    """Failed band writes remove partial output, including failed overwrites."""
+    """Failed writes remove partial output, including failed overwrites."""
     out_fp = tmp_path / 'output.tif'
     if existing:
         Geotiff.write(out_fp, output_profile, np.ones((2, 2), dtype='uint8'))
