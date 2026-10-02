@@ -158,8 +158,9 @@ def test_sc_point_overlap():
 
     assert all(gid in point_res_gids for gid in p1_res_gid)
     assert all(gid in point_res_gids for gid in p2_res_gid)
-    assert sum(p1_cap) + sum(p2_cap) < float(sc_point_raw['capacity'])
-    assert sum(p1_cap) + sum(p2_cap) > (0.9 * float(sc_point_raw['capacity']))
+    point_capacity = sc_point_raw['capacity'].item()
+    assert sum(p1_cap) + sum(p2_cap) < point_capacity
+    assert sum(p1_cap) + sum(p2_cap) > (0.9 * point_capacity)
 
 
 @pytest.mark.parametrize('power_scalar', (0.5, 1, 5))

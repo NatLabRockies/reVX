@@ -29,7 +29,7 @@ def test_plant_builds():
         sc_points_built = plx_plants[pid]
 
         # make sure built capacity for plant is equal to requested
-        total_built = sum([x['build_capacity'] for x in sc_points_built])
+        total_built = sum(x['build_capacity'] for x in sc_points_built)
         requested = plx_plants.plant_table.at[pid, 'plant_capacity']
         assert np.allclose(total_built, requested)
 
@@ -50,7 +50,7 @@ def test_plant_builds():
     # make sure total built capacity at supply curve points doesnt exceed the
     # original available SC point capacity
     built_cap = sc_table[['sc_gid', 'capacity']].copy()
-    built_cap['built_cap'] = 0
+    built_cap['built_cap'] = 0.0
     for pid, sc_builds in plx_plants.plants.items():
         for point_build in sc_builds:
             loc = np.where(built_cap['sc_gid'].values

@@ -238,7 +238,8 @@ class RegionClassifier():
                 raise
 
         classified_meta = self._meta.copy()
-        classified_meta[self._regions_label] = self._outlier_value
+        classified_meta[self._regions_label] = pd.Series(
+            self._outlier_value, index=classified_meta.index, dtype=object)
         region_labels = self._regions.loc[region_inds, self._regions_label]
         region_labels = list(region_labels)
         classified_meta.loc[meta_inds, self._regions_label] = region_labels
