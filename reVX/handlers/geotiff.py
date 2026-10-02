@@ -401,7 +401,8 @@ class Geotiff:
         out_fp : str
             Path to GeoTIFF output file to save data to.
         profile : dict
-            GeoTIFF profile (attributes).
+            GeoTIFF profile (attributes). Incompatible nodata values are
+            replaced with the output dtype's maximum value.
         values : ndarray
             GeoTIFF data to save.
         dtype : str, optional
@@ -419,14 +420,29 @@ class Geotiff:
         dtype = dtype or values.dtype.name
         profile['dtype'] = dtype
 
-        if "nodata" not in profile:
-            if np.issubdtype(dtype, np.integer):
-                dtype_max = np.iinfo(dtype).max
-            else:
-                dtype_max = np.finfo(dtype).max
-            profile['nodata'] = dtype_max
+        _validate_nodata(profile, dtype)
 
         with rasterio.open(out_fp, 'w', **profile) as f:
             f.write(values)
 
         logger.debug('%s created', out_fp)
+
+
+def _validate_nodata(profile, dtype):
+    """Validate and adjust the 'nodata' value in the profile"""
+    if "nodata" not in profile:
+        return
+
+    nodata = profile.get('nodata')
+    if nodata is None:
+        return
+
+    if rasterio.dtypes.in_dtype_range(nodata, dtype):
+        return
+
+    if np.issubdtype(dtype, np.integer):
+        dtype_max = np.iinfo(dtype).max
+    else:
+        dtype_max = np.finfo(dtype).max
+
+    profile['nodata'] = dtype_max
