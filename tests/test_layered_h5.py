@@ -321,11 +321,16 @@ def test_geotiff_to_h5(tif):
             if profile_k == 'crs':
                 true_crs = dict([i.split("=") for i in true_v.split(' ')])
                 true_crs = pd.DataFrame(true_crs, index=[0, ])
-                true_crs = true_crs.apply(pd.to_numeric, errors='ignore')
 
                 test_crs = dict([i.split("=") for i in test_v.split(' ')])
                 test_crs = pd.DataFrame(test_crs, index=[0, ])
-                test_crs = test_crs.apply(pd.to_numeric, errors='ignore')
+
+                for crs in (true_crs, test_crs):
+                    for column in crs:
+                        try:
+                            crs[column] = pd.to_numeric(crs[column])
+                        except ValueError:
+                            pass
 
                 cols = list(set(true_crs.columns) & set(test_crs.columns))
                 assert_frame_equal(true_crs[cols], test_crs[cols],
@@ -404,11 +409,17 @@ def test_cli(runner):
             if profile_k == 'crs':
                 true_crs = dict([i.split("=") for i in true_v.split(' ')])
                 true_crs = pd.DataFrame(true_crs, index=[0, ])
-                true_crs = true_crs.apply(pd.to_numeric, errors='ignore')
 
                 test_crs = dict([i.split("=") for i in test_v.split(' ')])
                 test_crs = pd.DataFrame(test_crs, index=[0, ])
-                test_crs = test_crs.apply(pd.to_numeric, errors='ignore')
+
+                for crs in (true_crs, test_crs):
+                    for column in crs:
+                        try:
+                            crs[column] = pd.to_numeric(crs[column])
+                        except ValueError:
+                            pass
+
 
                 cols = list(set(true_crs.columns) & set(test_crs.columns))
                 assert_frame_equal(true_crs[cols], test_crs[cols],

@@ -53,7 +53,7 @@ def test_temporal_agg(max_workers, h5_fpath, local_time):
     assert np.allclose(truth, test), f"{DATASET} aggregated to 1day failed"
 
 
-@pytest.mark.parametrize("freq", ['1d', '1m'])
+@pytest.mark.parametrize("freq", ['1d', '1ME'])
 def test_temporal_agg_freq(freq):
     """
     Test Dataset Aggregation freqency
@@ -64,7 +64,7 @@ def test_temporal_agg_freq(freq):
 
     if freq == '1d':
         gp = data.index.dayofyear
-    elif freq == '1m':
+    elif freq == '1ME':
         gp = data.index.month
 
     truth = []

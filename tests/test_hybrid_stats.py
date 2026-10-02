@@ -68,6 +68,9 @@ def test_hybrid_stats(max_workers, func):
                                      combinations=True,
                                      max_workers=max_workers)
 
+    stat_cols = test_stats.columns.difference(META.columns)
+    assert (test_stats[stat_cols].dtypes == np.dtype("float32")).all()
+
     gids = META.index.values
     msg = 'gids do not match!'
     assert np.allclose(gids, test_stats.index.values), msg
@@ -170,7 +173,8 @@ def stability_coeff(solar, wind, reference='solar'):
         m_var = HybridStabilityCoefficient._daily_variability(m_doy)
         r_var = HybridStabilityCoefficient._daily_variability(r_doy)
 
-        s = (1 - ((m_var / r_var) * (r_doy.mean() / m_doy.mean()))).values
+        s = (1 - ((m_var / r_var)
+              * (r_doy.mean() / m_doy.mean()))).to_numpy(copy=True)
 
         mask = np.isfinite(s)
         s[~mask] = 0
@@ -178,6 +182,16 @@ def stability_coeff(solar, wind, reference='solar'):
         stab += s.astype(np.float32)
 
     return stab / N
+
+
+def test_daily_variability():
+    """Daily variability is computed independently for each site."""
+    profiles = pd.DataFrame({'solar': [0., 2.], 'wind': [0., 4.]})
+
+    variability = HybridStabilityCoefficient._daily_variability(profiles)
+
+    pd.testing.assert_series_equal(
+        variability, pd.Series(np.sqrt([2., 8.]), index=profiles.columns))
 
 
 @pytest.mark.parametrize(("max_workers", "reference"),

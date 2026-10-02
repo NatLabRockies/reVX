@@ -127,6 +127,24 @@ def check_profiles(baseline, test):
     np.allclose(baseline.values, test.values, rtol=0.001)
 
 
+def test_combine_region_clusters():
+    """Numeric cluster IDs become unique region-prefixed strings."""
+    clusters = pd.DataFrame({'cluster_id': [0, 1], 'rank': [0, 0]},
+                            index=[4, 8])
+    original = clusters.copy()
+    regions = {'west': {'clusters': clusters, 'gids': [10, 11]},
+               'east': {'clusters': clusters, 'gids': [20, 21]}}
+
+    combined = RPMClusterManager._combine_region_clusters(regions)
+
+    expected = pd.DataFrame({'cluster_id': ['west-0', 'west-1',
+                                          'east-0', 'east-1'],
+                             'rank': [0, 0, 0, 0],
+                             'gid': [10, 11, 20, 21]})
+    pd.testing.assert_frame_equal(combined, expected)
+    pd.testing.assert_frame_equal(clusters, original)
+
+
 @pytest.mark.parametrize(('max_workers', 'pre_extract_inclusions'),
                          ([None, False],
                           [1, False],

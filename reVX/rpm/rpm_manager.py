@@ -260,7 +260,7 @@ class RPMClusterManager:
         for region, r_dict in rpm_regions.items():
             r_df = r_dict['clusters'].copy()
             ids = region + '-' + r_df.copy()['cluster_id'].astype(str).values
-            r_df.loc[:, 'cluster_id'] = ids
+            r_df['cluster_id'] = ids
             r_df['gid'] = r_dict['gids']
             rpm_clusters.append(r_df)
 

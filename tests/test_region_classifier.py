@@ -2,10 +2,12 @@
 """reVX PLEXOS unit test module
 """
 from click.testing import CliRunner
+import geopandas as gpd
 import os
 import pytest
 import pandas as pd
 from pandas.testing import assert_series_equal
+from shapely.geometry import box
 import tempfile
 import traceback
 
@@ -46,6 +48,26 @@ def test_region_classification():
     msg = ('Classification failed on these sites: \n{}\nGot new labels:\n{}'
            .format(baseline[bad_mask], test_labels[bad_mask]))
     assert not any(bad_mask), msg
+
+
+@pytest.mark.parametrize('labels', [['west', 'east'], [1, 2]])
+@pytest.mark.parametrize('force', [False, True])
+def test_region_label_types(labels, force):
+    """Region labels and the outlier sentinel can coexist in one column."""
+    meta = pd.DataFrame({'latitude': [0.5, 0.5, 0.5],
+                         'longitude': [0.5, 2.5, 4.0]}, index=[10, 20, 30])
+    regions = gpd.GeoDataFrame(
+        {REGIONS_LABEL: labels},
+        geometry=[box(0, 0, 1, 1), box(2, 0, 3, 1)],
+        crs=RegionClassifier.CRS)
+
+    classifier = RegionClassifier(meta, regions, regions_label=REGIONS_LABEL)
+    classification = classifier.classify(force=force)
+
+    expected = pd.Series(
+        [*labels, labels[1] if force else -999],
+        index=meta.index, name=REGIONS_LABEL, dtype=object)
+    assert_series_equal(classification[REGIONS_LABEL], expected)
 
 
 def test_cli(runner):
