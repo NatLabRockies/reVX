@@ -217,6 +217,26 @@ def test_geotiff_write_nodata(tmp_path, output_profile, dtype, nodata,
         np.testing.assert_array_equal(src.read(1), values)
 
 
+@pytest.mark.parametrize('inherited', [None, 'deflate'])
+@pytest.mark.parametrize('kwargs,expected', [
+    ({}, rasterio.enums.Compression.lzw),
+    ({'compress': 'deflate'}, rasterio.enums.Compression.deflate),
+    ({'compress': None}, None),
+])
+def test_geotiff_write_compression(tmp_path, output_profile, inherited,
+                                   kwargs, expected):
+    """Compression options override inherited settings without data loss."""
+    output_profile['compress'] = inherited
+    values = np.array([[0, 1], [2, 3]], dtype='float32')
+    out_fp = tmp_path / 'output.tif'
+
+    Geotiff.write(out_fp, output_profile, values, **kwargs)
+
+    with rasterio.open(out_fp) as src:
+        assert src.compression == expected
+        np.testing.assert_array_equal(src.read(1), values)
+
+
 def test_geotiff_write_dtype_override(tmp_path, output_profile):
     """Validate inherited nodata against the explicitly requested dtype."""
     output_profile['nodata'] = float(np.finfo('float32').max)

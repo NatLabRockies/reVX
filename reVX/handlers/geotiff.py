@@ -393,7 +393,7 @@ class Geotiff:
         self._src.close()
 
     @staticmethod
-    def write(out_fp, profile, values, dtype=None):
+    def write(out_fp, profile, values, dtype=None, compress='lzw'):
         """Write values to GeoTIFF file with given profile.
 
         Parameters
@@ -409,6 +409,10 @@ class Geotiff:
         dtype : str, optional
             Type of data being stored. If ``None``, the data dtype is
             inferred from the `values` input itself.
+        compress : str, optional
+            Rasterio compression codec, overriding any compression in
+            `profile`. Defaults to lossless ``'lzw'`` compression. Set
+            this argument to ``None`` to write without compression.
         """
         out_dir = os.path.dirname(out_fp)
         if out_dir and not os.path.exists(out_dir):
@@ -420,6 +424,7 @@ class Geotiff:
 
         dtype = dtype or values.dtype.name
         profile['dtype'] = dtype
+        profile['compress'] = compress
 
         _validate_nodata(profile, dtype)
         _safe_write(out_fp, values, profile)
