@@ -243,6 +243,69 @@ def test_geotiff_write_default_nodata(tmp_path, output_profile):
         np.testing.assert_array_equal(src.read(1), values)
 
 
+@pytest.mark.parametrize('existing', [False, True])
+def test_geotiff_write_failure_cleanup(tmp_path, output_profile, existing):
+    """Failed band writes remove partial output, including failed overwrites."""
+    out_fp = tmp_path / 'output.tif'
+    if existing:
+        Geotiff.write(out_fp, output_profile, np.ones((2, 2), dtype='uint8'))
+
+    with pytest.raises(ValueError, match='Source shape'):
+        Geotiff.write(out_fp, output_profile,
+                      np.ones((2, 2, 2), dtype='uint8'))
+
+    assert not out_fp.exists()
+    assert not list(tmp_path.iterdir())
+
+
+def test_geotiff_open_failure_preserves_existing(tmp_path, output_profile):
+    """An error before opening the destination leaves existing output alone."""
+    out_fp = tmp_path / 'output.tif'
+    Geotiff.write(out_fp, output_profile, np.ones((2, 2), dtype='uint8'))
+    original = out_fp.read_bytes()
+
+    with pytest.raises(TypeError):
+        Geotiff.write(out_fp, output_profile, np.ones((2, 2), dtype='uint8'),
+                      dtype='invalid')
+
+    assert out_fp.read_bytes() == original
+
+
+def test_geotiff_open_failure_cleanup(tmp_path, output_profile, monkeypatch):
+    """Remove a new stub even when opening raises before returning a writer."""
+    out_fp = tmp_path / 'output.tif'
+    original_open = rasterio.open
+
+    def failing_open(*args, **kwargs):
+        with original_open(*args, **kwargs):
+            pass
+        raise RuntimeError('opening failed')
+
+    monkeypatch.setattr(rasterio, 'open', failing_open)
+    with pytest.raises(RuntimeError, match='opening failed'):
+        Geotiff.write(out_fp, output_profile, np.ones((2, 2), dtype='uint8'))
+
+    assert not out_fp.exists()
+
+
+def test_geotiff_cleanup_failure_preserves_error(tmp_path, output_profile,
+                                               monkeypatch, caplog):
+    """A filesystem cleanup error must not hide the original write error."""
+    out_fp = tmp_path / 'output.tif'
+
+    def failing_remove(path):
+        raise PermissionError('cleanup denied')
+
+    with monkeypatch.context() as patch:
+        patch.setattr(os, 'remove', failing_remove)
+        with pytest.raises(ValueError, match='Source shape'):
+            Geotiff.write(out_fp, output_profile,
+                          np.ones((2, 2, 2), dtype='uint8'))
+
+    assert 'Could not remove partial GeoTIFF' in caplog.text
+    assert 'cleanup denied' in caplog.text
+
+
 def execute_pytest(capture='all', flags='-rapP'):
     """Execute module as pytest with detailed summary report.
 
