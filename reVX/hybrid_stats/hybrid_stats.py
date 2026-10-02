@@ -1411,7 +1411,7 @@ class HybridStabilityCoefficient(HybridStats):
         var : pandas.DataFrame
             Daily variablility by site
         """
-        var = np.sqrt(np.sum((doy - doy.mean())**2))
+        var = np.sqrt(np.sum((doy - doy.mean())**2, axis=0))
 
         return var
 
