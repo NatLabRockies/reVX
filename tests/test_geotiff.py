@@ -42,6 +42,14 @@ def extract_layer(h5_path, layer):
     return values, profile
 
 
+@pytest.fixture
+def output_profile():
+    """Small georeferenced profile for writer tests."""
+    return {'driver': 'GTiff', 'height': 2, 'width': 2, 'count': 1,
+            'dtype': 'float32', 'crs': 'EPSG:4326',
+            'transform': rasterio.transform.from_origin(-71, 42, 0.1, 0.1)}
+
+
 @pytest.mark.parametrize('layer',
                          ['ri_padus', 'ri_reeds_regions', 'ri_smod',
                           'ri_srtm_slope'])
@@ -175,6 +183,64 @@ def test_geotiff_lat_lon_components_sliced(x_inds, y_inds):
 
         assert np.allclose(lon, lon_truth[x_inds, y_inds])
         assert np.allclose(lat, lat_truth[x_inds, y_inds])
+
+
+@pytest.mark.parametrize('dtype,nodata,expected', [
+    ('uint8', float(np.finfo('float32').max), 255),
+    ('uint8', -9999, 255),
+    ('uint8', np.nan, 255),
+    ('uint8', np.inf, 255),
+    ('float32', float(np.finfo('float64').max), np.finfo('float32').max),
+    ('uint8', None, None),
+    ('uint8', 0, 0),
+    ('int16', -9999, -9999),
+    ('float32', -9999, -9999),
+    ('float32', np.nan, np.nan),
+])
+def test_geotiff_write_nodata(tmp_path, output_profile, dtype, nodata,
+                             expected):
+    """Replace incompatible inherited nodata, preserving valid settings."""
+    output_profile['nodata'] = nodata
+    values = np.array([[0, 1], [1, 0]], dtype=dtype)
+    out_fp = tmp_path / 'output.tif'
+
+    Geotiff.write(out_fp, output_profile, values)
+
+    with rasterio.open(out_fp) as src:
+        assert src.dtypes == (dtype,)
+        if expected is not None and np.isnan(expected):
+            assert np.isnan(src.nodata)
+        else:
+            assert src.nodata == expected
+        assert src.crs == rasterio.crs.CRS.from_epsg(4326)
+        assert src.transform == output_profile['transform']
+        np.testing.assert_array_equal(src.read(1), values)
+
+
+def test_geotiff_write_dtype_override(tmp_path, output_profile):
+    """Validate inherited nodata against the explicitly requested dtype."""
+    output_profile['nodata'] = float(np.finfo('float32').max)
+    values = np.ones((2, 2), dtype='float32')
+    out_fp = tmp_path / 'output.tif'
+
+    Geotiff.write(out_fp, output_profile, values, dtype='uint8')
+
+    with rasterio.open(out_fp) as src:
+        assert src.dtypes == ('uint8',)
+        assert src.nodata == 255
+        np.testing.assert_array_equal(src.read(1), values)
+
+
+def test_geotiff_write_default_nodata(tmp_path, output_profile):
+    """Missing nodata still defaults to the output dtype's maximum value."""
+    out_fp = tmp_path / 'output.tif'
+    values = np.ones((2, 2), dtype='int16')
+
+    Geotiff.write(out_fp, output_profile, values)
+
+    with rasterio.open(out_fp) as src:
+        assert src.nodata == np.iinfo('int16').max
+        np.testing.assert_array_equal(src.read(1), values)
 
 
 def execute_pytest(capture='all', flags='-rapP'):
