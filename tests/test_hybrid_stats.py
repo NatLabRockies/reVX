@@ -68,6 +68,9 @@ def test_hybrid_stats(max_workers, func):
                                      combinations=True,
                                      max_workers=max_workers)
 
+    stat_cols = test_stats.columns.difference(META.columns)
+    assert (test_stats[stat_cols].dtypes == np.dtype("float32")).all()
+
     gids = META.index.values
     msg = 'gids do not match!'
     assert np.allclose(gids, test_stats.index.values), msg
