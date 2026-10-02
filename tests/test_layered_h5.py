@@ -181,14 +181,16 @@ def test_write_layer_to_h5():
     with tempfile.TemporaryDirectory() as td:
         h5_file = os.path.join(td, 'test.h5')
         lh5 = LayeredH5(h5_file, template_file=XMISSION_H5)
+        extra_attrs = {"citation": "Example source"}
         lh5.write_layer_to_h5(values, "iso_regions", profile=profile,
-                              description="ISO")
+                              description="ISO", attrs=extra_attrs)
 
         profile["transform"] = list(profile["transform"])
         with Resource(h5_file) as h5:
             assert np.allclose(h5["iso_regions"], values)
             assert json.loads(h5.attrs["iso_regions"]["profile"]) == profile
             assert h5.attrs["iso_regions"]["description"] == "ISO"
+            assert h5.attrs["iso_regions"]["citation"] == "Example source"
 
 
 def test_extract_layer():
@@ -245,6 +247,52 @@ def test_write_geotiff_to_h5():
             assert np.allclose(h5["iso_regions"], values)
             assert json.loads(h5.attrs["iso_regions"]["profile"]) == profile
             assert h5.attrs["iso_regions"]["description"] == "ISO"
+
+
+@pytest.mark.parametrize('scale_factor', [None, 100])
+@pytest.mark.parametrize('replace_existing', [False, True])
+def test_write_geotiff_to_h5_attrs(tmp_path, scale_factor, replace_existing):
+    """Test custom dataset metadata on new, scaled, and replaced layers."""
+    values, profile = extract_geotiff(ISO_TIFF)
+    h5_file = tmp_path / 'metadata.h5'
+    lh5 = LayeredH5(str(h5_file), template_file=XMISSION_H5)
+    metadata = {
+        'citation': 'Example source',
+        'data_category': 'ISO regions',
+        'source_year': 2026,
+        'reviewed': True,
+        'confidence': 0.95,
+        'region_codes': np.array([1, 2, 3]),
+    }
+
+    if replace_existing:
+        attrs = {'citation': 'Previous source', 'retained': 'unchanged'}
+        lh5.write_geotiff_to_h5(ISO_TIFF, 'iso_regions', attrs=attrs)
+        with pytest.warns(UserWarning, match='will be replaced'):
+            lh5.write_geotiff_to_h5(
+                ISO_TIFF, 'iso_regions', description='ISO',
+                scale_factor=scale_factor, dtype='int32', attrs=metadata)
+    else:
+        lh5.write_geotiff_to_h5(
+            ISO_TIFF, 'iso_regions', description='ISO',
+            scale_factor=scale_factor, dtype='int32', attrs=metadata)
+
+    profile['transform'] = list(profile['transform'])
+    if scale_factor is not None:
+        profile['dtype'] = 'int32'
+
+    with Resource(h5_file) as h5:
+        assert np.allclose(h5['iso_regions'], values)
+        attrs = h5.attrs['iso_regions']
+        assert json.loads(attrs['profile']) == profile
+        assert attrs['description'] == 'ISO'
+        for key, expected in metadata.items():
+            np.testing.assert_equal(attrs[key], expected)
+        if scale_factor is not None:
+            assert attrs['scale_factor'] == scale_factor
+        if replace_existing:
+            assert attrs['retained'] == 'unchanged'
+        assert 'citation' not in h5.global_attrs
 
 
 @pytest.mark.parametrize('include_lat_lon', [True, False])

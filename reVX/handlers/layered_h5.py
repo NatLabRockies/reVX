@@ -238,7 +238,7 @@ class LayeredH5:
                 os.remove(self.h5_file)
 
     def write_layer_to_h5(self, values, layer_name, profile=None,
-                          description=None, scale_factor=None):
+                          description=None, scale_factor=None, attrs=None):
         """Write a layer to the HDF5 file.
 
         Parameters
@@ -257,6 +257,10 @@ class LayeredH5:
             Scale factor to use to scale geotiff data when added to the
             HDF5 file. By default, ``None``, which does not scale the
             values.
+        attrs : dict, optional
+            Additional metadata stored as layer dataset attributes.
+            Values must be supported by HDF5 attributes.
+            By default, ``None``.
         """
         if not Path(self.h5_file).exists():
             self.create_new(overwrite=False)
@@ -299,9 +303,13 @@ class LayeredH5:
                 logger.debug('\t- scale_factor for %s added:\n%.2f',
                              layer_name, scale_factor)
 
+            if attrs:
+                ds.attrs.update(attrs)
+
     def write_geotiff_to_h5(self, geotiff, layer_name, check_tiff=True,
                             transform_atol=0.01, description=None,
-                            scale_factor=None, dtype='int16', replace=True):
+                            scale_factor=None, dtype='int16', replace=True,
+                            attrs=None):
         """Transfer GeoTIFF to HDF5 confirming it matches existing layers.
 
         Parameters
@@ -328,6 +336,10 @@ class LayeredH5:
         replace : bool, optional
             Option to replace existing layer (if any).
             By default, ``True``.
+        attrs : dict, optional
+            Additional metadata stored as layer dataset attributes.
+            Values must be supported by HDF5 attributes.
+            By default, ``None``.
         """
         if not Path(self.h5_file).exists():
             if self.template_file == self.h5_file:
@@ -347,13 +359,13 @@ class LayeredH5:
             profile, values = tif.profile, tif.values
 
         if scale_factor is not None:
-            attrs = {'scale_factor': scale_factor}
+            scaling_attrs = {'scale_factor': scale_factor}
             values = Outputs._check_data_dtype(layer_name, values, dtype,
-                                               attrs=attrs)
+                                               attrs=scaling_attrs)
 
         self.write_layer_to_h5(values, layer_name, profile=profile,
                                description=description,
-                               scale_factor=scale_factor)
+                               scale_factor=scale_factor, attrs=attrs)
 
     def _warn_or_error_for_existing_layer(self, layer_name, replace):
         """Warn about existing layers. """
