@@ -14,7 +14,6 @@ from warnings import warn
 from rex.resource import Resource
 from rex.utilities import parse_table, SpawnProcessPool
 
-from reVX.plexos.base import BaseProfileAggregation
 from reVX.utilities.exceptions import SupplyCurvePointCapacityError
 
 logger = logging.getLogger(__name__)

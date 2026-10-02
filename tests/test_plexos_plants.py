@@ -29,7 +29,7 @@ def test_plant_builds():
         sc_points_built = plx_plants[pid]
 
         # make sure built capacity for plant is equal to requested
-        total_built = sum([x['build_capacity'] for x in sc_points_built])
+        total_built = sum(x['build_capacity'] for x in sc_points_built)
         requested = plx_plants.plant_table.at[pid, 'plant_capacity']
         assert np.allclose(total_built, requested)
 
