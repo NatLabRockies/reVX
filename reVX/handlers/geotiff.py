@@ -399,7 +399,8 @@ class Geotiff:
         Parameters
         ----------
         out_fp : str
-            Path to GeoTIFF output file to save data to.
+            Path to GeoTIFF output file to save data to. Partial output
+            is removed if writing fails after the destination is opened.
         profile : dict
             GeoTIFF profile (attributes). Incompatible nodata values are
             replaced with the output dtype's maximum value.
@@ -421,9 +422,7 @@ class Geotiff:
         profile['dtype'] = dtype
 
         _validate_nodata(profile, dtype)
-
-        with rasterio.open(out_fp, 'w', **profile) as f:
-            f.write(values)
+        _safe_write(out_fp, values, profile)
 
         logger.debug('%s created', out_fp)
 
@@ -446,3 +445,23 @@ def _validate_nodata(profile, dtype):
         dtype_max = np.finfo(dtype).max
 
     profile['nodata'] = dtype_max
+
+
+def _safe_write(out_fp, values, profile):
+    """Write GeoTIFF safely, removing partial files on failure."""
+    existed = os.path.exists(out_fp)
+    opened = False
+    try:
+        with rasterio.open(out_fp, 'w', **profile) as f:
+            opened = True
+            f.write(values)
+    except Exception:
+        if opened or not existed:
+            try:
+                os.remove(out_fp)
+            except FileNotFoundError:
+                pass
+            except OSError:
+                logger.warning('Could not remove partial GeoTIFF %s',
+                               out_fp, exc_info=True)
+        raise
