@@ -2,11 +2,11 @@ Installation
 ============
 
 .. include:: ../../../README.rst
-   :start-after: Installing reVX
+   :start-after: inclusion-installation
 
 Command Line Tools
 ==================
 
 .. include:: ../../../README.rst
-   :start-after: reVX command line tools
+   :start-after: inclusion-command-line-tools
    :end-before: Installing reVX

@@ -37,7 +37,7 @@ class Geotiff:
         self._src = rasterio.open(self._fpath, chunks=chunks)
         self._profile = dict(self._src.profile)
         self._profile["transform"] = self._profile["transform"][:6]
-        self._profile["crs"] = self._profile["crs"].to_proj4()
+        self._profile["crs"] = self._profile["crs"].to_wkt()
 
     def __enter__(self):
         return self
