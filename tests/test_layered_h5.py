@@ -5,9 +5,8 @@ import json
 import os
 import numpy as np
 import pytest
-import pandas as pd
 from pathlib import Path
-from pandas.testing import assert_frame_equal
+from rasterio.crs import CRS
 import tempfile
 import traceback
 
@@ -57,6 +56,18 @@ def extract_geotiff(geotiff):
     return values, profile
 
 
+def assert_profiles_match(true_profile, test_profile, ignore_nodata=False):
+    """Compare raster profiles using normalized CRS projection parameters."""
+    true_profile = true_profile.copy()
+    test_profile = test_profile.copy()
+    for profile in (true_profile, test_profile):
+        profile['crs'] = CRS.from_user_input(profile['crs']).to_dict()
+        if ignore_nodata:
+            profile.pop('nodata', None)
+
+    assert true_profile == test_profile
+
+
 def extract_layer(h5_path, layer):
     """
     Extract layer data from .h5 file
@@ -80,6 +91,32 @@ def extract_layer(h5_path, layer):
         profile = f.get_layer_profile(layer)
 
     return values, profile
+
+
+@pytest.mark.parametrize('layer',
+                         ['ri_padus', 'ri_reeds_regions', 'ri_smod',
+                          'ri_srtm_slope'])
+def test_profiles_match_crs_formats(layer):
+    """Match legacy PROJ profiles to the equivalent GeoTIFF WKT profiles."""
+    _, true_profile = extract_layer(EXCL_H5, layer)
+    _, test_profile = extract_geotiff(os.path.join(RI_DIR, f'{layer}.tif'))
+
+    assert_profiles_match({'crs': true_profile['crs']},
+                          {'crs': test_profile['crs']})
+
+
+@pytest.mark.parametrize('parameter, value',
+                         [('lon_0', -72), ('ellps', 'WGS84'),
+                          ('units', 'ft'), ('towgs84', '1,0,0,0,0,0,0')])
+def test_profiles_match_rejects_different_crs(parameter, value):
+    """CRS normalization must not hide changed projection parameters."""
+    _, profile = extract_layer(EXCL_H5, 'ri_padus')
+    changed_crs = CRS.from_user_input(profile['crs']).to_dict()
+    changed_crs[parameter] = value
+    changed_profile = dict(profile, crs=CRS.from_dict(changed_crs).to_wkt())
+
+    with pytest.raises(AssertionError):
+        assert_profiles_match(profile, changed_profile)
 
 
 def test_bad_handler_init():
@@ -292,10 +329,8 @@ def test_layer_to_geotiff(layer):
 
         # original logic overwrote this value for unknown reason,
         # so we don't test for it anymore
-        true_profile.pop("nodata", None)
-        test_profile.pop("nodata", None)
         assert np.allclose(true_values, test_values)
-        assert true_profile == test_profile
+        assert_profiles_match(true_profile, test_profile, ignore_nodata=True)
 
 
 @pytest.mark.parametrize('tif',
@@ -316,29 +351,7 @@ def test_geotiff_to_h5(tif):
 
         assert np.allclose(true_values, test_values)
 
-        for profile_k, true_v in true_profile.items():
-            test_v = test_profile[profile_k]
-            if profile_k == 'crs':
-                true_crs = dict([i.split("=") for i in true_v.split(' ')])
-                true_crs = pd.DataFrame(true_crs, index=[0, ])
-
-                test_crs = dict([i.split("=") for i in test_v.split(' ')])
-                test_crs = pd.DataFrame(test_crs, index=[0, ])
-
-                for crs in (true_crs, test_crs):
-                    for column in crs:
-                        try:
-                            crs[column] = pd.to_numeric(crs[column])
-                        except ValueError:
-                            pass
-
-                cols = list(set(true_crs.columns) & set(test_crs.columns))
-                assert_frame_equal(true_crs[cols], test_crs[cols],
-                                   check_dtype=False, check_exact=False)
-            elif profile_k != 'nodata':
-                msg = ("Profile {} does not match: {} != {}"
-                       .format(profile_k, true_v, test_v))
-                assert true_v == test_v, msg
+        assert_profiles_match(true_profile, test_profile, ignore_nodata=True)
 
 
 def test_scale():
@@ -382,7 +395,7 @@ def test_cli(runner):
         true_values, true_profile = extract_geotiff(truth)
 
         assert np.allclose(true_values, test_values)
-        assert true_profile == test_profile
+        assert_profiles_match(true_profile, test_profile)
 
         # Geotiff to H5
         layers = {'layers': {layer: truth}}
@@ -404,30 +417,7 @@ def test_cli(runner):
 
         assert np.allclose(true_values, test_values)
 
-        for profile_k, true_v in true_profile.items():
-            test_v = test_profile[profile_k]
-            if profile_k == 'crs':
-                true_crs = dict([i.split("=") for i in true_v.split(' ')])
-                true_crs = pd.DataFrame(true_crs, index=[0, ])
-
-                test_crs = dict([i.split("=") for i in test_v.split(' ')])
-                test_crs = pd.DataFrame(test_crs, index=[0, ])
-
-                for crs in (true_crs, test_crs):
-                    for column in crs:
-                        try:
-                            crs[column] = pd.to_numeric(crs[column])
-                        except ValueError:
-                            pass
-
-
-                cols = list(set(true_crs.columns) & set(test_crs.columns))
-                assert_frame_equal(true_crs[cols], test_crs[cols],
-                                   check_dtype=False, check_exact=False)
-            else:
-                msg = ("Profile {} does not match: {} != {}"
-                       .format(profile_k, true_v, test_v))
-                assert true_v == test_v, msg
+        assert_profiles_match(true_profile, test_profile)
 
     LOGGERS.clear()
 
