@@ -113,8 +113,8 @@ def test_geotiff_profile():
     geotiff = os.path.join(DIR, 'ri_padus.tif')
     __, profile = extract_layer(EXCL_H5, 'ri_padus')
     with Geotiff(geotiff) as f:
-        assert (rasterio.crs.CRS.from_string(f.profile["crs"])
-                == rasterio.crs.CRS.from_string(profile["crs"]))
+        assert (rasterio.crs.CRS.from_string(f.profile["crs"]).to_dict()
+                == rasterio.crs.CRS.from_string(profile["crs"]).to_dict())
         assert np.allclose(f.profile["transform"], profile["transform"])
         assert f.profile["tiled"] == profile["tiled"]
         assert f.profile["nodata"] == profile["nodata"]
@@ -171,8 +171,12 @@ def test_geotiff_lat_lon(use_prop):
         # pylint: disable=unpacking-non-sequence
         lon_truth, lat_truth = transformer.transform(np.array(xs),
                                                      np.array(ys))
-        assert np.allclose(lon.flatten(), lon_truth.flatten())
-        assert np.allclose(lat.flatten(), lat_truth.flatten())
+        lon_truth = lon_truth.reshape(rows.shape)
+        lat_truth = lat_truth.reshape(rows.shape)
+        assert lon.shape == lon_truth.shape
+        assert lat.shape == lat_truth.shape
+        np.testing.assert_allclose(lon, lon_truth, rtol=1e-5, atol=1e-8)
+        np.testing.assert_allclose(lat, lat_truth, rtol=1e-5, atol=1e-8)
         assert lon.min() > -71.912
         assert lon.max() < -70.856
         assert lat.min() > 40.8558
@@ -198,8 +202,10 @@ def test_geotiff_lat_lon_sliced(x_slice, y_slice):
         lat_truth = lat_truth.reshape(rows.shape)
         lon_truth = lon_truth[x_slice, y_slice]
         lat_truth = lat_truth[x_slice, y_slice]
-        assert np.allclose(lon, lon_truth)
-        assert np.allclose(lat, lat_truth)
+        assert lon.shape == lon_truth.shape
+        assert lat.shape == lat_truth.shape
+        np.testing.assert_allclose(lon, lon_truth, rtol=1e-5, atol=1e-8)
+        np.testing.assert_allclose(lat, lat_truth, rtol=1e-5, atol=1e-8)
 
 
 @pytest.mark.parametrize("x_inds", ([1, 5, 10], slice(1, 20)))
@@ -212,8 +218,12 @@ def test_geotiff_lat_lon_components_sliced(x_inds, y_inds):
         lat = f["latitude", x_inds, y_inds]
         lon = f["longitude", x_inds, y_inds]
 
-        assert np.allclose(lon, lon_truth[x_inds, y_inds])
-        assert np.allclose(lat, lat_truth[x_inds, y_inds])
+        lon_truth = lon_truth[x_inds, y_inds]
+        lat_truth = lat_truth[x_inds, y_inds]
+        assert lon.shape == lon_truth.shape
+        assert lat.shape == lat_truth.shape
+        np.testing.assert_allclose(lon, lon_truth, rtol=1e-5, atol=1e-8)
+        np.testing.assert_allclose(lat, lat_truth, rtol=1e-5, atol=1e-8)
 
 
 @pytest.mark.parametrize('dtype,nodata,expected', [
