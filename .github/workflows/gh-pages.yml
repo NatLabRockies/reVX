@@ -11,6 +11,7 @@ concurrency:
 on:
   push:
     branches: [main, master]
+  pull_request:
   release:
     types: [created, published]
   workflow_dispatch:
@@ -34,6 +35,8 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install .[doc]
       - name: build documentation
+        env:
+          SPHINXOPTS: "--fail-on-warning --keep-going"
         run: |
           cd docs
           make clean html
