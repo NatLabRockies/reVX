@@ -60,7 +60,8 @@ def cost_config_path(tmp_path):
     return str(path)
 
 
-@pytest.mark.parametrize("attrs", [None, {}, {"source": "survey", "year": 2026}])
+@pytest.mark.parametrize("attrs",
+                         [None, {}, {"source": "survey", "year": 2026}])
 def test_layer_build_attrs(layer_files, tmp_path, attrs):
     """Layer builds preserve data and description while forwarding attrs."""
     files, handler = layer_files

@@ -3,7 +3,6 @@ Build friction or barrier layers from raster and vector data.
 """
 import logging
 from pathlib import Path
-from typing import Dict
 from warnings import warn
 
 import numpy as np
@@ -119,6 +118,7 @@ class LayerCreator(BaseLayerCreator):
                                                description=description,
                                                attrs=attrs)
 
+    # pylint: disable=too-many-return-statements
     def _process_raster_layer(self, data: npt.NDArray,  # type: ignore[return]
                               config: LayerBuildConfig) -> npt.NDArray:
         """Create the desired layer from the array using LayerBuildConfig.

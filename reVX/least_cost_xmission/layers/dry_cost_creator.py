@@ -165,6 +165,7 @@ class DryCostCreator(BaseLayerCreator):
             dry_layer_name = 'tie_line_costs_{}MW'.format(capacity)
             tie_line_costs_tiff = '{}.tif'.format(dry_layer_name)
             out_fp = self.output_tiff_dir / tie_line_costs_tiff
+            # pylint: disable=invalid-unary-operand-type
             costs_arr[~self._mask] = 0
             self._io_handler.save_data_using_h5_profile(costs_arr, out_fp)
             if self._io_handler is not None:

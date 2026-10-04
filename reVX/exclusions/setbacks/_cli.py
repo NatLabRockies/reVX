@@ -457,7 +457,7 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
     -------
     str
         Path to output GeoTIFF file containing setback exclusion data.
-    """
+    """  # pylint: disable=line-too-long
 
     _update_setbacks_calculators(feature_specs)
     logger.info('Computing setbacks from {} in {}'

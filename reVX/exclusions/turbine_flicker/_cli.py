@@ -125,7 +125,7 @@ def run_flicker(excl_fpath, res_fpath, hub_height, rotor_diameter, out_dir,
     The output file name is generated as
     ``flicker_{hub_height}hh_{rotor_diameter}rd{tag}.tif`` in
     ``out_dir``.
-    """
+    """  # pylint: disable=line-too-long
 
     if out_layer is not None:
         out_layers = {os.path.basename(building_layer): out_layer}
