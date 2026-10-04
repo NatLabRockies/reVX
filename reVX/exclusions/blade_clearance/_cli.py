@@ -83,10 +83,12 @@ def compute_blade_clearance_exclusions(excl_fpath, out_dir,
         Boolean flag to use ``h5pyd`` to handle HDF5 "files" hosted on
         AWS behind HSDS. By default, ``False``.
     out_layers : dict, optional
-        Dictionary mapping the input feature file names (with extension)
+        Dictionary mapping the output GeoTIFF file name (with extension)
         to names of layers under which exclusions should be saved in the
         ``excl_fpath`` HDF5 file. If ``None`` or empty dictionary,
-        no layers are saved to the HDF5 file. By default, ``None``.
+        no layers are saved to the HDF5 file. The output filename is
+        ``blade_clearance_restrictions_<hub_height>hh_<rotor_diameter>rd.tif``.
+        By default, ``None``.
     max_workers : int, optional
         Number of workers to use for exclusion computation. If this
         value is 1, the computation runs in serial. If this value
