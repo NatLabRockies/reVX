@@ -238,7 +238,7 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
                      regulations_fpath=None,
                      weights_calculation_upscale_factor=None,
                      replace=False, hsds=False, out_layers=None,
-                     feature_specs=None, max_workers=None):
+                     feature_specs=None, max_workers=None, attrs=None):
     """Compute Setbacks
 
     Setbacks can be computed using a technology-specific system
@@ -377,6 +377,10 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
         to names of layers under which exclusions should be saved in the
         ``excl_fpath`` HDF5 file. If ``None`` or empty dictionary,
         no layers are saved to the HDF5 file. By default, ``None``.
+    attrs : dict, optional
+        Mapping of output HDF5 layer names to attribute dictionaries.
+        Layers omitted from the mapping receive no additional
+        attributes. By default, ``None``.
     feature_specs : dict, optional
         Optional dictionary specifying new feature setback calculators
         or updates to existing ones. The keys of this dictionary should
@@ -486,7 +490,7 @@ def compute_setbacks(excl_fpath, node_feature_type, node_file_path,
     setbacks_class.run(excl_fpath, node_file_path, out_fn, regulations,
                        weights_calculation_upscale_factor=uf,
                        max_workers=max_workers, replace=replace, hsds=hsds,
-                       out_layers=out_layers)
+                       out_layers=out_layers, attrs=attrs)
     logger.info('Flicker exclusions computed and written to %r', out_fn)
     return out_fn
 
