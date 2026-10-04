@@ -118,9 +118,9 @@ class SetbacksConverter(LayeredH5):
         setbacks = parse_setbacks(setbacks, chunks=self._chunks,
                                   is_inclusion_layer=is_inclusion_layer)
         if scale_factor is not None:
-            attrs = {'scale_factor': scale_factor}
+            scaling_attrs = {'scale_factor': scale_factor}
             setbacks = Outputs._check_data_dtype(layer_name, setbacks, dtype,
-                                                 attrs=attrs)
+                                                 attrs=scaling_attrs)
 
         logger.debug('Writing final setback layer to %s', self.h5_file)
         self.write_layer_to_h5(setbacks, layer_name, profile=profile,
