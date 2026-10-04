@@ -20,7 +20,7 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath=None,
                               system_height=None, hub_height=None,
                               rotor_diameter=None, generic_height_limit=None,
                               replace=False, hsds=False, out_layers=None,
-                              max_workers=None):
+                              max_workers=None, attrs=None):
     """Exclude regions where system height exceeds height limits.
 
     Exclusions can be computed for a specific turbine (hub height and
@@ -101,6 +101,10 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath=None,
         is > 1, the computation runs in parallel with that many workers.
         If ``None``, the computation runs in parallel on all available
         cores. By default, ``None``.
+    attrs : dict, optional
+        Mapping of output HDF5 layer names to attribute dictionaries.
+        Layers omitted from the mapping receive no additional
+        attributes. By default, ``None``.
 
     Returns
     -------
@@ -135,7 +139,8 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath=None,
     out_fn = os.path.join(out_dir, fn)
     HeightRestrictionExclusions.run(excl_fpath, None, out_fn, regulations,
                                     max_workers=max_workers, replace=replace,
-                                    hsds=hsds, out_layers=out_layers)
+                                    hsds=hsds, out_layers=out_layers,
+                                    attrs=attrs)
 
     logger.info('Height restrictions computed and written to %r', out_fn)
     return out_fn
