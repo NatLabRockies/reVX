@@ -16,8 +16,9 @@ Documentation config file
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-import sphinx_rtd_theme
 import sys
+import sphinx_rtd_theme
+from sphinx.ext.autodoc import between
 sys.path.insert(0, os.path.abspath('../../'))
 
 # -- Project information -----------------------------------------------------
@@ -221,6 +222,96 @@ texinfo_documents = [
      author, 'reVX', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+def skip_external_methods(name, obj):
+    obj_module = getattr(obj, "__module__", "")
+    property_module = getattr(getattr(obj, "fget", None), "__module__", "")
+
+    if name == "model_config":
+        return True
+
+    if name.startswith("model_") and (
+        obj_module.startswith("pydantic")
+        or property_module.startswith("pydantic")
+    ):
+        return True
+
+    mapping_methods = {
+        "clear",
+        "pop",
+        "popitem",
+        "setdefault",
+        "update",
+    }
+
+    if name in mapping_methods and (
+        "MutableMapping" in str(obj)
+        or "TypedDict" in str(obj)
+        or getattr(obj, "__doc__", "").startswith("D.")
+    ):
+        return True
+
+    if name in {"copy", "fromkeys"} and "TransmissionConfig" in str(obj):
+        return True
+
+    if name in {"items", "keys", "values"} and "Mapping" in str(obj):
+        return True
+
+    if name in {"copy", "get"} and "UserDict" in str(obj):
+        return True
+
+    if name in {
+        "model_dump_json",
+        "model_json_schema",
+        "model_dump",
+        "model_construct",
+        "model_copy",
+        "model_config",
+        "model_fields",
+        "model_computed_fields",
+        "model_rebuild",
+        "model_parametrized_name",
+        "model_post_init",
+        "model_validate",
+        "model_validate_json",
+        "model_validate_strings",
+        "copy",
+        "construct",
+        "dict",
+        "from_orm",
+        "json",
+        "parse_file",
+        "parse_obj",
+        "parse_raw",
+        "schema",
+        "schema_json",
+        "update_forward_refs",
+        "validate",
+    } and "BaseModel" in str(obj):
+        return True
+
+    return None
+
+
+def _skip_internal_api(obj):
+    return (getattr(obj, "__doc__", None) or "").startswith("[NOT PUBLIC API]")
+
+
+def _skip_member(app, what, name, obj, skip, options):
+    if _skip_internal_api(obj) or skip_external_methods(name, obj):
+        return True
+    return None
+
+
+def setup(app):
+    app.connect("autodoc-skip-member", _skip_member)
+
+    # Register a sphinx.ext.autodoc.between listener to ignore everything
+    # between lines that contain the word IGNORE
+    app.connect(
+        "autodoc-process-docstring", between("^.*IGNORE.*$", exclude=True)
+    )
+    return app
 
 # -- Extension configuration -------------------------------------------------
 
