@@ -147,6 +147,14 @@ class DryCosts(BaseModel, extra='forbid'):
     extra_tiffs: Optional[List[FilePath]] = None
     """Optional list of extra GeoTIFFs to add to cost H5 file. """
 
+    attrs: Optional[Dict[str, Dict]] = None
+    """H5 dataset attributes keyed by layer name.
+
+    Input and extra GeoTIFF layer names are their filename stems. Generated
+    layers include ``dry_multipliers`` and ``tie_line_costs_<capacity>MW``.
+    Layers omitted from this mapping receive no additional attributes.
+    """
+
 
 class MergeFrictionBarriers(BaseModel, extra='forbid'):
     """
@@ -180,6 +188,9 @@ class MergeFrictionBarriers(BaseModel, extra='forbid'):
     The multiplier should be large enough that all barriers have
     a higher value than any possible friction."""
 
+    attrs: Optional[Dict] = None
+    """Additional H5 dataset attributes for the combined output layer."""
+
 
 LayerBuildComponents = Dict[str, LayerBuildConfig]
 """Mapping of layer components to use for building the final layer.
@@ -198,6 +209,9 @@ class LayerConfig(BaseModel):
 
     description: Optional[str] = None
     """Optional description to store in attrs for layer. """
+
+    attrs: Optional[Dict] = None
+    """Additional H5 dataset attributes for this layer."""
 
     include_in_h5: Optional[bool] = True
     """Flag to specify whether layer should be stored in H5 or not. """

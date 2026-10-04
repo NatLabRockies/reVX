@@ -143,7 +143,8 @@ def exclusions(ctx, excl_h5):
 @click.option('--layers', '-l', required=True, type=click.Path(exists=True),
               help=(".json file containing mapping of layer names to geotiffs."
                     " Json can also contain layer descriptions and/or "
-                    "scale factors"))
+                    "scale factors, and an attrs mapping from layer names "
+                    "to HDF5 dataset attributes"))
 @click.option('-check_tiff', '-ct', is_flag=True,
               help=("Flag to check tiff profile, CRS, and shape against "
                     "exclusion .h5 profile, CRS, and shape"))
@@ -171,6 +172,7 @@ def layers_to_h5(ctx, layers, check_tiff, setbacks, distance_to_ports,
     layers = inputs['layers']
     descriptions = inputs.get('descriptions')
     scale_factors = inputs.get('scale_factors')
+    attrs = inputs.get('attrs')
 
     if setbacks and distance_to_ports:
         msg = ('Both the setbacks "--setbacks/-sb" and distance to ports '
@@ -187,19 +189,19 @@ def layers_to_h5(ctx, layers, check_tiff, setbacks, distance_to_ports,
                                are_inclusion_layers=are_inclusion_layers,
                                transform_atol=transform_atol,
                                descriptions=descriptions,
-                               scale_factors=scale_factors)
+                               scale_factors=scale_factors, attrs=attrs)
     elif distance_to_ports:
         converter = DistToPortsConverter(excl_h5)
         converter.layers_to_h5(layers, check_tiff=check_tiff,
                                transform_atol=transform_atol,
                                descriptions=descriptions,
-                               scale_factors=scale_factors)
+                               scale_factors=scale_factors, attrs=attrs)
     else:
         converter = LayeredH5(excl_h5)
         converter.layers_to_h5(layers, check_tiff=check_tiff,
                                transform_atol=transform_atol,
                                descriptions=descriptions,
-                               scale_factors=scale_factors)
+                               scale_factors=scale_factors, attrs=attrs)
 
 
 @exclusions.command()
@@ -233,7 +235,9 @@ def layers_from_h5(ctx, out_dir, layers, hsds):
                     'A typical reV aggregation config satisfies this '
                     'requirement. If this file also contains an '
                     '``"excl_fpath"`` key, the value from the file will '
-                    'override the ``--excl_h5`` CLI argument input.'))
+                    'override the ``--excl_h5`` CLI argument input. '
+                    'An optional "attrs" dictionary supplies attributes '
+                    'for the output HDF5 dataset.'))
 @click.option('--out', '-o', required=True, type=STR,
               help=('Output name. If this string value ends in ".tif" '
                     'or ".tiff", this input is assumed to be a path to an '
@@ -294,7 +298,8 @@ def mask(ctx, excl_dict_fpath, out, min_area, kernel, hsds):
         desc = ("Exclusion mask computed from exclusion dictionary: {!r}"
                 .format(excl_dict))
         LayeredH5(excl_fpath).write_layer_to_h5(mask_, out, profile,
-                                                description=desc)
+                                                description=desc,
+                                                attrs=config.get("attrs"))
 
 
 @main.command()

@@ -20,7 +20,7 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath=None,
                               system_height=None, hub_height=None,
                               rotor_diameter=None, generic_height_limit=None,
                               replace=False, hsds=False, out_layers=None,
-                              max_workers=None):
+                              max_workers=None, attrs=None):
     """Exclude regions where system height exceeds height limits.
 
     Exclusions can be computed for a specific turbine (hub height and
@@ -89,16 +89,22 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath=None,
         Boolean flag to use ``h5pyd`` to handle HDF5 "files" hosted on
         AWS behind HSDS. By default, ``False``.
     out_layers : dict, optional
-        Dictionary mapping the input feature file names (with extension)
+        Dictionary mapping the output GeoTIFF file name (with extension)
         to names of layers under which exclusions should be saved in the
         ``excl_fpath`` HDF5 file. If ``None`` or empty dictionary,
-        no layers are saved to the HDF5 file. By default, ``None``.
+        no layers are saved to the HDF5 file. The output filename is
+        ``height_restrictions_<system_height>m.tif``.
+        By default, ``None``.
     max_workers : int, optional
         Number of workers to use for exclusion computation. If this
         value is 1, the computation runs in serial. If this value
         is > 1, the computation runs in parallel with that many workers.
         If ``None``, the computation runs in parallel on all available
         cores. By default, ``None``.
+    attrs : dict, optional
+        Mapping of output HDF5 layer names to attribute dictionaries.
+        Layers omitted from the mapping receive no additional
+        attributes. By default, ``None``.
 
     Returns
     -------
@@ -133,7 +139,8 @@ def compute_height_exclusions(excl_fpath, out_dir, regulations_fpath=None,
     out_fn = os.path.join(out_dir, fn)
     HeightRestrictionExclusions.run(excl_fpath, None, out_fn, regulations,
                                     max_workers=max_workers, replace=replace,
-                                    hsds=hsds, out_layers=out_layers)
+                                    hsds=hsds, out_layers=out_layers,
+                                    attrs=attrs)
 
     logger.info('Height restrictions computed and written to %r', out_fn)
     return out_fn

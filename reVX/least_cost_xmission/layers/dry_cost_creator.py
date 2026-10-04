@@ -68,7 +68,7 @@ class DryCostCreator(BaseLayerCreator):
     def build(self, iso_region_tiff: str, nlcd_tiff: str, slope_tiff: str,
               cost_configs: Optional[Union[str, Dict]] = None,
               default_mults: Optional[IsoMultipliers] = None,
-              extra_tiffs: Optional[List[str]] = None):
+              extra_tiffs: Optional[List[str]] = None, attrs=None):
         """
         Build cost rasters using base line costs and multipliers. Save to
         GeoTIFF.
@@ -106,7 +106,14 @@ class DryCostCreator(BaseLayerCreator):
             Optional list of extra GeoTIFFs to add to cost H5 file (e.g.
             a transmission barrier file). By default, ``None``, which
             does not add any extra layers.
+        attrs : dict, optional
+            Mapping of H5 layer names to additional dataset attribute
+            dictionaries. Input and extra GeoTIFF names are filename
+            stems; generated cost names are ``tie_line_costs_<capacity>MW``.
+            Layers omitted from the mapping receive no extra attributes.
+            By default, ``None``.
         """
+        attrs = attrs or {}
         xc = XmissionConfig(config=cost_configs)
         self._iso_lookup = xc['iso_lookup']
 
@@ -138,7 +145,8 @@ class DryCostCreator(BaseLayerCreator):
                 out = self._io_handler.load_data_using_h5_profile(
                     layer_fp, reproject=True)
                 logger.debug(f'Writing {layer_name} to H5')
-                self._io_handler.write_layer_to_h5(out, layer_name)
+                self._io_handler.write_layer_to_h5(
+                    out, layer_name, attrs=attrs.get(layer_name))
 
         for power_class, capacity in xc['power_classes'].items():
             logger.info('Calculating costs for class %s using a %sMW line',
@@ -157,13 +165,15 @@ class DryCostCreator(BaseLayerCreator):
             dry_layer_name = 'tie_line_costs_{}MW'.format(capacity)
             tie_line_costs_tiff = '{}.tif'.format(dry_layer_name)
             out_fp = self.output_tiff_dir / tie_line_costs_tiff
+            # pylint: disable=invalid-unary-operand-type
             costs_arr[~self._mask] = 0
             self._io_handler.save_data_using_h5_profile(costs_arr, out_fp)
             if self._io_handler is not None:
                 out = self._io_handler.load_data_using_h5_profile(
                     out_fp, reproject=True)
                 logger.debug('Writing dry costs to H5')
-                self._io_handler.write_layer_to_h5(out, dry_layer_name)
+                self._io_handler.write_layer_to_h5(
+                    out, dry_layer_name, attrs=attrs.get(dry_layer_name))
 
     @staticmethod
     def _compute_slope_mult(slope: npt.NDArray,

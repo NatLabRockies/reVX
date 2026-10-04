@@ -311,7 +311,7 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
 
         Geotiff.write(geotiff, self.profile, exclusions)
 
-    def _write_layer(self, out_layer, exclusions, replace=False):
+    def _write_layer(self, out_layer, exclusions, replace=False, attrs=None):
         """Write exclusions to H5, replace if requested
 
         Parameters
@@ -323,6 +323,8 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         replace : bool, optional
             Flag to replace local layer data with arr if layer already
             exists in the exclusion .h5 file. By default `False`.
+        attrs : dict, optional
+            Additional HDF5 dataset attributes. By default, ``None``.
         """
         with ExclusionLayers(self._excl_fpath, hsds=self._hsds) as exc:
             layers = exc.layers
@@ -337,7 +339,8 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
 
         LayeredH5(self._excl_fpath).write_layer_to_h5(exclusions, out_layer,
                                                       self.profile,
-                                                      description=description)
+                                                      description=description,
+                                                      attrs=attrs)
 
     def _county_exclusions(self):
         """Yield county exclusion arguments. """
@@ -422,7 +425,7 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         return exclusions
 
     def compute_exclusions(self, out_layer=None, out_tiff=None, replace=False,
-                           max_workers=None):
+                           max_workers=None, attrs=None):
         """
         Compute exclusions for all states either in serial or parallel.
         Existing exclusions are computed if a regulations file was
@@ -447,6 +450,9 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
             in serial, if > 1 run in parallel with that many workers,
             if `None`, run in parallel on all available cores.
             By default `None`.
+        attrs : dict, optional
+            Additional attributes for the output HDF5 dataset. Ignored
+            when ``out_layer`` is ``None``. By default, ``None``.
 
         Returns
         -------
@@ -458,7 +464,8 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         if out_layer is not None:
             logger.info('Saving exclusion layer to {} as {}'
                         .format(self._excl_fpath, out_layer))
-            self._write_layer(out_layer, exclusions, replace=replace)
+            self._write_layer(out_layer, exclusions, replace=replace,
+                              attrs=attrs)
 
         if out_tiff is not None:
             logger.debug('Writing exclusions to {}'.format(out_tiff))
@@ -558,7 +565,7 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
     @classmethod
     def run(cls, excl_fpath, features_path, out_fn, regulations,
             max_workers=None, replace=False, out_layers=None, hsds=False,
-            **kwargs):
+            attrs=None, **kwargs):
         """
         Compute exclusions and write them to a geotiff. If a regulations
         file is given, compute local exclusions, otherwise compute
@@ -600,14 +607,21 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
             names of layers under which exclusions should be saved in
             the `excl_fpath` .h5 file. If `None` or empty dictionary,
             no layers are saved to the h5 file. By default `None`.
+            When there is no feature file, use the output GeoTIFF file
+            name (with extension) as the key instead.
         hsds : bool, optional
             Boolean flag to use h5pyd to handle .h5 'files' hosted on
             AWS behind HSDS. By default `False`.
+        attrs : dict, optional
+            Mapping of output HDF5 layer names to attribute dictionaries.
+            Layers omitted from the mapping receive no additional attributes.
+            By default, ``None``.
         **kwargs
             Keyword args to exclusions calculator class.
         """
 
         out_layers = out_layers or {}
+        attrs = attrs or {}
         cls_init_kwargs = {"excl_fpath": excl_fpath,
                            "regulations": regulations}
         cls_init_kwargs.update(kwargs)
@@ -619,14 +633,14 @@ class AbstractBaseExclusionsMerger(AbstractExclusionCalculatorInterface):
         else:
             logger.info("Computing exclusions from {} and saving "
                         "to {}".format(features_path, out_fn))
-            out_layer = None
-            if out_layers and features_path:
-                out_layer = out_layers.get(os.path.basename(features_path))
+            feature_name = os.path.basename(features_path or out_fn)
+            out_layer = out_layers.get(feature_name)
             exclusions = cls(excl_fpath=excl_fpath, regulations=regulations,
                              features=features_path, hsds=hsds, **kwargs)
             exclusions.compute_exclusions(out_tiff=out_fn, out_layer=out_layer,
                                           max_workers=max_workers,
-                                          replace=replace)
+                                          replace=replace,
+                                          attrs=attrs.get(out_layer))
 
 
 def _error_or_warn(name, replace):

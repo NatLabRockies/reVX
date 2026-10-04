@@ -3,7 +3,6 @@ Build friction or barrier layers from raster and vector data.
 """
 import logging
 from pathlib import Path
-from typing import Dict
 from warnings import warn
 
 import numpy as np
@@ -56,7 +55,7 @@ class LayerCreator(BaseLayerCreator):
 
     def build(self, layer_name, build_config: LayerBuildComponents,
               values_are_costs_per_mile=False, write_to_h5=True,
-              description=None):
+              description=None, attrs=None):
         """
         Combine multiple GeoTIFFs and vectors to a raster layer and save
         to GeoTIFF/HDF5 file.
@@ -77,6 +76,9 @@ class LayerCreator(BaseLayerCreator):
         description : str, optional
             Optional description to store with this layer in the H5
             file. By default, ``None``.
+        attrs : dict, optional
+            Additional attributes to store on the H5 dataset.
+            By default, ``None``.
         """
         layer_name = layer_name.replace(".tif", "").replace(".tiff", "")
         logger.debug('Combining %s layers', layer_name)
@@ -113,8 +115,10 @@ class LayerCreator(BaseLayerCreator):
                 out_filename, reproject=True)
             logger.debug('Writing %s to H5', layer_name)
             self._io_handler.write_layer_to_h5(out, layer_name,
-                                               description=description)
+                                               description=description,
+                                               attrs=attrs)
 
+    # pylint: disable=too-many-return-statements
     def _process_raster_layer(self, data: npt.NDArray,  # type: ignore[return]
                               config: LayerBuildConfig) -> npt.NDArray:
         """Create the desired layer from the array using LayerBuildConfig.
