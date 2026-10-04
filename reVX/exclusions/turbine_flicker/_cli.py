@@ -20,7 +20,7 @@ def run_flicker(excl_fpath, res_fpath, hub_height, rotor_diameter, out_dir,
                 tm_dset='techmap_wtk', building_threshold=0,
                 flicker_threshold=30, resolution=128, grid_cell_size=90,
                 max_flicker_exclusion_range="10x",
-                max_workers=None, replace=False, hsds=False):
+                max_workers=None, replace=False, hsds=False, attrs=None):
     """Compute turbine shadow flicker exclusions from building data
 
     Flicker exclusions can be computed using:
@@ -94,6 +94,9 @@ def run_flicker(excl_fpath, res_fpath, hub_height, rotor_diameter, out_dir,
     hsds : bool, optional
         If ``True``, use HSDS/h5pyd access for HDF5 resources.
         By default, ``False``.
+    attrs : dict, optional
+        Additional attributes for the ``out_layer`` HDF5 dataset.
+        Ignored when ``out_layer`` is ``None``. By default, ``None``.
 
     Raises
     ------
@@ -155,6 +158,7 @@ def run_flicker(excl_fpath, res_fpath, hub_height, rotor_diameter, out_dir,
                                      flicker_threshold, regulations_fpath)
     fn = "flicker_{}hh_{}rd.tif".format(hub_height, rotor_diameter)
     out_fn = os.path.join(out_dir, fn)
+    attrs = None if out_layer is None else {out_layer: attrs}
     TurbineFlicker.run(excl_fpath, building_layer, out_fn,
                        res_fpath=res_fpath,
                        regulations=regulations,
@@ -163,7 +167,8 @@ def run_flicker(excl_fpath, res_fpath, hub_height, rotor_diameter, out_dir,
                        grid_cell_size=grid_cell_size,
                        max_flicker_exclusion_range=max_flicker_exclusion_range,
                        tm_dset=tm_dset, max_workers=max_workers,
-                       replace=replace, hsds=hsds, out_layers=out_layers)
+                       replace=replace, hsds=hsds, out_layers=out_layers,
+                       attrs=attrs)
     logger.info('Flicker exclusions computed and written to %r', out_fn)
     return out_fn
 
