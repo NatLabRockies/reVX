@@ -106,12 +106,12 @@ technology-specific PV dimension from ``system_config``. For example:
 }
 ```
 
-The ``regulations_fpath`` should point to the [``reVX`` ordinance CSV file you generated above](#ordinance-database)
+The ``regulations_fpath`` should point to the [``reVX`` ordinance file you generated above](https://natlabrockies.github.io/reVX/misc/exclusions.setbacks.html#ordinance-database)
 (path relative to the project directory are allowed). If you are not modeling any local regulations, you can leave this
 input as ``None`` (``null`` in JSON).
 
 Basic execution of ``reVX`` setbacks will not require ``weights_calculation_upscale_factor``, ``out_layers``, or
-``feature_specs``, so we instead cover them in the [Advanced Topics section below](#advanced-topics). For now, these keys
+``feature_specs``, so we instead cover them in the [Advanced Topics section below](https://natlabrockies.github.io/reVX/misc/exclusions.setbacks.html#advanced-topics). For now, these keys
 are okay to remove from the configuration file entirely.
 
 ``replace`` and ``hsds`` can be left with their default values, unless you would like ``reVX`` to replace any existing
