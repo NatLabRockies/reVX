@@ -295,6 +295,40 @@ def test_write_geotiff_to_h5_attrs(tmp_path, scale_factor, replace_existing):
         assert 'citation' not in h5.global_attrs
 
 
+@pytest.mark.parametrize('converter_flag', [None, '--setbacks',
+                                          '--distance_to_ports'])
+@pytest.mark.parametrize('scale_factor', [None, 100])
+def test_layers_to_h5_cli_attrs(
+    tmp_path, runner, converter_flag, scale_factor
+):
+    """Batch CLI metadata reaches only the corresponding dataset."""
+    h5_file = tmp_path / 'metadata.h5'
+    config_file = tmp_path / 'layers.json'
+    metadata = {'citation': 'Example source', 'source_year': 2026,
+                'region_codes': [1, 2, 3]}
+    config = {'layers': {'regions': ISO_TIFF, 'other': ISO_TIFF},
+              'descriptions': {'regions': 'ISO'},
+              'attrs': {'regions': metadata}}
+    if scale_factor is not None:
+        config['scale_factors'] = {
+            'regions': {'scale_factor': scale_factor, 'dtype': 'int32'}}
+    config_file.write_text(json.dumps(config))
+    command = ['exclusions', '--excl_h5', str(h5_file),
+               'layers-to-h5', '--layers', str(config_file), '-ct']
+    if converter_flag:
+        command.append(converter_flag)
+    result = runner.invoke(main, command)
+    assert result.exit_code == 0, result.output
+    with Resource(h5_file) as h5:
+        for key, expected in metadata.items():
+            np.testing.assert_equal(h5.attrs['regions'][key], expected)
+        assert h5.attrs['regions']['description'] == 'ISO'
+        if scale_factor is not None:
+            assert h5.attrs['regions']['scale_factor'] == scale_factor
+        assert 'citation' not in h5.attrs['other']
+        assert 'citation' not in h5.global_attrs
+
+
 @pytest.mark.parametrize('include_lat_lon', [True, False])
 def test_extract_all_layers_to_geotiff(include_lat_lon):
     """Test extracting all layer data from HDF5 file. """
