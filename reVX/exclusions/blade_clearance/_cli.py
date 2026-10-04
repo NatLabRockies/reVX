@@ -22,7 +22,8 @@ def compute_blade_clearance_exclusions(excl_fpath, out_dir,
                                        rotor_diameter=None,
                                        generic_minimum_clearance=None,
                                        replace=False, hsds=False,
-                                       out_layers=None, max_workers=None):
+                                       out_layers=None, max_workers=None,
+                                       attrs=None):
     """Exclude regions where system blade clearance does not meet requirements.
 
     Blade clearance restrictions can be computed from a generic minimum
@@ -95,6 +96,10 @@ def compute_blade_clearance_exclusions(excl_fpath, out_dir,
         is > 1, the computation runs in parallel with that many workers.
         If ``None``, the computation runs in parallel on all available
         cores. By default, ``None``.
+    attrs : dict, optional
+        Mapping of output HDF5 layer names to attribute dictionaries.
+        Layers omitted from the mapping receive no additional attributes.
+        By default, ``None``.
 
     Returns
     -------
@@ -127,7 +132,7 @@ def compute_blade_clearance_exclusions(excl_fpath, out_dir,
     out_fn = os.path.join(out_dir, fn)
     BladeClearanceExclusions.run(excl_fpath, None, out_fn, regulations,
                                  max_workers=max_workers, replace=replace,
-                                 hsds=hsds, out_layers=out_layers)
+                                 hsds=hsds, out_layers=out_layers, attrs=attrs)
 
     logger.info('Blade clearance restrictions computed and written to %r',
                 out_fn)
