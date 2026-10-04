@@ -30,6 +30,8 @@ Welcome to the `reV <https://natlabrockies.github.io/reV>`_ eXchange (reVX) tool
 reVX command line tools
 =======================
 
+.. inclusion-command-line-tools
+
 - `reVX <https://natlabrockies.github.io/reVX/_cli/reVX.html#revx>`_
 - `reV-rpm <https://natlabrockies.github.io/reVX/_cli/reV-rpm.html#rev-rpm>`_
 - `reV-plexos <https://natlabrockies.github.io/reVX/_cli/reV-plexos.html>`_
@@ -43,6 +45,8 @@ reVX command line tools
 
 Installing reVX
 ===============
+
+.. inclusion-installation
 
 NOTE: The installation instruction below assume that you have python installed
 on your machine and are using `conda <https://docs.conda.io/en/latest/index.html>`_
