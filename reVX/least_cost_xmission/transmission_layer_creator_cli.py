@@ -78,7 +78,8 @@ def from_config(config_fpath: str):  # noqa: C901
     for lc in config.layers or []:
         builder.build(lc.layer_name, lc.build,
                       values_are_costs_per_mile=lc.values_are_costs_per_mile,
-                      write_to_h5=lc.include_in_h5, description=lc.description)
+                      write_to_h5=lc.include_in_h5, description=lc.description,
+                      attrs=lc.attrs)
 
     if config.dry_costs is not None:
         dc = config.dry_costs
@@ -97,7 +98,8 @@ def from_config(config_fpath: str):  # noqa: C901
         cost_configs = None if not dc.cost_configs else str(dc.cost_configs)
         dcc.build(str(dc.iso_region_tiff), str(dc.nlcd_tiff),
                   str(dc.slope_tiff), cost_configs=cost_configs,
-                  default_mults=dc.default_mults, extra_tiffs=dc.extra_tiffs)
+                  default_mults=dc.default_mults, extra_tiffs=dc.extra_tiffs,
+                  attrs=dc.attrs)
 
     if config.merge_friction_and_barriers is not None:
         _combine_friction_and_barriers(config.merge_friction_and_barriers,
@@ -199,7 +201,7 @@ def _load_masks(config, h5_io_handler):
 
 def _combine_friction_and_barriers(config: MergeFrictionBarriers,
                                    io_handler: LayeredTransmissionH5,
-                                   output_tiff_dir=None):
+                                   output_tiff_dir=None, attrs=None):
     """
     Combine friction and barriers and save to H5 and optionally GeoTIFF
 
@@ -212,6 +214,8 @@ def _combine_friction_and_barriers(config: MergeFrictionBarriers,
     output_tiff_dir : path-like, optional
         Directory where combined barriers should be saved as GeoTIFF. If
         ``None``, combined layers are not saved. By default, ``None``.
+    attrs : dict, optional
+        Additional H5 dataset attributes. If ``None``, use ``config.attrs``.
     """
     output_tiff_dir = Path(output_tiff_dir)
     friction_tiff = output_tiff_dir / f"{config.friction_layer}.tif"
@@ -239,8 +243,10 @@ def _combine_friction_and_barriers(config: MergeFrictionBarriers,
         logger.debug('Saving combined barriers to %s', out_fp)
         io_handler.save_data_using_h5_profile(combined, out_fp)
 
+    attrs = config.attrs if attrs is None else attrs
     logger.info('Writing combined barriers to H5')
-    io_handler.write_layer_to_h5(combined, config.output_layer_name)
+    io_handler.write_layer_to_h5(combined, config.output_layer_name,
+                                 attrs=attrs)
 
 
 if __name__ == '__main__':

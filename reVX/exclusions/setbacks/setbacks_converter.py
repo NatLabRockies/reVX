@@ -56,7 +56,7 @@ class SetbacksConverter(LayeredH5):
     def write_setbacks_to_h5(self, setbacks, layer_name, check_tiff=True,
                              is_inclusion_layer=False, transform_atol=0.01,
                              description=None, scale_factor=None,
-                             dtype='uint8', replace=True):
+                             dtype='uint8', replace=True, attrs=None):
         """
         Transfer geotiff setbacks to h5 confirming they match existing layers
 
@@ -91,6 +91,8 @@ class SetbacksConverter(LayeredH5):
         replace : bool, optional
             Option to replace existing layer (if any).
             By default, ``True``.
+        attrs : dict, optional
+            Additional HDF5 dataset attributes. By default, ``None``.
         """
         if os.path.isdir(setbacks):
             setbacks = [os.path.join(setbacks, file)
@@ -118,18 +120,18 @@ class SetbacksConverter(LayeredH5):
         setbacks = parse_setbacks(setbacks, chunks=self._chunks,
                                   is_inclusion_layer=is_inclusion_layer)
         if scale_factor is not None:
-            attrs = {'scale_factor': scale_factor}
+            scaling_attrs = {'scale_factor': scale_factor}
             setbacks = Outputs._check_data_dtype(layer_name, setbacks, dtype,
-                                                 attrs=attrs)
+                                                 attrs=scaling_attrs)
 
         logger.debug('Writing final setback layer to %s', self.h5_file)
         self.write_layer_to_h5(setbacks, layer_name, profile=profile,
                                description=description,
-                               scale_factor=scale_factor)
+                               scale_factor=scale_factor, attrs=attrs)
 
     def layers_to_h5(self, layers, replace=True, check_tiff=True,
                      are_inclusion_layers=False, transform_atol=0.01,
-                     descriptions=None, scale_factors=None):
+                     descriptions=None, scale_factors=None, attrs=None):
         """
         Create exclusions .h5 file, or load layers into existing exclusion .h5
         file from provided setbacks
@@ -160,6 +162,9 @@ class SetbacksConverter(LayeredH5):
         scale_factor : dict, optional
             Scale factors and dtypes to use when scaling given layers,
             by default None
+        attrs : dict, optional
+            Mapping of layer names to dictionaries of HDF5 dataset
+            attributes. By default, ``None``.
         """
         if isinstance(layers, list):
             layers = {os.path.basename(lyr).split('.')[0]: lyr
@@ -170,6 +175,8 @@ class SetbacksConverter(LayeredH5):
 
         if descriptions is None:
             descriptions = {}
+
+        attrs = attrs or {}
 
         logger.info('Moving layers to %s', self.h5_file)
         for layer_name, setbacks in layers.items():
@@ -189,4 +196,5 @@ class SetbacksConverter(LayeredH5):
                                       transform_atol=transform_atol,
                                       description=description,
                                       scale_factor=scale_factor,
-                                      dtype=dtype, replace=replace)
+                                      dtype=dtype, replace=replace,
+                                      attrs=attrs.get(layer_name))

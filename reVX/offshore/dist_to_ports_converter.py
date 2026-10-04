@@ -59,7 +59,7 @@ class DistToPortsConverter(LayeredH5):
     def write_dist_to_ports_to_h5(self, dist_to_ports, layer_name,
                                   check_tiff=True, transform_atol=0.01,
                                   description=None, scale_factor=None,
-                                  dtype='float32'):
+                                  dtype='float32', attrs=None):
         """
         Transfer geotiff exclusions to h5 confirming they match existing layers
 
@@ -84,6 +84,8 @@ class DistToPortsConverter(LayeredH5):
         dtype : str, optional
             Dtype to save geotiff data as in the .h5 file. Only used when
             'scale_factor' is not None, by default 'float32'
+        attrs : dict, optional
+            Additional HDF5 dataset attributes. By default, ``None``.
         """
         if os.path.isdir(dist_to_ports):
             dist_to_ports = [os.path.join(dist_to_ports, file)
@@ -118,16 +120,16 @@ class DistToPortsConverter(LayeredH5):
                 dist_to_ports = np.minimum(dist_to_ports, exc[layer_name])
 
         if scale_factor is not None:
-            attrs = {'scale_factor': scale_factor}
+            scaling_attrs = {'scale_factor': scale_factor}
             dist_to_ports = Outputs._check_data_dtype(
-                layer_name, dist_to_ports, dtype, attrs=attrs)
+                layer_name, dist_to_ports, dtype, attrs=scaling_attrs)
 
         self.write_layer_to_h5(dist_to_ports, layer_name, profile=profile,
                                description=description,
-                               scale_factor=scale_factor)
+                               scale_factor=scale_factor, attrs=attrs)
 
     def layers_to_h5(self, layers, check_tiff=True, transform_atol=0.01,
-                     descriptions=None, scale_factors=None):
+                     descriptions=None, scale_factors=None, attrs=None):
         """
         Create exclusions .h5 file, or load layers into existing exclusion .h5
         file from provided dist_to_ports
@@ -150,12 +152,17 @@ class DistToPortsConverter(LayeredH5):
         scale_factor : dict, optional
             Scale factors and dtypes to use when scaling given layers,
             by default None
+        attrs : dict, optional
+            Mapping of layer names to dictionaries of HDF5 dataset
+            attributes. By default, ``None``.
         """
         if scale_factors is None:
             scale_factors = {}
 
         if descriptions is None:
             descriptions = {}
+
+        attrs = attrs or {}
 
         if isinstance(layers, list):
             layers = {os.path.basename(lyr).split('.')[0]: lyr
@@ -178,4 +185,5 @@ class DistToPortsConverter(LayeredH5):
                                            transform_atol=transform_atol,
                                            description=description,
                                            scale_factor=scale_factor,
-                                           dtype=dtype)
+                                           dtype=dtype,
+                                           attrs=attrs.get(layer_name))
