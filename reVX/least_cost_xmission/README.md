@@ -284,7 +284,7 @@ $ least-cost-xmission from-config --config ./config_conus.json
 # Reinforced Transmission
 In this methodology, total interconnection costs are comprised of two components: *point-of-interconnection costs* and *network upgrade costs*. Point-of-interconnection costs include the cost of the spur line between the RE facility (SC point) and the connected substation, as well as the cost to upgrade the substation itself. Network upgrade costs are represented by costs to increase the transmission capacity between the connected substation and the main network node in a given reinforcement region. Network upgrade costs are assumed to be 50% of the cost of a new greenfield transmission of the same voltage as the existing transmission lines along the same path. The 50% heuristic represents cost for reconductoring or increasing the number of circuits along those lines. `reVX` (and any derivative products, e.g. `reV`) do not include estimates for longer-distance transmission that may be needed to export the renewable energy between one reinforcement region and another.
 
-### Key assumptions under this approach:
+## Key assumptions under this approach:
 
 - Area of interest (e.g. CONUS) is broken up into "Reinforcement Regions" (i.e. Balancing Areas, States, Counties, etc.)
 - Each reinforcement region has one or more "Network Node" (typically a city or highly populated area)
