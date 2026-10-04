@@ -393,20 +393,26 @@ class Geotiff:
         self._src.close()
 
     @staticmethod
-    def write(out_fp, profile, values, dtype=None):
+    def write(out_fp, profile, values, dtype=None, compress='lzw'):
         """Write values to GeoTIFF file with given profile.
 
         Parameters
         ----------
         out_fp : str
-            Path to GeoTIFF output file to save data to.
+            Path to GeoTIFF output file to save data to. Partial output
+            is removed if writing fails after the destination is opened.
         profile : dict
-            GeoTIFF profile (attributes).
+            GeoTIFF profile (attributes). Incompatible nodata values are
+            replaced with the output dtype's maximum value.
         values : ndarray
             GeoTIFF data to save.
         dtype : str, optional
             Type of data being stored. If ``None``, the data dtype is
             inferred from the `values` input itself.
+        compress : str, optional
+            Rasterio compression codec, overriding any compression in
+            `profile`. Defaults to lossless ``'lzw'`` compression. Set
+            this argument to ``None`` to write without compression.
         """
         out_dir = os.path.dirname(out_fp)
         if out_dir and not os.path.exists(out_dir):
@@ -418,15 +424,49 @@ class Geotiff:
 
         dtype = dtype or values.dtype.name
         profile['dtype'] = dtype
+        profile['compress'] = compress
 
-        if "nodata" not in profile:
-            if np.issubdtype(dtype, np.integer):
-                dtype_max = np.iinfo(dtype).max
-            else:
-                dtype_max = np.finfo(dtype).max
-            profile['nodata'] = dtype_max
-
-        with rasterio.open(out_fp, 'w', **profile) as f:
-            f.write(values)
+        _validate_nodata(profile, dtype)
+        _safe_write(out_fp, values, profile)
 
         logger.debug('%s created', out_fp)
+
+
+def _validate_nodata(profile, dtype):
+    """Validate and adjust the 'nodata' value in the profile"""
+    if "nodata" not in profile:
+        return
+
+    nodata = profile.get('nodata')
+    if nodata is None:
+        return
+
+    if rasterio.dtypes.in_dtype_range(nodata, dtype):
+        return
+
+    if np.issubdtype(dtype, np.integer):
+        dtype_max = np.iinfo(dtype).max
+    else:
+        dtype_max = np.finfo(dtype).max
+
+    profile['nodata'] = dtype_max
+
+
+def _safe_write(out_fp, values, profile):
+    """Write GeoTIFF safely, removing partial files on failure."""
+    existed = os.path.exists(out_fp)
+    opened = False
+    try:
+        with rasterio.open(out_fp, 'w', **profile) as f:
+            opened = True
+            f.write(values)
+    except Exception:
+        if opened or not existed:
+            try:
+                os.remove(out_fp)
+            except FileNotFoundError:
+                pass
+            except OSError:
+                logger.warning('Could not remove partial GeoTIFF %s',
+                               out_fp, exc_info=True)
+        raise
