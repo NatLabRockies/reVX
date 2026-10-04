@@ -118,9 +118,9 @@ class DistToPortsConverter(LayeredH5):
                 dist_to_ports = np.minimum(dist_to_ports, exc[layer_name])
 
         if scale_factor is not None:
-            attrs = {'scale_factor': scale_factor}
+            scaling_attrs = {'scale_factor': scale_factor}
             dist_to_ports = Outputs._check_data_dtype(
-                layer_name, dist_to_ports, dtype, attrs=attrs)
+                layer_name, dist_to_ports, dtype, attrs=scaling_attrs)
 
         self.write_layer_to_h5(dist_to_ports, layer_name, profile=profile,
                                description=description,
