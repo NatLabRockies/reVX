@@ -126,6 +126,37 @@ def test_geotiff_profile():
         assert f.profile["width"] == profile["width"]
 
 
+@pytest.mark.parametrize('crs,epsg', [
+    ('EPSG:4326', 4326),
+    ('+proj=lcc +lat_1=33 +lat_2=45 +lat_0=39 +lon_0=-97 '
+     '+x_0=1234 +y_0=5678 +datum=WGS84 +units=m +no_defs', None),
+])
+@pytest.mark.filterwarnings(
+    'error:You will likely lose important projection information:UserWarning')
+def test_geotiff_profile_crs_round_trip(tmp_path, output_profile, crs, epsg):
+    """Preserve standard and custom CRSs as WKT through reading and writing."""
+    source_crs = rasterio.crs.CRS.from_string(crs)
+    assert source_crs.to_epsg() == epsg
+    output_profile['crs'] = source_crs
+    values = np.arange(4, dtype='float32').reshape(2, 2)
+    source_path = tmp_path / 'source.tif'
+    output_path = tmp_path / 'output.tif'
+    Geotiff.write(source_path, output_profile, values)
+
+    with Geotiff(source_path) as geotiff:
+        profile = geotiff.profile.copy()
+        assert isinstance(profile['crs'], str)
+        assert rasterio.crs.CRS.from_wkt(profile['crs']) == source_crs
+        transformer = Transformer.from_crs(profile['crs'], 'EPSG:4326',
+                                           always_xy=True)
+        assert np.isfinite(transformer.transform(-71, 42)).all()
+        Geotiff.write(output_path, profile, geotiff.values)
+
+    with rasterio.open(output_path) as source:
+        assert source.crs == source_crs
+        np.testing.assert_array_equal(source.read(1), values)
+
+
 @pytest.mark.parametrize("use_prop", [True, False])
 def test_geotiff_lat_lon(use_prop):
     """Test Geotiff Lat/Lon"""
