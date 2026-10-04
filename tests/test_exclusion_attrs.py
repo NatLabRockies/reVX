@@ -70,7 +70,7 @@ def test_flicker_cli_function_attrs(tmp_path, monkeypatch):
     """Flicker's single-layer metadata is mapped for the shared run API."""
     calls = []
 
-    def capture_run(*args, **kwargs):
+    def capture_run(*__, **kwargs):
         calls.append(kwargs)
 
     monkeypatch.setattr(TurbineFlicker, "run", capture_run)
