@@ -3,7 +3,6 @@ Command Line Interfaces (CLIs)
 
 .. toctree::
 
-   dry-cost-creator
    least-cost-paths
    least-cost-xmission
    mean-wind-dirs
