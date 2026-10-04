@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.config.least_cost_xmission &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.config.least_cost_xmission &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for reVX.config.least_cost_xmission</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">reVX Least Cost Xmission Configurations</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -654,34 +671,34 @@
 <div class="viewcode-block" id="LeastCostXmissionConfig">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.least_cost_xmission.LeastCostXmissionConfig.html#reVX.config.least_cost_xmission.LeastCostXmissionConfig">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LeastCostXmissionConfig</span><span class="p">(</span><span class="n">AnalysisConfig</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Config framework for Least Cost Xmission&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Config framework for Least Cost Xmission"""</span>
 
-    <span class="n">NAME</span> <span class="o">=</span> <span class="s1">&#39;LeastCostXmission&#39;</span>
-    <span class="n">REQUIREMENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;cost_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;features_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;capacity_class&#39;</span><span class="p">,</span>
-                    <span class="s1">&#39;cost_layers&#39;</span><span class="p">)</span>
+    <span class="n">NAME</span> <span class="o">=</span> <span class="s1">'LeastCostXmission'</span>
+    <span class="n">REQUIREMENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'cost_fpath'</span><span class="p">,</span> <span class="s1">'features_fpath'</span><span class="p">,</span> <span class="s1">'capacity_class'</span><span class="p">,</span>
+                    <span class="s1">'cost_layers'</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        config : str | dict</span>
 <span class="sd">            Path to config .json or pre-extracted config input dictionary.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_sc_point_gids</span> <span class="o">=</span> <span class="kc">None</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the job name, defaults to the output directory name.</span>
+<span class="w">        </span><span class="sd">"""Get the job name, defaults to the output directory name.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        _name : str</span>
 <span class="sd">            Job name.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">default_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dirout</span><span class="p">))</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">default_name</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="n">default_name</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
 
     <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
@@ -690,206 +707,206 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">radius</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Optional radius to use for clipping</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;radius&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'radius'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">expand_radius</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Optional flag to expand radius until at least one transmission</span>
 <span class="sd">        feature is available for connection.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;expand_radius&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'expand_radius'</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">mp_delay</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Delay in seconds between starting multi-process workers.</span>
 <span class="sd">        Useful for reducing memory spike at working startup.</span>
 <span class="sd">        By default, ``3.0``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mp_delay&#39;</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'mp_delay'</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">simplify_geo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Optional float to use to simplify path geometries before saving to</span>
 <span class="sd">        geopackage</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;simplify_geo&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'simplify_geo'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">save_paths</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Save paths as GPKG if true</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;save_paths&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'save_paths'</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cost_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        .h5 file with cost and required layers</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;cost_fpath&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'cost_fpath'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">features_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tranmission feature .gpkg</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;features_fpath&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'features_fpath'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">regions_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Reinforcement regions .gpkg</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;regions_fpath&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'regions_fpath'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">region_identifier_column</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Name of column containing unique region identifier</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">rid_col</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;region_identifier_column&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">rid_col</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"region_identifier_column"</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">regions_fpath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">rid_col</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;`region_identifier_column` input cannot be `None` for &quot;</span>
-                   <span class="s2">&quot;reinforcement path computation.&quot;</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"`region_identifier_column` input cannot be `None` for "</span>
+                   <span class="s2">"reinforcement path computation."</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">ConfigError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">rid_col</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">capacity_class</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Capacity class, either {capacity}MW or capacity value in MW</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;capacity_class&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'capacity_class'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">resolution</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        SC point resolution</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;resolution&#39;</span><span class="p">,</span> <span class="n">RESOLUTION</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'resolution'</span><span class="p">,</span> <span class="n">RESOLUTION</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">xmission_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Xmission config input</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;xmission_config&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'xmission_config'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">length_mult_kind</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Type of length multiplier calcualtion.</span>
 
-<span class="sd">        &quot;step&quot; computes length multipliers using a step function, while</span>
-<span class="sd">        &quot;linear&quot; computes the length multiplier using a linear</span>
+<span class="sd">        "step" computes length multipliers using a step function, while</span>
+<span class="sd">        "linear" computes the length multiplier using a linear</span>
 <span class="sd">        interpolation between 0 amd 10 mile spur-line lengths.</span>
-<span class="sd">        By default, ``&quot;linear&quot;``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;length_mult_kind&#39;</span><span class="p">,</span> <span class="s2">&quot;linear&quot;</span><span class="p">)</span>
+<span class="sd">        By default, ``"linear"``.</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'length_mult_kind'</span><span class="p">,</span> <span class="s2">"linear"</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">min_line_length</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Minimum Tie-line length config input</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;min_line_length&#39;</span><span class="p">,</span> <span class="n">MINIMUM_SPUR_DIST_KM</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'min_line_length'</span><span class="p">,</span> <span class="n">MINIMUM_SPUR_DIST_KM</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">nn_sinks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Number of nearest neighbor sinks to use for clipping radius</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;nn_sinks&#39;</span><span class="p">,</span> <span class="n">NUM_NN_SINKS</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'nn_sinks'</span><span class="p">,</span> <span class="n">NUM_NN_SINKS</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">clipping_buffer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Buffer to add to clipping radius</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;clipping_buffer&#39;</span><span class="p">,</span> <span class="n">CLIP_RASTER_BUFFER</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'clipping_buffer'</span><span class="p">,</span> <span class="n">CLIP_RASTER_BUFFER</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">tb_layer_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Name of transmission barrier layer in `cost_fpath` file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tb_layer_name&#39;</span><span class="p">,</span> <span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tb_layer_name'</span><span class="p">,</span> <span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">barrier_mult</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Transmission barrier multiplier to use for MCP costs</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;barrier_mult&#39;</span><span class="p">,</span> <span class="n">BARRIERS_MULT</span><span class="p">))</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'barrier_mult'</span><span class="p">,</span> <span class="n">BARRIERS_MULT</span><span class="p">))</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">iso_regions_layer_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Name of ISO regions layer in `cost_fpath` file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;iso_regions_layer_name&#39;</span><span class="p">,</span> <span class="n">ISO_H5_LAYER_NAME</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'iso_regions_layer_name'</span><span class="p">,</span> <span class="n">ISO_H5_LAYER_NAME</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cost_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        List of H5 layers that are summed to determine total costs</span>
 <span class="sd">        raster used for routing. Costs and distances for each individual</span>
 <span class="sd">        layer are also reported (e.g. wet and dry costs).</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;cost_layers&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'cost_layers'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">length_invariant_cost_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Layers to be added to the cost raster whose costs do not scale</span>
 <span class="sd">        with distance traversed (i.e. fixed one-time costs for crossing</span>
 <span class="sd">        these cells).</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="c1"># self.get(&#39;length_invariant_cost_layers&#39;, []) does not work!!</span>
-        <span class="k">if</span> <span class="s1">&#39;length_invariant_cost_layers&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
+<span class="sd">        """</span>
+        <span class="c1"># self.get('length_invariant_cost_layers', []) does not work!!</span>
+        <span class="k">if</span> <span class="s1">'length_invariant_cost_layers'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">[]</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;length_invariant_cost_layers&#39;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'length_invariant_cost_layers'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">tracked_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Dictionary mapping layer names to strings, where the strings are</span>
 <span class="sd">        numpy methods that should be applied to the layer along the LCP.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tracked_layers&quot;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"tracked_layers"</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cell_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Side length of each cell, in meters.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cell_size&#39;</span><span class="p">,</span> <span class="n">CELL_SIZE</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'cell_size'</span><span class="p">,</span> <span class="n">CELL_SIZE</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">sc_point_gids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        List of sc_point_gids to compute Least Cost Xmission for</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sc_point_gids</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">sc_point_gids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;sc_point_gids&#39;</span><span class="p">)</span>
+            <span class="n">sc_point_gids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'sc_point_gids'</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">sc_point_gids</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">sce</span> <span class="o">=</span> <span class="n">SupplyCurveExtent</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cost_fpath</span><span class="p">,</span>
                                         <span class="n">resolution</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">resolution</span><span class="p">)</span>
                 <span class="n">sc_point_gids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">sce</span><span class="o">.</span><span class="n">points</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
             <span class="k">elif</span> <span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">sc_point_gids</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
-                  <span class="ow">and</span> <span class="n">sc_point_gids</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.csv&quot;</span><span class="p">)):</span>
+                  <span class="ow">and</span> <span class="n">sc_point_gids</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".csv"</span><span class="p">)):</span>
                 <span class="n">points</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">sc_point_gids</span><span class="p">)</span>
                 <span class="n">sc_point_gids</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">points</span><span class="o">.</span><span class="n">sc_point_gid</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">sc_point_gids</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;sc_point_gids must be a list or path to a &#39;</span>
-                                 <span class="s1">&#39;csv file, got a </span><span class="si">{}</span><span class="s1"> (</span><span class="si">{}</span><span class="s1">)&#39;</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'sc_point_gids must be a list or path to a '</span>
+                                 <span class="s1">'csv file, got a </span><span class="si">{}</span><span class="s1"> (</span><span class="si">{}</span><span class="s1">)'</span>
                                  <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">sc_point_gids</span><span class="p">),</span> <span class="n">sc_point_gids</span><span class="p">))</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_sc_point_gids</span> <span class="o">=</span> <span class="n">sc_point_gids</span>
 
@@ -900,23 +917,23 @@
 <div class="viewcode-block" id="LeastCostPathsConfig">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.least_cost_xmission.LeastCostPathsConfig.html#reVX.config.least_cost_xmission.LeastCostPathsConfig">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LeastCostPathsConfig</span><span class="p">(</span><span class="n">AnalysisConfig</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Config framework for Least Cost Paths&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Config framework for Least Cost Paths"""</span>
 
-    <span class="n">NAME</span> <span class="o">=</span> <span class="s1">&#39;LeastCostPaths&#39;</span>
-    <span class="n">REQUIREMENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;cost_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;features_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;cost_layers&#39;</span><span class="p">)</span>
+    <span class="n">NAME</span> <span class="o">=</span> <span class="s1">'LeastCostPaths'</span>
+    <span class="n">REQUIREMENTS</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'cost_fpath'</span><span class="p">,</span> <span class="s1">'features_fpath'</span><span class="p">,</span> <span class="s1">'cost_layers'</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        config : str | dict</span>
 <span class="sd">            Path to config .json or pre-extracted config input dictionary.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_validate_reinforcement_run</span><span class="p">()</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_validate_reinforcement_run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate all inputs given for reinforcement run&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Validate all inputs given for reinforcement run"""</span>
         <span class="n">reinforcement_run</span> <span class="o">=</span> <span class="nb">any</span><span class="p">(</span><span class="n">val</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">val</span> <span class="ow">in</span>
                                 <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">transmission_lines_fpath</span><span class="p">,</span>
                                  <span class="bp">self</span><span class="o">.</span><span class="n">network_nodes_fpath</span><span class="p">,</span>
@@ -926,24 +943,24 @@
                               <span class="bp">self</span><span class="o">.</span><span class="n">network_nodes_fpath</span><span class="p">,</span>
                               <span class="bp">self</span><span class="o">.</span><span class="n">capacity_class</span><span class="p">])</span>
         <span class="k">if</span> <span class="n">reinforcement_run</span> <span class="ow">and</span> <span class="n">missing_inputs</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Must specify all of the following arguments for &quot;</span>
-                   <span class="s2">&quot;reinforcement computations: &#39;transmission_lines_fpath&#39;, &quot;</span>
-                   <span class="s2">&quot;&#39;network_nodes_fpath&#39;, and &#39;capacity_class&#39;!&quot;</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"Must specify all of the following arguments for "</span>
+                   <span class="s2">"reinforcement computations: 'transmission_lines_fpath', "</span>
+                   <span class="s2">"'network_nodes_fpath', and 'capacity_class'!"</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the job name, defaults to the output directory name.</span>
+<span class="w">        </span><span class="sd">"""Get the job name, defaults to the output directory name.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        _name : str</span>
 <span class="sd">            Job name.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">default_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dirout</span><span class="p">))</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="n">default_name</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'name'</span><span class="p">,</span> <span class="n">default_name</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
 
     <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
@@ -952,142 +969,142 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cost_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        .h5 file with cost and required layers</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;cost_fpath&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'cost_fpath'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">features_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tranmission feature .gpkg</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;features_fpath&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'features_fpath'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">network_nodes_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Network nodes config input</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;network_nodes_fpath&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'network_nodes_fpath'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">transmission_lines_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Transmission line features  config input</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;transmission_lines_fpath&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'transmission_lines_fpath'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">capacity_class</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Capacity class of the &#39;base&#39; greenfield costs layer. Costs will</span>
+<span class="w">        </span><span class="sd">"""</span>
+<span class="sd">        Capacity class of the 'base' greenfield costs layer. Costs will</span>
 <span class="sd">        be scaled by the capacity corresponding to this class to report</span>
 <span class="sd">        reinforcement costs as $/MW. Only used for reinforcement path</span>
 <span class="sd">        computations.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;capacity_class&quot;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"capacity_class"</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cost_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        List of H5 layers that are summed to determine total costs</span>
 <span class="sd">        raster used for routing.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;cost_layers&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'cost_layers'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">length_invariant_cost_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Layers to be added to the cost raster whose costs do not scale</span>
 <span class="sd">        with distance traversed (i.e. fixed one-time costs for crossing</span>
 <span class="sd">        these cells).</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="c1"># self.get(&#39;length_invariant_cost_layers&#39;, []) does not work!!</span>
-        <span class="k">if</span> <span class="s1">&#39;length_invariant_cost_layers&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
+<span class="sd">        """</span>
+        <span class="c1"># self.get('length_invariant_cost_layers', []) does not work!!</span>
+        <span class="k">if</span> <span class="s1">'length_invariant_cost_layers'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">:</span>
             <span class="k">return</span> <span class="p">[]</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;length_invariant_cost_layers&#39;</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'length_invariant_cost_layers'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">tracked_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Dictionary mapping layer names to strings, where the strings are</span>
 <span class="sd">        numpy methods that should be applied to the layer along the LCP.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;tracked_layers&quot;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"tracked_layers"</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cell_size</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Side length of each cell, in meters.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cell_size&#39;</span><span class="p">,</span> <span class="n">CELL_SIZE</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'cell_size'</span><span class="p">,</span> <span class="n">CELL_SIZE</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">xmission_config</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Xmission config input</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;xmission_config&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'xmission_config'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">tb_layer_name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Name of transmission barrier layer in `cost_fpath` file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;tb_layer_name&#39;</span><span class="p">,</span> <span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'tb_layer_name'</span><span class="p">,</span> <span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">clip_buffer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Number of array elements to buffer clip area by.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;clip_buffer&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'clip_buffer'</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">barrier_mult</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Transmission barrier multiplier to use for MCP costs</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;barrier_mult&#39;</span><span class="p">,</span> <span class="n">BARRIERS_MULT</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'barrier_mult'</span><span class="p">,</span> <span class="n">BARRIERS_MULT</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">is_reinforcement_run</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Boolean flag indicating wether this run is for reinforcement</span>
 <span class="sd">        path computation</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">network_nodes_fpath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
                 <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">transmission_lines_fpath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">region_identifier_column</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Name of column containing unique region identifier</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">rid_col</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;region_identifier_column&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">rid_col</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"region_identifier_column"</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_reinforcement_run</span> <span class="ow">and</span> <span class="n">rid_col</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;`region_identifier_column` input cannot be `None` for &quot;</span>
-                   <span class="s2">&quot;reinforcement path computation.&quot;</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"`region_identifier_column` input cannot be `None` for "</span>
+                   <span class="s2">"reinforcement path computation."</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">ConfigError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">rid_col</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">ss_id_col</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Name of column containing unique identifier for each substation.</span>
 <span class="sd">        This column will be used to compute minimum reinforcement cost</span>
-<span class="sd">        per substation. By default, ``&quot;poi_gid&quot;``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;ss_id_col&quot;</span><span class="p">,</span> <span class="s2">&quot;poi_gid&quot;</span><span class="p">)</span>
+<span class="sd">        per substation. By default, ``"poi_gid"``.</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"ss_id_col"</span><span class="p">,</span> <span class="s2">"poi_gid"</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">save_paths</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Boolean flag to save the least cost paths along with the costs and</span>
 <span class="sd">        lengths</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;save_paths&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span></div>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'save_paths'</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span></div>
 
 </pre></div>
 

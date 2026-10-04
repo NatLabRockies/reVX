@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.layers.dry_cost_creator &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.layers.dry_cost_creator &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for reVX.least_cost_xmission.layers.dry_cost_creator</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Module to build and save dry (land) cost raster layers</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 
@@ -657,25 +674,25 @@
 
 
 <span class="n">NLCD_LAND_USE_CLASSES</span><span class="p">:</span> <span class="n">LandUseClasses</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;cropland&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">80</span><span class="p">,</span> <span class="mi">81</span><span class="p">],</span>
-    <span class="s1">&#39;forest&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">41</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">43</span><span class="p">],</span>
-    <span class="s1">&#39;wetland&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">],</span>
-    <span class="s1">&#39;suburban&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">],</span>
-    <span class="s1">&#39;urban&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">24</span><span class="p">],</span>
+    <span class="s1">'cropland'</span><span class="p">:</span> <span class="p">[</span><span class="mi">80</span><span class="p">,</span> <span class="mi">81</span><span class="p">],</span>
+    <span class="s1">'forest'</span><span class="p">:</span> <span class="p">[</span><span class="mi">41</span><span class="p">,</span> <span class="mi">42</span><span class="p">,</span> <span class="mi">43</span><span class="p">],</span>
+    <span class="s1">'wetland'</span><span class="p">:</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span> <span class="mi">95</span><span class="p">],</span>
+    <span class="s1">'suburban'</span><span class="p">:</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">23</span><span class="p">],</span>
+    <span class="s1">'urban'</span><span class="p">:</span> <span class="p">[</span><span class="mi">24</span><span class="p">],</span>
 <span class="p">}</span>
 
 
 <div class="viewcode-block" id="DryCostCreator">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.layers.dry_cost_creator.DryCostCreator.html#reVX.least_cost_xmission.layers.dry_cost_creator.DryCostCreator">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">DryCostCreator</span><span class="p">(</span><span class="n">BaseLayerCreator</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Class to create and save dry transmission cost layers</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_handler</span><span class="p">:</span> <span class="n">LayeredTransmissionH5</span><span class="p">,</span>
-                 <span class="n">mask</span><span class="p">,</span> <span class="n">output_tiff_dir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span>
+                 <span class="n">mask</span><span class="p">,</span> <span class="n">output_tiff_dir</span><span class="o">=</span><span class="s2">"."</span><span class="p">,</span>
                  <span class="n">dtype</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">DTypeLike</span> <span class="o">=</span> <span class="n">DEFAULT_DTYPE</span><span class="p">,</span>
                  <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        io_handler : :class:`LayeredTransmissionH5`</span>
@@ -684,13 +701,13 @@
 <span class="sd">            Array representing mask for layer values.</span>
 <span class="sd">        output_tiff_dir : path-like, optional</span>
 <span class="sd">            Directory where cost layers should be saved as GeoTIFF.</span>
-<span class="sd">            By default, ``&quot;.&quot;``.</span>
+<span class="sd">            By default, ``"."``.</span>
 <span class="sd">        dtype : np.dtype, optional</span>
 <span class="sd">            Data type for final dataset. By default, ``float32``.</span>
 <span class="sd">        cell_size : int, optional</span>
 <span class="sd">            Side length of each cell, in meters. Cells are assumed to be</span>
 <span class="sd">            square. By default, :obj:`CELL_SIZE`.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">io_handler</span><span class="o">=</span><span class="n">io_handler</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">,</span>
                          <span class="n">output_tiff_dir</span><span class="o">=</span><span class="n">output_tiff_dir</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
                          <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
@@ -701,8 +718,8 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">iso_region_tiff</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">nlcd_tiff</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">slope_tiff</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
               <span class="n">cost_configs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
               <span class="n">default_mults</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">IsoMultipliers</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-              <span class="n">extra_tiffs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+              <span class="n">extra_tiffs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Build cost rasters using base line costs and multipliers. Save to</span>
 <span class="sd">        GeoTIFF.</span>
 
@@ -719,15 +736,15 @@
 <span class="sd">            Xmission cost configuration values. Valid configuration keys</span>
 <span class="sd">            are:</span>
 
-<span class="sd">                - &quot;base_line_costs&quot;</span>
-<span class="sd">                - &quot;iso_lookup&quot;</span>
-<span class="sd">                - &quot;iso_multipliers&quot;</span>
-<span class="sd">                - &quot;land_use_classes&quot;</span>
-<span class="sd">                - &quot;new_substation_costs&quot;</span>
-<span class="sd">                - &quot;power_classes&quot;</span>
-<span class="sd">                - &quot;power_to_voltage&quot;</span>
-<span class="sd">                - &quot;transformer_costs&quot;</span>
-<span class="sd">                - &quot;upgrade_substation_costs&quot;</span>
+<span class="sd">                - "base_line_costs"</span>
+<span class="sd">                - "iso_lookup"</span>
+<span class="sd">                - "iso_multipliers"</span>
+<span class="sd">                - "land_use_classes"</span>
+<span class="sd">                - "new_substation_costs"</span>
+<span class="sd">                - "power_classes"</span>
+<span class="sd">                - "power_to_voltage"</span>
+<span class="sd">                - "transformer_costs"</span>
+<span class="sd">                - "upgrade_substation_costs"</span>
 
 <span class="sd">            Each of these keys should point to a dictionary or a path to</span>
 <span class="sd">            a separate json file contianing a dictionary of</span>
@@ -739,27 +756,34 @@
 <span class="sd">            Optional list of extra GeoTIFFs to add to cost H5 file (e.g.</span>
 <span class="sd">            a transmission barrier file). By default, ``None``, which</span>
 <span class="sd">            does not add any extra layers.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        attrs : dict, optional</span>
+<span class="sd">            Mapping of H5 layer names to additional dataset attribute</span>
+<span class="sd">            dictionaries. Input and extra GeoTIFF names are filename</span>
+<span class="sd">            stems; generated cost names are ``tie_line_costs_&lt;capacity&gt;MW``.</span>
+<span class="sd">            Layers omitted from the mapping receive no extra attributes.</span>
+<span class="sd">            By default, ``None``.</span>
+<span class="sd">        """</span>
+        <span class="n">attrs</span> <span class="o">=</span> <span class="n">attrs</span> <span class="ow">or</span> <span class="p">{}</span>
         <span class="n">xc</span> <span class="o">=</span> <span class="n">XmissionConfig</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">cost_configs</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_iso_lookup</span> <span class="o">=</span> <span class="n">xc</span><span class="p">[</span><span class="s1">&#39;iso_lookup&#39;</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_iso_lookup</span> <span class="o">=</span> <span class="n">xc</span><span class="p">[</span><span class="s1">'iso_lookup'</span><span class="p">]</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Loading ISO region, slope and land use rasters&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Loading ISO region, slope and land use rasters'</span><span class="p">)</span>
         <span class="n">iso_layer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
             <span class="n">iso_region_tiff</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">slope_layer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
             <span class="n">slope_tiff</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
         <span class="n">nlcd_layer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
             <span class="n">nlcd_tiff</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Loading complete&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Loading complete'</span><span class="p">)</span>
 
-        <span class="n">lu_classes</span> <span class="o">=</span> <span class="n">xc</span><span class="p">[</span><span class="s1">&#39;land_use_classes&#39;</span><span class="p">]</span>
-        <span class="n">iso_mults</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">IsoMultipliers</span><span class="p">]</span> <span class="o">=</span> <span class="n">xc</span><span class="p">[</span><span class="s1">&#39;iso_multipliers&#39;</span><span class="p">]</span>
+        <span class="n">lu_classes</span> <span class="o">=</span> <span class="n">xc</span><span class="p">[</span><span class="s1">'land_use_classes'</span><span class="p">]</span>
+        <span class="n">iso_mults</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">IsoMultipliers</span><span class="p">]</span> <span class="o">=</span> <span class="n">xc</span><span class="p">[</span><span class="s1">'iso_multipliers'</span><span class="p">]</span>
         <span class="n">mults_arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_multipliers</span><span class="p">(</span><span class="n">iso_mults</span><span class="p">,</span> <span class="n">iso_layer</span><span class="p">,</span>
                                               <span class="n">slope_layer</span><span class="p">,</span> <span class="n">nlcd_layer</span><span class="p">,</span>
                                               <span class="n">land_use_classes</span><span class="o">=</span><span class="n">lu_classes</span><span class="p">,</span>
                                               <span class="n">default_mults</span><span class="o">=</span><span class="n">default_mults</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Saving multipliers array GeoTIFF&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Saving multipliers array GeoTIFF'</span><span class="p">)</span>
         <span class="n">mult_tiff</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_tiff_dir</span> <span class="o">/</span> <span class="n">DRY_MULTIPLIER_TIFF</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">save_data_using_h5_profile</span><span class="p">(</span><span class="n">mults_arr</span><span class="p">,</span> <span class="n">mult_tiff</span><span class="p">)</span>
 
@@ -770,71 +794,74 @@
                 <span class="n">layer_name</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">layer_fp</span><span class="p">)</span><span class="o">.</span><span class="n">stem</span>
                 <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
                     <span class="n">layer_fp</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Writing </span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s1"> to H5&#39;</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">write_layer_to_h5</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Writing </span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s1"> to H5'</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">write_layer_to_h5</span><span class="p">(</span>
+                    <span class="n">out</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">layer_name</span><span class="p">))</span>
 
-        <span class="k">for</span> <span class="n">power_class</span><span class="p">,</span> <span class="n">capacity</span> <span class="ow">in</span> <span class="n">xc</span><span class="p">[</span><span class="s1">&#39;power_classes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Calculating costs for class </span><span class="si">%s</span><span class="s1"> using a </span><span class="si">%s</span><span class="s1">MW line&#39;</span><span class="p">,</span>
+        <span class="k">for</span> <span class="n">power_class</span><span class="p">,</span> <span class="n">capacity</span> <span class="ow">in</span> <span class="n">xc</span><span class="p">[</span><span class="s1">'power_classes'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Calculating costs for class </span><span class="si">%s</span><span class="s1"> using a </span><span class="si">%s</span><span class="s1">MW line'</span><span class="p">,</span>
                         <span class="n">power_class</span><span class="p">,</span> <span class="n">capacity</span><span class="p">)</span>
             <span class="n">blc_arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_base_line_costs</span><span class="p">(</span><span class="n">capacity</span><span class="p">,</span>
-                                                    <span class="n">xc</span><span class="p">[</span><span class="s1">&#39;base_line_costs&#39;</span><span class="p">],</span>
+                                                    <span class="n">xc</span><span class="p">[</span><span class="s1">'base_line_costs'</span><span class="p">],</span>
                                                     <span class="n">iso_layer</span><span class="p">)</span>
 
-            <span class="n">base_costs_tiff</span> <span class="o">=</span> <span class="s1">&#39;base_line_costs_</span><span class="si">{}</span><span class="s1">MW.tif&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
+            <span class="n">base_costs_tiff</span> <span class="o">=</span> <span class="s1">'base_line_costs_</span><span class="si">{}</span><span class="s1">MW.tif'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
             <span class="n">out_fp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_tiff_dir</span> <span class="o">/</span> <span class="n">base_costs_tiff</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">save_data_using_h5_profile</span><span class="p">(</span><span class="n">blc_arr</span><span class="p">,</span> <span class="n">out_fp</span><span class="p">)</span>
 
             <span class="c1"># Calculate total costs w/ multipliers</span>
             <span class="n">costs_arr</span> <span class="o">=</span> <span class="n">blc_arr</span> <span class="o">*</span> <span class="n">mults_arr</span>
 
-            <span class="n">dry_layer_name</span> <span class="o">=</span> <span class="s1">&#39;tie_line_costs_</span><span class="si">{}</span><span class="s1">MW&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
-            <span class="n">tie_line_costs_tiff</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">.tif&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dry_layer_name</span><span class="p">)</span>
+            <span class="n">dry_layer_name</span> <span class="o">=</span> <span class="s1">'tie_line_costs_</span><span class="si">{}</span><span class="s1">MW'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
+            <span class="n">tie_line_costs_tiff</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">.tif'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dry_layer_name</span><span class="p">)</span>
             <span class="n">out_fp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_tiff_dir</span> <span class="o">/</span> <span class="n">tie_line_costs_tiff</span>
+            <span class="c1"># pylint: disable=invalid-unary-operand-type</span>
             <span class="n">costs_arr</span><span class="p">[</span><span class="o">~</span><span class="bp">self</span><span class="o">.</span><span class="n">_mask</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">save_data_using_h5_profile</span><span class="p">(</span><span class="n">costs_arr</span><span class="p">,</span> <span class="n">out_fp</span><span class="p">)</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
                     <span class="n">out_fp</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Writing dry costs to H5&#39;</span><span class="p">)</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">write_layer_to_h5</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">dry_layer_name</span><span class="p">)</span></div>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Writing dry costs to H5'</span><span class="p">)</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">write_layer_to_h5</span><span class="p">(</span>
+                    <span class="n">out</span><span class="p">,</span> <span class="n">dry_layer_name</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">dry_layer_name</span><span class="p">))</span></div>
 
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_compute_slope_mult</span><span class="p">(</span><span class="n">slope</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">,</span>
                             <span class="n">config</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">SlopeMultipliers</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
                             <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Create slope multiplier raster for a region. Unspecified slopes are</span>
 <span class="sd">        left at 1.0</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        slope : numpy.ndarray</span>
-<span class="sd">            Slope raster clipped to a region- &quot;Terrain slope in % of grade&quot;</span>
+<span class="sd">            Slope raster clipped to a region- "Terrain slope in % of grade"</span>
 <span class="sd">        config : dict | None</span>
 <span class="sd">            Multipliers and slope cut offs for hilly and mountain terrain.</span>
 <span class="sd">            Use defaults if None.</span>
-<span class="sd">            config[&#39;hill_mult&#39;] : float</span>
+<span class="sd">            config['hill_mult'] : float</span>
 <span class="sd">                Multiplier for hilly terrain</span>
-<span class="sd">            config[&#39;mtn_slope&#39;] : float</span>
+<span class="sd">            config['mtn_slope'] : float</span>
 <span class="sd">                Multiplier for mountainous terrain</span>
-<span class="sd">            config[&#39;hill_slope&#39;] : float</span>
+<span class="sd">            config['hill_slope'] : float</span>
 <span class="sd">                Slope at and above which a cell is classified as hilly.</span>
-<span class="sd">            config[&#39;mtn_slope&#39;] : float</span>
+<span class="sd">            config['mtn_slope'] : float</span>
 <span class="sd">                Slope at and above which a cell is classified as mountainous</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        numpy.ndarray</span>
 <span class="sd">            Slope multiplier raster. Minimum value for any cell is 1.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">config</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">config</span> <span class="o">=</span> <span class="p">{}</span>
 
-        <span class="n">hill_mult</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hill_mult&#39;</span><span class="p">,</span> <span class="n">HILL_MULT</span><span class="p">)</span>
-        <span class="n">mtn_mult</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mtn_mult&#39;</span><span class="p">,</span> <span class="n">MTN_MULT</span><span class="p">)</span>
-        <span class="n">hill_slope</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;hill_slope&#39;</span><span class="p">,</span> <span class="n">HILL_SLOPE</span><span class="p">)</span>
-        <span class="n">mtn_slope</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;mtn_slope&#39;</span><span class="p">,</span> <span class="n">MTN_SLOPE</span><span class="p">)</span>
+        <span class="n">hill_mult</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'hill_mult'</span><span class="p">,</span> <span class="n">HILL_MULT</span><span class="p">)</span>
+        <span class="n">mtn_mult</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'mtn_mult'</span><span class="p">,</span> <span class="n">MTN_MULT</span><span class="p">)</span>
+        <span class="n">hill_slope</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'hill_slope'</span><span class="p">,</span> <span class="n">HILL_SLOPE</span><span class="p">)</span>
+        <span class="n">mtn_slope</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'mtn_slope'</span><span class="p">,</span> <span class="n">MTN_SLOPE</span><span class="p">)</span>
 
         <span class="n">hilly</span> <span class="o">=</span> <span class="p">(</span><span class="n">slope</span> <span class="o">&gt;=</span> <span class="n">hill_slope</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">slope</span> <span class="o">&lt;</span> <span class="n">mtn_slope</span><span class="p">)</span>
         <span class="n">mountainous</span> <span class="o">=</span> <span class="n">slope</span> <span class="o">&gt;=</span> <span class="n">mtn_slope</span>
@@ -850,7 +877,7 @@
                                <span class="n">multipliers</span><span class="p">:</span> <span class="n">LandUseMultipliers</span><span class="p">,</span>
                                <span class="n">land_use_classes</span><span class="p">:</span> <span class="n">LandUseClasses</span>
                                <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Convert NLCD raster to land use multiplier raster for a single ISO</span>
 <span class="sd">        region. Land classes without specified multipliers are left a 1.</span>
 
@@ -859,7 +886,7 @@
 <span class="sd">        land_use : numpy.ndarray</span>
 <span class="sd">           NLCD land user raster clipped to a region</span>
 <span class="sd">        multipliers : LandUseMultipliers</span>
-<span class="sd">            Multiplier for for land classes, E.g. {&#39;forest&#39;: 1.5}</span>
+<span class="sd">            Multiplier for for land classes, E.g. {'forest': 1.5}</span>
 <span class="sd">        land_use_classes : dict</span>
 <span class="sd">            NCLD land use codes corresponding to use classes for multipliers</span>
 
@@ -867,7 +894,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        numpy.ndarray</span>
 <span class="sd">            Land use multiplier raster. Minimum value for any cell is 1.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">mult_raster</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="n">land_use</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
         <span class="c1"># Determine mask arrays for NCLD values and multiplier to apply</span>
@@ -875,7 +902,7 @@
         <span class="n">multiplier</span><span class="p">:</span> <span class="nb">float</span>
         <span class="k">for</span> <span class="n">_class</span><span class="p">,</span> <span class="n">multiplier</span> <span class="ow">in</span> <span class="n">multipliers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># type: ignore</span>
             <span class="k">if</span> <span class="n">_class</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">land_use_classes</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Class </span><span class="si">{}</span><span class="s1"> not in land_use_classes: </span><span class="si">{}</span><span class="s1">&#39;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Class </span><span class="si">{}</span><span class="s1"> not in land_use_classes: </span><span class="si">{}</span><span class="s1">'</span>
                        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">_class</span><span class="p">,</span> <span class="n">land_use_classes</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -900,7 +927,7 @@
                              <span class="n">land_use_classes</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">LandUseClasses</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
                              <span class="n">default_mults</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">IsoMultipliers</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
                              <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Create costs multiplier raster</span>
 
 <span class="sd">        Parameters</span>
@@ -908,10 +935,10 @@
 <span class="sd">        iso_mults : List[IsoMultipliers]</span>
 <span class="sd">            Land use and slope multipliers for ISOs</span>
 <span class="sd">        sloper_layer : str, optional</span>
-<span class="sd">            Name of slope layer in excl_h5, by default &#39;srtm_slope&#39;</span>
+<span class="sd">            Name of slope layer in excl_h5, by default 'srtm_slope'</span>
 <span class="sd">        ncld_layer : str, optional</span>
 <span class="sd">            Name of NLCD (land use) layer in excl_h5, by default</span>
-<span class="sd">            &#39;usa_mrlc_nlcd2011&#39;</span>
+<span class="sd">            'usa_mrlc_nlcd2011'</span>
 <span class="sd">        land_use_classes : dict, optional</span>
 <span class="sd">            NCLD land use codes corresponding to use classes for multipliers.</span>
 <span class="sd">            If None, use NLCD_LAND_USE_CLASSES. By default None</span>
@@ -923,7 +950,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        numpy.ndarray</span>
 <span class="sd">            Costs multiplier raster, including slope and land use</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">mults_arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
         <span class="n">regions_mask</span><span class="p">:</span> <span class="n">MaskArr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
 
@@ -931,46 +958,46 @@
             <span class="n">land_use_classes</span> <span class="o">=</span> <span class="n">NLCD_LAND_USE_CLASSES</span>
 
         <span class="k">for</span> <span class="n">r_conf</span> <span class="ow">in</span> <span class="n">iso_mults</span><span class="p">:</span>
-            <span class="n">iso_name</span> <span class="o">=</span> <span class="n">r_conf</span><span class="p">[</span><span class="s1">&#39;iso&#39;</span><span class="p">]</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Processing multipliers for region </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">iso_name</span><span class="p">)</span>
+            <span class="n">iso_name</span> <span class="o">=</span> <span class="n">r_conf</span><span class="p">[</span><span class="s1">'iso'</span><span class="p">]</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Processing multipliers for region </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">iso_name</span><span class="p">)</span>
 
             <span class="n">iso</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iso_lookup</span><span class="p">[</span><span class="n">iso_name</span><span class="p">]</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;ISO </span><span class="si">%s</span><span class="s1"> has id </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">iso_name</span><span class="p">,</span> <span class="n">iso</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'ISO </span><span class="si">%s</span><span class="s1"> has id </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">iso_name</span><span class="p">,</span> <span class="n">iso</span><span class="p">)</span>
 
             <span class="n">mask</span><span class="p">:</span> <span class="n">MaskArr</span> <span class="o">=</span> <span class="n">iso_layer</span> <span class="o">==</span> <span class="n">iso</span>
             <span class="n">regions_mask</span> <span class="o">=</span> <span class="n">regions_mask</span> <span class="o">|</span> <span class="n">mask</span>
 
-            <span class="k">if</span> <span class="s1">&#39;land_use&#39;</span> <span class="ow">in</span> <span class="n">r_conf</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">'land_use'</span> <span class="ow">in</span> <span class="n">r_conf</span><span class="p">:</span>
                 <span class="n">r_lu</span> <span class="o">=</span> <span class="n">land_use_layer</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
-                <span class="n">lu_mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_land_use_mult</span><span class="p">(</span><span class="n">r_lu</span><span class="p">,</span> <span class="n">r_conf</span><span class="p">[</span><span class="s1">&#39;land_use&#39;</span><span class="p">],</span>
+                <span class="n">lu_mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_land_use_mult</span><span class="p">(</span><span class="n">r_lu</span><span class="p">,</span> <span class="n">r_conf</span><span class="p">[</span><span class="s1">'land_use'</span><span class="p">],</span>
                                                       <span class="n">land_use_classes</span><span class="p">)</span>
                 <span class="n">mults_arr</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">lu_mult</span>
 
-            <span class="k">if</span> <span class="s1">&#39;slope&#39;</span> <span class="ow">in</span> <span class="n">r_conf</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">'slope'</span> <span class="ow">in</span> <span class="n">r_conf</span><span class="p">:</span>
                 <span class="n">r_slope</span> <span class="o">=</span> <span class="n">slope_layer</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
-                <span class="n">slope_mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_slope_mult</span><span class="p">(</span><span class="n">r_slope</span><span class="p">,</span> <span class="n">r_conf</span><span class="p">[</span><span class="s1">&#39;slope&#39;</span><span class="p">])</span>
+                <span class="n">slope_mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_slope_mult</span><span class="p">(</span><span class="n">r_slope</span><span class="p">,</span> <span class="n">r_conf</span><span class="p">[</span><span class="s1">'slope'</span><span class="p">])</span>
                 <span class="n">mults_arr</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">mults_arr</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span> <span class="o">*</span> <span class="n">slope_mult</span>
 
         <span class="c1"># Calculate multipliers for regions not defined in `config`</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Processing default region&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Processing default region'</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">default_mults</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">default_mask</span> <span class="o">=</span> <span class="o">~</span><span class="n">regions_mask</span>
 
-            <span class="k">if</span> <span class="s1">&#39;land_use&#39;</span> <span class="ow">in</span> <span class="n">default_mults</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">'land_use'</span> <span class="ow">in</span> <span class="n">default_mults</span><span class="p">:</span>
                 <span class="n">region_land_use</span> <span class="o">=</span> <span class="n">land_use_layer</span><span class="p">[</span><span class="n">default_mask</span><span class="p">]</span>
-                <span class="n">lu_mult_dict</span> <span class="o">=</span> <span class="n">default_mults</span><span class="p">[</span><span class="s1">&#39;land_use&#39;</span><span class="p">]</span>
+                <span class="n">lu_mult_dict</span> <span class="o">=</span> <span class="n">default_mults</span><span class="p">[</span><span class="s1">'land_use'</span><span class="p">]</span>
                 <span class="n">lu_mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_land_use_mult</span><span class="p">(</span><span class="n">region_land_use</span><span class="p">,</span>
                                                       <span class="n">lu_mult_dict</span><span class="p">,</span>
                                                       <span class="n">land_use_classes</span><span class="p">)</span>
                 <span class="n">mults_arr</span><span class="p">[</span><span class="n">default_mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">lu_mult</span>
 
-            <span class="k">if</span> <span class="s1">&#39;slope&#39;</span> <span class="ow">in</span> <span class="n">default_mults</span><span class="p">:</span>
+            <span class="k">if</span> <span class="s1">'slope'</span> <span class="ow">in</span> <span class="n">default_mults</span><span class="p">:</span>
                 <span class="n">region_slope</span> <span class="o">=</span> <span class="n">slope_layer</span><span class="p">[</span><span class="n">default_mask</span><span class="p">]</span>
                 <span class="n">slope_mult</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_slope_mult</span><span class="p">(</span><span class="n">region_slope</span><span class="p">,</span>
-                                                      <span class="n">default_mults</span><span class="p">[</span><span class="s1">&#39;slope&#39;</span><span class="p">])</span>
+                                                      <span class="n">default_mults</span><span class="p">[</span><span class="s1">'slope'</span><span class="p">])</span>
                 <span class="n">mults_arr</span><span class="p">[</span><span class="n">default_mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">mults_arr</span><span class="p">[</span><span class="n">default_mask</span><span class="p">]</span> <span class="o">*</span> <span class="n">slope_mult</span>
 
-        <span class="c1"># Set water multiplier last so we don&#39;t get super high multipliers at</span>
+        <span class="c1"># Set water multiplier last so we don't get super high multipliers at</span>
         <span class="c1"># water body boundaries next to steep slopes</span>
         <span class="n">mults_arr</span><span class="p">[</span><span class="n">land_use_layer</span> <span class="o">==</span> <span class="n">WATER_NLCD_CODE</span><span class="p">]</span> <span class="o">=</span> <span class="n">WATER_MULT</span>
 
@@ -979,7 +1006,7 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">_compute_base_line_costs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">capacity</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
                                  <span class="n">base_line_costs</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">]],</span>
                                  <span class="n">iso_layer</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get base line cost per cell raster for a given voltage</span>
 
 <span class="sd">        Parameters</span>
@@ -995,16 +1022,16 @@
 <span class="sd">        -------</span>
 <span class="sd">        base_cost : numpy.ndarray</span>
 <span class="sd">            Cost per cell raster in standard shape</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">base_cost</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">iso</span> <span class="ow">in</span> <span class="n">base_line_costs</span><span class="p">:</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Processing costs for </span><span class="si">%s</span><span class="s1"> for </span><span class="si">%s</span><span class="s1">MW&#39;</span><span class="p">,</span> <span class="n">iso</span><span class="p">,</span> <span class="n">capacity</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Processing costs for </span><span class="si">%s</span><span class="s1"> for </span><span class="si">%s</span><span class="s1">MW'</span><span class="p">,</span> <span class="n">iso</span><span class="p">,</span> <span class="n">capacity</span><span class="p">)</span>
             <span class="n">iso_code</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iso_lookup</span><span class="p">[</span><span class="n">iso</span><span class="p">]</span>
             <span class="n">cost_per_mile</span> <span class="o">=</span> <span class="n">base_line_costs</span><span class="p">[</span><span class="n">iso</span><span class="p">][</span><span class="nb">str</span><span class="p">(</span><span class="n">capacity</span><span class="p">)]</span>
             <span class="n">cost_per_cell</span> <span class="o">=</span> <span class="n">cost_per_mile</span> <span class="o">/</span> <span class="n">METERS_IN_MILE</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cell_size</span>
 
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Base line $/mile is </span><span class="si">%s</span><span class="s1">, $/cell is </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">cost_per_mile</span><span class="p">,</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Base line $/mile is </span><span class="si">%s</span><span class="s1">, $/cell is </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">cost_per_mile</span><span class="p">,</span>
                          <span class="n">cost_per_cell</span><span class="p">)</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="n">iso_layer</span> <span class="o">==</span> <span class="n">iso_code</span>
             <span class="n">base_cost</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span> <span class="o">=</span> <span class="n">cost_per_cell</span>

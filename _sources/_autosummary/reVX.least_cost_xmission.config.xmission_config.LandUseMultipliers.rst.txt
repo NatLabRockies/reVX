@@ -15,16 +15,13 @@ reVX.least\_cost\_xmission.config.xmission\_config.LandUseMultipliers
 
    .. autosummary::
    
-      ~LandUseMultipliers.clear
       ~LandUseMultipliers.copy
       ~LandUseMultipliers.fromkeys
       ~LandUseMultipliers.get
       ~LandUseMultipliers.items
       ~LandUseMultipliers.keys
-      ~LandUseMultipliers.pop
       ~LandUseMultipliers.popitem
       ~LandUseMultipliers.setdefault
-      ~LandUseMultipliers.update
       ~LandUseMultipliers.values
    
    

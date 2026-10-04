@@ -17,19 +17,16 @@ reVX.config.least\_cost\_xmission.LeastCostPathsConfig
    
       ~LeastCostPathsConfig.check_files
       ~LeastCostPathsConfig.check_overwrite_keys
-      ~LeastCostPathsConfig.clear
       ~LeastCostPathsConfig.copy
       ~LeastCostPathsConfig.fromkeys
       ~LeastCostPathsConfig.get
       ~LeastCostPathsConfig.items
       ~LeastCostPathsConfig.keys
-      ~LeastCostPathsConfig.pop
       ~LeastCostPathsConfig.popitem
       ~LeastCostPathsConfig.resolve_path
       ~LeastCostPathsConfig.set_self_dict
       ~LeastCostPathsConfig.setdefault
       ~LeastCostPathsConfig.str_replace_and_resolve
-      ~LeastCostPathsConfig.update
       ~LeastCostPathsConfig.values
    
    

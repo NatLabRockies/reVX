@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.handlers.geotiff &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.handlers.geotiff &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,13 +645,13 @@
              
   <h1>Source code for reVX.handlers.geotiff</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Class to handle geotiff input files.</span>
 
 <span class="sd">Created on Thu Jun 20 09:43:34 2019</span>
 
 <span class="sd">@author: gbuster</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">rasterio</span>
@@ -652,23 +669,23 @@
 <div class="viewcode-block" id="Geotiff">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.geotiff.Geotiff.html#reVX.handlers.geotiff.Geotiff">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Geotiff</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;GeoTIFF handler object.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""GeoTIFF handler object."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fpath</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">)):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        fpath : str</span>
 <span class="sd">            Path to .tiff file.</span>
 <span class="sd">        chunks : tuple</span>
 <span class="sd">            GeoTIFF chunk (tile) shape/size.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_fpath</span> <span class="o">=</span> <span class="n">fpath</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_iarr</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_src</span> <span class="o">=</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fpath</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">profile</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">&quot;transform&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">&quot;transform&quot;</span><span class="p">][:</span><span class="mi">6</span><span class="p">]</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">&quot;crs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">&quot;crs&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">to_proj4</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">"transform"</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">"transform"</span><span class="p">][:</span><span class="mi">6</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">"crs"</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span><span class="p">[</span><span class="s2">"crs"</span><span class="p">]</span><span class="o">.</span><span class="n">to_wkt</span><span class="p">()</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__enter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="k">return</span> <span class="bp">self</span>
@@ -679,33 +696,33 @@
             <span class="k">raise</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Total number of pixels in the GeoTiff.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Total number of pixels in the GeoTiff."""</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_rows</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">n_cols</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">keys</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Retrieve data from the GeoTIFF object.</span>
+<span class="w">        </span><span class="sd">"""Retrieve data from the GeoTIFF object.</span>
 
 <span class="sd">        Example, get meta data and layer-0 data for rows 0 through 128 and</span>
 <span class="sd">        columns 128 through 256.</span>
 
-<span class="sd">            meta = geotiff[&#39;meta&#39;, 0:128, 128:256]</span>
+<span class="sd">            meta = geotiff['meta', 0:128, 128:256]</span>
 <span class="sd">            data = geotiff[0, 0:128, 128:256]</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        keys : tuple</span>
 <span class="sd">            Slicing args similar to a numpy array slice. See examples above.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">ds</span><span class="p">,</span> <span class="n">ds_slice</span> <span class="o">=</span> <span class="n">parse_keys</span><span class="p">(</span><span class="n">keys</span><span class="p">)</span>
         <span class="n">out</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">ds</span> <span class="o">==</span> <span class="s1">&#39;meta&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">ds</span> <span class="o">==</span> <span class="s1">'meta'</span><span class="p">:</span>
                 <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_meta</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">casefold</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;lat_lon&#39;</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">casefold</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'lat_lon'</span><span class="p">:</span>
                 <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_lat_lon</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;lat&#39;</span><span class="p">):</span>
+            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'lat'</span><span class="p">):</span>
                 <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_lat_lon</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
-            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;lon&#39;</span><span class="p">):</span>
+            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'lon'</span><span class="p">):</span>
                 <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_lat_lon</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)[</span><span class="mi">1</span><span class="p">]</span>
 
         <span class="k">if</span> <span class="n">out</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -715,39 +732,39 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">profile</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        GeoTiff geospatial profile</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        _profile : dict</span>
 <span class="sd">            Dictionary of geo-spatial attributes needed to create GeoTiff</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">dtype</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        GeoTiff array dtype</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        dtype : str</span>
 <span class="sd">            Dtype of data in GeoTiff</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s2">&quot;dtype&quot;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s2">"dtype"</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">iarr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get an array of 1D index values for the flattened geotiff extent.</span>
+<span class="w">        </span><span class="sd">"""Get an array of 1D index values for the flattened geotiff extent.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        iarr : np.ndarray</span>
 <span class="sd">            Uint array with same shape as geotiff extent, representing the 1D</span>
 <span class="sd">            index values if the geotiff extent was flattened</span>
-<span class="sd">            (with default flatten order &#39;C&#39;)</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">            (with default flatten order 'C')</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iarr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_iarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_iarr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_iarr</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
@@ -755,118 +772,118 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">tiff_shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tiff array shape (bands, y, x)</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        shape : tuple</span>
 <span class="sd">            (bands, y, x)</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">bands</span><span class="p">,</span> <span class="o">*</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the Geotiff shape tuple (n_rows, n_cols).</span>
+<span class="w">        </span><span class="sd">"""Get the Geotiff shape tuple (n_rows, n_cols).</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        shape : tuple</span>
 <span class="sd">            2-entry tuple representing the full GeoTiff shape.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">shape</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">n_rows</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the number of Geotiff rows.</span>
+<span class="w">        </span><span class="sd">"""Get the number of Geotiff rows.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        n_rows : int</span>
 <span class="sd">            Number of row entries in the full geotiff.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">n_cols</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the number of Geotiff columns.</span>
+<span class="w">        </span><span class="sd">"""Get the number of Geotiff columns.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        n_cols : int</span>
 <span class="sd">            Number of column entries in the full geotiff.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">bands</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get number of GeoTiff bands</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        bands : int</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">count</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">lat_lon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get latitude and longitude coordinate arrays</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        tuple</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_lat_lon</span><span class="p">(</span><span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">),</span> <span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">))</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">latitude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get latitude coordinates array</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        ndarray</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'lat'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">longitude</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get longitude coordinates array</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        ndarray</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'lon'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">meta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Lat lon to y, x coordinate mapping</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        pd.DataFrame</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">values</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Full DataArray in [bands, y, x] dimensions</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        ndarray</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_unpack_slices</span><span class="p">(</span><span class="o">*</span><span class="n">yx_slice</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the flattened geotiff layer data.</span>
+<span class="w">        </span><span class="sd">"""Get the flattened geotiff layer data.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -879,7 +896,7 @@
 <span class="sd">            Row slice.</span>
 <span class="sd">        x_slice : slice</span>
 <span class="sd">            Col slice.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">yx_slice</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
             <span class="n">y_slice</span> <span class="o">=</span> <span class="n">yx_slice</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
             <span class="n">x_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
@@ -887,13 +904,13 @@
             <span class="n">y_slice</span> <span class="o">=</span> <span class="n">yx_slice</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
             <span class="n">x_slice</span> <span class="o">=</span> <span class="n">yx_slice</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="n">GeoTiffKeyError</span><span class="p">(</span><span class="s1">&#39;Cannot do 3D slicing on GeoTiff meta.&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">GeoTiffKeyError</span><span class="p">(</span><span class="s1">'Cannot do 3D slicing on GeoTiff meta.'</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">y_slice</span><span class="p">,</span> <span class="n">x_slice</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_meta_inds</span><span class="p">(</span><span class="n">x_slice</span><span class="p">,</span> <span class="n">y_slice</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the row and column indices associated with lat/lon slices.</span>
+<span class="w">        </span><span class="sd">"""Get the row and column indices associated with lat/lon slices.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -910,7 +927,7 @@
 <span class="sd">        col_ind : np.ndarray</span>
 <span class="sd">            1D array of the col indices corresponding to the lat/lon arrays</span>
 <span class="sd">            once mesh-gridded and flattened</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">y_slice</span><span class="o">.</span><span class="n">start</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">y_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">y_slice</span><span class="o">.</span><span class="n">stop</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">x_slice</span><span class="o">.</span><span class="n">start</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -930,7 +947,7 @@
         <span class="k">return</span> <span class="n">row_ind</span><span class="p">,</span> <span class="n">col_ind</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_meta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">ds_slice</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the geotiff meta dataframe in standard WGS84 projection.</span>
+<span class="w">        </span><span class="sd">"""Get the geotiff meta dataframe in standard WGS84 projection.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -941,7 +958,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        meta : pd.DataFrame</span>
 <span class="sd">            Flattened meta data with same format as reV resource meta data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">y_slice</span><span class="p">,</span> <span class="n">x_slice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unpack_slices</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)</span>
         <span class="n">row_ind</span><span class="p">,</span> <span class="n">col_ind</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_meta_inds</span><span class="p">(</span><span class="n">x_slice</span><span class="p">,</span> <span class="n">y_slice</span><span class="p">)</span>
 
@@ -949,14 +966,14 @@
         <span class="n">lon</span> <span class="o">=</span> <span class="n">lon</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
         <span class="n">lat</span> <span class="o">=</span> <span class="n">lat</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
 
-        <span class="n">meta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;latitude&#39;</span><span class="p">:</span> <span class="n">lat</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span>
-                             <span class="s1">&#39;longitude&#39;</span><span class="p">:</span> <span class="n">lon</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span>
-                             <span class="s1">&#39;row_ind&#39;</span><span class="p">:</span> <span class="n">row_ind</span><span class="p">,</span> <span class="s1">&#39;col_ind&#39;</span><span class="p">:</span> <span class="n">col_ind</span><span class="p">})</span>
+        <span class="n">meta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">'latitude'</span><span class="p">:</span> <span class="n">lat</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span>
+                             <span class="s1">'longitude'</span><span class="p">:</span> <span class="n">lon</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span>
+                             <span class="s1">'row_ind'</span><span class="p">:</span> <span class="n">row_ind</span><span class="p">,</span> <span class="s1">'col_ind'</span><span class="p">:</span> <span class="n">col_ind</span><span class="p">})</span>
         <span class="k">return</span> <span class="n">meta</span>
 
     <span class="c1"># pylint: disable=all</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_lat_lon</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">ds_slice</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get the geotiff latitude and longitude coordinates</span>
 
 <span class="sd">        Parameters</span>
@@ -970,13 +987,13 @@
 <span class="sd">            Projected latitude coordinates</span>
 <span class="sd">        lon : ndarray</span>
 <span class="sd">            Projected longitude coordinates</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">row_slice</span><span class="p">,</span> <span class="n">col_slice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unpack_slices</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="s2">&quot;uint16&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="n">dim</span> <span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">):</span>
-            <span class="n">dtype</span> <span class="o">=</span> <span class="s2">&quot;uint16&quot;</span>
+        <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="s2">"uint16"</span><span class="p">)</span><span class="o">.</span><span class="n">max</span> <span class="o">&gt;</span> <span class="n">dim</span> <span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">):</span>
+            <span class="n">dtype</span> <span class="o">=</span> <span class="s2">"uint16"</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">dtype</span> <span class="o">=</span> <span class="s2">&quot;uint32&quot;</span>
+            <span class="n">dtype</span> <span class="o">=</span> <span class="s2">"uint32"</span>
 
         <span class="n">rows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_rows</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
         <span class="n">cols</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_cols</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
@@ -989,11 +1006,11 @@
 
         <span class="n">rows</span><span class="p">,</span> <span class="n">cols</span> <span class="o">=</span> <span class="n">centered_pixels</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">transform</span><span class="p">)</span>
         <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">transform_pixels_to_lat_lon</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">,</span>
-                                               <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s2">&quot;crs&quot;</span><span class="p">])</span>
+                                               <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s2">"crs"</span><span class="p">])</span>
         <span class="k">return</span> <span class="n">lat</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span> <span class="n">lon</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ds</span><span class="p">,</span> <span class="o">*</span><span class="n">ds_slice</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the flattened geotiff layer data.</span>
+<span class="w">        </span><span class="sd">"""Get the flattened geotiff layer data.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1006,7 +1023,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        data : np.ndarray</span>
 <span class="sd">            1D array of flattened data corresponding to meta data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">y_slice</span><span class="p">,</span> <span class="n">x_slice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_unpack_slices</span><span class="p">(</span><span class="o">*</span><span class="n">ds_slice</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">x_slice</span><span class="o">.</span><span class="n">stop</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1022,52 +1039,92 @@
 <div class="viewcode-block" id="Geotiff.close">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.geotiff.Geotiff.html#reVX.handlers.geotiff.Geotiff.close">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Close the rasterio source object&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Close the rasterio source object"""</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_src</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
 
 
 <div class="viewcode-block" id="Geotiff.write">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.geotiff.Geotiff.html#reVX.handlers.geotiff.Geotiff.write">[docs]</a>
     <span class="nd">@staticmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="n">out_fp</span><span class="p">,</span> <span class="n">profile</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Write values to GeoTIFF file with given profile.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">write</span><span class="p">(</span><span class="n">out_fp</span><span class="p">,</span> <span class="n">profile</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">compress</span><span class="o">=</span><span class="s1">'lzw'</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Write values to GeoTIFF file with given profile.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        out_fp : str</span>
-<span class="sd">            Path to GeoTIFF output file to save data to.</span>
+<span class="sd">            Path to GeoTIFF output file to save data to. Partial output</span>
+<span class="sd">            is removed if writing fails after the destination is opened.</span>
 <span class="sd">        profile : dict</span>
-<span class="sd">            GeoTIFF profile (attributes).</span>
+<span class="sd">            GeoTIFF profile (attributes). Incompatible nodata values are</span>
+<span class="sd">            replaced with the output dtype's maximum value.</span>
 <span class="sd">        values : ndarray</span>
 <span class="sd">            GeoTIFF data to save.</span>
 <span class="sd">        dtype : str, optional</span>
 <span class="sd">            Type of data being stored. If ``None``, the data dtype is</span>
 <span class="sd">            inferred from the `values` input itself.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        compress : str, optional</span>
+<span class="sd">            Rasterio compression codec, overriding any compression in</span>
+<span class="sd">            `profile`. Defaults to lossless ``'lzw'`` compression. Set</span>
+<span class="sd">            this argument to ``None`` to write without compression.</span>
+<span class="sd">        """</span>
         <span class="n">out_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">out_fp</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">out_dir</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir</span><span class="p">):</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Creating </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">out_dir</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Creating </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="n">out_dir</span><span class="p">)</span>
             <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">values</span><span class="o">.</span><span class="n">ndim</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
             <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
         <span class="n">dtype</span> <span class="o">=</span> <span class="n">dtype</span> <span class="ow">or</span> <span class="n">values</span><span class="o">.</span><span class="n">dtype</span><span class="o">.</span><span class="n">name</span>
-        <span class="n">profile</span><span class="p">[</span><span class="s1">&#39;dtype&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dtype</span>
+        <span class="n">profile</span><span class="p">[</span><span class="s1">'dtype'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dtype</span>
+        <span class="n">profile</span><span class="p">[</span><span class="s1">'compress'</span><span class="p">]</span> <span class="o">=</span> <span class="n">compress</span>
 
-        <span class="k">if</span> <span class="s2">&quot;nodata&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">profile</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">):</span>
-                <span class="n">dtype_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">max</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">dtype_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">finfo</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">max</span>
-            <span class="n">profile</span><span class="p">[</span><span class="s1">&#39;nodata&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dtype_max</span>
+        <span class="n">_validate_nodata</span><span class="p">(</span><span class="n">profile</span><span class="p">,</span> <span class="n">dtype</span><span class="p">)</span>
+        <span class="n">_safe_write</span><span class="p">(</span><span class="n">out_fp</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">profile</span><span class="p">)</span>
 
-        <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">out_fp</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">profile</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">%s</span><span class="s1"> created&#39;</span><span class="p">,</span> <span class="n">out_fp</span><span class="p">)</span></div>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="si">%s</span><span class="s1"> created'</span><span class="p">,</span> <span class="n">out_fp</span><span class="p">)</span></div>
 </div>
 
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_validate_nodata</span><span class="p">(</span><span class="n">profile</span><span class="p">,</span> <span class="n">dtype</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Validate and adjust the 'nodata' value in the profile"""</span>
+    <span class="k">if</span> <span class="s2">"nodata"</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">profile</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="n">nodata</span> <span class="o">=</span> <span class="n">profile</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'nodata'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">nodata</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">dtypes</span><span class="o">.</span><span class="n">in_dtype_range</span><span class="p">(</span><span class="n">nodata</span><span class="p">,</span> <span class="n">dtype</span><span class="p">):</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">):</span>
+        <span class="n">dtype_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">iinfo</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">max</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">dtype_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">finfo</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span><span class="o">.</span><span class="n">max</span>
+
+    <span class="n">profile</span><span class="p">[</span><span class="s1">'nodata'</span><span class="p">]</span> <span class="o">=</span> <span class="n">dtype_max</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_safe_write</span><span class="p">(</span><span class="n">out_fp</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">profile</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Write GeoTIFF safely, removing partial files on failure."""</span>
+    <span class="n">existed</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_fp</span><span class="p">)</span>
+    <span class="n">opened</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">out_fp</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="o">**</span><span class="n">profile</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">opened</span> <span class="o">=</span> <span class="kc">True</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">opened</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">existed</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">out_fp</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+                <span class="k">pass</span>
+            <span class="k">except</span> <span class="ne">OSError</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="s1">'Could not remove partial GeoTIFF </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
+                               <span class="n">out_fp</span><span class="p">,</span> <span class="n">exc_info</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="k">raise</span>
 </pre></div>
 
            </div>

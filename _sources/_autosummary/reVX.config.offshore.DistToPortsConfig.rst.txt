@@ -17,19 +17,16 @@ reVX.config.offshore.DistToPortsConfig
    
       ~DistToPortsConfig.check_files
       ~DistToPortsConfig.check_overwrite_keys
-      ~DistToPortsConfig.clear
       ~DistToPortsConfig.copy
       ~DistToPortsConfig.fromkeys
       ~DistToPortsConfig.get
       ~DistToPortsConfig.items
       ~DistToPortsConfig.keys
-      ~DistToPortsConfig.pop
       ~DistToPortsConfig.popitem
       ~DistToPortsConfig.resolve_path
       ~DistToPortsConfig.set_self_dict
       ~DistToPortsConfig.setdefault
       ~DistToPortsConfig.str_replace_and_resolve
-      ~DistToPortsConfig.update
       ~DistToPortsConfig.values
    
    

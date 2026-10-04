@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.config.xmission_config &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.config.xmission_config &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -627,12 +644,12 @@
            <div itemprop="articleBody">
              
   <h1>Source code for reVX.least_cost_xmission.config.xmission_config</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">"""</span>
 <span class="sd">Load default configuration for tie-line cost determination</span>
 
 <span class="sd">Mike Bannister</span>
 <span class="sd">7/27/21</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -645,10 +662,10 @@
 <div class="viewcode-block" id="LandUseClasses">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.LandUseClasses.html#reVX.least_cost_xmission.config.xmission_config.LandUseClasses">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LandUseClasses</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    NLCD land use values that correpsond to land use classes as defined for</span>
 <span class="sd">    this project.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">cropland</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
     <span class="n">forest</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
     <span class="n">wetland</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>
@@ -660,77 +677,77 @@
 <div class="viewcode-block" id="LandUseMultipliers">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.LandUseMultipliers.html#reVX.least_cost_xmission.config.xmission_config.LandUseMultipliers">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LandUseMultipliers</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">,</span> <span class="n">total</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Land use multipliers &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Land use multipliers """</span>
 
     <span class="n">cropland</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Cost multiplier for cropland &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Cost multiplier for cropland """</span>
 
     <span class="n">forest</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Cost multiplier for forest &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Cost multiplier for forest """</span>
 
     <span class="n">suburban</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Cost multiplier for suburban areas &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Cost multiplier for suburban areas """</span>
 
     <span class="n">urban</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Cost multiplier for urband areas &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Cost multiplier for urband areas """</span>
 
     <span class="n">wetland</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Cost multiplier for wetlands. This is independent of the water multiplier.</span>
-<span class="sd">    &quot;&quot;&quot;</span></div>
+<span class="sd">    """</span></div>
 
 
 
 <div class="viewcode-block" id="SlopeMultipliers">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.SlopeMultipliers.html#reVX.least_cost_xmission.config.xmission_config.SlopeMultipliers">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">SlopeMultipliers</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">,</span> <span class="n">total</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Slope multipliers and cutoffs &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Slope multipliers and cutoffs """</span>
 
     <span class="n">hill_mult</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Cost multiplier for hills &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Cost multiplier for hills """</span>
 
     <span class="n">hill_slope</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Lowest slope that qualifies as a hill (decimal percent) &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Lowest slope that qualifies as a hill (decimal percent) """</span>
 
     <span class="n">mtn_mult</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Cost multiplier for mountains &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Cost multiplier for mountains """</span>
 
     <span class="n">mtn_slope</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Lowest slope that qualifies as a mountain (decimal percent) &quot;&quot;&quot;</span></div>
+<span class="w">    </span><span class="sd">""" Lowest slope that qualifies as a mountain (decimal percent) """</span></div>
 
 
 
 <div class="viewcode-block" id="IsoMultipliers">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.IsoMultipliers.html#reVX.least_cost_xmission.config.xmission_config.IsoMultipliers">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">IsoMultipliers</span><span class="p">(</span><span class="n">TypedDict</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Multiplier config for one ISO &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Multiplier config for one ISO """</span>
 
     <span class="n">iso</span><span class="p">:</span> <span class="nb">str</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Name of ISO these multipliers are for&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Name of ISO these multipliers are for"""</span>
 
     <span class="n">land_use</span><span class="p">:</span> <span class="n">LandUseMultipliers</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Land use multipliers &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Land use multipliers """</span>
 
     <span class="n">slope</span><span class="p">:</span> <span class="n">SlopeMultipliers</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Slope multipliers and cutoffs &quot;&quot;&quot;</span></div>
+<span class="w">    </span><span class="sd">""" Slope multipliers and cutoffs """</span></div>
 
 
 
 <span class="n">CONFIG_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">realpath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
 <span class="n">CONFIG</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;base_line_costs&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">&#39;base_line_costs.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;iso_lookup&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">&#39;iso_lookup.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;iso_multipliers&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">&#39;iso_multipliers.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;land_use_classes&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">&#39;land_use_classes.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;new_substation_costs&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span>
-                                         <span class="s1">&#39;new_substation_costs.json&#39;</span><span class="p">),</span>
+    <span class="s2">"base_line_costs"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">'base_line_costs.json'</span><span class="p">),</span>
+    <span class="s2">"iso_lookup"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">'iso_lookup.json'</span><span class="p">),</span>
+    <span class="s2">"iso_multipliers"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">'iso_multipliers.json'</span><span class="p">),</span>
+    <span class="s2">"land_use_classes"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">'land_use_classes.json'</span><span class="p">),</span>
+    <span class="s2">"new_substation_costs"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span>
+                                         <span class="s1">'new_substation_costs.json'</span><span class="p">),</span>
 
-    <span class="s2">&quot;power_classes&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">&#39;power_classes.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;power_to_voltage&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">&#39;power_to_voltage.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;transformer_costs&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span>
-                                      <span class="s1">&#39;transformer_costs.json&#39;</span><span class="p">),</span>
-    <span class="s2">&quot;upgrade_substation_costs&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span>
-                                             <span class="s1">&#39;upgrade_substation_costs.json&#39;</span><span class="p">)</span>
+    <span class="s2">"power_classes"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">'power_classes.json'</span><span class="p">),</span>
+    <span class="s2">"power_to_voltage"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span> <span class="s1">'power_to_voltage.json'</span><span class="p">),</span>
+    <span class="s2">"transformer_costs"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span>
+                                      <span class="s1">'transformer_costs.json'</span><span class="p">),</span>
+    <span class="s2">"upgrade_substation_costs"</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">CONFIG_DIR</span><span class="p">,</span>
+                                             <span class="s1">'upgrade_substation_costs.json'</span><span class="p">)</span>
 <span class="p">}</span>
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
@@ -738,10 +755,10 @@
 <div class="viewcode-block" id="XmissionConfig">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.XmissionConfig.html#reVX.least_cost_xmission.config.xmission_config.XmissionConfig">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">XmissionConfig</span><span class="p">(</span><span class="nb">dict</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Load default tie lines configuration &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">""" Load default tie lines configuration """</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Use default values for all parameters if None.</span>
 
 <span class="sd">        Parameters</span>
@@ -751,20 +768,20 @@
 <span class="sd">            or jsonified dict of cost configuration values,</span>
 <span class="sd">            or dictionary of configuration values,</span>
 <span class="sd">            or dictionary of paths to config jsons,</span>
-<span class="sd">            if None use defaults in &#39;./config.json&#39;</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">            if None use defaults in './config.json'</span>
+<span class="sd">        """</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_load_config</span><span class="p">(</span><span class="n">CONFIG</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_load_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;reverse_iso&#39;</span><span class="p">:</span>
-            <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;iso_lookup&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
-        <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;voltage_to_power&#39;</span><span class="p">:</span>
-            <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;power_to_voltage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
-        <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">&#39;line_power_to_classes&#39;</span><span class="p">:</span>
-            <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;power_classes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        <span class="k">if</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">'reverse_iso'</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'iso_lookup'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">'voltage_to_power'</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'power_to_voltage'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+        <span class="k">elif</span> <span class="n">k</span> <span class="o">==</span> <span class="s1">'line_power_to_classes'</span><span class="p">:</span>
+            <span class="n">out</span> <span class="o">=</span> <span class="p">{</span><span class="n">v</span><span class="p">:</span> <span class="n">k</span> <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'power_classes'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">out</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__getitem__</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
 
@@ -772,7 +789,7 @@
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_parse_cap_class</span><span class="p">(</span><span class="n">capacity</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parse capacity class from input capacity which can be a number or a</span>
 <span class="sd">        string</span>
 
@@ -784,19 +801,19 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        cap_class : str</span>
-<span class="sd">            Capacity class in format &quot;{capacity}MW&quot;</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">            Capacity class in format "{capacity}MW"</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">capacity</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-            <span class="n">cap_class</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">MW&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">capacity</span><span class="p">))</span>
-        <span class="k">elif</span> <span class="ow">not</span> <span class="n">capacity</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;MW&#39;</span><span class="p">):</span>
-            <span class="n">cap_class</span> <span class="o">=</span> <span class="n">capacity</span> <span class="o">+</span> <span class="s1">&#39;MW&#39;</span>
+            <span class="n">cap_class</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">MW'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">capacity</span><span class="p">))</span>
+        <span class="k">elif</span> <span class="ow">not</span> <span class="n">capacity</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'MW'</span><span class="p">):</span>
+            <span class="n">cap_class</span> <span class="o">=</span> <span class="n">capacity</span> <span class="o">+</span> <span class="s1">'MW'</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">cap_class</span> <span class="o">=</span> <span class="n">capacity</span>
 
         <span class="k">return</span> <span class="n">cap_class</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_load_config</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Load config</span>
 
 <span class="sd">        Parameters</span>
@@ -806,33 +823,33 @@
 <span class="sd">            Xmission cost configuration values. Valid configuration keys</span>
 <span class="sd">            are:</span>
 
-<span class="sd">                - &quot;base_line_costs&quot;</span>
-<span class="sd">                - &quot;iso_lookup&quot;</span>
-<span class="sd">                - &quot;iso_multipliers&quot;</span>
-<span class="sd">                - &quot;land_use_classes&quot;</span>
-<span class="sd">                - &quot;new_substation_costs&quot;</span>
-<span class="sd">                - &quot;power_classes&quot;</span>
-<span class="sd">                - &quot;power_to_voltage&quot;</span>
-<span class="sd">                - &quot;transformer_costs&quot;</span>
-<span class="sd">                - &quot;upgrade_substation_costs&quot;</span>
+<span class="sd">                - "base_line_costs"</span>
+<span class="sd">                - "iso_lookup"</span>
+<span class="sd">                - "iso_multipliers"</span>
+<span class="sd">                - "land_use_classes"</span>
+<span class="sd">                - "new_substation_costs"</span>
+<span class="sd">                - "power_classes"</span>
+<span class="sd">                - "power_to_voltage"</span>
+<span class="sd">                - "transformer_costs"</span>
+<span class="sd">                - "upgrade_substation_costs"</span>
 
 <span class="sd">            Each of these keys should point to a dictionary or path to</span>
 <span class="sd">            json file contianing a dictionary of configurations for each</span>
 <span class="sd">            section.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">config</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
                 <span class="n">config</span> <span class="o">=</span> <span class="n">safe_json_load</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Xmission costs config must be a path to a json file, &#39;</span>
-                       <span class="s1">&#39;a jsonified dictionary, or a dictionary, not: </span><span class="si">{}</span><span class="s1">&#39;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Xmission costs config must be a path to a json file, '</span>
+                       <span class="s1">'a jsonified dictionary, or a dictionary, not: </span><span class="si">{}</span><span class="s1">'</span>
                        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">config</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
             <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-                <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.json&#39;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">v</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.json'</span><span class="p">):</span>
                     <span class="n">v</span> <span class="o">=</span> <span class="n">safe_json_load</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
 
                 <span class="bp">self</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
@@ -840,7 +857,7 @@
 <div class="viewcode-block" id="XmissionConfig.capacity_to_kv">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.XmissionConfig.html#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.capacity_to_kv">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">capacity_to_kv</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">capacity</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Convert capacity class to line voltage</span>
 
 <span class="sd">        Parameters</span>
@@ -852,10 +869,10 @@
 <span class="sd">        -------</span>
 <span class="sd">        kv : int</span>
 <span class="sd">            Tie-line voltage in kv</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">cap_class</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_parse_cap_class</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span>
-        <span class="n">line_capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;power_classes&#39;</span><span class="p">][</span><span class="n">cap_class</span><span class="p">]</span>
-        <span class="n">kv</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;power_to_voltage&#39;</span><span class="p">][</span><span class="nb">str</span><span class="p">(</span><span class="n">line_capacity</span><span class="p">)]</span>
+        <span class="n">line_capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'power_classes'</span><span class="p">][</span><span class="n">cap_class</span><span class="p">]</span>
+        <span class="n">kv</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'power_to_voltage'</span><span class="p">][</span><span class="nb">str</span><span class="p">(</span><span class="n">line_capacity</span><span class="p">)]</span>
 
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">kv</span><span class="p">)</span></div>
 
@@ -863,7 +880,7 @@
 <div class="viewcode-block" id="XmissionConfig.kv_to_capacity">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.XmissionConfig.html#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.kv_to_capacity">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">kv_to_capacity</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">kv</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Convert line voltage to capacity class</span>
 
 <span class="sd">        Parameters</span>
@@ -875,9 +892,9 @@
 <span class="sd">        -------</span>
 <span class="sd">        capacity : int</span>
 <span class="sd">            Capacity class in MW</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">line_capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;voltage_to_power&#39;</span><span class="p">][</span><span class="n">kv</span><span class="p">]</span>
-        <span class="n">capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;line_power_to_classes&#39;</span><span class="p">][</span><span class="n">line_capacity</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;MW&quot;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">line_capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'voltage_to_power'</span><span class="p">][</span><span class="n">kv</span><span class="p">]</span>
+        <span class="n">capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'line_power_to_classes'</span><span class="p">][</span><span class="n">line_capacity</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">"MW"</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">capacity</span><span class="p">)</span></div>
 
@@ -885,7 +902,7 @@
 <div class="viewcode-block" id="XmissionConfig.sub_upgrade_cost">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.XmissionConfig.html#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.sub_upgrade_cost">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">sub_upgrade_cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">tie_line_voltage</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Extract substation upgrade costs in $ for given region and tie-line</span>
 <span class="sd">        voltage rating</span>
 
@@ -900,19 +917,19 @@
 <span class="sd">        -------</span>
 <span class="sd">        int</span>
 <span class="sd">            Substation upgrade cost</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tie_line_voltage</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
             <span class="n">tie_line_voltage</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">tie_line_voltage</span><span class="p">)</span>
 
-        <span class="n">region</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;reverse_iso&#39;</span><span class="p">][</span><span class="n">region</span><span class="p">]</span>
+        <span class="n">region</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'reverse_iso'</span><span class="p">][</span><span class="n">region</span><span class="p">]</span>
 
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;upgrade_substation_costs&#39;</span><span class="p">][</span><span class="n">region</span><span class="p">][</span><span class="n">tie_line_voltage</span><span class="p">]</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'upgrade_substation_costs'</span><span class="p">][</span><span class="n">region</span><span class="p">][</span><span class="n">tie_line_voltage</span><span class="p">]</span></div>
 
 
 <div class="viewcode-block" id="XmissionConfig.new_sub_cost">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.XmissionConfig.html#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.new_sub_cost">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">new_sub_cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">tie_line_voltage</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Extract new substation costs in $ for given region and tie-line</span>
 <span class="sd">        voltage rating</span>
 
@@ -927,19 +944,19 @@
 <span class="sd">        -------</span>
 <span class="sd">        int</span>
 <span class="sd">            New substation cost</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tie_line_voltage</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
             <span class="n">tie_line_voltage</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">tie_line_voltage</span><span class="p">)</span>
 
-        <span class="n">region</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;reverse_iso&#39;</span><span class="p">][</span><span class="n">region</span><span class="p">]</span>
+        <span class="n">region</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'reverse_iso'</span><span class="p">][</span><span class="n">region</span><span class="p">]</span>
 
-        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;new_substation_costs&#39;</span><span class="p">][</span><span class="n">region</span><span class="p">][</span><span class="n">tie_line_voltage</span><span class="p">]</span></div>
+        <span class="k">return</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'new_substation_costs'</span><span class="p">][</span><span class="n">region</span><span class="p">][</span><span class="n">tie_line_voltage</span><span class="p">]</span></div>
 
 
 <div class="viewcode-block" id="XmissionConfig.xformer_cost">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.config.xmission_config.XmissionConfig.html#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.xformer_cost">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">xformer_cost</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">feature_voltage</span><span class="p">,</span> <span class="n">tie_line_voltage</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Extract transformer costs in $ for given region and tie-line</span>
 <span class="sd">        voltage rating</span>
 
@@ -954,11 +971,11 @@
 <span class="sd">        -------</span>
 <span class="sd">        int</span>
 <span class="sd">            Transformer cost as $/MW</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tie_line_voltage</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
             <span class="n">tie_line_voltage</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">tie_line_voltage</span><span class="p">)</span>
 
-        <span class="n">costs</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">&#39;transformer_costs&#39;</span><span class="p">][</span><span class="n">tie_line_voltage</span><span class="p">]</span>
+        <span class="n">costs</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="s1">'transformer_costs'</span><span class="p">][</span><span class="n">tie_line_voltage</span><span class="p">]</span>
 
         <span class="n">classes</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">costs</span><span class="p">)))</span>
         <span class="n">valid_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">classes</span> <span class="o">&gt;=</span> <span class="n">feature_voltage</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>

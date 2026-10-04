@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.plexos.dpv_plexos &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.plexos.dpv_plexos &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for reVX.plexos.dpv_plexos</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Distribute PV to PLEXOS methods.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
@@ -647,10 +664,10 @@
 <div class="viewcode-block" id="DpvResource">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.dpv_plexos.DpvResource.html#reVX.plexos.dpv_plexos.DpvResource">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">DpvResource</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Framework to handle and merge multiple reV distributed PV runs.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Framework to handle and merge multiple reV distributed PV runs."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root_dir</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">sub_dirs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        root_dir : str</span>
@@ -661,7 +678,7 @@
 <span class="sd">        sub_dirs : list</span>
 <span class="sd">            List of strings of directory names in root_dir. Each sub_dir is a</span>
 <span class="sd">            job directory.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_root_dir</span> <span class="o">=</span> <span class="n">root_dir</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_year</span> <span class="o">=</span> <span class="n">year</span>
@@ -671,7 +688,7 @@
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_parse_sub_dirs</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">sub_dirs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get a list of strings of directory names in root_dir.</span>
+<span class="w">        </span><span class="sd">"""Get a list of strings of directory names in root_dir.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -687,7 +704,7 @@
 <span class="sd">        sub_dirs : list</span>
 <span class="sd">            List of strings of directory names in root_dir. Each sub_dir is a</span>
 <span class="sd">            job directory.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">if</span> <span class="n">sub_dirs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">sub_dirs</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">root_dir</span><span class="p">)</span>
@@ -696,7 +713,7 @@
         <span class="k">return</span> <span class="n">sub_dirs</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_sub_dir_fpath</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">sub_dir</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the full h5 filepath of the job in the target sub dir.</span>
+<span class="w">        </span><span class="sd">"""Get the full h5 filepath of the job in the target sub dir.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -707,34 +724,34 @@
 <span class="sd">        -------</span>
 <span class="sd">        fpath : str</span>
 <span class="sd">            Full filepath to the h5 job file in root_dir/sub_dir/</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">fpaths</span> <span class="o">=</span> <span class="p">[]</span>
 
         <span class="n">d</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_root_dir</span><span class="p">,</span> <span class="n">sub_dir</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">fn</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">fn</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.h5&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_year</span><span class="p">)</span> <span class="ow">in</span> <span class="n">fn</span>
-                    <span class="ow">and</span> <span class="s1">&#39;node&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">fn</span><span class="p">):</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">fn</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'.h5'</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_year</span><span class="p">)</span> <span class="ow">in</span> <span class="n">fn</span>
+                    <span class="ow">and</span> <span class="s1">'node'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">fn</span><span class="p">):</span>
                 <span class="n">fpaths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d</span><span class="p">,</span> <span class="n">fn</span><span class="p">))</span>
 
         <span class="n">fpath</span> <span class="o">=</span> <span class="n">fpaths</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">fpaths</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">wmsg</span> <span class="o">=</span> <span class="s1">&#39;More than one h5 filepath found. Using: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fpath</span><span class="p">)</span>
+            <span class="n">wmsg</span> <span class="o">=</span> <span class="s1">'More than one h5 filepath found. Using: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">fpath</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">wmsg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">wmsg</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">fpath</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_all_fpaths</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get a list of all job filepaths in all sub directories.</span>
+<span class="w">        </span><span class="sd">"""Get a list of all job filepaths in all sub directories.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        fpaths : list</span>
 <span class="sd">            List of full filepaths to h5 job files in root_dir/sub_dir/</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">fpaths</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">sub_dir</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sub_dirs</span><span class="p">:</span>
@@ -742,7 +759,7 @@
         <span class="k">return</span> <span class="n">fpaths</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_merge_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">job_frac_map</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Merge reV data from multiple dpv jobs based on relative fractions.</span>
+<span class="w">        </span><span class="sd">"""Merge reV data from multiple dpv jobs based on relative fractions.</span>
 
 <span class="sd">        Example: batch job to run multiple DPV jobs at different tilt/azimuths,</span>
 <span class="sd">        this method will combine all of the different jobs based on respective</span>
@@ -763,7 +780,7 @@
 <span class="sd">        arr : np.ndarray</span>
 <span class="sd">            Unscaled numpy array of dset data merged from all fpaths based</span>
 <span class="sd">            on the job fractions.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">arr</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="n">total_frac</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">for</span> <span class="n">fpath</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fpaths</span><span class="p">:</span>
@@ -775,7 +792,7 @@
                     <span class="k">break</span>
 
             <span class="k">if</span> <span class="n">apply_frac</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Merging &quot;</span><span class="si">{}</span><span class="s1">&quot; with frac </span><span class="si">{}</span><span class="s1"> from: </span><span class="si">{}</span><span class="s1">&#39;</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Merging "</span><span class="si">{}</span><span class="s1">" with frac </span><span class="si">{}</span><span class="s1"> from: </span><span class="si">{}</span><span class="s1">'</span>
                              <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">,</span> <span class="n">apply_frac</span><span class="p">,</span>
                                      <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">fpath</span><span class="p">)))</span>
                 <span class="k">if</span> <span class="n">arr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -786,15 +803,15 @@
                         <span class="n">arr</span> <span class="o">+=</span> <span class="p">(</span><span class="n">apply_frac</span> <span class="o">*</span> <span class="n">out</span><span class="p">[</span><span class="n">dset</span><span class="p">])</span>
 
         <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">total_frac</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.01</span><span class="p">:</span>
-            <span class="n">wmsg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Fractions sum to </span><span class="si">{}</span><span class="s1"> (should be 1.00) when merging &#39;</span>
-                    <span class="s1">&#39;DPV jobs: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_frac</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fpaths</span><span class="p">))</span>
+            <span class="n">wmsg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Fractions sum to </span><span class="si">{}</span><span class="s1"> (should be 1.00) when merging '</span>
+                    <span class="s1">'DPV jobs: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">total_frac</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_fpaths</span><span class="p">))</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">wmsg</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">wmsg</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">arr</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_merge_dpv_files</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fn_out</span><span class="p">,</span> <span class="n">job_frac_map</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Merge multiple DPV reV runs into a single result based on fractional</span>
+<span class="w">        </span><span class="sd">"""Merge multiple DPV reV runs into a single result based on fractional</span>
 <span class="sd">        contributions.</span>
 
 <span class="sd">        Parameters</span>
@@ -806,26 +823,26 @@
 <span class="sd">            The keys are job names (string tags found in the sub_dirs and</span>
 <span class="sd">            job h5 files), and the values are fractions for the</span>
 <span class="sd">            respective jobs.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">fpath_out</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_root_dir</span><span class="p">,</span> <span class="n">fn_out</span><span class="p">)</span>
         <span class="n">shutil</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_fpaths</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">fpath_out</span><span class="p">)</span>
         <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="n">fpath_out</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
             <span class="n">dsets</span> <span class="o">=</span> <span class="p">[</span><span class="n">d</span> <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">out</span><span class="o">.</span><span class="n">datasets</span>
-                     <span class="k">if</span> <span class="n">d</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;time_index&#39;</span><span class="p">,</span> <span class="s1">&#39;meta&#39;</span><span class="p">]]</span>
+                     <span class="k">if</span> <span class="n">d</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'time_index'</span><span class="p">,</span> <span class="s1">'meta'</span><span class="p">]]</span>
 
         <span class="k">for</span> <span class="n">dset</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
             <span class="n">arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_merge_data</span><span class="p">(</span><span class="n">dset</span><span class="p">,</span> <span class="n">job_frac_map</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Writing &quot;</span><span class="si">{}</span><span class="s1">&quot; to merged DPV output file.&#39;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Writing "</span><span class="si">{}</span><span class="s1">" to merged DPV output file.'</span>
                          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">))</span>
-            <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="n">fpath_out</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+            <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="n">fpath_out</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
                 <span class="n">out</span><span class="p">[</span><span class="n">dset</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span>
 
 <div class="viewcode-block" id="DpvResource.merge">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.dpv_plexos.DpvResource.html#reVX.plexos.dpv_plexos.DpvResource.merge">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">merge</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">root_dir</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">fn_out</span><span class="p">,</span> <span class="n">job_frac_map</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Merge multiple DPV reV runs into a single result based on fractional</span>
+<span class="w">        </span><span class="sd">"""Merge multiple DPV reV runs into a single result based on fractional</span>
 <span class="sd">        contributions.</span>
 
 <span class="sd">        Parameters</span>
@@ -842,7 +859,7 @@
 <span class="sd">            The keys are job names (string tags found in the sub_dirs and</span>
 <span class="sd">            job h5 files), and the values are fractions for the</span>
 <span class="sd">            respective jobs.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">dpv</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">root_dir</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">sub_dirs</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">job_frac_map</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span>
         <span class="n">dpv</span><span class="o">.</span><span class="n">_merge_dpv_files</span><span class="p">(</span><span class="n">fn_out</span><span class="p">,</span> <span class="n">job_frac_map</span><span class="p">)</span></div>
@@ -853,10 +870,10 @@
 <div class="viewcode-block" id="DpvPlexosAggregation">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.dpv_plexos.DpvPlexosAggregation.html#reVX.plexos.dpv_plexos.DpvPlexosAggregation">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">DpvPlexosAggregation</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Methods to aggregate DPV profiles to plexos nodes.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Methods to aggregate DPV profiles to plexos nodes."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_buildout</span><span class="p">,</span> <span class="n">cf_fpath</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        node_buildout : str | pd.DataFrame</span>
@@ -864,8 +881,8 @@
 <span class="sd">            [plexos_id, latitude, longitude, built_capacity]</span>
 <span class="sd">        cf_fpath : str</span>
 <span class="sd">            Filepath to a reV capacity factor file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Starting DPV to PLEXOS aggregation.&#39;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Starting DPV to PLEXOS aggregation.'</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_parse_node_buildout</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cf_fpath</span> <span class="o">=</span> <span class="n">cf_fpath</span>
@@ -873,12 +890,12 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_kdtree</span> <span class="o">=</span> <span class="kc">None</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Using CF file: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cf_fpath</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Using CF file: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cf_fpath</span><span class="p">))</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_parse_node_buildout</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node_buildout</span><span class="p">,</span>
-                             <span class="n">req</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;plexos_id&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">,</span>
-                                  <span class="s1">&#39;built_capacity&#39;</span><span class="p">)):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Parse the node buildout table.</span>
+                             <span class="n">req</span><span class="o">=</span><span class="p">(</span><span class="s1">'plexos_id'</span><span class="p">,</span> <span class="s1">'latitude'</span><span class="p">,</span> <span class="s1">'longitude'</span><span class="p">,</span>
+                                  <span class="s1">'built_capacity'</span><span class="p">)):</span>
+<span class="w">        </span><span class="sd">"""Parse the node buildout table.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -886,40 +903,40 @@
 <span class="sd">            Plexos node buildout meta data.</span>
 <span class="sd">        req : list</span>
 <span class="sd">            List of required column names in node_buildout</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Using PLEXOS node file: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">))</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Using PLEXOS node file: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">))</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">)</span>
         <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span> <span class="o">=</span> <span class="n">node_buildout</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;Did not recognize the type of the node buildout &#39;</span>
-                            <span class="s1">&#39;table input: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">)))</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">'Did not recognize the type of the node buildout '</span>
+                            <span class="s1">'table input: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">)))</span>
         <span class="n">missing</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">req</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">r</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">:</span>
                 <span class="n">missing</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">missing</span><span class="p">):</span>
-            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s1">&#39;Node buildout table is missing the following &#39;</span>
-                           <span class="s1">&#39;columns: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">missing</span><span class="p">))</span>
+            <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="s1">'Node buildout table is missing the following '</span>
+                           <span class="s1">'columns: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">missing</span><span class="p">))</span>
 
         <span class="c1"># drop node buildouts without capacity</span>
-        <span class="n">bad</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[</span><span class="s1">&#39;built_capacity&#39;</span><span class="p">])</span>
-               <span class="o">|</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[</span><span class="s1">&#39;built_capacity&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span>
+        <span class="n">bad</span> <span class="o">=</span> <span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[</span><span class="s1">'built_capacity'</span><span class="p">])</span>
+               <span class="o">|</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[</span><span class="s1">'built_capacity'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">))</span>
         <span class="n">bad</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">bad</span><span class="p">]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">bad</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">cf_meta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the cf meta data.</span>
+<span class="w">        </span><span class="sd">"""Get the cf meta data.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        _cf_meta : pd.DataFrame</span>
 <span class="sd">            reV CF Meta data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cf_meta</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cf_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_cf_meta</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">meta</span>
@@ -927,13 +944,13 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">time_index</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the cf time index.</span>
+<span class="w">        </span><span class="sd">"""Get the cf time index.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        _time_index : pd.DateTimeindex</span>
 <span class="sd">            reV timeindex data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cf_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">time_index</span>
@@ -941,21 +958,21 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">kdtree</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the KDtree of the reV CF meta data coordinates.</span>
+<span class="w">        </span><span class="sd">"""Get the KDtree of the reV CF meta data coordinates.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        _kdtree : scipy.spatial.ckdtree</span>
 <span class="sd">            KDtree build from the reV CF meta data coordinates.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_kdtree</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">]</span>
+            <span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'latitude'</span><span class="p">,</span> <span class="s1">'longitude'</span><span class="p">]</span>
             <span class="c1"># pylint: disable=not-callable</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_kdtree</span> <span class="o">=</span> <span class="n">cKDTree</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">cf_meta</span><span class="p">[</span><span class="n">cols</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_kdtree</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_run_nn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Run KDTree query, getting CF index values matching the node buildout</span>
+<span class="w">        </span><span class="sd">"""Run KDTree query, getting CF index values matching the node buildout</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -966,10 +983,10 @@
 <span class="sd">        -------</span>
 <span class="sd">        i : np.ndarray</span>
 <span class="sd">            1D array of CF index values.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">d</span><span class="p">,</span> <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">kdtree</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;KDTree distance min / mean / max: </span><span class="si">{}</span><span class="s1"> / </span><span class="si">{}</span><span class="s1"> / </span><span class="si">{}</span><span class="s1">&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'KDTree distance min / mean / max: </span><span class="si">{}</span><span class="s1"> / </span><span class="si">{}</span><span class="s1"> / </span><span class="si">{}</span><span class="s1">'</span>
                     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
                             <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
                             <span class="n">np</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="n">d</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">decimals</span><span class="o">=</span><span class="mi">3</span><span class="p">)))</span>
@@ -977,18 +994,18 @@
 
 <div class="viewcode-block" id="DpvPlexosAggregation.get_mapped_node_data">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.dpv_plexos.DpvPlexosAggregation.html#reVX.plexos.dpv_plexos.DpvPlexosAggregation.get_mapped_node_data">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">get_mapped_node_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset</span><span class="o">=</span><span class="s1">&#39;cf_profile&#39;</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the CF dataset mapped to plexos nodes via NN results.</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_mapped_node_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset</span><span class="o">=</span><span class="s1">'cf_profile'</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Get the CF dataset mapped to plexos nodes via NN results.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        node_arr : np.ndarray</span>
 <span class="sd">            Get a 2D dataset from the reV cf file mapped to the node_buildout</span>
 <span class="sd">            table via NN.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cf_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
             <span class="n">arr</span> <span class="o">=</span> <span class="n">out</span><span class="p">[</span><span class="n">dset</span><span class="p">]</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_nn</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_run_nn</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[[</span><span class="s1">'latitude'</span><span class="p">,</span> <span class="s1">'longitude'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
         <span class="n">node_arr</span> <span class="o">=</span> <span class="n">arr</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span>
         <span class="k">return</span> <span class="n">node_arr</span></div>
 
@@ -996,7 +1013,7 @@
 <div class="viewcode-block" id="DpvPlexosAggregation.get_node_gen_profiles">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.dpv_plexos.DpvPlexosAggregation.html#reVX.plexos.dpv_plexos.DpvPlexosAggregation.get_node_gen_profiles">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">get_node_gen_profiles</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get the generation profiles (cf * capacity) mapped to the node meta.</span>
+<span class="w">        </span><span class="sd">"""Get the generation profiles (cf * capacity) mapped to the node meta.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
@@ -1004,9 +1021,9 @@
 <span class="sd">            Timeseries profiles of (t, n) where t is the time index and n is</span>
 <span class="sd">            the node buildout. Units are the built_capacity units from the</span>
 <span class="sd">            node_buildout table.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">node_arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_mapped_node_data</span><span class="p">(</span><span class="n">dset</span><span class="o">=</span><span class="s1">&#39;cf_profile&#39;</span><span class="p">)</span>
-        <span class="n">built_capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[</span><span class="s1">&#39;built_capacity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="sd">        """</span>
+        <span class="n">node_arr</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_mapped_node_data</span><span class="p">(</span><span class="n">dset</span><span class="o">=</span><span class="s1">'cf_profile'</span><span class="p">)</span>
+        <span class="n">built_capacity</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_node_buildout</span><span class="p">[</span><span class="s1">'built_capacity'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
         <span class="n">gen_profiles</span> <span class="o">=</span> <span class="n">node_arr</span> <span class="o">*</span> <span class="n">built_capacity</span>
         <span class="k">return</span> <span class="n">gen_profiles</span></div>
 
@@ -1015,7 +1032,7 @@
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.dpv_plexos.DpvPlexosAggregation.html#reVX.plexos.dpv_plexos.DpvPlexosAggregation.run">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">node_buildout</span><span class="p">,</span> <span class="n">cf_fpath</span><span class="p">,</span> <span class="n">out_fpath</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Aggregate dpv reV gen data to a buildout nodes and save to h5.</span>
+<span class="w">        </span><span class="sd">"""Aggregate dpv reV gen data to a buildout nodes and save to h5.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1026,20 +1043,20 @@
 <span class="sd">            Filepath to a reV capacity factor file.</span>
 <span class="sd">        out_fpath : str</span>
 <span class="sd">            Output filepath.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">pa</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">node_buildout</span><span class="p">,</span> <span class="n">cf_fpath</span><span class="p">)</span>
         <span class="n">profiles</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">get_node_gen_profiles</span><span class="p">()</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Writing results to file: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_fpath</span><span class="p">))</span>
-        <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="n">out_fpath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
-            <span class="n">out</span><span class="p">[</span><span class="s1">&#39;dpv/meta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">_node_buildout</span>
-            <span class="n">out</span><span class="p">[</span><span class="s1">&#39;dpv/time_index&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">time_index</span>
-            <span class="n">out</span><span class="o">.</span><span class="n">_create_dset</span><span class="p">(</span><span class="s1">&#39;dpv/gen_profiles&#39;</span><span class="p">,</span> <span class="n">profiles</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Writing results to file: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_fpath</span><span class="p">))</span>
+        <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="n">out_fpath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">out</span><span class="p">:</span>
+            <span class="n">out</span><span class="p">[</span><span class="s1">'dpv/meta'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">_node_buildout</span>
+            <span class="n">out</span><span class="p">[</span><span class="s1">'dpv/time_index'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pa</span><span class="o">.</span><span class="n">time_index</span>
+            <span class="n">out</span><span class="o">.</span><span class="n">_create_dset</span><span class="p">(</span><span class="s1">'dpv/gen_profiles'</span><span class="p">,</span> <span class="n">profiles</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
                              <span class="n">profiles</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
                              <span class="n">data</span><span class="o">=</span><span class="n">profiles</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Finished DPV to PLEXOS aggregation.&#39;</span><span class="p">)</span></div>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Finished DPV to PLEXOS aggregation.'</span><span class="p">)</span></div>
 </div>
 
 </pre></div>

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>rex.outputs &mdash; reVX 0.8.0 documentation</title>
+  <title>rex.outputs &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for rex.outputs</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Classes to handle h5 output files.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -653,7 +670,7 @@
 
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Outputs</span><span class="p">(</span><span class="n">BaseResource</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Base class to handle output data in .h5 format</span>
 
 <span class="sd">    Examples</span>
@@ -665,13 +682,13 @@
 <span class="sd">    &gt;&gt;&gt; import pandas as pd</span>
 <span class="sd">    &gt;&gt;&gt; import numpy as np</span>
 <span class="sd">    &gt;&gt;&gt;</span>
-<span class="sd">    &gt;&gt;&gt; meta = pd.DataFrame({&#39;latitude&#39;: np.ones(100),</span>
-<span class="sd">    &gt;&gt;&gt;                      &#39;longitude&#39;: np.ones(100)})</span>
+<span class="sd">    &gt;&gt;&gt; meta = pd.DataFrame({'latitude': np.ones(100),</span>
+<span class="sd">    &gt;&gt;&gt;                      'longitude': np.ones(100)})</span>
 <span class="sd">    &gt;&gt;&gt;</span>
-<span class="sd">    &gt;&gt;&gt; time_index = pd.date_range(&#39;20210101&#39;, &#39;20220101&#39;, freq=&#39;1h&#39;,</span>
-<span class="sd">    &gt;&gt;&gt;                            closed=&#39;right&#39;)</span>
+<span class="sd">    &gt;&gt;&gt; time_index = pd.date_range('20210101', '20220101', freq='1h',</span>
+<span class="sd">    &gt;&gt;&gt;                            closed='right')</span>
 <span class="sd">    &gt;&gt;&gt;</span>
-<span class="sd">    &gt;&gt;&gt; with Outputs(&#39;test.h5&#39;, &#39;w&#39;) as f:</span>
+<span class="sd">    &gt;&gt;&gt; with Outputs('test.h5', 'w') as f:</span>
 <span class="sd">    &gt;&gt;&gt;     f.meta = meta</span>
 <span class="sd">    &gt;&gt;&gt;     f.time_index = time_index</span>
 
@@ -680,7 +697,7 @@
 <span class="sd">    into the expected pandas objects (DataFrame and DatetimeIndex,</span>
 <span class="sd">    respectively).</span>
 
-<span class="sd">    &gt;&gt;&gt; with Outputs(&#39;test.h5&#39;) as f:</span>
+<span class="sd">    &gt;&gt;&gt; with Outputs('test.h5') as f:</span>
 <span class="sd">    &gt;&gt;&gt;     print(f.meta.head())</span>
 <span class="sd">    &gt;&gt;&gt;</span>
 <span class="sd">         latitude  longitude</span>
@@ -691,38 +708,38 @@
 <span class="sd">    3         1.0        1.0</span>
 <span class="sd">    4         1.0        1.0</span>
 
-<span class="sd">    &gt;&gt;&gt; with Outputs(&#39;test.h5&#39;) as f:</span>
+<span class="sd">    &gt;&gt;&gt; with Outputs('test.h5') as f:</span>
 <span class="sd">    &gt;&gt;&gt;     print(f.time_index)</span>
-<span class="sd">    DatetimeIndex([&#39;2021-01-01 01:00:00+00:00&#39;, &#39;2021-01-01 02:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-01-01 03:00:00+00:00&#39;, &#39;2021-01-01 04:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-01-01 05:00:00+00:00&#39;, &#39;2021-01-01 06:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-01-01 07:00:00+00:00&#39;, &#39;2021-01-01 08:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-01-01 09:00:00+00:00&#39;, &#39;2021-01-01 10:00:00+00:00&#39;,</span>
+<span class="sd">    DatetimeIndex(['2021-01-01 01:00:00+00:00', '2021-01-01 02:00:00+00:00',</span>
+<span class="sd">                   '2021-01-01 03:00:00+00:00', '2021-01-01 04:00:00+00:00',</span>
+<span class="sd">                   '2021-01-01 05:00:00+00:00', '2021-01-01 06:00:00+00:00',</span>
+<span class="sd">                   '2021-01-01 07:00:00+00:00', '2021-01-01 08:00:00+00:00',</span>
+<span class="sd">                   '2021-01-01 09:00:00+00:00', '2021-01-01 10:00:00+00:00',</span>
 <span class="sd">                   ...</span>
-<span class="sd">                   &#39;2021-12-31 15:00:00+00:00&#39;, &#39;2021-12-31 16:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-12-31 17:00:00+00:00&#39;, &#39;2021-12-31 18:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-12-31 19:00:00+00:00&#39;, &#39;2021-12-31 20:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-12-31 21:00:00+00:00&#39;, &#39;2021-12-31 22:00:00+00:00&#39;,</span>
-<span class="sd">                   &#39;2021-12-31 23:00:00+00:00&#39;, &#39;2022-01-01 00:00:00+00:00&#39;],</span>
-<span class="sd">                  dtype=&#39;datetime64[ns, UTC]&#39;, length=8760, freq=None)</span>
+<span class="sd">                   '2021-12-31 15:00:00+00:00', '2021-12-31 16:00:00+00:00',</span>
+<span class="sd">                   '2021-12-31 17:00:00+00:00', '2021-12-31 18:00:00+00:00',</span>
+<span class="sd">                   '2021-12-31 19:00:00+00:00', '2021-12-31 20:00:00+00:00',</span>
+<span class="sd">                   '2021-12-31 21:00:00+00:00', '2021-12-31 22:00:00+00:00',</span>
+<span class="sd">                   '2021-12-31 23:00:00+00:00', '2022-01-01 00:00:00+00:00'],</span>
+<span class="sd">                  dtype='datetime64[ns, UTC]', length=8760, freq=None)</span>
 
 <span class="sd">    There are a few ways to use the Outputs handler to write data to a file.</span>
 <span class="sd">    Here is one example using the pre-initialized file we created earlier.</span>
 <span class="sd">    Note that the Outputs handler will automatically scale float data using</span>
-<span class="sd">    the &quot;scale_factor&quot; attribute. The Outputs handler will unscale the data</span>
+<span class="sd">    the "scale_factor" attribute. The Outputs handler will unscale the data</span>
 <span class="sd">    while being read unless the unscale kwarg is explicityly set to False.</span>
 <span class="sd">    This behavior is intended to reduce disk storage requirements for big</span>
 <span class="sd">    data and can be disabled by setting dtype=np.float32 or dtype=np.float64</span>
 <span class="sd">    when writing data.</span>
 
-<span class="sd">    &gt;&gt;&gt; Outputs.add_dataset(h5_file=&#39;test.h5&#39;, dset_name=&#39;dset1&#39;,</span>
+<span class="sd">    &gt;&gt;&gt; Outputs.add_dataset(h5_file='test.h5', dset_name='dset1',</span>
 <span class="sd">    &gt;&gt;&gt;                     dset_data=np.ones((8760, 100)) * 42.42,</span>
-<span class="sd">    &gt;&gt;&gt;                     attrs={&#39;scale_factor&#39;: 100}, dtype=np.int32)</span>
+<span class="sd">    &gt;&gt;&gt;                     attrs={'scale_factor': 100}, dtype=np.int32)</span>
 
 
-<span class="sd">    &gt;&gt;&gt; with Outputs(&#39;test.h5&#39;) as f:</span>
-<span class="sd">    &gt;&gt;&gt;     print(f[&#39;dset1&#39;])</span>
-<span class="sd">    &gt;&gt;&gt;     print(f[&#39;dset1&#39;].dtype)</span>
+<span class="sd">    &gt;&gt;&gt; with Outputs('test.h5') as f:</span>
+<span class="sd">    &gt;&gt;&gt;     print(f['dset1'])</span>
+<span class="sd">    &gt;&gt;&gt;     print(f['dset1'].dtype)</span>
 <span class="sd">    [[42.42 42.42 42.42 ... 42.42 42.42 42.42]</span>
 <span class="sd">     [42.42 42.42 42.42 ... 42.42 42.42 42.42]</span>
 <span class="sd">     [42.42 42.42 42.42 ... 42.42 42.42 42.42]</span>
@@ -732,9 +749,9 @@
 <span class="sd">     [42.42 42.42 42.42 ... 42.42 42.42 42.42]]</span>
 <span class="sd">    float32</span>
 
-<span class="sd">    &gt;&gt;&gt; with Outputs(&#39;test.h5&#39;, unscale=False) as f:</span>
-<span class="sd">    &gt;&gt;&gt;     print(f[&#39;dset1&#39;])</span>
-<span class="sd">    &gt;&gt;&gt;     print(f[&#39;dset1&#39;].dtype)</span>
+<span class="sd">    &gt;&gt;&gt; with Outputs('test.h5', unscale=False) as f:</span>
+<span class="sd">    &gt;&gt;&gt;     print(f['dset1'])</span>
+<span class="sd">    &gt;&gt;&gt;     print(f['dset1'].dtype)</span>
 <span class="sd">    [[4242 4242 4242 ... 4242 4242 4242]</span>
 <span class="sd">     [4242 4242 4242 ... 4242 4242 4242]</span>
 <span class="sd">     [4242 4242 4242 ... 4242 4242 4242]</span>
@@ -753,28 +770,28 @@
 <span class="sd">    shape corresponds to (len(time_index), len(meta)). You can see these</span>
 <span class="sd">    constraints here:</span>
 
-<span class="sd">    &gt;&gt;&gt; Outputs.add_dataset(h5_file=&#39;test.h5&#39;, dset_name=&#39;bad_shape&#39;,</span>
+<span class="sd">    &gt;&gt;&gt; Outputs.add_dataset(h5_file='test.h5', dset_name='bad_shape',</span>
 <span class="sd">                            dset_data=np.ones((1, 100)) * 42.42,</span>
-<span class="sd">                            attrs={&#39;scale_factor&#39;: 100}, dtype=np.int32)</span>
+<span class="sd">                            attrs={'scale_factor': 100}, dtype=np.int32)</span>
 <span class="sd">    HandlerValueError: 2D data with shape (1, 100) is not of the proper</span>
 <span class="sd">    spatiotemporal shape: (8760, 100)</span>
 
-<span class="sd">    &gt;&gt;&gt; Outputs.add_dataset(h5_file=&#39;test.h5&#39;, dset_name=&#39;bad_shape&#39;,</span>
+<span class="sd">    &gt;&gt;&gt; Outputs.add_dataset(h5_file='test.h5', dset_name='bad_shape',</span>
 <span class="sd">                            dset_data=np.ones((8760,)) * 42.42,</span>
-<span class="sd">                            attrs={&#39;scale_factor&#39;: 100}, dtype=np.int32)</span>
+<span class="sd">                            attrs={'scale_factor': 100}, dtype=np.int32)</span>
 <span class="sd">    HandlerValueError: 1D data with shape (8760,) is not of the proper</span>
 <span class="sd">    spatial shape: (100,)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'r'</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                  <span class="n">group</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        h5_file : str</span>
 <span class="sd">            Path to .h5 resource file</span>
 <span class="sd">        mode : str, optional</span>
-<span class="sd">            Mode to instantiate h5py.File instance, by default &#39;r&#39;</span>
+<span class="sd">            Mode to instantiate h5py.File instance, by default 'r'</span>
 <span class="sd">        unscale : bool, optional</span>
 <span class="sd">            Boolean flag to automatically unscale variables on extraction,</span>
 <span class="sd">            by default True</span>
@@ -784,7 +801,7 @@
 <span class="sd">            by default True</span>
 <span class="sd">        group : str, optional</span>
 <span class="sd">            Group within .h5 resource file to open, by default None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="n">unscale</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                          <span class="n">str_decode</span><span class="o">=</span><span class="n">str_decode</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="n">group</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span> <span class="o">=</span> <span class="n">mode</span>
@@ -796,8 +813,8 @@
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="n">_len</span> <span class="o">=</span> <span class="mi">0</span>
-        <span class="k">if</span> <span class="s1">&#39;meta&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
-            <span class="n">_len</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">if</span> <span class="s1">'meta'</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
+            <span class="n">_len</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
         <span class="k">return</span> <span class="n">_len</span>
 
@@ -809,109 +826,109 @@
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">ds_slice</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">):</span>
                 <span class="n">slice_test</span> <span class="o">=</span> <span class="n">ds_slice</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
-            <span class="k">if</span> <span class="n">ds</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">slice_test</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">ds</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'meta'</span><span class="p">)</span> <span class="ow">and</span> <span class="n">slice_test</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_set_meta</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;time_index&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="n">slice_test</span><span class="p">:</span>
+            <span class="k">elif</span> <span class="n">ds</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">'time_index'</span><span class="p">)</span> <span class="ow">and</span> <span class="n">slice_test</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_set_time_index</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">arr</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_set_ds_array</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">ds_slice</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">full_version_record</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get record of versions for dependencies</span>
+<span class="w">        </span><span class="sd">"""Get record of versions for dependencies</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        dict</span>
 <span class="sd">            Dictionary of package versions for dependencies</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">versions</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;python&#39;</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">,</span>
-                    <span class="s1">&#39;rex&#39;</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
-                    <span class="s1">&#39;h5py&#39;</span><span class="p">:</span> <span class="n">h5py</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
-                    <span class="s1">&#39;h5pyd&#39;</span><span class="p">:</span> <span class="n">h5pyd</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
-                    <span class="s1">&#39;pandas&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
-                    <span class="s1">&#39;numpy&#39;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
-                    <span class="s1">&#39;scipy&#39;</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
-                    <span class="s1">&#39;click&#39;</span><span class="p">:</span> <span class="n">click</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+<span class="sd">        """</span>
+        <span class="n">versions</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'python'</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">,</span>
+                    <span class="s1">'rex'</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
+                    <span class="s1">'h5py'</span><span class="p">:</span> <span class="n">h5py</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+                    <span class="s1">'h5pyd'</span><span class="p">:</span> <span class="n">h5pyd</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+                    <span class="s1">'pandas'</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+                    <span class="s1">'numpy'</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+                    <span class="s1">'scipy'</span><span class="p">:</span> <span class="n">scipy</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+                    <span class="s1">'click'</span><span class="p">:</span> <span class="n">click</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
                     <span class="p">}</span>
         <span class="k">return</span> <span class="n">versions</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">set_version_attr</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Set the version attribute to the h5 file.&quot;&quot;&quot;</span>
-        <span class="n">new_attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;version&#39;</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
-                     <span class="s1">&#39;full_version_record&#39;</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span>
+<span class="w">        </span><span class="sd">"""Set the version attribute to the h5 file."""</span>
+        <span class="n">new_attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'version'</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
+                     <span class="s1">'full_version_record'</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span>
                          <span class="bp">self</span><span class="o">.</span><span class="n">full_version_record</span><span class="p">),</span>
-                     <span class="s1">&#39;package&#39;</span><span class="p">:</span> <span class="s1">&#39;rex&#39;</span><span class="p">}</span>
+                     <span class="s1">'package'</span><span class="p">:</span> <span class="s1">'rex'</span><span class="p">}</span>
         <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">new_attrs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
             <span class="k">if</span> <span class="n">name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">version</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Version of package used to create file</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        str</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;version&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'version'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">package</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Package used to create file</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        str</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;package&#39;</span><span class="p">]</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'package'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">source</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Package and version used to create file</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        str</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">out</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2">_</span><span class="si">{}</span><span class="s2">&quot;</span>
-               <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;package&#39;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;version&#39;</span><span class="p">]))</span>
+<span class="sd">        """</span>
+        <span class="n">out</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"</span><span class="si">{}</span><span class="s2">_</span><span class="si">{}</span><span class="s2">"</span>
+               <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'package'</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'version'</span><span class="p">]))</span>
         <span class="k">return</span> <span class="n">out</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Variable array shape from time_index and meta</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        tuple</span>
 <span class="sd">            shape of variables arrays == (time, locations)</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">dsets</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span>
-            <span class="k">if</span> <span class="s1">&#39;meta&#39;</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
-                <span class="k">if</span> <span class="s1">&#39;time_index&#39;</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
-                    <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">&#39;time_index&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span>
+            <span class="k">if</span> <span class="s1">'meta'</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+                <span class="k">if</span> <span class="s1">'time_index'</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">'time_index'</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">writable</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Check to see if h5py.File instance is writable</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        is_writable : bool</span>
 <span class="sd">            Flag if mode is writable</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">is_writable</span> <span class="o">=</span> <span class="kc">True</span>
-        <span class="n">mode</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;w-&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">]</span>
+        <span class="n">mode</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'w'</span><span class="p">,</span> <span class="s1">'w-'</span><span class="p">,</span> <span class="s1">'x'</span><span class="p">]</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mode</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
             <span class="n">is_writable</span> <span class="o">=</span> <span class="kc">False</span>
 
@@ -919,41 +936,41 @@
 
     <span class="nd">@BaseResource</span><span class="o">.</span><span class="n">meta</span><span class="o">.</span><span class="n">setter</span>  <span class="c1"># pylint: disable-msg=E1101</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">meta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">meta</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write meta data to disk, convert type if neccessary</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        meta : pandas.DataFrame | numpy.recarray</span>
 <span class="sd">            Locational meta data</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_set_meta</span><span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">,</span> <span class="n">meta</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_meta</span><span class="p">(</span><span class="s1">'meta'</span><span class="p">,</span> <span class="n">meta</span><span class="p">)</span>
 
     <span class="nd">@BaseResource</span><span class="o">.</span><span class="n">time_index</span><span class="o">.</span><span class="n">setter</span>  <span class="c1"># pylint: disable-msg=E1101</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">time_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time_index</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write time_index to dics, convert type if neccessary</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        time_index : pandas.DatetimeIndex | ndarray</span>
 <span class="sd">            Temporal index of timesteps</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_set_time_index</span><span class="p">(</span><span class="s1">&#39;time_index&#39;</span><span class="p">,</span> <span class="n">time_index</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_set_time_index</span><span class="p">(</span><span class="s1">'time_index'</span><span class="p">,</span> <span class="n">time_index</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">SAM_configs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        SAM configuration JSONs used to create CF profiles</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        configs : dict</span>
 <span class="sd">            Dictionary of SAM configuration JSONs</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="s1">&#39;meta&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
+<span class="sd">        """</span>
+        <span class="k">if</span> <span class="s1">'meta'</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
             <span class="n">configs</span> <span class="o">=</span> <span class="p">{</span><span class="n">k</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
-                       <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+                       <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">configs</span> <span class="o">=</span> <span class="p">{}</span>
 
@@ -961,32 +978,32 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run_attrs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Runtime attributes stored at the global (file) level</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        global_attrs : dict</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">global_attrs</span>
 
     <span class="nd">@run_attrs</span><span class="o">.</span><span class="n">setter</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run_attrs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">run_attrs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Set runtime attributes as global (file) attributes</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        run_attrs : dict</span>
 <span class="sd">            Dictionary of runtime attributes (args, kwargs)</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">writable</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">run_attrs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">v</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_data_dtype</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Check data dtype and scale if needed</span>
 
 <span class="sd">        Parameters</span>
@@ -998,7 +1015,7 @@
 <span class="sd">        dtype : str</span>
 <span class="sd">            dtype of data on disc</span>
 <span class="sd">        attrs : dict, optional</span>
-<span class="sd">            Attributes to be set. May include &#39;scale_factor&#39;,</span>
+<span class="sd">            Attributes to be set. May include 'scale_factor',</span>
 <span class="sd">            by default None</span>
 
 <span class="sd">        Returns</span>
@@ -1006,18 +1023,18 @@
 <span class="sd">        data : ndarray</span>
 <span class="sd">            Data ready for writing to disc:</span>
 <span class="sd">            - Scaled and converted to dtype</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">attrs</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">attrs</span> <span class="o">=</span> <span class="p">{}</span>
 
-        <span class="n">scale_factor</span> <span class="o">=</span> <span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;scale_factor&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+        <span class="n">scale_factor</span> <span class="o">=</span> <span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'scale_factor'</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 
         <span class="n">scale</span> <span class="o">=</span> <span class="p">(</span><span class="n">scale_factor</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
                  <span class="ow">and</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">scale</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">scale_factor</span> <span class="o">!=</span> <span class="mi">1</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">):</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Output dtype for &quot;</span><span class="si">{}</span><span class="s1">&quot; must be an integer in &#39;</span>
-                       <span class="s1">&#39;order to apply scale factor </span><span class="si">{}</span><span class="s1">&quot;.&#39;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Output dtype for "</span><span class="si">{}</span><span class="s1">" must be an integer in '</span>
+                       <span class="s1">'order to apply scale factor </span><span class="si">{}</span><span class="s1">".'</span>
                        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">scale_factor</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -1030,36 +1047,36 @@
 
         <span class="k">elif</span> <span class="p">(</span><span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">))</span>
                 <span class="ow">and</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">issubdtype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">(</span><span class="n">dtype</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">floating</span><span class="p">)):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;A scale_factor is needed to scale &#39;</span>
-                   <span class="s1">&#39;&quot;</span><span class="si">{}</span><span class="s1">&quot; of type &quot;</span><span class="si">{}</span><span class="s1">&quot; to &quot;</span><span class="si">{}</span><span class="s1">&quot;.&#39;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'A scale_factor is needed to scale '</span>
+                   <span class="s1">'"</span><span class="si">{}</span><span class="s1">" of type "</span><span class="si">{}</span><span class="s1">" to "</span><span class="si">{}</span><span class="s1">".'</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">dtype</span><span class="p">))</span>
             <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">data</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_group</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Ensure group is in .h5 file</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        group : str</span>
 <span class="sd">            Group of interest</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">group</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">group</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_h5</span><span class="p">:</span>
                 <span class="k">try</span><span class="p">:</span>
                     <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">writable</span><span class="p">:</span>
                         <span class="bp">self</span><span class="o">.</span><span class="n">_h5</span><span class="o">.</span><span class="n">create_group</span><span class="p">(</span><span class="n">group</span><span class="p">)</span>
                 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
-                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Cannot create group </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">&#39;</span>
+                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Cannot create group </span><span class="si">{}</span><span class="s1">: </span><span class="si">{}</span><span class="s1">'</span>
                            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">group</span><span class="p">,</span> <span class="n">ex</span><span class="p">))</span>
                     <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">ex</span>
 
         <span class="k">return</span> <span class="n">group</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_set_meta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ds</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write meta data to disk</span>
 
 <span class="sd">        Parameters</span>
@@ -1070,7 +1087,7 @@
 <span class="sd">            Locational meta data</span>
 <span class="sd">        attrs : dict</span>
 <span class="sd">            Attributes to add to the meta data dataset</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="c1"># pylint: disable=attribute-defined-outside-init</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_meta</span> <span class="o">=</span> <span class="n">meta</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">meta</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">):</span>
@@ -1083,7 +1100,7 @@
                               <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_set_time_index</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ds</span><span class="p">,</span> <span class="n">time_index</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write time index to disk</span>
 
 <span class="sd">        Parameters</span>
@@ -1094,12 +1111,12 @@
 <span class="sd">            Temporal index of timesteps</span>
 <span class="sd">        attrs : dict</span>
 <span class="sd">            Attributes to add to the meta data dataset</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="c1"># pylint: disable=attribute-defined-outside-init</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span> <span class="o">=</span> <span class="n">time_index</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">time_index</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DatetimeIndex</span><span class="p">):</span>
             <span class="n">time_index</span> <span class="o">=</span> <span class="n">time_index</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>
-            <span class="n">dtype</span> <span class="o">=</span> <span class="s2">&quot;S</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">time_index</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
+            <span class="n">dtype</span> <span class="o">=</span> <span class="s2">"S</span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">time_index</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
             <span class="n">time_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">time_index</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">ds</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
@@ -1111,7 +1128,7 @@
 <div class="viewcode-block" id="Outputs.get_config">
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.get_config">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">get_config</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">config_name</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get SAM config</span>
 
 <span class="sd">        Parameters</span>
@@ -1123,9 +1140,9 @@
 <span class="sd">        -------</span>
 <span class="sd">        config : dict</span>
 <span class="sd">            SAM config JSON as a dictionary</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="s1">&#39;meta&#39;</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
-            <span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">config_name</span><span class="p">])</span>
+<span class="sd">        """</span>
+        <span class="k">if</span> <span class="s1">'meta'</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
+            <span class="n">config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">config_name</span><span class="p">])</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">config</span> <span class="o">=</span> <span class="kc">None</span>
 
@@ -1135,14 +1152,14 @@
 <div class="viewcode-block" id="Outputs.set_configs">
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.set_configs">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">set_configs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">SAM_configs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Set SAM configuration JSONs as attributes of &#39;meta&#39;</span>
+<span class="w">        </span><span class="sd">"""</span>
+<span class="sd">        Set SAM configuration JSONs as attributes of 'meta'</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        SAM_configs : dict</span>
 <span class="sd">            Dictionary of SAM configuration JSONs</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">writable</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">config</span> <span class="ow">in</span> <span class="n">SAM_configs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
                 <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
@@ -1151,11 +1168,11 @@
                 <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
                     <span class="n">key</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
 
-                <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span></div>
+                <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span></div>
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_set_ds_array</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ds_name</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">ds_slice</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write ds to disk</span>
 
 <span class="sd">        Parameters</span>
@@ -1166,9 +1183,9 @@
 <span class="sd">            Dataset data array</span>
 <span class="sd">        ds_slice : tuple</span>
 <span class="sd">            Dataset slicing that corresponds to arr</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">ds_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> must be initialized!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_name</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1"> must be initialized!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_name</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="n">dtype</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="p">[</span><span class="n">ds_name</span><span class="p">]</span><span class="o">.</span><span class="n">dtype</span>
@@ -1178,7 +1195,7 @@
             <span class="n">ds_name</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_chunks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chunks</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Convert dataset chunk size into valid tuple based on variable array</span>
 <span class="sd">        shape</span>
 
@@ -1193,7 +1210,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        ds_chunks : tuple | None</span>
 <span class="sd">            dataset chunk size</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">chunks</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">None</span>
 
@@ -1203,9 +1220,9 @@
             <span class="n">shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span>
 
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunks</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Shape dimensions (</span><span class="si">{}</span><span class="s1">) are not the same length as chunks &#39;</span>
-                   <span class="s1">&#39;(</span><span class="si">{}</span><span class="s1">). Please provide a single chunk value for each &#39;</span>
-                   <span class="s1">&#39;dimension!&#39;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Shape dimensions (</span><span class="si">{}</span><span class="s1">) are not the same length as chunks '</span>
+                   <span class="s1">'(</span><span class="si">{}</span><span class="s1">). Please provide a single chunk value for each '</span>
+                   <span class="s1">'dimension!'</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">chunks</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -1215,7 +1232,7 @@
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_create_dset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">ds_name</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                      <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Initialize dataset</span>
 
 <span class="sd">        Parameters</span>
@@ -1234,7 +1251,7 @@
 <span class="sd">            Dataset data array</span>
 <span class="sd">        replace : bool</span>
 <span class="sd">            If previous dataset exists with the same name, it will be replaced.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">ds</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">writable</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">ds_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span> <span class="ow">and</span> <span class="n">replace</span><span class="p">:</span>
@@ -1243,9 +1260,9 @@
             <span class="k">elif</span> <span class="n">ds_name</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">datasets</span><span class="p">:</span>
                 <span class="n">old_shape</span><span class="p">,</span> <span class="n">old_dtype</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_dset_properties</span><span class="p">(</span><span class="n">ds_name</span><span class="p">)</span>
                 <span class="k">if</span> <span class="n">old_shape</span> <span class="o">!=</span> <span class="n">shape</span> <span class="ow">or</span> <span class="n">old_dtype</span> <span class="o">!=</span> <span class="n">dtype</span><span class="p">:</span>
-                    <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Trying to create dataset &quot;</span><span class="si">{}</span><span class="s1">&quot;, but already exists &#39;</span>
-                         <span class="s1">&#39;with mismatched shape and dtype. New shape/dtype &#39;</span>
-                         <span class="s1">&#39;is </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">, previous shape/dtype is </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">&#39;</span>
+                    <span class="n">e</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Trying to create dataset "</span><span class="si">{}</span><span class="s1">", but already exists '</span>
+                         <span class="s1">'with mismatched shape and dtype. New shape/dtype '</span>
+                         <span class="s1">'is </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">, previous shape/dtype is </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1">'</span>
                          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_name</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">old_shape</span><span class="p">,</span> <span class="n">old_dtype</span><span class="p">))</span>
                     <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
                     <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
@@ -1256,7 +1273,7 @@
                     <span class="n">ds</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="n">ds_name</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">shape</span><span class="p">,</span>
                                                 <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">)</span>
                 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Could not create dataset &quot;</span><span class="si">{}</span><span class="s1">&quot; in file!&#39;</span>
+                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Could not create dataset "</span><span class="si">{}</span><span class="s1">" in file!'</span>
                            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_name</span><span class="p">))</span>
                     <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                     <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
@@ -1269,7 +1286,7 @@
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_create_ds_attrs</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">ds_name</span><span class="p">,</span> <span class="n">attrs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create dataset attributes.</span>
+<span class="w">        </span><span class="sd">"""Create dataset attributes.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1279,19 +1296,19 @@
 <span class="sd">            Dataset name for logging / debugging</span>
 <span class="sd">        attrs : dict | None</span>
 <span class="sd">            Dataset attributes to write (None if no attributes to write).</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">attrs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">attrs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
                 <span class="k">try</span><span class="p">:</span>
                     <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
                 <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Could not save datset &quot;</span><span class="si">{}</span><span class="s1">&quot; attribute &quot;</span><span class="si">{}</span><span class="s1">&quot; &#39;</span>
-                           <span class="s1">&#39;to value: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_name</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
+                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Could not save datset "</span><span class="si">{}</span><span class="s1">" attribute "</span><span class="si">{}</span><span class="s1">" '</span>
+                           <span class="s1">'to value: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds_name</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">))</span>
                     <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                     <span class="k">raise</span> <span class="ne">IOError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">e</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_dset_shape</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset_name</span><span class="p">,</span> <span class="n">dset_data</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Check to ensure that dataset array is of the proper shape</span>
 
 <span class="sd">        Parameters</span>
@@ -1300,31 +1317,31 @@
 <span class="sd">            Dataset name being written to disk.</span>
 <span class="sd">        dset_data : ndarray</span>
 <span class="sd">            Dataset data array</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">dset_shape</span> <span class="o">=</span> <span class="n">dset_data</span><span class="o">.</span><span class="n">shape</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">dset_shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
             <span class="n">possible_shapes</span> <span class="o">=</span> <span class="p">{}</span>
             <span class="k">try</span><span class="p">:</span>
-                <span class="n">possible_shapes</span><span class="p">[</span><span class="s2">&quot;spatial&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">),)</span>
+                <span class="n">possible_shapes</span><span class="p">[</span><span class="s2">"spatial"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">),)</span>
             <span class="k">except</span> <span class="n">ResourceKeyError</span><span class="p">:</span>
                 <span class="k">pass</span>
             <span class="k">try</span><span class="p">:</span>
-                <span class="n">possible_shapes</span><span class="p">[</span><span class="s2">&quot;temporal&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time_index</span><span class="p">),)</span>
+                <span class="n">possible_shapes</span><span class="p">[</span><span class="s2">"temporal"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">time_index</span><span class="p">),)</span>
             <span class="k">except</span> <span class="n">ResourceKeyError</span><span class="p">:</span>
                 <span class="k">pass</span>
 
             <span class="k">if</span> <span class="ow">not</span> <span class="n">possible_shapes</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Please load either &#39;meta&#39; or &#39;time_index&#39; before &quot;</span>
-                       <span class="s2">&quot;loading a 1D dataset.&quot;</span><span class="p">)</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"Please load either 'meta' or 'time_index' before "</span>
+                       <span class="s2">"loading a 1D dataset."</span><span class="p">)</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="n">dset_shape</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">possible_shapes</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
-                <span class="n">possible_shapes_str</span> <span class="o">=</span> <span class="s2">&quot; or &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+                <span class="n">possible_shapes_str</span> <span class="o">=</span> <span class="s2">" or "</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="s2">"</span><span class="si">{}</span><span class="s2"> </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
                                                    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span>
                                                    <span class="ow">in</span> <span class="n">possible_shapes</span><span class="o">.</span><span class="n">items</span><span class="p">()])</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;1D dataset &quot;</span><span class="si">{}</span><span class="s1">&quot; with shape </span><span class="si">{}</span><span class="s1"> is not of &#39;</span>
-                       <span class="s1">&#39;the proper </span><span class="si">{}</span><span class="s1"> shape!&#39;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'1D dataset "</span><span class="si">{}</span><span class="s1">" with shape </span><span class="si">{}</span><span class="s1"> is not of '</span>
+                       <span class="s1">'the proper </span><span class="si">{}</span><span class="s1"> shape!'</span>
                        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">dset_shape</span><span class="p">,</span> <span class="n">possible_shapes_str</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="n">HandlerValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -1332,18 +1349,18 @@
             <span class="n">shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span>
             <span class="k">if</span> <span class="n">shape</span><span class="p">:</span>
                 <span class="k">if</span> <span class="n">dset_shape</span> <span class="o">!=</span> <span class="n">shape</span><span class="p">:</span>
-                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;2D dataset &quot;</span><span class="si">{}</span><span class="s1">&quot; with shape </span><span class="si">{}</span><span class="s1"> is not of the &#39;</span>
-                           <span class="s1">&#39;proper spatiotemporal shape: </span><span class="si">{}</span><span class="s1">&#39;</span>
+                    <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'2D dataset "</span><span class="si">{}</span><span class="s1">" with shape </span><span class="si">{}</span><span class="s1"> is not of the '</span>
+                           <span class="s1">'proper spatiotemporal shape: </span><span class="si">{}</span><span class="s1">'</span>
                            <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">dset_shape</span><span class="p">,</span> <span class="n">shape</span><span class="p">))</span>
                     <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                     <span class="k">raise</span> <span class="n">HandlerValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;&#39;meta&#39; and &#39;time_index&#39; have not been loaded&quot;</span><span class="p">)</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"'meta' and 'time_index' have not been loaded"</span><span class="p">)</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="n">HandlerRuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_add_dset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write dataset to disk. Dataset it created in .h5 file and data is</span>
 <span class="sd">        scaled if needed.</span>
 
@@ -1358,8 +1375,8 @@
 <span class="sd">        chunks : tuple</span>
 <span class="sd">            Chunk size for capacity factor means dataset.</span>
 <span class="sd">        attrs : dict</span>
-<span class="sd">            Attributes to be set. May include &#39;scale_factor&#39;.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">            Attributes to be set. May include 'scale_factor'.</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_dset_shape</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
 
         <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_data_dtype</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
@@ -1370,7 +1387,7 @@
 <div class="viewcode-block" id="Outputs.update_dset">
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.update_dset">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">update_dset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">dset_array</span><span class="p">,</span> <span class="n">dset_slice</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Check to see if dset needs to be updated on disk</span>
 <span class="sd">        If so write dset_array to disk</span>
 
@@ -1382,7 +1399,7 @@
 <span class="sd">            dataset array</span>
 <span class="sd">        dset_slice : tuple</span>
 <span class="sd">            slice of dataset to update, it None update all</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">dset_slice</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">dset_slice</span> <span class="o">=</span> <span class="p">(</span><span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span> <span class="p">)</span>
 
@@ -1397,7 +1414,7 @@
 <div class="viewcode-block" id="Outputs.write_dataset">
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.write_dataset">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">write_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write dataset to disk. Dataset it created in .h5 file and data is</span>
 <span class="sd">        scaled if needed.</span>
 
@@ -1412,8 +1429,8 @@
 <span class="sd">        chunks : tuple</span>
 <span class="sd">            Chunk size for capacity factor means dataset.</span>
 <span class="sd">        attrs : dict</span>
-<span class="sd">            Attributes to be set. May include &#39;scale_factor&#39;.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">            Attributes to be set. May include 'scale_factor'.</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_add_dset</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span></div>
 
 
@@ -1422,8 +1439,8 @@
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">write_profiles</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">time_index</span><span class="p">,</span> <span class="n">dset_name</span><span class="p">,</span> <span class="n">profiles</span><span class="p">,</span>
                        <span class="n">dtype</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">SAM_configs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span>
-                       <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w-&#39;</span><span class="p">,</span> <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+                       <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'w-'</span><span class="p">,</span> <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write profiles to disk</span>
 
 <span class="sd">        Parameters</span>
@@ -1441,7 +1458,7 @@
 <span class="sd">        dtype : str</span>
 <span class="sd">            Intended dataset datatype after scaling.</span>
 <span class="sd">        attrs : dict, optional</span>
-<span class="sd">            Attributes to be set. May include &#39;scale_factor&#39;, by default None</span>
+<span class="sd">            Attributes to be set. May include 'scale_factor', by default None</span>
 <span class="sd">        SAM_configs : dict, optional</span>
 <span class="sd">            Dictionary of SAM configuration JSONs used to compute cf means,</span>
 <span class="sd">            by default None</span>
@@ -1452,42 +1469,42 @@
 <span class="sd">            Boolean flag to automatically unscale variables on extraction,</span>
 <span class="sd">            by default True</span>
 <span class="sd">        mode : str, optional</span>
-<span class="sd">            Mode to instantiate h5py.File instance, by default &#39;w-&#39;</span>
+<span class="sd">            Mode to instantiate h5py.File instance, by default 'w-'</span>
 <span class="sd">        str_decode : bool, optional</span>
 <span class="sd">            Boolean flag to decode the bytestring meta data into normal</span>
 <span class="sd">            strings. Setting this to False will speed up the meta data read,</span>
 <span class="sd">            by default True</span>
 <span class="sd">        group : str, optional</span>
 <span class="sd">            Group within .h5 resource file to open, by default None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Saving profiles (</span><span class="si">{}</span><span class="s2">) to </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">))</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Saving profiles (</span><span class="si">{}</span><span class="s2">) to </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">))</span>
         <span class="k">if</span> <span class="n">profiles</span><span class="o">.</span><span class="n">shape</span> <span class="o">!=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">time_index</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">meta</span><span class="p">)):</span>
-            <span class="k">raise</span> <span class="n">HandlerValueError</span><span class="p">(</span><span class="s2">&quot;Profile dimensions does not match&quot;</span>
-                                    <span class="s2">&quot;&#39;time_index&#39; and &#39;meta&#39;&quot;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="n">HandlerValueError</span><span class="p">(</span><span class="s2">"Profile dimensions does not match"</span>
+                                    <span class="s2">"'time_index' and 'meta'"</span><span class="p">)</span>
         <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;unscale&quot;</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">&quot;str_decode&quot;</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
-                  <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"unscale"</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">"mode"</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">"str_decode"</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
+                  <span class="s2">"group"</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
         <span class="k">with</span> <span class="bp">cls</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="c1"># Save time index</span>
-            <span class="n">f</span><span class="p">[</span><span class="s1">&#39;time_index&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_index</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- &#39;time_index&#39; saved to disc&quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="p">[</span><span class="s1">'time_index'</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_index</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- 'time_index' saved to disc"</span><span class="p">)</span>
             <span class="c1"># Save meta</span>
-            <span class="n">f</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- &#39;meta&#39; saved to disc&quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- 'meta' saved to disc"</span><span class="p">)</span>
             <span class="c1"># Add SAM configurations as attributes to meta</span>
             <span class="k">if</span> <span class="n">SAM_configs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">set_configs</span><span class="p">(</span><span class="n">SAM_configs</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- SAM configurations saved as attributes &quot;</span>
-                             <span class="s2">&quot;on &#39;meta&#39;&quot;</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- SAM configurations saved as attributes "</span>
+                             <span class="s2">"on 'meta'"</span><span class="p">)</span>
 
             <span class="c1"># Write dset to disk</span>
             <span class="n">f</span><span class="o">.</span><span class="n">_add_dset</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">profiles</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span>
                         <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- &#39;</span><span class="si">{}</span><span class="s2">&#39; saved to disc&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">))</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- '</span><span class="si">{}</span><span class="s2">' saved to disc"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">))</span>
 
         <span class="n">tt</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">ts</span><span class="p">)</span> <span class="o">/</span> <span class="mi">60</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is complete&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_file</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Saving to disc took </span><span class="si">{:.4f}</span><span class="s1"> minutes&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> is complete'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_file</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Saving to disc took </span><span class="si">{:.4f}</span><span class="s1"> minutes'</span>
                      <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tt</span><span class="p">))</span></div>
 
 
@@ -1495,9 +1512,9 @@
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.write_means">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">write_means</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">dset_name</span><span class="p">,</span> <span class="n">means</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                    <span class="n">SAM_configs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w-&#39;</span><span class="p">,</span>
+                    <span class="n">SAM_configs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'w-'</span><span class="p">,</span>
                     <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Write means array to disk</span>
 
 <span class="sd">        Parameters</span>
@@ -1513,7 +1530,7 @@
 <span class="sd">        dtype : str</span>
 <span class="sd">            Intended dataset datatype after scaling.</span>
 <span class="sd">        attrs : dict, optional</span>
-<span class="sd">            Attributes to be set. May include &#39;scale_factor&#39;, by default None</span>
+<span class="sd">            Attributes to be set. May include 'scale_factor', by default None</span>
 <span class="sd">        SAM_configs : dict, optional</span>
 <span class="sd">            Dictionary of SAM configuration JSONs used to compute cf means,</span>
 <span class="sd">            by default None</span>
@@ -1523,40 +1540,40 @@
 <span class="sd">            Boolean flag to automatically unscale variables on extraction,</span>
 <span class="sd">            by default True</span>
 <span class="sd">        mode : str, optional</span>
-<span class="sd">            Mode to instantiate h5py.File instance, by default &#39;w-&#39;</span>
+<span class="sd">            Mode to instantiate h5py.File instance, by default 'w-'</span>
 <span class="sd">        str_decode : bool, optional</span>
 <span class="sd">            Boolean flag to decode the bytestring meta data into normal</span>
 <span class="sd">            strings. Setting this to False will speed up the meta data read,</span>
 <span class="sd">            by default True</span>
 <span class="sd">        group : str, optional</span>
 <span class="sd">            Group within .h5 resource file to open, by default None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Saving means (</span><span class="si">{}</span><span class="s2">) to </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">))</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Saving means (</span><span class="si">{}</span><span class="s2">) to </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">))</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">means</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">meta</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;Number of means does not match meta&#39;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">'Number of means does not match meta'</span>
             <span class="k">raise</span> <span class="n">HandlerValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;unscale&quot;</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">&quot;str_decode&quot;</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
-                  <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"unscale"</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">"mode"</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">"str_decode"</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
+                  <span class="s2">"group"</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
         <span class="k">with</span> <span class="bp">cls</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="c1"># Save meta</span>
-            <span class="n">f</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- &#39;meta&#39; saved to disc&quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- 'meta' saved to disc"</span><span class="p">)</span>
             <span class="c1"># Add SAM configurations as attributes to meta</span>
             <span class="k">if</span> <span class="n">SAM_configs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">set_configs</span><span class="p">(</span><span class="n">SAM_configs</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- SAM configurations saved as attributes &quot;</span>
-                             <span class="s2">&quot;on &#39;meta&#39;&quot;</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- SAM configurations saved as attributes "</span>
+                             <span class="s2">"on 'meta'"</span><span class="p">)</span>
 
             <span class="c1"># Write dset to disk</span>
             <span class="n">f</span><span class="o">.</span><span class="n">_add_dset</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">means</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span>
                         <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- &#39;</span><span class="si">{}</span><span class="s2">&#39; saved to disc&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">))</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- '</span><span class="si">{}</span><span class="s2">' saved to disc"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">))</span>
 
         <span class="n">tt</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">ts</span><span class="p">)</span> <span class="o">/</span> <span class="mi">60</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is complete&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_file</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Saving to disc took </span><span class="si">{:.4f}</span><span class="s1"> minutes&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> is complete'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_file</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Saving to disc took </span><span class="si">{:.4f}</span><span class="s1"> minutes'</span>
                      <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tt</span><span class="p">))</span></div>
 
 
@@ -1564,9 +1581,9 @@
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.add_dataset">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">add_dataset</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">dset_name</span><span class="p">,</span> <span class="n">dset_data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                    <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="n">chunks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'a'</span><span class="p">,</span> <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                     <span class="n">group</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Add dataset to h5_file</span>
 
 <span class="sd">        Parameters</span>
@@ -1580,30 +1597,30 @@
 <span class="sd">        dtype : str</span>
 <span class="sd">            Intended dataset datatype after scaling.</span>
 <span class="sd">        attrs : dict, optional</span>
-<span class="sd">            Attributes to be set. May include &#39;scale_factor&#39;, by default None</span>
+<span class="sd">            Attributes to be set. May include 'scale_factor', by default None</span>
 <span class="sd">        unscale : bool, optional</span>
 <span class="sd">            Boolean flag to automatically unscale variables on extraction,</span>
 <span class="sd">            by default True</span>
 <span class="sd">        mode : str, optional</span>
-<span class="sd">            Mode to instantiate h5py.File instance, by default &#39;a&#39;</span>
+<span class="sd">            Mode to instantiate h5py.File instance, by default 'a'</span>
 <span class="sd">        str_decode : bool, optional</span>
 <span class="sd">            Boolean flag to decode the bytestring meta data into normal</span>
 <span class="sd">            strings. Setting this to False will speed up the meta data read,</span>
 <span class="sd">            by default True</span>
 <span class="sd">        group : str, optional</span>
 <span class="sd">            Group within .h5 resource file to open, by default None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Adding </span><span class="si">{}</span><span class="s2"> to </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">))</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Adding </span><span class="si">{}</span><span class="s2"> to </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">))</span>
         <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;unscale&quot;</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">&quot;str_decode&quot;</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
-                  <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"unscale"</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">"mode"</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">"str_decode"</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
+                  <span class="s2">"group"</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
         <span class="k">with</span> <span class="bp">cls</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">f</span><span class="o">.</span><span class="n">_add_dset</span><span class="p">(</span><span class="n">dset_name</span><span class="p">,</span> <span class="n">dset_data</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span>
                         <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
 
         <span class="n">tt</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">ts</span><span class="p">)</span> <span class="o">/</span> <span class="mi">60</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> added&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Saving to disc took </span><span class="si">{:.4f}</span><span class="s1"> minutes&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> added'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset_name</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Saving to disc took </span><span class="si">{:.4f}</span><span class="s1"> minutes'</span>
                      <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">tt</span><span class="p">))</span></div>
 
 
@@ -1611,9 +1628,9 @@
 <a class="viewcode-back" href="../../_autosummary/reVX.handlers.outputs.Outputs.html#reVX.handlers.outputs.Outputs.init_h5">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">init_h5</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">dsets</span><span class="p">,</span> <span class="n">shapes</span><span class="p">,</span> <span class="n">attrs</span><span class="p">,</span> <span class="n">chunks</span><span class="p">,</span> <span class="n">dtypes</span><span class="p">,</span>
-                <span class="n">meta</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">configs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span>
+                <span class="n">meta</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">configs</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">unscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'w'</span><span class="p">,</span>
                 <span class="n">str_decode</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">group</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">run_attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Init a full output file with the final intended shape without data.</span>
+<span class="w">        </span><span class="sd">"""Init a full output file with the final intended shape without data.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1649,32 +1666,32 @@
 <span class="sd">        run_attrs : dict | NoneType</span>
 <span class="sd">            Runtime attributes (args, kwargs) to add as global (file)</span>
 <span class="sd">            attributes</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Initializing output file: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_file</span><span class="p">))</span>
-        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;unscale&quot;</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">&quot;mode&quot;</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">&quot;str_decode&quot;</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
-                  <span class="s2">&quot;group&quot;</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Initializing output file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_file</span><span class="p">))</span>
+        <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"unscale"</span><span class="p">:</span> <span class="n">unscale</span><span class="p">,</span> <span class="s2">"mode"</span><span class="p">:</span> <span class="n">mode</span><span class="p">,</span> <span class="s2">"str_decode"</span><span class="p">:</span> <span class="n">str_decode</span><span class="p">,</span>
+                  <span class="s2">"group"</span><span class="p">:</span> <span class="n">group</span><span class="p">}</span>
         <span class="k">with</span> <span class="bp">cls</span><span class="p">(</span><span class="n">h5_file</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">run_attrs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">run_attrs</span> <span class="o">=</span> <span class="n">run_attrs</span>
 
-            <span class="n">f</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
+            <span class="n">f</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
 
             <span class="k">if</span> <span class="n">time_index</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">f</span><span class="p">[</span><span class="s1">&#39;time_index&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_index</span>
+                <span class="n">f</span><span class="p">[</span><span class="s1">'time_index'</span><span class="p">]</span> <span class="o">=</span> <span class="n">time_index</span>
 
             <span class="k">for</span> <span class="n">dset</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
-                <span class="k">if</span> <span class="n">dset</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">,</span> <span class="s1">&#39;time_index&#39;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">dset</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'meta'</span><span class="p">,</span> <span class="s1">'time_index'</span><span class="p">):</span>
                     <span class="c1"># initialize each dset to disk</span>
                     <span class="n">f</span><span class="o">.</span><span class="n">_create_dset</span><span class="p">(</span><span class="n">dset</span><span class="p">,</span> <span class="n">shapes</span><span class="p">[</span><span class="n">dset</span><span class="p">],</span> <span class="n">dtypes</span><span class="p">[</span><span class="n">dset</span><span class="p">],</span>
                                    <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">[</span><span class="n">dset</span><span class="p">],</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">[</span><span class="n">dset</span><span class="p">])</span>
 
             <span class="k">if</span> <span class="n">configs</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">set_configs</span><span class="p">(</span><span class="n">configs</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">- Configurations saved as attributes &quot;</span>
-                             <span class="s2">&quot;on &#39;meta&#39;&quot;</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">- Configurations saved as attributes "</span>
+                             <span class="s2">"on 'meta'"</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Output file has been initialized.&#39;</span><span class="p">)</span></div>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Output file has been initialized.'</span><span class="p">)</span></div>
 
 </pre></div>
 

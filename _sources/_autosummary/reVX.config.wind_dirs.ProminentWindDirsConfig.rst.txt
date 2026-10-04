@@ -17,19 +17,16 @@ reVX.config.wind\_dirs.ProminentWindDirsConfig
    
       ~ProminentWindDirsConfig.check_files
       ~ProminentWindDirsConfig.check_overwrite_keys
-      ~ProminentWindDirsConfig.clear
       ~ProminentWindDirsConfig.copy
       ~ProminentWindDirsConfig.fromkeys
       ~ProminentWindDirsConfig.get
       ~ProminentWindDirsConfig.items
       ~ProminentWindDirsConfig.keys
-      ~ProminentWindDirsConfig.pop
       ~ProminentWindDirsConfig.popitem
       ~ProminentWindDirsConfig.resolve_path
       ~ProminentWindDirsConfig.set_self_dict
       ~ProminentWindDirsConfig.setdefault
       ~ProminentWindDirsConfig.str_replace_and_resolve
-      ~ProminentWindDirsConfig.update
       ~ProminentWindDirsConfig.values
    
    

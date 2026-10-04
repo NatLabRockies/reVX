@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.handlers.geotiff.Geotiff &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.handlers.geotiff.Geotiff &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,8 +653,8 @@
 <h1>reVX.handlers.geotiff.Geotiff<a class="headerlink" href="#revx-handlers-geotiff-geotiff" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Geotiff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(128,</span> <span class="pre">128)</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/handlers/geotiff.html#Geotiff"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">Geotiff</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chunks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(128,</span> <span class="pre">128)</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/handlers/geotiff.html#Geotiff"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/builtins/functions.html#object" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>GeoTIFF handler object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -653,7 +670,7 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#reVX.handlers.geotiff.Geotiff.close" title="reVX.handlers.geotiff.Geotiff.close"><code class="xref py py-obj docutils literal notranslate"><span class="pre">close</span></code></a>()</p></td>
 <td><p>Close the rasterio source object</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.handlers.geotiff.Geotiff.write" title="reVX.handlers.geotiff.Geotiff.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(out_fp, profile, values[, dtype])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.handlers.geotiff.Geotiff.write" title="reVX.handlers.geotiff.Geotiff.write"><code class="xref py py-obj docutils literal notranslate"><span class="pre">write</span></code></a>(out_fp, profile, values[, dtype, compress])</p></td>
 <td><p>Write values to GeoTIFF file with given profile.</p></td>
 </tr>
 </tbody>
@@ -704,7 +721,7 @@
 </table>
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.profile">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">profile</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.profile" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">profile</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.profile" title="Link to this definition"></a></dt>
 <dd><p>GeoTiff geospatial profile</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -715,7 +732,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.dtype">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dtype</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.dtype" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">dtype</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.dtype" title="Link to this definition"></a></dt>
 <dd><p>GeoTiff array dtype</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -726,7 +743,7 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.iarr">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">iarr</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.iarr" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">iarr</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.iarr" title="Link to this definition"></a></dt>
 <dd><p>Get an array of 1D index values for the flattened geotiff extent.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -739,7 +756,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.tiff_shape">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tiff_shape</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.tiff_shape" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tiff_shape</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.tiff_shape" title="Link to this definition"></a></dt>
 <dd><p>Tiff array shape (bands, y, x)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -750,7 +767,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.shape">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">shape</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.shape" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">shape</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.shape" title="Link to this definition"></a></dt>
 <dd><p>Get the Geotiff shape tuple (n_rows, n_cols).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -761,7 +778,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.n_rows">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_rows</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.n_rows" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">n_rows</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.n_rows" title="Link to this definition"></a></dt>
 <dd><p>Get the number of Geotiff rows.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -772,7 +789,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.n_cols">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_cols</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.n_cols" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">n_cols</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.n_cols" title="Link to this definition"></a></dt>
 <dd><p>Get the number of Geotiff columns.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -783,7 +800,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.bands">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bands</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.bands" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bands</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.bands" title="Link to this definition"></a></dt>
 <dd><p>Get number of GeoTiff bands</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -794,7 +811,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.lat_lon">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">lat_lon</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.lat_lon" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">lat_lon</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.lat_lon" title="Link to this definition"></a></dt>
 <dd><p>Get latitude and longitude coordinate arrays</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -805,7 +822,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.latitude">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">latitude</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.latitude" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">latitude</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.latitude" title="Link to this definition"></a></dt>
 <dd><p>Get latitude coordinates array</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -816,7 +833,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.longitude">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">longitude</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.longitude" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">longitude</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.longitude" title="Link to this definition"></a></dt>
 <dd><p>Get longitude coordinates array</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -827,7 +844,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.meta">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">meta</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.meta" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">meta</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.meta" title="Link to this definition"></a></dt>
 <dd><p>Lat lon to y, x coordinate mapping</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -838,7 +855,7 @@ index values if the geotiff extent was flattened
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.values">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">values</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.values" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">values</span></span><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.values" title="Link to this definition"></a></dt>
 <dd><p>Full DataArray in [bands, y, x] dimensions</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -855,16 +872,21 @@ index values if the geotiff extent was flattened
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.handlers.geotiff.Geotiff.write">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out_fp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">profile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/handlers/geotiff.html#Geotiff.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.write" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">out_fp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">profile</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">compress</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lzw'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/handlers/geotiff.html#Geotiff.write"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.handlers.geotiff.Geotiff.write" title="Link to this definition"></a></dt>
 <dd><p>Write values to GeoTIFF file with given profile.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>out_fp</strong> (<em>str</em>) – Path to GeoTIFF output file to save data to.</p></li>
-<li><p><strong>profile</strong> (<em>dict</em>) – GeoTIFF profile (attributes).</p></li>
+<li><p><strong>out_fp</strong> (<em>str</em>) – Path to GeoTIFF output file to save data to. Partial output
+is removed if writing fails after the destination is opened.</p></li>
+<li><p><strong>profile</strong> (<em>dict</em>) – GeoTIFF profile (attributes). Incompatible nodata values are
+replaced with the output dtype’s maximum value.</p></li>
 <li><p><strong>values</strong> (<em>ndarray</em>) – GeoTIFF data to save.</p></li>
 <li><p><strong>dtype</strong> (<em>str, optional</em>) – Type of data being stored. If <code class="docutils literal notranslate"><span class="pre">None</span></code>, the data dtype is
 inferred from the <cite>values</cite> input itself.</p></li>
+<li><p><strong>compress</strong> (<em>str, optional</em>) – Rasterio compression codec, overriding any compression in
+<cite>profile</cite>. Defaults to lossless <code class="docutils literal notranslate"><span class="pre">'lzw'</span></code> compression. Set
+this argument to <code class="docutils literal notranslate"><span class="pre">None</span></code> to write without compression.</p></li>
 </ul>
 </dd>
 </dl>

@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.layers.layer_creator &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.layers.layer_creator &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -627,12 +644,11 @@
            <div itemprop="articleBody">
              
   <h1>Source code for reVX.least_cost_xmission.layers.layer_creator</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">"""</span>
 <span class="sd">Build friction or barrier layers from raster and vector data.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dict</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">warnings</span><span class="w"> </span><span class="kn">import</span> <span class="n">warn</span>
 
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -650,20 +666,20 @@
                                                        <span class="n">CELL_SIZE</span><span class="p">)</span>
 
 <span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-<span class="n">TIFF_EXTENSIONS</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;.tif&#39;</span><span class="p">,</span> <span class="s1">&#39;.tiff&#39;</span><span class="p">}</span>
-<span class="n">SHP_EXTENSIONS</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;.shp&#39;</span><span class="p">,</span> <span class="s1">&#39;.gpkg&#39;</span><span class="p">}</span>
+<span class="n">TIFF_EXTENSIONS</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'.tif'</span><span class="p">,</span> <span class="s1">'.tiff'</span><span class="p">}</span>
+<span class="n">SHP_EXTENSIONS</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'.shp'</span><span class="p">,</span> <span class="s1">'.gpkg'</span><span class="p">}</span>
 
 
 <div class="viewcode-block" id="LayerCreator">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.layers.layer_creator.LayerCreator.html#reVX.least_cost_xmission.layers.layer_creator.LayerCreator">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LayerCreator</span><span class="p">(</span><span class="n">BaseLayerCreator</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Build layer based on tiff and user config.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Build layer based on tiff and user config."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_handler</span><span class="p">:</span> <span class="n">LayeredTransmissionH5</span><span class="p">,</span>
-                 <span class="n">masks</span><span class="p">:</span> <span class="n">Masks</span><span class="p">,</span> <span class="n">output_tiff_dir</span><span class="o">=</span><span class="s2">&quot;.&quot;</span><span class="p">,</span>
+                 <span class="n">masks</span><span class="p">:</span> <span class="n">Masks</span><span class="p">,</span> <span class="n">output_tiff_dir</span><span class="o">=</span><span class="s2">"."</span><span class="p">,</span>
                  <span class="n">dtype</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">DTypeLike</span><span class="o">=</span><span class="n">DEFAULT_DTYPE</span><span class="p">,</span>
                  <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        io_handler : :class:`LayeredTransmissionH5`</span>
@@ -673,13 +689,13 @@
 <span class="sd">            of masks.</span>
 <span class="sd">        output_tiff_dir : path-like, optional</span>
 <span class="sd">            Directory where cost layers should be saved as GeoTIFF.</span>
-<span class="sd">            By default, ``&quot;.&quot;``.</span>
+<span class="sd">            By default, ``"."``.</span>
 <span class="sd">        dtype : np.dtype, optional</span>
 <span class="sd">            Data type for final dataset. By default, ``float32``.</span>
 <span class="sd">        cell_size : int, optional</span>
 <span class="sd">            Side length of each cell, in meters. Cells are assumed to be</span>
 <span class="sd">            square. By default, :obj:`CELL_SIZE`.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_masks</span> <span class="o">=</span> <span class="n">masks</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">io_handler</span><span class="o">=</span><span class="n">io_handler</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                          <span class="n">output_tiff_dir</span><span class="o">=</span><span class="n">output_tiff_dir</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
@@ -689,8 +705,8 @@
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.layers.layer_creator.LayerCreator.html#reVX.least_cost_xmission.layers.layer_creator.LayerCreator.build">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">build_config</span><span class="p">:</span> <span class="n">LayerBuildComponents</span><span class="p">,</span>
               <span class="n">values_are_costs_per_mile</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">write_to_h5</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+              <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Combine multiple GeoTIFFs and vectors to a raster layer and save</span>
 <span class="sd">        to GeoTIFF/HDF5 file.</span>
 
@@ -710,9 +726,12 @@
 <span class="sd">        description : str, optional</span>
 <span class="sd">            Optional description to store with this layer in the H5</span>
 <span class="sd">            file. By default, ``None``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">layer_name</span> <span class="o">=</span> <span class="n">layer_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.tif&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.tiff&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Combining </span><span class="si">%s</span><span class="s1"> layers&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+<span class="sd">        attrs : dict, optional</span>
+<span class="sd">            Additional attributes to store on the H5 dataset.</span>
+<span class="sd">            By default, ``None``.</span>
+<span class="sd">        """</span>
+        <span class="n">layer_name</span> <span class="o">=</span> <span class="n">layer_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">".tif"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">".tiff"</span><span class="p">,</span> <span class="s2">""</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Combining </span><span class="si">%s</span><span class="s1"> layers'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
         <span class="n">result</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_dtype</span><span class="p">)</span>
         <span class="n">fi_layers</span><span class="p">:</span> <span class="n">LayerBuildComponents</span> <span class="o">=</span> <span class="p">{}</span>
 
@@ -721,7 +740,7 @@
                 <span class="n">fi_layers</span><span class="p">[</span><span class="n">fname</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span>
                 <span class="k">continue</span>
 
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Processing </span><span class="si">%s</span><span class="s1"> with config </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Processing </span><span class="si">%s</span><span class="s1"> with config </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">fname</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">Path</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span><span class="o">.</span><span class="n">suffix</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">TIFF_EXTENSIONS</span><span class="p">:</span>
                 <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
                     <span class="n">fname</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -731,30 +750,32 @@
                 <span class="n">temp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_process_vector_layer</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
                 <span class="n">result</span> <span class="o">+=</span> <span class="n">temp</span>
             <span class="k">else</span><span class="p">:</span>
-                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Unsupported file extension on </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Unsupported file extension on </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
         <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_process_forced_inclusions</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">fi_layers</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">values_are_costs_per_mile</span><span class="p">:</span>
             <span class="n">result</span> <span class="o">=</span> <span class="n">result</span> <span class="o">/</span> <span class="n">METERS_IN_MILE</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">_cell_size</span>
 
-        <span class="n">out_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_tiff_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2">.tif&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Writing combined </span><span class="si">%s</span><span class="s1"> layers to </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span>
+        <span class="n">out_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_tiff_dir</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2">.tif"</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Writing combined </span><span class="si">%s</span><span class="s1"> layers to </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span>
                      <span class="n">out_filename</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">save_data_using_h5_profile</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">out_filename</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">write_to_h5</span><span class="p">:</span>
             <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span>
                 <span class="n">out_filename</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Writing </span><span class="si">%s</span><span class="s1"> to H5&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Writing </span><span class="si">%s</span><span class="s1"> to H5'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">write_layer_to_h5</span><span class="p">(</span><span class="n">out</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span>
-                                               <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)</span></div>
+                                               <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
+                                               <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span></div>
 
 
+    <span class="c1"># pylint: disable=too-many-return-statements</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_process_raster_layer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">,</span>  <span class="c1"># type: ignore[return]</span>
                               <span class="n">config</span><span class="p">:</span> <span class="n">LayerBuildConfig</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create the desired layer from the array using LayerBuildConfig.</span>
+<span class="w">        </span><span class="sd">"""Create the desired layer from the array using LayerBuildConfig.</span>
 
-<span class="sd">        Desired &quot;range&quot; or &quot;map&quot; operation is only applied to the area</span>
-<span class="sd">        indicated by the &quot;extent&quot;.</span>
+<span class="sd">        Desired "range" or "map" operation is only applied to the area</span>
+<span class="sd">        indicated by the "extent".</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -767,7 +788,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        array-like | None</span>
 <span class="sd">            Transformed data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_tiff_layer_config</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">global_value</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
@@ -793,8 +814,8 @@
                 <span class="n">mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_mask</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">extent</span><span class="p">)</span>
 
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">interval</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">bins</span><span class="p">):</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Calculating layer values for bin &#39;</span>
-                             <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">bins</span><span class="p">)</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">interval</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Calculating layer values for bin '</span>
+                             <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s1">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">bins</span><span class="p">)</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">interval</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
                 <span class="nb">min</span><span class="p">,</span> <span class="nb">max</span> <span class="o">=</span> <span class="n">interval</span><span class="o">.</span><span class="n">min</span><span class="p">,</span> <span class="n">interval</span><span class="o">.</span><span class="n">max</span>
                 <span class="n">temp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">logical_and</span><span class="p">(</span><span class="n">data</span> <span class="o">&gt;=</span> <span class="nb">min</span><span class="p">,</span> <span class="n">data</span> <span class="o">&lt;</span> <span class="nb">max</span><span class="p">),</span>
                                 <span class="n">interval</span><span class="o">.</span><span class="n">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -831,7 +852,7 @@
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_process_vector_layer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">LayerBuildConfig</span>
                               <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Rasterize a vector layer</span>
 
 <span class="sd">        Parameters</span>
@@ -845,10 +866,10 @@
 <span class="sd">        -------</span>
 <span class="sd">        array-like</span>
 <span class="sd">            Rasterized vector</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">rasterize</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> is a vector but the config is missing &#39;</span>
-                             <span class="sa">f</span><span class="s1">&#39;key &quot;rasterize&quot;: </span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> is a vector but the config is missing '</span>
+                             <span class="sa">f</span><span class="s1">'key "rasterize": </span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
         <span class="n">r_config</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">rasterize</span>
 
@@ -869,7 +890,7 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">_process_forced_inclusions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">,</span>
                                    <span class="n">fi_layers</span><span class="p">:</span> <span class="n">LayerBuildComponents</span>
                                    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Use forced inclusion (FI) layers to remove barriers/friction. Any</span>
 <span class="sd">        value &gt; 0 in the FI layers will result in a 0 in the corresponding</span>
 <span class="sd">        cell in the returned raster.</span>
@@ -885,14 +906,14 @@
 <span class="sd">        -------</span>
 <span class="sd">        array-like</span>
 <span class="sd">            Composite layer with forced inclusions added</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">fi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
         <span class="k">for</span> <span class="n">fname</span><span class="p">,</span> <span class="n">config</span> <span class="ow">in</span> <span class="n">fi_layers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="k">if</span> <span class="n">Path</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span><span class="o">.</span><span class="n">suffix</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;.tif&#39;</span><span class="p">,</span> <span class="s1">&#39;.tiff&#39;</span><span class="p">]:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Forced inclusion file </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> does not end with .tif.&#39;</span>
-                       <span class="s1">&#39; GeoTIFFs are the only format allowed for forced &#39;</span>
-                       <span class="s1">&#39;inclusions.&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">Path</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span><span class="o">.</span><span class="n">suffix</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">'.tif'</span><span class="p">,</span> <span class="s1">'.tiff'</span><span class="p">]:</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">'Forced inclusion file </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> does not end with .tif.'</span>
+                       <span class="s1">' GeoTIFFs are the only format allowed for forced '</span>
+                       <span class="s1">'inclusions.'</span><span class="p">)</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -905,9 +926,9 @@
                                <span class="ow">or</span> <span class="n">range_given</span>
                                <span class="ow">or</span> <span class="n">rasterize_given</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">bad_input_given</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;`global_value`, `map`, `bins`, and `rasterize` are &#39;</span>
-                       <span class="s1">&#39;not allowed if `forced_inclusion` is True, but one &#39;</span>
-                       <span class="sa">f</span><span class="s1">&#39;was found in config: </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'`global_value`, `map`, `bins`, and `rasterize` are '</span>
+                       <span class="s1">'not allowed if `forced_inclusion` is True, but one '</span>
+                       <span class="sa">f</span><span class="s1">'was found in config: </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1">: </span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -927,40 +948,40 @@
         <span class="k">return</span> <span class="n">data</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">extent</span><span class="p">:</span> <span class="n">Extents</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MaskArr</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get mask by requested extent</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        extent : Extents</span>
-<span class="sd">            Extent of desired mask, &#39;all&#39; is not allowed.</span>
+<span class="sd">            Extent of desired mask, 'all' is not allowed.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        MaskArr</span>
 <span class="sd">            Mask array</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">extent</span> <span class="o">==</span> <span class="n">ALL</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Mask for extent of </span><span class="si">{</span><span class="n">extent</span><span class="si">}</span><span class="s1"> is unnecessary&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Mask for extent of </span><span class="si">{</span><span class="n">extent</span><span class="si">}</span><span class="s1"> is unnecessary'</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">&#39;wet&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">'wet'</span><span class="p">:</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_masks</span><span class="o">.</span><span class="n">wet_mask</span>
-        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">&#39;wet+&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">'wet+'</span><span class="p">:</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_masks</span><span class="o">.</span><span class="n">wet_plus_mask</span>
-        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">&#39;dry&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">'dry'</span><span class="p">:</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_masks</span><span class="o">.</span><span class="n">dry_mask</span>
-        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">&#39;dry+&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">'dry+'</span><span class="p">:</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_masks</span><span class="o">.</span><span class="n">dry_plus_mask</span>
-        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">&#39;landfall&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">extent</span> <span class="o">==</span> <span class="s1">'landfall'</span><span class="p">:</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_masks</span><span class="o">.</span><span class="n">landfall_mask</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Unknown mask type: </span><span class="si">{</span><span class="n">extent</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Unknown mask type: </span><span class="si">{</span><span class="n">extent</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">mask</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_tiff_layer_config</span><span class="p">(</span><span class="n">config</span><span class="p">:</span> <span class="n">LayerBuildConfig</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot; Check if a LayerBuildConfig is valid for a GeoTIFF.</span>
+<span class="w">        </span><span class="sd">""" Check if a LayerBuildConfig is valid for a GeoTIFF.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -971,60 +992,60 @@
 <span class="sd">        ------</span>
 <span class="sd">        ValueError</span>
 <span class="sd">            If an issue is detected</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">rasterize</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;&quot;rasterize&quot; is only for vectors. Found in &#39;</span>
-                             <span class="sa">f</span><span class="s1">&#39;config </span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'"rasterize" is only for vectors. Found in '</span>
+                             <span class="sa">f</span><span class="s1">'config </span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
         <span class="n">mutex_entries</span> <span class="o">=</span> <span class="p">[</span><span class="n">config</span><span class="o">.</span><span class="n">map</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">bins</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">global_value</span><span class="p">]</span>
         <span class="n">num_entries</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">entry</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">mutex_entries</span><span class="p">)</span>
         <span class="n">num_entries</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">pass_through</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">num_entries</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Keys &quot;global_value&quot;, &quot;map&quot;, &quot;bins&quot;, and &#39;</span>
-                             <span class="s1">&#39;&quot;pass_through&quot; are mutually exclusive but &#39;</span>
-                             <span class="s1">&#39;more than one was found in raster config &#39;</span>
-                             <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Keys "global_value", "map", "bins", and '</span>
+                             <span class="s1">'"pass_through" are mutually exclusive but '</span>
+                             <span class="s1">'more than one was found in raster config '</span>
+                             <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">num_entries</span> <span class="o">&lt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;Either &quot;global_value&quot;, &quot;map&quot;, &quot;bins&quot;, and &#39;</span>
-                             <span class="s1">&#39;&quot;pass_through&quot; must be specified fora raster, &#39;</span>
-                             <span class="s1">&#39;but none were found in config &#39;</span>
-                             <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span></div>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">'Either "global_value", "map", "bins", and '</span>
+                             <span class="s1">'"pass_through" must be specified fora raster, '</span>
+                             <span class="s1">'but none were found in config '</span>
+                             <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">config</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span></div>
 
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_validate_bin_range</span><span class="p">(</span><span class="n">bins</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Check for correctness in bin range. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Check for correctness in bin range. """</span>
     <span class="k">for</span> <span class="nb">bin</span> <span class="ow">in</span> <span class="n">bins</span><span class="p">:</span>
         <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">min</span> <span class="o">&gt;</span> <span class="nb">bin</span><span class="o">.</span><span class="n">max</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s1">&#39;Min is greater than max for bin config &#39;</span>
-                                 <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">min</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-inf&#39;</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">bin</span><span class="o">.</span><span class="n">max</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Bin covers all possible values, did you forget to set &#39;</span>
-                   <span class="sa">f</span><span class="s1">&#39;min or max? </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">AttributeError</span><span class="p">(</span><span class="s1">'Min is greater than max for bin config '</span>
+                                 <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">.'</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">min</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'-inf'</span><span class="p">)</span> <span class="ow">and</span> <span class="nb">bin</span><span class="o">.</span><span class="n">max</span> <span class="o">==</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'inf'</span><span class="p">):</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Bin covers all possible values, did you forget to set '</span>
+                   <span class="sa">f</span><span class="s1">'min or max? </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_validate_bin_continuity</span><span class="p">(</span><span class="n">bins</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Warn user of potential gaps in bin range continuity.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Warn user of potential gaps in bin range continuity."""</span>
     <span class="n">sorted_bins</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">bins</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">)</span>
-    <span class="n">last_max</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-inf&#39;</span><span class="p">)</span>
+    <span class="n">last_max</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'-inf'</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="nb">bin</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sorted_bins</span><span class="p">):</span>
         <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">min</span> <span class="o">&lt;</span> <span class="n">last_max</span><span class="p">:</span>
-            <span class="n">last_bin</span> <span class="o">=</span> <span class="n">sorted_bins</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;-infinity&#39;</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Overlapping bins detected between bin </span><span class="si">{</span><span class="n">last_bin</span><span class="si">}</span><span class="s1"> &#39;</span>
-                   <span class="sa">f</span><span class="s1">&#39;and </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">last_bin</span> <span class="o">=</span> <span class="n">sorted_bins</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">'-infinity'</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">'Overlapping bins detected between bin </span><span class="si">{</span><span class="n">last_bin</span><span class="si">}</span><span class="s1"> '</span>
+                   <span class="sa">f</span><span class="s1">'and </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">min</span> <span class="o">&gt;</span> <span class="n">last_max</span><span class="p">:</span>
-            <span class="n">last_bin</span> <span class="o">=</span> <span class="n">sorted_bins</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;-infinity&#39;</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Gap detected between bin </span><span class="si">{</span><span class="n">last_bin</span><span class="si">}</span><span class="s1"> and </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">&#39;</span>
+            <span class="n">last_bin</span> <span class="o">=</span> <span class="n">sorted_bins</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">if</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="k">else</span> <span class="s1">'-infinity'</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'Gap detected between bin </span><span class="si">{</span><span class="n">last_bin</span><span class="si">}</span><span class="s1"> and </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1">'</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">sorted_bins</span><span class="p">):</span>
-            <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">max</span> <span class="o">&lt;</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">):</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;Gap detected between bin </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1"> and infinity&#39;</span>
+            <span class="k">if</span> <span class="nb">bin</span><span class="o">.</span><span class="n">max</span> <span class="o">&lt;</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'inf'</span><span class="p">):</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">'Gap detected between bin </span><span class="si">{</span><span class="nb">bin</span><span class="si">}</span><span class="s1"> and infinity'</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 

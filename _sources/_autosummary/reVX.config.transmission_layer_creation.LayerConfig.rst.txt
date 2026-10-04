@@ -15,29 +15,6 @@ reVX.config.transmission\_layer\_creation.LayerConfig
 
    .. autosummary::
    
-      ~LayerConfig.construct
-      ~LayerConfig.copy
-      ~LayerConfig.dict
-      ~LayerConfig.from_orm
-      ~LayerConfig.json
-      ~LayerConfig.model_construct
-      ~LayerConfig.model_copy
-      ~LayerConfig.model_dump
-      ~LayerConfig.model_dump_json
-      ~LayerConfig.model_json_schema
-      ~LayerConfig.model_parametrized_name
-      ~LayerConfig.model_post_init
-      ~LayerConfig.model_rebuild
-      ~LayerConfig.model_validate
-      ~LayerConfig.model_validate_json
-      ~LayerConfig.model_validate_strings
-      ~LayerConfig.parse_file
-      ~LayerConfig.parse_obj
-      ~LayerConfig.parse_raw
-      ~LayerConfig.schema
-      ~LayerConfig.schema_json
-      ~LayerConfig.update_forward_refs
-      ~LayerConfig.validate
    
    
 
@@ -48,12 +25,10 @@ reVX.config.transmission\_layer\_creation.LayerConfig
    .. autosummary::
    
       ~LayerConfig.model_computed_fields
-      ~LayerConfig.model_config
-      ~LayerConfig.model_extra
       ~LayerConfig.model_fields
-      ~LayerConfig.model_fields_set
       ~LayerConfig.layer_name
       ~LayerConfig.description
+      ~LayerConfig.attrs
       ~LayerConfig.include_in_h5
       ~LayerConfig.values_are_costs_per_mile
       ~LayerConfig.build

@@ -17,19 +17,16 @@ reVX.config.reeds.ProfilesConfigGroup
    
       ~ProfilesConfigGroup.check_files
       ~ProfilesConfigGroup.check_overwrite_keys
-      ~ProfilesConfigGroup.clear
       ~ProfilesConfigGroup.copy
       ~ProfilesConfigGroup.fromkeys
       ~ProfilesConfigGroup.get
       ~ProfilesConfigGroup.items
       ~ProfilesConfigGroup.keys
-      ~ProfilesConfigGroup.pop
       ~ProfilesConfigGroup.popitem
       ~ProfilesConfigGroup.resolve_path
       ~ProfilesConfigGroup.set_self_dict
       ~ProfilesConfigGroup.setdefault
       ~ProfilesConfigGroup.str_replace_and_resolve
-      ~ProfilesConfigGroup.update
       ~ProfilesConfigGroup.values
    
    

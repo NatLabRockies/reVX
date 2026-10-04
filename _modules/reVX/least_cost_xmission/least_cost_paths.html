@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.least_cost_paths &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.least_cost_paths &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for reVX.least_cost_xmission.least_cost_paths</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Module to compute least cost transmission paths and distances</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">concurrent.futures</span><span class="w"> </span><span class="kn">import</span> <span class="n">as_completed</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">geopandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gpd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
@@ -660,13 +677,13 @@
 <div class="viewcode-block" id="LeastCostPaths">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths.LeastCostPaths.html#reVX.least_cost_xmission.least_cost_paths.LeastCostPaths">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LeastCostPaths</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Compute least cost paths between desired locations</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span> <span class="n">clip_buffer</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
                  <span class="n">tb_layer_name</span><span class="o">=</span><span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        cost_fpath : str</span>
@@ -683,7 +700,7 @@
 <span class="sd">            This layer defines the multipliers applied to the cost layer</span>
 <span class="sd">            to determine LCP routing (but does not actually affect</span>
 <span class="sd">            output costs). By default, :obj:`BARRIER_H5_LAYER_NAME`.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cost_fpath</span> <span class="o">=</span> <span class="n">cost_fpath</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_tb_layer_name</span> <span class="o">=</span> <span class="n">tb_layer_name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_layers</span><span class="p">()</span>
@@ -691,34 +708,34 @@
         <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_map_to_costs</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">features_fpath</span><span class="p">),</span>
                                  <span class="n">clip_buffer</span><span class="o">=</span><span class="n">clip_buffer</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_row_slice</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_col_slice</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> <span class="n">out</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;geometry&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">'geometry'</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_start_feature_ind</span> <span class="o">=</span> <span class="mi">0</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> initialized&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> initialized'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> to be computed for </span><span class="si">{:,d}</span><span class="s2"> features&quot;</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"</span><span class="si">{}</span><span class="s2"> to be computed for </span><span class="si">{:,d}</span><span class="s2"> features"</span>
                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">)))</span>
         <span class="k">return</span> <span class="n">msg</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">features</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Table of features to compute paths for</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        pandas.DataFrame</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Check to make sure the required layers are in cost_fpath. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Check to make sure the required layers are in cost_fpath. """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_layers_in_h5</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_cost_fpath</span><span class="p">,</span> <span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_tb_layer_name</span><span class="p">])</span>
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_check_layers_in_h5</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cost_fpath</span><span class="p">,</span> <span class="n">layers</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Check to make sure the required layers are in cost_fpath</span>
 
 <span class="sd">        Parameters</span>
@@ -732,7 +749,7 @@
 <span class="sd">        ------</span>
 <span class="sd">        RuntimeError</span>
 <span class="sd">            If the required layers are not found in the cost H5.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">with</span> <span class="n">ExclusionLayers</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">missing</span> <span class="o">=</span> <span class="p">[]</span>
             <span class="k">for</span> <span class="n">lyr</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">:</span>
@@ -740,15 +757,15 @@
                     <span class="n">missing</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lyr</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="n">missing</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;The following layers are required to compute Least &quot;</span>
-                       <span class="s2">&quot;Cost Transmission but are missing from </span><span class="si">{}</span><span class="s2">:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">&quot;</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"The following layers are required to compute Least "</span>
+                       <span class="s2">"Cost Transmission but are missing from </span><span class="si">{}</span><span class="s2">:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">"</span>
                        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">missing</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_feature_cost_indices</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">crs</span><span class="p">,</span> <span class="n">transform</span><span class="p">,</span> <span class="n">shape</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Map features to cost row, col indices using rasterio transform</span>
 
 <span class="sd">        Parameters</span>
@@ -770,23 +787,23 @@
 <span class="sd">            Vector of col indices for each features</span>
 <span class="sd">        mask : ndarray</span>
 <span class="sd">            Boolean mask of features with indices outside of cost raster</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">feat_crs</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">crs</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
         <span class="n">cost_crs</span> <span class="o">=</span> <span class="n">crs</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">crs_match</span><span class="p">(</span><span class="n">cost_crs</span><span class="p">,</span> <span class="n">feat_crs</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;input crs (</span><span class="si">{}</span><span class="s1">) does not match cost raster crs (</span><span class="si">{}</span><span class="s1">) &#39;</span>
-                   <span class="s1">&#39;and will be transformed!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">feat_crs</span><span class="p">,</span> <span class="n">cost_crs</span><span class="p">))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'input crs (</span><span class="si">{}</span><span class="s1">) does not match cost raster crs (</span><span class="si">{}</span><span class="s1">) '</span>
+                   <span class="s1">'and will be transformed!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">feat_crs</span><span class="p">,</span> <span class="n">cost_crs</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Map </span><span class="si">%d</span><span class="s1"> features to cost raster&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;First few features:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">head</span><span class="p">()))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Transform:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">transform</span><span class="p">))</span>
-        <span class="n">coords</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;geometry&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">centroid</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Map </span><span class="si">%d</span><span class="s1"> features to cost raster'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">features</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'First few features:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">head</span><span class="p">()))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Transform:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">transform</span><span class="p">))</span>
+        <span class="n">coords</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s1">'geometry'</span><span class="p">]</span><span class="o">.</span><span class="n">centroid</span>
         <span class="n">row</span><span class="p">,</span> <span class="n">col</span> <span class="o">=</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">transform</span><span class="o">.</span><span class="n">rowcol</span><span class="p">(</span><span class="n">transform</span><span class="p">,</span> <span class="n">coords</span><span class="o">.</span><span class="n">x</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
                                              <span class="n">coords</span><span class="o">.</span><span class="n">y</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Mapping done!&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Mapping done!'</span><span class="p">)</span>
         <span class="n">row</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">row</span><span class="p">)</span>
         <span class="n">col</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">col</span><span class="p">)</span>
 
@@ -796,12 +813,12 @@
         <span class="n">mask</span> <span class="o">&amp;=</span> <span class="n">col</span> <span class="o">&gt;=</span> <span class="mi">0</span>
         <span class="n">mask</span> <span class="o">&amp;=</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Mask computed!&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Mask computed!'</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">mask</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_clip_slice</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">clip_buffer</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Clip cost raster to bounds of features</span>
 
 <span class="sd">        Parameters</span>
@@ -822,7 +839,7 @@
 <span class="sd">            Row slice to clip too</span>
 <span class="sd">        col_slice : slice</span>
 <span class="sd">            Col slice to clip too</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">row_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">clip_buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
                           <span class="nb">min</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">clip_buffer</span><span class="p">,</span> <span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
         <span class="n">col_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">col</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">clip_buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
@@ -832,7 +849,7 @@
 
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_map_to_costs</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">clip_buffer</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Map features to cost arrays</span>
 
 <span class="sd">        Parameters</span>
@@ -855,17 +872,17 @@
 <span class="sd">        clip_buffer : int, optional</span>
 <span class="sd">            Optional number of array elements to buffer clip area by.</span>
 <span class="sd">            By default, ``0``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">with</span> <span class="n">ExclusionLayers</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
-            <span class="n">transform</span> <span class="o">=</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">Affine</span><span class="p">(</span><span class="o">*</span><span class="n">f</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">])</span>
+            <span class="n">transform</span> <span class="o">=</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">Affine</span><span class="p">(</span><span class="o">*</span><span class="n">f</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">])</span>
             <span class="n">shape</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">shape</span>
 
         <span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">mask</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_get_feature_cost_indices</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">crs</span><span class="p">,</span>
                                                        <span class="n">transform</span><span class="p">,</span> <span class="n">shape</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="o">~</span><span class="n">mask</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;The following features are outside of the cost exclusion &quot;</span>
-                   <span class="s2">&quot;domain and will be dropped:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">&quot;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"The following features are outside of the cost exclusion "</span>
+                   <span class="s2">"domain and will be dropped:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">"</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">~</span><span class="n">mask</span><span class="p">]))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -873,19 +890,19 @@
             <span class="n">col</span> <span class="o">=</span> <span class="n">col</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span>
             <span class="n">features</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Getting clip size...&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Getting clip size...'</span><span class="p">)</span>
         <span class="n">row_slice</span><span class="p">,</span> <span class="n">col_slice</span> <span class="o">=</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_get_clip_slice</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span>
                                                    <span class="n">clip_buffer</span><span class="o">=</span><span class="n">clip_buffer</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Done!&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Done!'</span><span class="p">)</span>
 
-        <span class="n">features</span><span class="p">[</span><span class="s1">&#39;row&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">row</span> <span class="o">-</span> <span class="n">row_slice</span><span class="o">.</span><span class="n">start</span>
-        <span class="n">features</span><span class="p">[</span><span class="s1">&#39;col&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">col</span> <span class="o">-</span> <span class="n">col_slice</span><span class="o">.</span><span class="n">start</span>
+        <span class="n">features</span><span class="p">[</span><span class="s1">'row'</span><span class="p">]</span> <span class="o">=</span> <span class="n">row</span> <span class="o">-</span> <span class="n">row_slice</span><span class="o">.</span><span class="n">start</span>
+        <span class="n">features</span><span class="p">[</span><span class="s1">'col'</span><span class="p">]</span> <span class="o">=</span> <span class="n">col</span> <span class="o">-</span> <span class="n">col_slice</span><span class="o">.</span><span class="n">start</span>
 
         <span class="k">return</span> <span class="n">features</span><span class="p">,</span> <span class="n">row_slice</span><span class="p">,</span> <span class="n">col_slice</span><span class="p">,</span> <span class="n">shape</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">start_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tuple of (row_idx, col_idx) in the cost array indicating the</span>
 <span class="sd">        start position of all paths to compute (typically, this is</span>
 <span class="sd">        the centroid of the supply curve cell under consideration).</span>
@@ -896,16 +913,16 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        tuple</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">start_indices</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_start_feature_ind</span><span class="p">,</span>
-                                            <span class="p">[</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+                                            <span class="p">[</span><span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">start_indices</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
             <span class="n">start_indices</span> <span class="o">=</span> <span class="n">start_indices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="k">return</span> <span class="n">start_indices</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">end_features</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        GeoDataFrame containing the transmission features to compute the</span>
 <span class="sd">        least cost paths to, starting from the `start_indices`</span>
 <span class="sd">        (typically the centroid of the supply curve cell under</span>
@@ -914,14 +931,14 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        pandas.DataFrame</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">end_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_start_feature_ind</span><span class="p">)</span>
-        <span class="n">end_features</span><span class="p">[</span><span class="s1">&#39;start_index&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_start_feature_ind</span>
+        <span class="n">end_features</span><span class="p">[</span><span class="s1">'start_index'</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_start_feature_ind</span>
         <span class="k">return</span> <span class="n">end_features</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">end_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tuple (row, col) index or list of (row, col) indices in the</span>
 <span class="sd">        cost array indicating the end location(s) to compute least</span>
 <span class="sd">        cost paths to (typically transmission feature locations).</span>
@@ -932,8 +949,8 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        tuple | list</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_features</span><span class="p">[[</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_features</span><span class="p">[[</span><span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
 
 <div class="viewcode-block" id="LeastCostPaths.process_least_cost_paths">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths.LeastCostPaths.html#reVX.least_cost_xmission.least_cost_paths.LeastCostPaths.process_least_cost_paths">[docs]</a>
@@ -942,7 +959,7 @@
                                  <span class="n">save_paths</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                  <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                                  <span class="n">tracked_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Find Least Cost Paths between all pairs of provided features for</span>
 <span class="sd">        the given tie-line capacity class</span>
 
@@ -975,7 +992,7 @@
 <span class="sd">            Dictionary mapping layer names to strings, where the strings</span>
 <span class="sd">            are numpy methods that should be applied to the layer along</span>
 <span class="sd">            the LCP. For example,</span>
-<span class="sd">            ``tracked_layers={&#39;layer_1&#39;: &#39;mean&#39;, &#39;layer_2&#39;: &#39;max}``</span>
+<span class="sd">            ``tracked_layers={'layer_1': 'mean', 'layer_2': 'max}``</span>
 <span class="sd">            would report the average of ``layer_1`` values along the</span>
 <span class="sd">            least cost path and the max of ``layer_2`` values along the</span>
 <span class="sd">            least cost path. Examples of numpy methods (non-exhaustive):</span>
@@ -997,15 +1014,15 @@
 <span class="sd">        least_cost_paths : pandas.DataFrame | gpd.GeoDataFrame</span>
 <span class="sd">            DataFrame of lengths and costs for each path or GeoDataFrame</span>
 <span class="sd">            of length, cost, and geometry for each path</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">max_workers</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()</span> <span class="k">if</span> <span class="n">max_workers</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">max_workers</span>
         <span class="n">indices</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">features</span><span class="o">.</span><span class="n">index</span> <span class="k">if</span> <span class="n">indices</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">indices</span>
         <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">if</span> <span class="n">max_workers</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Computing Least Cost Paths in parallel on </span><span class="si">{}</span><span class="s1"> workers&#39;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Computing Least Cost Paths in parallel on </span><span class="si">{}</span><span class="s1"> workers'</span>
                         <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">max_workers</span><span class="p">))</span>
             <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
-            <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">&#39;reV&#39;</span><span class="p">,</span> <span class="s1">&#39;reVX&#39;</span><span class="p">]</span>
+            <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">'reV'</span><span class="p">,</span> <span class="s1">'reVX'</span><span class="p">]</span>
             <span class="k">with</span> <span class="n">SpawnProcessPool</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>
                                   <span class="n">loggers</span><span class="o">=</span><span class="n">loggers</span><span class="p">)</span> <span class="k">as</span> <span class="n">exe</span><span class="p">:</span>
                 <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_compute_paths_in_chunks</span><span class="p">(</span>
@@ -1014,7 +1031,7 @@
                     <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="p">[]</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Computing Least Cost Paths in serial&#39;</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Computing Least Cost Paths in serial'</span><span class="p">)</span>
             <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
             <span class="n">licl</span> <span class="o">=</span> <span class="n">length_invariant_cost_layers</span>
             <span class="k">for</span> <span class="n">ind</span><span class="p">,</span> <span class="n">start</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
@@ -1029,12 +1046,12 @@
                                        <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="n">licl</span><span class="p">,</span>
                                        <span class="n">tracked_layers</span><span class="o">=</span><span class="n">tracked_layers</span><span class="p">,</span>
                                        <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
-                <span class="n">end_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">],</span>
-                                                      <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+                <span class="n">end_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">],</span>
+                                                      <span class="n">errors</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">)</span>
                 <span class="n">lcp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">((</span><span class="n">lcp</span><span class="p">,</span> <span class="n">end_features</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
                 <span class="n">least_cost_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lcp</span><span class="p">)</span>
 
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Least cost path </span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> complete!&#39;</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Least cost path </span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> complete!'</span>
                              <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">features</span><span class="p">)))</span>
                 <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
 
@@ -1046,7 +1063,7 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">_compute_paths_in_chunks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">exe</span><span class="p">,</span> <span class="n">max_submissions</span><span class="p">,</span> <span class="n">indices</span><span class="p">,</span>
                                  <span class="n">cost_layers</span><span class="p">,</span> <span class="n">barrier_mult</span><span class="p">,</span> <span class="n">save_paths</span><span class="p">,</span>
                                  <span class="n">licl</span><span class="p">,</span> <span class="n">tracked_layers</span><span class="p">,</span> <span class="n">cell_size</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute LCP&#39;s in parallel using futures. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Compute LCP's in parallel using futures. """</span>
         <span class="n">futures</span><span class="p">,</span> <span class="n">paths</span> <span class="o">=</span> <span class="p">{},</span> <span class="p">[]</span>
 
         <span class="k">for</span> <span class="n">ind</span><span class="p">,</span> <span class="n">start</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
@@ -1062,7 +1079,7 @@
                                 <span class="n">tracked_layers</span><span class="o">=</span><span class="n">tracked_layers</span><span class="p">,</span>
                                 <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
             <span class="n">futures</span><span class="p">[</span><span class="n">future</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">end_features</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Submitted </span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> futures&#39;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Submitted </span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> futures'</span>
                          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">indices</span><span class="p">)))</span>
             <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">ind</span> <span class="o">%</span> <span class="n">max_submissions</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -1078,7 +1095,7 @@
             <span class="n">barrier_mult</span><span class="o">=</span><span class="n">BARRIERS_MULT</span><span class="p">,</span> <span class="n">indices</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">save_paths</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">tracked_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Find Least Cost Paths between all pairs of provided features for</span>
 <span class="sd">        the given tie-line capacity class</span>
 
@@ -1123,7 +1140,7 @@
 <span class="sd">            Dictionary mapping layer names to strings, where the strings</span>
 <span class="sd">            are numpy methods that should be applied to the layer along</span>
 <span class="sd">            the LCP. For example,</span>
-<span class="sd">            ``tracked_layers={&#39;layer_1&#39;: &#39;mean&#39;, &#39;layer_2&#39;: &#39;max}``</span>
+<span class="sd">            ``tracked_layers={'layer_1': 'mean', 'layer_2': 'max}``</span>
 <span class="sd">            would report the average of ``layer_1`` values along the</span>
 <span class="sd">            least cost path and the max of ``layer_2`` values along the</span>
 <span class="sd">            least cost path. Examples of numpy methods (non-exhaustive):</span>
@@ -1145,7 +1162,7 @@
 <span class="sd">        least_cost_paths : pandas.DataFrame | gpd.GeoDataFrame</span>
 <span class="sd">            DataFrame of lengths and costs for each path or GeoDataFrame</span>
 <span class="sd">            of length, cost, and geometry for each path</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
         <span class="n">lcp</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span> <span class="n">clip_buffer</span><span class="o">=</span><span class="n">clip_buffer</span><span class="p">,</span>
                   <span class="n">tb_layer_name</span><span class="o">=</span><span class="n">tb_layer_name</span><span class="p">)</span>
@@ -1158,7 +1175,7 @@
             <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="n">length_invariant_cost_layers</span><span class="p">,</span>
             <span class="n">tracked_layers</span><span class="o">=</span><span class="n">tracked_layers</span><span class="p">,</span> <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> paths were computed in </span><span class="si">{:.4f}</span><span class="s1"> hours&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> paths were computed in </span><span class="si">{:.4f}</span><span class="s1"> hours'</span>
                     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">least_cost_paths</span><span class="p">),</span>
                             <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">ts</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3600</span><span class="p">))</span>
 
@@ -1170,13 +1187,13 @@
 <div class="viewcode-block" id="ReinforcementPaths">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths.ReinforcementPaths.html#reVX.least_cost_xmission.least_cost_paths.ReinforcementPaths">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">ReinforcementPaths</span><span class="p">(</span><span class="n">LeastCostPaths</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Compute reinforcement line paths between substations and a single</span>
 <span class="sd">    balancing area network node.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">transmission_lines</span><span class="p">,</span>
                  <span class="n">clip_buffer</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">tb_layer_name</span><span class="o">=</span><span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        cost_fpath : str</span>
@@ -1201,21 +1218,21 @@
 <span class="sd">            This layer defines the multipliers applied to the cost layer</span>
 <span class="sd">            to determine LCP routing (but does not actually affect</span>
 <span class="sd">            output costs). By default, :obj:`BARRIER_H5_LAYER_NAME`.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_cost_fpath</span> <span class="o">=</span> <span class="n">cost_fpath</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_tb_layer_name</span> <span class="o">=</span> <span class="n">tb_layer_name</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_check_layers</span><span class="p">()</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_row_slice</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_col_slice</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> \
             <span class="bp">self</span><span class="o">.</span><span class="n">_map_to_costs</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">clip_buffer</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">&#39;geometry&#39;</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_features</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">'geometry'</span><span class="p">)</span>
 
         <span class="n">network_node</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">1</span><span class="p">]</span>
-                        <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">))</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_start_indices</span> <span class="o">=</span> <span class="n">network_node</span><span class="p">[[</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+                        <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"all"</span><span class="p">))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_start_indices</span> <span class="o">=</span> <span class="n">network_node</span><span class="p">[[</span><span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_features</span> <span class="o">=</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
                           <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-                          <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">))</span>
+                          <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"all"</span><span class="p">))</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_transmission_lines</span> <span class="o">=</span> <span class="p">{</span>
             <span class="n">capacity_mw</span><span class="p">:</span> <span class="n">lines</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">_row_slice</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_col_slice</span><span class="p">]</span>
@@ -1224,7 +1241,7 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">start_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tuple of (row_idx, col_idx) in the cost array indicating the</span>
 <span class="sd">        start position of all reinforcement line paths to compute</span>
 <span class="sd">        (typically, this is the location of the network node in the</span>
@@ -1236,12 +1253,12 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        tuple</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_start_indices</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">end_indices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Tuple (row, col) index or list of (row, col) indices in the cost</span>
 <span class="sd">        array indicating the end location(s) to compute reinforcement</span>
 <span class="sd">        line paths to (typically substations within a single</span>
@@ -1252,8 +1269,8 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        tuple | list</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">[[</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">[[</span><span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
 
 <div class="viewcode-block" id="ReinforcementPaths.process_least_cost_paths">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths.ReinforcementPaths.html#reVX.least_cost_xmission.least_cost_paths.ReinforcementPaths.process_least_cost_paths">[docs]</a>
@@ -1262,19 +1279,19 @@
                                  <span class="n">save_paths</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                  <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                                  <span class="n">tracked_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Find the reinforcement line paths between the network node and</span>
 <span class="sd">        the substations for the given tie-line capacity class</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        capacity_class : int | str</span>
-<span class="sd">            Capacity class of the &#39;base&#39; greenfield costs layer. Costs</span>
+<span class="sd">            Capacity class of the 'base' greenfield costs layer. Costs</span>
 <span class="sd">            will be scaled by the capacity corresponding to this class</span>
 <span class="sd">            to report reinforcement costs as $/MW.</span>
 <span class="sd">        cost_layers : List[str]</span>
 <span class="sd">            List of layers in H5 that are summed to determine total</span>
-<span class="sd">            &#39;base&#39; greenfield costs raster used for routing. &#39;Base&#39;</span>
+<span class="sd">            'base' greenfield costs raster used for routing. 'Base'</span>
 <span class="sd">            greenfield costs are only used if the reinforcement path</span>
 <span class="sd">            *must* deviate from existing transmission lines. Typically,</span>
 <span class="sd">            a capacity class of 400 MW (230kV transmission line) is used</span>
@@ -1289,7 +1306,7 @@
 <span class="sd">            Flag to save reinforcement line path as a multi-line</span>
 <span class="sd">            geometry. By default, ``False``.</span>
 <span class="sd">        length_invariant_cost_layers : List[str] | None, optional</span>
-<span class="sd">            List of layers in H5 to be added to the &#39;base&#39; greenfield</span>
+<span class="sd">            List of layers in H5 to be added to the 'base' greenfield</span>
 <span class="sd">            cost raster. The costs specified by these layers are not</span>
 <span class="sd">            scaled with distance traversed across the cell (i.e. fixed</span>
 <span class="sd">            one-time costs for crossing these cells).</span>
@@ -1297,7 +1314,7 @@
 <span class="sd">            Dictionary mapping layer names to strings, where the strings</span>
 <span class="sd">            are numpy methods that should be applied to the layer along</span>
 <span class="sd">            the LCP. For example,</span>
-<span class="sd">            ``tracked_layers={&#39;layer_1&#39;: &#39;mean&#39;, &#39;layer_2&#39;: &#39;max}``</span>
+<span class="sd">            ``tracked_layers={'layer_1': 'mean', 'layer_2': 'max}``</span>
 <span class="sd">            would report the average of ``layer_1`` values along the</span>
 <span class="sd">            least cost path and the max of ``layer_2`` values along the</span>
 <span class="sd">            least cost path. Examples of numpy methods (non-exhaustive):</span>
@@ -1320,9 +1337,9 @@
 <span class="sd">            DataFrame of lengths and costs for each reinforcement line</span>
 <span class="sd">            path or GeoDataFrame of length, cost, and geometry for each</span>
 <span class="sd">            reinforcement line path.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Computing reinforcement path costs for start index </span><span class="si">{}</span><span class="s1">&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Computing reinforcement path costs for start index </span><span class="si">{}</span><span class="s1">'</span>
                     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_start_indices</span><span class="p">))</span>
         <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
         <span class="n">max_workers</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()</span> <span class="k">if</span> <span class="n">max_workers</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">max_workers</span>
@@ -1331,10 +1348,10 @@
         <span class="n">licl</span> <span class="o">=</span> <span class="n">length_invariant_cost_layers</span>
         <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">if</span> <span class="n">max_workers</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Computing Reinforcement Cost Paths in parallel on &#39;</span>
-                        <span class="s1">&#39;</span><span class="si">%d</span><span class="s1"> workers&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Computing Reinforcement Cost Paths in parallel on '</span>
+                        <span class="s1">'</span><span class="si">%d</span><span class="s1"> workers'</span><span class="p">,</span> <span class="n">max_workers</span><span class="p">)</span>
             <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
-            <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">&#39;reV&#39;</span><span class="p">,</span> <span class="s1">&#39;reVX&#39;</span><span class="p">]</span>
+            <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">'reV'</span><span class="p">,</span> <span class="s1">'reVX'</span><span class="p">]</span>
             <span class="k">with</span> <span class="n">SpawnProcessPool</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>
                                   <span class="n">loggers</span><span class="o">=</span><span class="n">loggers</span><span class="p">)</span> <span class="k">as</span> <span class="n">exe</span><span class="p">:</span>
 
@@ -1345,7 +1362,7 @@
                                         <span class="bp">self</span><span class="o">.</span><span class="n">_transmission_lines</span><span class="p">,</span>
                                         <span class="bp">self</span><span class="o">.</span><span class="n">_cost_fpath</span><span class="p">,</span>
                                         <span class="bp">self</span><span class="o">.</span><span class="n">start_indices</span><span class="p">,</span>
-                                        <span class="n">feats</span><span class="p">[[</span><span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+                                        <span class="n">feats</span><span class="p">[[</span><span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
                                         <span class="n">capacity_class</span><span class="p">,</span>
                                         <span class="n">cost_layers</span><span class="p">,</span>
                                         <span class="bp">self</span><span class="o">.</span><span class="n">_row_slice</span><span class="p">,</span>
@@ -1357,7 +1374,7 @@
                                         <span class="n">tracked_layers</span><span class="o">=</span><span class="n">tracked_layers</span><span class="p">,</span>
                                         <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
                     <span class="n">futures</span><span class="p">[</span><span class="n">future</span><span class="p">]</span> <span class="o">=</span> <span class="n">feats</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Submitted </span><span class="si">%d</span><span class="s1"> of </span><span class="si">%d</span><span class="s1"> futures&#39;</span><span class="p">,</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Submitted </span><span class="si">%d</span><span class="s1"> of </span><span class="si">%d</span><span class="s1"> futures'</span><span class="p">,</span>
                                  <span class="n">ind</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">max_workers</span><span class="p">)</span>
                     <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
 
@@ -1381,11 +1398,11 @@
                                              <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="n">licl</span><span class="p">,</span>
                                              <span class="n">tracked_layers</span><span class="o">=</span><span class="n">tracked_layers</span><span class="p">,</span>
                                              <span class="n">cell_size</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
-            <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="n">lcp</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;row&quot;</span><span class="p">,</span> <span class="s2">&quot;col&quot;</span><span class="p">])</span>
+            <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="n">lcp</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_features</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s2">"row"</span><span class="p">,</span> <span class="s2">"col"</span><span class="p">])</span>
 
-        <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="n">least_cost_paths</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
-        <span class="n">drop_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;index&#39;</span><span class="p">,</span> <span class="s1">&#39;row&#39;</span><span class="p">,</span> <span class="s1">&#39;col&#39;</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">least_cost_paths</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">drop_cols</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span></div>
+        <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="n">least_cost_paths</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)</span>
+        <span class="n">drop_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'index'</span><span class="p">,</span> <span class="s1">'row'</span><span class="p">,</span> <span class="s1">'col'</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">least_cost_paths</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">drop_cols</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="ReinforcementPaths.run">
@@ -1397,8 +1414,8 @@
             <span class="n">tb_layer_name</span><span class="o">=</span><span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">,</span> <span class="n">barrier_mult</span><span class="o">=</span><span class="n">BARRIERS_MULT</span><span class="p">,</span>
             <span class="n">indices</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">save_paths</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
             <span class="n">length_invariant_cost_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tracked_layers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">ss_id_col</span><span class="o">=</span><span class="s2">&quot;poi_gid&quot;</span><span class="p">,</span> <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+            <span class="n">ss_id_col</span><span class="o">=</span><span class="s2">"poi_gid"</span><span class="p">,</span> <span class="n">cell_size</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Find the reinforcement line paths between the network node and</span>
 <span class="sd">        the substations for the given tie-line capacity class</span>
 
@@ -1417,19 +1434,19 @@
 <span class="sd">        network_nodes_fpath : str</span>
 <span class="sd">            Path to GeoPackage with network node endpoints. The</span>
 <span class="sd">            endpoints should have a `region_identifier_column` column</span>
-<span class="sd">            that identifies matches exactly one of the ID&#39;s in the</span>
+<span class="sd">            that identifies matches exactly one of the ID's in the</span>
 <span class="sd">            reinforcement regions GeoPackage to be used in downstream</span>
 <span class="sd">            models.</span>
 <span class="sd">        region_identifier_column : str</span>
 <span class="sd">            Name of column in `network_nodes_fpath` GeoPackage</span>
 <span class="sd">            containing a unique identifier for each region.</span>
 <span class="sd">        capacity_class : int | str</span>
-<span class="sd">            Capacity class of the &#39;base&#39; greenfield costs layer. Costs</span>
+<span class="sd">            Capacity class of the 'base' greenfield costs layer. Costs</span>
 <span class="sd">            will be scaled by the capacity corresponding to this class</span>
 <span class="sd">            to report reinforcement costs as $/MW.</span>
 <span class="sd">        cost_layers : List[str]</span>
 <span class="sd">            List of layers in H5 that are summed to determine total</span>
-<span class="sd">            &#39;base&#39; greenfield costs raster used for routing. &#39;Base&#39;</span>
+<span class="sd">            'base' greenfield costs raster used for routing. 'Base'</span>
 <span class="sd">            greenfield costs are only used if the reinforcement path</span>
 <span class="sd">            *must* deviate from existing transmission lines. Typically,</span>
 <span class="sd">            a capacity class of 400 MW (230kV transmission line) is used</span>
@@ -1460,7 +1477,7 @@
 <span class="sd">            Flag to save reinforcement line path as a multi-line</span>
 <span class="sd">            geometry. By default, ``False``.</span>
 <span class="sd">        length_invariant_cost_layers : List[str] | None, optional</span>
-<span class="sd">            List of layers in H5 to be added to the &#39;base&#39; greenfield</span>
+<span class="sd">            List of layers in H5 to be added to the 'base' greenfield</span>
 <span class="sd">            cost raster. The costs specified by these layers are not</span>
 <span class="sd">            scaled with distance traversed across the cell (i.e. fixed</span>
 <span class="sd">            one-time costs for crossing these cells).</span>
@@ -1468,7 +1485,7 @@
 <span class="sd">            Dictionary mapping layer names to strings, where the strings</span>
 <span class="sd">            are numpy methods that should be applied to the layer along</span>
 <span class="sd">            the LCP. For example,</span>
-<span class="sd">            ``tracked_layers={&#39;layer_1&#39;: &#39;mean&#39;, &#39;layer_2&#39;: &#39;max}``</span>
+<span class="sd">            ``tracked_layers={'layer_1': 'mean', 'layer_2': 'max}``</span>
 <span class="sd">            would report the average of ``layer_1`` values along the</span>
 <span class="sd">            least cost path and the max of ``layer_2`` values along the</span>
 <span class="sd">            least cost path. Examples of numpy methods (non-exhaustive):</span>
@@ -1481,11 +1498,11 @@
 <span class="sd">                - std</span>
 
 <span class="sd">            By default, ``None``, which does not track any extra layers.</span>
-<span class="sd">        ss_id_col : str, default=&quot;poi_gid&quot;</span>
+<span class="sd">        ss_id_col : str, default="poi_gid"</span>
 <span class="sd">            Name of column containing unique identifier for each</span>
 <span class="sd">            substation. This column will be used to compute minimum</span>
 <span class="sd">            reinforcement cost per substation.</span>
-<span class="sd">            By default, ``&quot;poi_gid&quot;``.</span>
+<span class="sd">            By default, ``"poi_gid"``.</span>
 <span class="sd">        cell_size : int, optional</span>
 <span class="sd">            Side length of each cell, in meters. Cells are assumed to be</span>
 <span class="sd">            square. By default, :obj:`CELL_SIZE`.</span>
@@ -1496,47 +1513,47 @@
 <span class="sd">            DataFrame of lengths and costs for each reinforcement line</span>
 <span class="sd">            path or GeoDataFrame of length, cost, and geometry for each</span>
 <span class="sd">            reinforcement line path.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">ts</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
         <span class="n">least_cost_paths</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="n">licl</span> <span class="o">=</span> <span class="n">length_invariant_cost_layers</span>
-        <span class="n">lcp_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;capacity_class&quot;</span><span class="p">:</span> <span class="n">capacity_class</span><span class="p">,</span>
-                      <span class="s2">&quot;cost_layers&quot;</span><span class="p">:</span> <span class="n">cost_layers</span><span class="p">,</span>
-                      <span class="s2">&quot;length_invariant_cost_layers&quot;</span><span class="p">:</span> <span class="n">licl</span><span class="p">,</span>
-                      <span class="s2">&quot;barrier_mult&quot;</span><span class="p">:</span> <span class="n">barrier_mult</span><span class="p">,</span>
-                      <span class="s2">&quot;save_paths&quot;</span><span class="p">:</span> <span class="n">save_paths</span><span class="p">,</span>
-                      <span class="s2">&quot;max_workers&quot;</span><span class="p">:</span> <span class="n">max_workers</span><span class="p">,</span>
-                      <span class="s2">&quot;tracked_layers&quot;</span><span class="p">:</span> <span class="n">tracked_layers</span><span class="p">,</span>
-                      <span class="s2">&quot;cell_size&quot;</span><span class="p">:</span> <span class="n">cell_size</span><span class="p">}</span>
+        <span class="n">lcp_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"capacity_class"</span><span class="p">:</span> <span class="n">capacity_class</span><span class="p">,</span>
+                      <span class="s2">"cost_layers"</span><span class="p">:</span> <span class="n">cost_layers</span><span class="p">,</span>
+                      <span class="s2">"length_invariant_cost_layers"</span><span class="p">:</span> <span class="n">licl</span><span class="p">,</span>
+                      <span class="s2">"barrier_mult"</span><span class="p">:</span> <span class="n">barrier_mult</span><span class="p">,</span>
+                      <span class="s2">"save_paths"</span><span class="p">:</span> <span class="n">save_paths</span><span class="p">,</span>
+                      <span class="s2">"max_workers"</span><span class="p">:</span> <span class="n">max_workers</span><span class="p">,</span>
+                      <span class="s2">"tracked_layers"</span><span class="p">:</span> <span class="n">tracked_layers</span><span class="p">,</span>
+                      <span class="s2">"cell_size"</span><span class="p">:</span> <span class="n">cell_size</span><span class="p">}</span>
         <span class="k">with</span> <span class="n">ExclusionLayers</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">cost_crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
             <span class="n">cost_shape</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">shape</span>
-            <span class="n">cost_transform</span> <span class="o">=</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">Affine</span><span class="p">(</span><span class="o">*</span><span class="n">f</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">])</span>
+            <span class="n">cost_transform</span> <span class="o">=</span> <span class="n">rasterio</span><span class="o">.</span><span class="n">Affine</span><span class="p">(</span><span class="o">*</span><span class="n">f</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">])</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Loading features from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Loading features from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">)</span>
         <span class="n">features</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">features_fpath</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">cost_crs</span><span class="p">)</span>
-        <span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;gid&#39;</span><span class="p">:</span> <span class="n">ss_id_col</span><span class="p">}</span>
+        <span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'gid'</span><span class="p">:</span> <span class="n">ss_id_col</span><span class="p">}</span>
         <span class="n">substations</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">mapping</span><span class="p">)</span>
-        <span class="n">substations</span> <span class="o">=</span> <span class="n">substations</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Loaded </span><span class="si">%d</span><span class="s1"> features from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">substations</span><span class="p">),</span>
+        <span class="n">substations</span> <span class="o">=</span> <span class="n">substations</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"all"</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Loaded </span><span class="si">%d</span><span class="s1"> features from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">substations</span><span class="p">),</span>
                     <span class="n">features_fpath</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Loading tline shapes from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">transmission_lines_fpath</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Loading tline shapes from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">transmission_lines_fpath</span><span class="p">)</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">transmission_lines_fpath</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">cost_crs</span><span class="p">)</span>
-        <span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;VOLTAGE&#39;</span><span class="p">:</span> <span class="s1">&#39;voltage&#39;</span><span class="p">}</span>
+        <span class="n">mapping</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'VOLTAGE'</span><span class="p">:</span> <span class="s1">'voltage'</span><span class="p">}</span>
         <span class="n">lines</span> <span class="o">=</span> <span class="n">lines</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">mapping</span><span class="p">)</span>
         <span class="n">transmission_lines</span> <span class="o">=</span> <span class="p">(</span><span class="n">lines</span><span class="p">[</span><span class="n">lines</span><span class="o">.</span><span class="n">category</span> <span class="o">==</span> <span class="n">TRANS_LINE_CAT</span><span class="p">]</span>
                               <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Loaded </span><span class="si">%d</span><span class="s1"> tline shapes from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">transmission_lines</span><span class="p">),</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Loaded </span><span class="si">%d</span><span class="s1"> tline shapes from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">transmission_lines</span><span class="p">),</span>
                     <span class="n">transmission_lines_fpath</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Rasterizing transmission lines onto grid...&quot;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Rasterizing transmission lines onto grid..."</span><span class="p">)</span>
         <span class="n">transmission_lines</span> <span class="o">=</span> <span class="n">_rasterize_transmission</span><span class="p">(</span><span class="n">transmission_lines</span><span class="p">,</span>
                                                      <span class="n">xmission_config</span><span class="p">,</span>
                                                      <span class="n">cost_shape</span><span class="p">,</span>
                                                      <span class="n">cost_transform</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Loading network nodes from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">network_nodes_fpath</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Loading network nodes from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">network_nodes_fpath</span><span class="p">)</span>
         <span class="n">network_nodes</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">cost_crs</span><span class="p">)</span>
         <span class="n">indices</span> <span class="o">=</span> <span class="n">network_nodes</span><span class="o">.</span><span class="n">index</span> <span class="k">if</span> <span class="n">indices</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">indices</span>
         <span class="k">for</span> <span class="n">loop_ind</span><span class="p">,</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">indices</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
@@ -1544,16 +1561,16 @@
                             <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
             <span class="n">rid</span> <span class="o">=</span> <span class="n">network_node</span><span class="p">[</span><span class="n">region_identifier_column</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
             <span class="n">mask</span> <span class="o">=</span> <span class="n">substations</span><span class="p">[</span><span class="n">region_identifier_column</span><span class="p">]</span> <span class="o">==</span> <span class="n">rid</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Computing reinfocements to </span><span class="si">%s</span><span class="s1"> in region </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Computing reinfocements to </span><span class="si">%s</span><span class="s1"> in region </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                          <span class="nb">str</span><span class="p">(</span><span class="n">network_node</span><span class="p">),</span> <span class="n">rid</span><span class="p">)</span>
             <span class="n">node_substations</span> <span class="o">=</span> <span class="n">substations</span><span class="p">[</span><span class="n">mask</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">node_substations</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
                 <span class="k">continue</span>
 
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Found </span><span class="si">%d</span><span class="s1"> unique </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Found </span><span class="si">%d</span><span class="s1"> unique </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                          <span class="n">node_substations</span><span class="p">[</span><span class="n">ss_id_col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
                          <span class="n">ss_id_col</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Working on </span><span class="si">%d</span><span class="s1"> substations in region </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Working on </span><span class="si">%d</span><span class="s1"> substations in region </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                         <span class="nb">len</span><span class="p">(</span><span class="n">node_substations</span><span class="p">),</span> <span class="n">rid</span><span class="p">)</span>
             <span class="n">node_features</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">network_node</span><span class="p">,</span> <span class="n">node_substations</span><span class="p">])</span>
             <span class="n">rp</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">node_features</span><span class="p">,</span> <span class="n">transmission_lines</span><span class="p">,</span>
@@ -1562,16 +1579,16 @@
             <span class="n">node_least_cost_paths</span><span class="p">[</span><span class="n">region_identifier_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">rid</span>
             <span class="n">least_cost_paths</span> <span class="o">+=</span> <span class="p">[</span><span class="n">node_least_cost_paths</span><span class="p">]</span>
 
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Found </span><span class="si">%d</span><span class="s1"> reinforcement paths for network node&#39;</span><span class="p">,</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Found </span><span class="si">%d</span><span class="s1"> reinforcement paths for network node'</span><span class="p">,</span>
                          <span class="nb">len</span><span class="p">(</span><span class="n">node_least_cost_paths</span><span class="p">))</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Computed reinforcements for </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1"> network nodes&#39;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Computed reinforcements for </span><span class="si">{}</span><span class="s1">/</span><span class="si">{}</span><span class="s1"> network nodes'</span>
                          <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">loop_ind</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">indices</span><span class="p">)))</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Paths to </span><span class="si">{}</span><span class="s1"> network node(s) were computed in </span><span class="si">{:.4f}</span><span class="s1"> hours&#39;</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Paths to </span><span class="si">{}</span><span class="s1"> network node(s) were computed in </span><span class="si">{:.4f}</span><span class="s1"> hours'</span>
                     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">least_cost_paths</span><span class="p">),</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">ts</span><span class="p">)</span> <span class="o">/</span> <span class="mi">3600</span><span class="p">))</span>
 
         <span class="n">costs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">least_cost_paths</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Computed </span><span class="si">%d</span><span class="s1"> reinforcement paths for </span><span class="si">%d</span><span class="s1"> unique POIs&#39;</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Computed </span><span class="si">%d</span><span class="s1"> reinforcement paths for </span><span class="si">%d</span><span class="s1"> unique POIs'</span><span class="p">,</span>
                      <span class="nb">len</span><span class="p">(</span><span class="n">costs</span><span class="p">),</span> <span class="n">costs</span><span class="p">[</span><span class="n">ss_id_col</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
         <span class="k">return</span> <span class="n">min_reinforcement_costs</span><span class="p">(</span><span class="n">costs</span><span class="p">,</span> <span class="n">group_col</span><span class="o">=</span><span class="n">ss_id_col</span><span class="p">)</span></div>
 </div>
@@ -1580,16 +1597,16 @@
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_rasterize_transmission</span><span class="p">(</span><span class="n">transmission_lines</span><span class="p">,</span> <span class="n">xmission_config</span><span class="p">,</span> <span class="n">cost_shape</span><span class="p">,</span>
                             <span class="n">cost_transform</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Rasterize transmission lines and assemble them into a dict. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Rasterize transmission lines and assemble them into a dict. """</span>
 
     <span class="n">transmission_lines_dict</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="n">capacities</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">xmission_config</span><span class="p">[</span><span class="s1">&#39;power_classes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+    <span class="n">capacities</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">xmission_config</span><span class="p">[</span><span class="s1">'power_classes'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
     <span class="n">v_min</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">capacity</span> <span class="ow">in</span> <span class="n">capacities</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
-        <span class="n">v_max</span> <span class="o">=</span> <span class="n">xmission_config</span><span class="p">[</span><span class="s1">&#39;power_to_voltage&#39;</span><span class="p">][</span><span class="nb">str</span><span class="p">(</span><span class="n">capacity</span><span class="p">)]</span>
+        <span class="n">v_max</span> <span class="o">=</span> <span class="n">xmission_config</span><span class="p">[</span><span class="s1">'power_to_voltage'</span><span class="p">][</span><span class="nb">str</span><span class="p">(</span><span class="n">capacity</span><span class="p">)]</span>
         <span class="n">curr_lines</span> <span class="o">=</span> <span class="n">transmission_lines</span><span class="p">[</span>
-            <span class="p">(</span><span class="n">transmission_lines</span><span class="p">[</span><span class="s2">&quot;voltage&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v_min</span><span class="p">)</span>
-            <span class="o">&amp;</span> <span class="p">(</span><span class="n">transmission_lines</span><span class="p">[</span><span class="s2">&quot;voltage&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">v_max</span><span class="p">)</span>
+            <span class="p">(</span><span class="n">transmission_lines</span><span class="p">[</span><span class="s2">"voltage"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v_min</span><span class="p">)</span>
+            <span class="o">&amp;</span> <span class="p">(</span><span class="n">transmission_lines</span><span class="p">[</span><span class="s2">"voltage"</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">v_max</span><span class="p">)</span>
         <span class="p">]</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">curr_lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
             <span class="k">continue</span>
@@ -1598,7 +1615,7 @@
         <span class="n">transmission_lines_dict</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">capacity</span><span class="p">)]</span> <span class="o">=</span> <span class="n">out</span>
         <span class="n">v_min</span> <span class="o">=</span> <span class="n">v_max</span>
 
-    <span class="n">curr_lines</span> <span class="o">=</span> <span class="n">transmission_lines</span><span class="p">[</span><span class="n">transmission_lines</span><span class="p">[</span><span class="s2">&quot;voltage&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v_min</span><span class="p">]</span>
+    <span class="n">curr_lines</span> <span class="o">=</span> <span class="n">transmission_lines</span><span class="p">[</span><span class="n">transmission_lines</span><span class="p">[</span><span class="s2">"voltage"</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">v_min</span><span class="p">]</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">curr_lines</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">transmission_lines_dict</span>
 
@@ -1609,10 +1626,10 @@
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_rasterize_transmission_layer</span><span class="p">(</span><span class="n">transmission_lines</span><span class="p">,</span> <span class="n">cost_shape</span><span class="p">,</span>
                                   <span class="n">cost_transform</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Rasterize a single transmission layer. &quot;&quot;&quot;</span>
-    <span class="n">shapes</span> <span class="o">=</span> <span class="p">[(</span><span class="n">geom</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">geom</span> <span class="ow">in</span> <span class="n">transmission_lines</span><span class="p">[</span><span class="s2">&quot;geometry&quot;</span><span class="p">]</span>
+<span class="w">    </span><span class="sd">"""Rasterize a single transmission layer. """</span>
+    <span class="n">shapes</span> <span class="o">=</span> <span class="p">[(</span><span class="n">geom</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">geom</span> <span class="ow">in</span> <span class="n">transmission_lines</span><span class="p">[</span><span class="s2">"geometry"</span><span class="p">]</span>
               <span class="k">if</span> <span class="n">geom</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">]</span>
-    <span class="n">out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">cost_shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;uint8&#39;</span><span class="p">)</span>
+    <span class="n">out</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">cost_shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">'uint8'</span><span class="p">)</span>
     <span class="n">rasterio</span><span class="o">.</span><span class="n">features</span><span class="o">.</span><span class="n">rasterize</span><span class="p">(</span><span class="n">shapes</span><span class="o">=</span><span class="n">shapes</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span> <span class="n">out_shape</span><span class="o">=</span><span class="n">out</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
                                 <span class="n">fill</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">transform</span><span class="o">=</span><span class="n">cost_transform</span><span class="p">)</span>
 
@@ -1621,8 +1638,8 @@
 
 <div class="viewcode-block" id="min_reinforcement_costs">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths.min_reinforcement_costs.html#reVX.least_cost_xmission.least_cost_paths.min_reinforcement_costs">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">min_reinforcement_costs</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">group_col</span><span class="o">=</span><span class="s2">&quot;poi_gid&quot;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Filter table down to cheapest reinforcement per substation.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">min_reinforcement_costs</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">group_col</span><span class="o">=</span><span class="s2">"poi_gid"</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Filter table down to cheapest reinforcement per substation.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -1631,7 +1648,7 @@
 <span class="sd">        a `group_col` column identifying each substation with its own</span>
 <span class="sd">        unique ID and a `reinforcement_cost_per_mw` column with the</span>
 <span class="sd">        reinforcement costs to minimize.</span>
-<span class="sd">    group_col : str, default=&quot;poi_gid&quot;</span>
+<span class="sd">    group_col : str, default="poi_gid"</span>
 <span class="sd">        Name of column containing unique identifier for each substation.</span>
 <span class="sd">        This column will be used to group costs and select the minimum</span>
 <span class="sd">        one.</span>
@@ -1641,38 +1658,38 @@
 <span class="sd">    pd.DataFrame | gpd.GeoDataFrame</span>
 <span class="sd">        Table with a single entry for each `group_col` with the least</span>
 <span class="sd">        `reinforcement_cost_per_mw`.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Computing min reinforcement cost grouped by </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">group_col</span><span class="p">)</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Reinforcement table contains </span><span class="si">%d</span><span class="s2"> paths&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
+<span class="sd">    """</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Computing min reinforcement cost grouped by </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="n">group_col</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Reinforcement table contains </span><span class="si">%d</span><span class="s2"> paths"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Dropping NA reinforcement costs&quot;</span><span class="p">)</span>
-    <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="p">[</span><span class="o">~</span><span class="n">table</span><span class="p">[</span><span class="s2">&quot;reinforcement_cost_per_mw&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Dropping NA reinforcement costs"</span><span class="p">)</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="p">[</span><span class="o">~</span><span class="n">table</span><span class="p">[</span><span class="s2">"reinforcement_cost_per_mw"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
     <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Reinforcement table with no NA costs contains </span><span class="si">%d</span><span class="s2"> paths&quot;</span><span class="p">,</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Reinforcement table with no NA costs contains </span><span class="si">%d</span><span class="s2"> paths"</span><span class="p">,</span>
                  <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
     <span class="n">grouped</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">group_col</span><span class="p">)</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Reinforcement table contains </span><span class="si">%d</span><span class="s2"> groups of </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Reinforcement table contains </span><span class="si">%d</span><span class="s2"> groups of </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span>
                  <span class="nb">len</span><span class="p">(</span><span class="n">grouped</span><span class="p">),</span> <span class="n">group_col</span><span class="p">)</span>
-    <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grouped</span><span class="p">[</span><span class="s2">&quot;reinforcement_cost_per_mw&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmin</span><span class="p">()]</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Final reinforcement table contains </span><span class="si">%d</span><span class="s2"> rows&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="n">table</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">grouped</span><span class="p">[</span><span class="s2">"reinforcement_cost_per_mw"</span><span class="p">]</span><span class="o">.</span><span class="n">idxmin</span><span class="p">()]</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Final reinforcement table contains </span><span class="si">%d</span><span class="s2"> rows"</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">table</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></div>
 
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">_collect_future_chunks</span><span class="p">(</span><span class="n">futures</span><span class="p">,</span> <span class="n">least_cost_paths</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Collect all futures from the input dictionary. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Collect all futures from the input dictionary. """</span>
 
     <span class="n">num_to_collect</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">futures</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">future</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">as_completed</span><span class="p">(</span><span class="n">futures</span><span class="p">),</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">end_features</span> <span class="o">=</span> <span class="n">futures</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">future</span><span class="p">)</span>
         <span class="n">lcp</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Joining feautres of shape </span><span class="si">%s</span><span class="s2"> with results of shape </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Joining feautres of shape </span><span class="si">%s</span><span class="s2"> with results of shape </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span>
                      <span class="nb">str</span><span class="p">(</span><span class="n">end_features</span><span class="o">.</span><span class="n">shape</span><span class="p">),</span> <span class="nb">str</span><span class="p">(</span><span class="n">lcp</span><span class="o">.</span><span class="n">shape</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Feature cols: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">end_features</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Results cols: </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">lcp</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
-        <span class="n">lcp</span> <span class="o">=</span> <span class="n">lcp</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">end_features</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;row&quot;</span><span class="p">,</span> <span class="s2">&quot;col&quot;</span><span class="p">])</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Feature cols: </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">end_features</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Results cols: </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">lcp</span><span class="o">.</span><span class="n">columns</span><span class="p">))</span>
+        <span class="n">lcp</span> <span class="o">=</span> <span class="n">lcp</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">end_features</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s2">"row"</span><span class="p">,</span> <span class="s2">"col"</span><span class="p">])</span>
         <span class="n">least_cost_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">lcp</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Collected </span><span class="si">%d</span><span class="s1"> of </span><span class="si">%d</span><span class="s1"> futures!&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">num_to_collect</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Collected </span><span class="si">%d</span><span class="s1"> of </span><span class="si">%d</span><span class="s1"> futures!'</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">num_to_collect</span><span class="p">)</span>
         <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">least_cost_paths</span>

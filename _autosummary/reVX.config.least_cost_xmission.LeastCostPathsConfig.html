@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.config.least_cost_xmission.LeastCostPathsConfig &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.config.least_cost_xmission.LeastCostPathsConfig &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,8 +653,8 @@
 <h1>reVX.config.least_cost_xmission.LeastCostPathsConfig<a class="headerlink" href="#revx-config-least-cost-xmission-leastcostpathsconfig" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeastCostPathsConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/config/least_cost_xmission.html#LeastCostPathsConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.config.base_analysis_config.AnalysisConfig.html#reV.config.base_analysis_config.AnalysisConfig" title="(in reV v0.15.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnalysisConfig</span></code></a></p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">LeastCostPathsConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/config/least_cost_xmission.html#LeastCostPathsConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.config.base_analysis_config.AnalysisConfig.html#reV.config.base_analysis_config.AnalysisConfig" title="(in reV v0.19.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AnalysisConfig</span></code></a></p>
 <p>Config framework for Least Cost Paths</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -653,26 +670,20 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.check_overwrite_keys" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.check_overwrite_keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_overwrite_keys</span></code></a>(primary_key, ...)</p></td>
 <td><p>Check for overwrite keys and raise a ConfigError if present</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.clear" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.copy" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.copy" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
 <td><p>Create a new dictionary with keys from iterable and values set to value.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.get" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.get" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
 <td><p>Return the value for key if key is in the dictionary, else default.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.items" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.items" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.keys" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.keys" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
 <td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.pop" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.pop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code></a>(k[,d])</p></td>
-<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.popitem" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.popitem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code></a>()</p></td>
 <td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
@@ -689,10 +700,7 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.str_replace_and_resolve" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.str_replace_and_resolve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str_replace_and_resolve</span></code></a>(d, str_rep)</p></td>
 <td><p>Perform a deep string replacement and path resolve in d.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.update" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>([E, ]**F)</p></td>
-<td><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.values" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.values" title="reVX.config.least_cost_xmission.LeastCostPathsConfig.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -785,13 +793,13 @@
 </table>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.REQUIREMENTS">
-<span class="sig-name descname"><span class="pre">REQUIREMENTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('cost_fpath',</span> <span class="pre">'features_fpath',</span> <span class="pre">'cost_layers')</span></em><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.REQUIREMENTS" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">REQUIREMENTS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('cost_fpath',</span> <span class="pre">'features_fpath',</span> <span class="pre">'cost_layers')</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.REQUIREMENTS" title="Link to this definition"></a></dt>
 <dd><p>Required keys for config</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.name">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.name" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.name" title="Link to this definition"></a></dt>
 <dd><p>Get the job name, defaults to the output directory name.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -802,31 +810,31 @@
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.cost_fpath">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cost_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.cost_fpath" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cost_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.cost_fpath" title="Link to this definition"></a></dt>
 <dd><p>.h5 file with cost and required layers</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.features_fpath">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">features_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.features_fpath" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">features_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.features_fpath" title="Link to this definition"></a></dt>
 <dd><p>Tranmission feature .gpkg</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.network_nodes_fpath">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">network_nodes_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.network_nodes_fpath" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">network_nodes_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.network_nodes_fpath" title="Link to this definition"></a></dt>
 <dd><p>Network nodes config input</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.transmission_lines_fpath">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transmission_lines_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.transmission_lines_fpath" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">transmission_lines_fpath</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.transmission_lines_fpath" title="Link to this definition"></a></dt>
 <dd><p>Transmission line features  config input</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.capacity_class">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">capacity_class</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.capacity_class" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">capacity_class</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.capacity_class" title="Link to this definition"></a></dt>
 <dd><p>Capacity class of the ‘base’ greenfield costs layer. Costs will
 be scaled by the capacity corresponding to this class to report
 reinforcement costs as $/MW. Only used for reinforcement path
@@ -835,14 +843,14 @@ computations.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.cost_layers">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cost_layers</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.cost_layers" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cost_layers</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.cost_layers" title="Link to this definition"></a></dt>
 <dd><p>List of H5 layers that are summed to determine total costs
 raster used for routing.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.length_invariant_cost_layers">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">length_invariant_cost_layers</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.length_invariant_cost_layers" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">length_invariant_cost_layers</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.length_invariant_cost_layers" title="Link to this definition"></a></dt>
 <dd><p>Layers to be added to the cost raster whose costs do not scale
 with distance traversed (i.e. fixed one-time costs for crossing
 these cells).</p>
@@ -850,64 +858,64 @@ these cells).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.tracked_layers">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tracked_layers</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.tracked_layers" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tracked_layers</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.tracked_layers" title="Link to this definition"></a></dt>
 <dd><p>Dictionary mapping layer names to strings, where the strings are
 numpy methods that should be applied to the layer along the LCP.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.cell_size">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cell_size</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.cell_size" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cell_size</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.cell_size" title="Link to this definition"></a></dt>
 <dd><p>Side length of each cell, in meters.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.xmission_config">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">xmission_config</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.xmission_config" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">xmission_config</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.xmission_config" title="Link to this definition"></a></dt>
 <dd><p>Xmission config input</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.tb_layer_name">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tb_layer_name</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.tb_layer_name" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tb_layer_name</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.tb_layer_name" title="Link to this definition"></a></dt>
 <dd><p>Name of transmission barrier layer in <cite>cost_fpath</cite> file.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.clip_buffer">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clip_buffer</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.clip_buffer" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">clip_buffer</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.clip_buffer" title="Link to this definition"></a></dt>
 <dd><p>Number of array elements to buffer clip area by.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.barrier_mult">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">barrier_mult</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.barrier_mult" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">barrier_mult</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.barrier_mult" title="Link to this definition"></a></dt>
 <dd><p>Transmission barrier multiplier to use for MCP costs</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.is_reinforcement_run">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">is_reinforcement_run</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.is_reinforcement_run" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">is_reinforcement_run</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.is_reinforcement_run" title="Link to this definition"></a></dt>
 <dd><p>Boolean flag indicating wether this run is for reinforcement
 path computation</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.region_identifier_column">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">region_identifier_column</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.region_identifier_column" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">region_identifier_column</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.region_identifier_column" title="Link to this definition"></a></dt>
 <dd><p>Name of column containing unique region identifier</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.STR_REP">
-<span class="sig-name descname"><span class="pre">STR_REP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'REVDIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/reV',</span> <span class="pre">'TESTDATADIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tests/data'}</span></em><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.STR_REP" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">STR_REP</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'REVDIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/reV',</span> <span class="pre">'TESTDATADIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/tests/data'}</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.STR_REP" title="Link to this definition"></a></dt>
 <dd><p>Mapping of config inputs (keys) to desired replacements (values) in
 addition to relative file paths as demarcated by ./ and ../</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.analysis_years">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">analysis_years</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.analysis_years" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">analysis_years</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.analysis_years" title="Link to this definition"></a></dt>
 <dd><p>Get the analysis years.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -920,7 +928,7 @@ the code will look anticipate a year in the input files.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.check_files">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.check_files" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">check_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.check_files" title="Link to this definition"></a></dt>
 <dd><p>Make sure all files in the input file list exist.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -943,14 +951,9 @@ the code will look anticipate a year in the input files.</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Remove</span> <span class="pre">all</span> <span class="pre">items</span> <span class="pre">from</span> <span class="pre">D.</span></span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.clear" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.config_dir">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_dir</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.config_dir" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">config_dir</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.config_dir" title="Link to this definition"></a></dt>
 <dd><p>Get the directory that the config file is in.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -961,7 +964,7 @@ the code will look anticipate a year in the input files.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.config_keys">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_keys</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.config_keys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">config_keys</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.config_keys" title="Link to this definition"></a></dt>
 <dd><p>List of valid config keys</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -977,7 +980,7 @@ the code will look anticipate a year in the input files.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.execution_control">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">execution_control</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.execution_control" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">execution_control</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.execution_control" title="Link to this definition"></a></dt>
 <dd><p>Get the execution control object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -989,7 +992,7 @@ option.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.fromkeys" title="Link to this definition"></a></dt>
 <dd><p>Create a new dictionary with keys from iterable and values set to value.</p>
 </dd></dl>
 
@@ -1011,7 +1014,7 @@ option.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.log_directory">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_directory</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.log_directory" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">log_directory</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.log_directory" title="Link to this definition"></a></dt>
 <dd><p>Get the logging directory, look for key “log_directory” in the
 config.
 :returns: <strong>log_directory</strong> (<em>str</em>) – Target path for reV log files.</p>
@@ -1019,7 +1022,7 @@ config.
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.log_level">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.log_level" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.log_level" title="Link to this definition"></a></dt>
 <dd><p>Get user-specified “log_level” (DEBUG, INFO, WARNING, etc…).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1027,13 +1030,6 @@ config.
 config-specified log level string.</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.pop">
-<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">v,</span> <span class="pre">remove</span> <span class="pre">specified</span> <span class="pre">key</span> <span class="pre">and</span> <span class="pre">return</span> <span class="pre">the</span> <span class="pre">corresponding</span> <span class="pre">value.</span></span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.pop" title="Link to this definition"></a></dt>
-<dd><p>If the key is not found, return the default if given; otherwise,
-raise a KeyError.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -1090,7 +1086,7 @@ the run directory.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.ss_id_col">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ss_id_col</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.ss_id_col" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">ss_id_col</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.ss_id_col" title="Link to this definition"></a></dt>
 <dd><p>Name of column containing unique identifier for each substation.
 This column will be used to compute minimum reinforcement cost
 per substation. By default, <code class="docutils literal notranslate"><span class="pre">&quot;poi_gid&quot;</span></code>.</p>
@@ -1116,21 +1112,13 @@ values are the new values.</p></li>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">E</span></span></em>, <span class="optional">]</span><em class="sig-param"><span class="n"><span class="pre">**F</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Update</span> <span class="pre">D</span> <span class="pre">from</span> <span class="pre">dict/iterable</span> <span class="pre">E</span> <span class="pre">and</span> <span class="pre">F.</span></span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.update" title="Link to this definition"></a></dt>
-<dd><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
-If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
-In either case, this is followed by: for k in F:  D[k] = F[k]</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.values">
 <span class="sig-name descname"><span class="pre">values</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">an</span> <span class="pre">object</span> <span class="pre">providing</span> <span class="pre">a</span> <span class="pre">view</span> <span class="pre">on</span> <span class="pre">D's</span> <span class="pre">values</span></span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.values" title="Link to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.least_cost_xmission.LeastCostPathsConfig.save_paths">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">save_paths</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.save_paths" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">save_paths</span></span><a class="headerlink" href="#reVX.config.least_cost_xmission.LeastCostPathsConfig.save_paths" title="Link to this definition"></a></dt>
 <dd><p>Boolean flag to save the least cost paths along with the costs and
 lengths</p>
 </dd></dl>

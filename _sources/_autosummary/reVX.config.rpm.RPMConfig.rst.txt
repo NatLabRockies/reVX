@@ -17,19 +17,16 @@ reVX.config.rpm.RPMConfig
    
       ~RPMConfig.check_files
       ~RPMConfig.check_overwrite_keys
-      ~RPMConfig.clear
       ~RPMConfig.copy
       ~RPMConfig.fromkeys
       ~RPMConfig.get
       ~RPMConfig.items
       ~RPMConfig.keys
-      ~RPMConfig.pop
       ~RPMConfig.popitem
       ~RPMConfig.resolve_path
       ~RPMConfig.set_self_dict
       ~RPMConfig.setdefault
       ~RPMConfig.str_replace_and_resolve
-      ~RPMConfig.update
       ~RPMConfig.values
    
    

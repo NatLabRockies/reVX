@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.least_cost_paths_cli &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.least_cost_paths_cli &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -629,9 +646,9 @@
   <h1>Source code for reVX.least_cost_xmission.least_cost_paths_cli</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="c1"># pylint: disable=all</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Least Cost Xmission Command Line Interface</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">click</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
@@ -671,33 +688,33 @@
 
 <span class="nd">@click</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">version_option</span><span class="p">(</span><span class="n">version</span><span class="o">=</span><span class="n">__version__</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--name&#39;</span><span class="p">,</span> <span class="s1">&#39;-n&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;LeastCostPaths&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--name'</span><span class="p">,</span> <span class="s1">'-n'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">'LeastCostPaths'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Job name.&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--verbose&#39;</span><span class="p">,</span> <span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Flag to turn on debug logging. Default is not verbose.&#39;</span><span class="p">)</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Job name.'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--verbose'</span><span class="p">,</span> <span class="s1">'-v'</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Flag to turn on debug logging. Default is not verbose.'</span><span class="p">)</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">pass_context</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">verbose</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Least Cost Paths Command Line Interface</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">ctx</span><span class="o">.</span><span class="n">ensure_object</span><span class="p">(</span><span class="nb">dict</span><span class="p">)</span>
-    <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;VERBOSE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">verbose</span>
-    <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">'VERBOSE'</span><span class="p">]</span> <span class="o">=</span> <span class="n">verbose</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">'NAME'</span><span class="p">]</span> <span class="o">=</span> <span class="n">name</span>
 
 
 <span class="nd">@main</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">valid_config_keys</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Echo the valid Least Cost Paths config keys</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">click</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">get_class_properties</span><span class="p">(</span><span class="n">LeastCostPathsConfig</span><span class="p">)))</span>
+<span class="sd">    """</span>
+    <span class="n">click</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="s1">', '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">get_class_properties</span><span class="p">(</span><span class="n">LeastCostPathsConfig</span><span class="p">)))</span>
 
 
 <div class="viewcode-block" id="run_local">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths_cli.run_local.html#reVX.least_cost_xmission.least_cost_paths_cli.run_local">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">run_local</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Run Least Cost Paths locally using config</span>
 
 <span class="sd">    Parameters</span>
@@ -706,8 +723,8 @@
 <span class="sd">        click ctx object</span>
 <span class="sd">    config : reVX.config.least_cost_xmission.LeastCostPathsConfig</span>
 <span class="sd">        Least Cost Paths config object.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">name</span>
+<span class="sd">    """</span>
+    <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">'NAME'</span><span class="p">]</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">name</span>
     <span class="n">ctx</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">local</span><span class="p">,</span>
                <span class="n">cost_fpath</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">cost_fpath</span><span class="p">,</span>
                <span class="n">features_fpath</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">features_fpath</span><span class="p">,</span>
@@ -734,31 +751,31 @@
 
 
 <span class="nd">@main</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--config&#39;</span><span class="p">,</span> <span class="s1">&#39;-c&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--config'</span><span class="p">,</span> <span class="s1">'-c'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Filepath to AssemblyAreas config json file.&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--verbose&#39;</span><span class="p">,</span> <span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Flag to turn on debug logging. Default is not verbose.&#39;</span><span class="p">)</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Filepath to AssemblyAreas config json file.'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--verbose'</span><span class="p">,</span> <span class="s1">'-v'</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Flag to turn on debug logging. Default is not verbose.'</span><span class="p">)</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">pass_context</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">from_config</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">verbose</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Run Least Cost Paths from a config.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">config</span> <span class="o">=</span> <span class="n">LeastCostPathsConfig</span><span class="p">(</span><span class="n">config</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="s1">&#39;VERBOSE&#39;</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">any</span><span class="p">((</span><span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;VERBOSE&#39;</span><span class="p">],</span> <span class="n">verbose</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="s1">'VERBOSE'</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">any</span><span class="p">((</span><span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">'VERBOSE'</span><span class="p">],</span> <span class="n">verbose</span><span class="p">)):</span>
             <span class="n">config</span><span class="o">.</span><span class="n">_log_level</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span>
     <span class="k">elif</span> <span class="n">verbose</span><span class="p">:</span>
         <span class="n">config</span><span class="o">.</span><span class="n">_log_level</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span>
 
-    <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">option</span> <span class="o">==</span> <span class="s1">&#39;local&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">option</span> <span class="o">==</span> <span class="s1">'local'</span><span class="p">:</span>
         <span class="n">run_local</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span>
         <span class="k">return</span>
 
-    <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">option</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">&#39;eagle&#39;</span><span class="p">,</span> <span class="s1">&#39;kestrel&#39;</span><span class="p">}:</span>
-        <span class="n">click</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="s1">&#39;Option &quot;</span><span class="si">{}</span><span class="s1">&quot; is not supported&#39;</span>
+    <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">option</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">'eagle'</span><span class="p">,</span> <span class="s1">'kestrel'</span><span class="p">}:</span>
+        <span class="n">click</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="s1">'Option "</span><span class="si">{}</span><span class="s1">" is not supported'</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">option</span><span class="p">))</span>
         <span class="k">return</span>
 
@@ -769,127 +786,127 @@
 
     <span class="n">name</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">name</span>
     <span class="n">num_nodes</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">nodes</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Splitting features over </span><span class="si">{}</span><span class="s1"> SLURM jobs&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_nodes</span><span class="p">))</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Splitting features over </span><span class="si">{}</span><span class="s1"> SLURM jobs'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_nodes</span><span class="p">))</span>
     <span class="n">n_zfill</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">num_nodes</span><span class="p">))</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_nodes</span><span class="p">):</span>
-        <span class="n">config</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">_</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="n">n_zfill</span><span class="p">))</span>
+        <span class="n">config</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1">_</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">.</span><span class="n">zfill</span><span class="p">(</span><span class="n">n_zfill</span><span class="p">))</span>
         <span class="n">eagle</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">start_index</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
 
 
 <span class="nd">@main</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--cost_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-cost&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--cost_fpath'</span><span class="p">,</span> <span class="s1">'-cost'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
               <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to h5 file with cost rasters and other required &quot;</span>
-                    <span class="s2">&quot;layers&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--features_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-feats&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to h5 file with cost rasters and other required "</span>
+                    <span class="s2">"layers"</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--features_fpath'</span><span class="p">,</span> <span class="s1">'-feats'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Path to GeoPackage with transmission features&quot;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--cost-layers&#39;</span><span class="p">,</span> <span class="s1">&#39;-cl&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">multiple</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s2">"Path to GeoPackage with transmission features"</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--cost-layers'</span><span class="p">,</span> <span class="s1">'-cl'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">multiple</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">default</span><span class="o">=</span><span class="p">(),</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Layer in H5 to add to total cost raster used for routing. &#39;</span>
-                   <span class="s1">&#39;Multiple layers may be specified. If running &#39;</span>
-                   <span class="s1">&#39;reinforcement computations, layer name may have &#39;</span>
-                   <span class="s1">&#39;curly brackets (``</span><span class="si">{}</span><span class="s1">``), which will be filled in &#39;</span>
-                   <span class="s1">&#39;based on the capacity class input (e.g. &#39;</span>
-                   <span class="s1">&#39;&quot;tie_line_costs_</span><span class="si">{}</span><span class="s1">MW&quot;)&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--network_nodes_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-nn&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Layer in H5 to add to total cost raster used for routing. '</span>
+                   <span class="s1">'Multiple layers may be specified. If running '</span>
+                   <span class="s1">'reinforcement computations, layer name may have '</span>
+                   <span class="s1">'curly brackets (``</span><span class="si">{}</span><span class="s1">``), which will be filled in '</span>
+                   <span class="s1">'based on the capacity class input (e.g. '</span>
+                   <span class="s1">'"tie_line_costs_</span><span class="si">{}</span><span class="s1">MW")'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--network_nodes_fpath'</span><span class="p">,</span> <span class="s1">'-nn'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to Network Nodes GeoPackage. If given alongside &quot;</span>
-                    <span class="s2">&quot;`transmission_lines_fpath`, reinforcement path cost &quot;</span>
-                    <span class="s2">&quot;calculation is run.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--transmission_lines_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-tl&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to Network Nodes GeoPackage. If given alongside "</span>
+                    <span class="s2">"`transmission_lines_fpath`, reinforcement path cost "</span>
+                    <span class="s2">"calculation is run."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--transmission_lines_fpath'</span><span class="p">,</span> <span class="s1">'-tl'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to Transmission lines GeoPackage. This file can &quot;</span>
-                    <span class="s2">&quot;contain other features, but transmission lines must &quot;</span>
-                    <span class="s2">&quot;be identified by </span><span class="si">{!r}</span><span class="s2">. If given alongside &quot;</span>
-                    <span class="s2">&quot;`network_nodes_fpath`, reinforcement path cost &quot;</span>
-                    <span class="s2">&quot;calculation is run.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TRANS_LINE_CAT</span><span class="p">)))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--xmission_config&#39;</span><span class="p">,</span> <span class="s1">&#39;-xcfg&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to Transmission lines GeoPackage. This file can "</span>
+                    <span class="s2">"contain other features, but transmission lines must "</span>
+                    <span class="s2">"be identified by </span><span class="si">{!r}</span><span class="s2">. If given alongside "</span>
+                    <span class="s2">"`network_nodes_fpath`, reinforcement path cost "</span>
+                    <span class="s2">"calculation is run."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">TRANS_LINE_CAT</span><span class="p">)))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--xmission_config'</span><span class="p">,</span> <span class="s1">'-xcfg'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to transmission config .json. Only used for &quot;</span>
-                    <span class="s2">&quot;reinforcement path computations.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--capacity_class&#39;</span><span class="p">,</span> <span class="s1">&#39;-cap&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Capacity class of the &#39;base&#39; greenfield costs layer. &quot;</span>
-                    <span class="s2">&quot;Costs will be scaled by the capacity corresponding to &quot;</span>
-                    <span class="s2">&quot;this class to report reinforcement costs as $/MW. &quot;</span>
-                    <span class="s2">&quot;Only used for reinforcement path computations.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--clip_buffer&#39;</span><span class="p">,</span> <span class="s1">&#39;-cb&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to transmission config .json. Only used for "</span>
+                    <span class="s2">"reinforcement path computations."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--capacity_class'</span><span class="p">,</span> <span class="s1">'-cap'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Capacity class of the 'base' greenfield costs layer. "</span>
+                    <span class="s2">"Costs will be scaled by the capacity corresponding to "</span>
+                    <span class="s2">"this class to report reinforcement costs as $/MW. "</span>
+                    <span class="s2">"Only used for reinforcement path computations."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--clip_buffer'</span><span class="p">,</span> <span class="s1">'-cb'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Optional number of array elements to buffer clip area by.&quot;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--start_index&#39;</span><span class="p">,</span> <span class="s1">&#39;-start&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s2">"Optional number of array elements to buffer clip area by."</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--start_index'</span><span class="p">,</span> <span class="s1">'-start'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Start index of features to run.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--step_index&#39;</span><span class="p">,</span> <span class="s1">&#39;-step&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Start index of features to run."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--step_index'</span><span class="p">,</span> <span class="s1">'-step'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Step index of features to run.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--tb_layer_name&#39;</span><span class="p">,</span> <span class="s1">&#39;-tbln&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Step index of features to run."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--tb_layer_name'</span><span class="p">,</span> <span class="s1">'-tbln'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of transmission barrier layer in `cost_fpath` file. &#39;</span>
-                   <span class="s1">&#39;This layer defines the multipliers applied to the cost &#39;</span>
-                   <span class="s1">&#39;layer to determine LCP routing (but does not actually &#39;</span>
-                   <span class="s1">&#39;affect output costs&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--barrier_mult&#39;</span><span class="p">,</span> <span class="s1">&#39;-bmult&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Name of transmission barrier layer in `cost_fpath` file. '</span>
+                   <span class="s1">'This layer defines the multipliers applied to the cost '</span>
+                   <span class="s1">'layer to determine LCP routing (but does not actually '</span>
+                   <span class="s1">'affect output costs'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--barrier_mult'</span><span class="p">,</span> <span class="s1">'-bmult'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">BARRIERS_MULT</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Transmission barrier multiplier, used when computing the &quot;</span>
-                    <span class="s2">&quot;least cost tie-line path&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--max_workers&#39;</span><span class="p">,</span> <span class="s1">&#39;-mw&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">INT</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Transmission barrier multiplier, used when computing the "</span>
+                    <span class="s2">"least cost tie-line path"</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--max_workers'</span><span class="p">,</span> <span class="s1">'-mw'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">INT</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Number of workers to use for processing, if 1 run in &quot;</span>
-                    <span class="s2">&quot;serial, if None use all available cores&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--region_identifier_column&#39;</span><span class="p">,</span> <span class="s1">&#39;-rid&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Name of column in reinforcement regions GeoPackage&quot;</span>
-                    <span class="s2">&quot;containing a unique identifier for each region.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--save_paths&#39;</span><span class="p">,</span> <span class="s1">&#39;-paths&#39;</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Flag to save least cost path as a multi-line geometry&quot;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--out_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;-o&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Number of workers to use for processing, if 1 run in "</span>
+                    <span class="s2">"serial, if None use all available cores"</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--region_identifier_column'</span><span class="p">,</span> <span class="s1">'-rid'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Name of column in reinforcement regions GeoPackage"</span>
+                    <span class="s2">"containing a unique identifier for each region."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--save_paths'</span><span class="p">,</span> <span class="s1">'-paths'</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s2">"Flag to save least cost path as a multi-line geometry"</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--out_dir'</span><span class="p">,</span> <span class="s1">'-o'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">'./'</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Directory to save least cost Paths values to.&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--log_dir&#39;</span><span class="p">,</span> <span class="s1">&#39;-log&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Directory to save least cost Paths values to.'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--log_dir'</span><span class="p">,</span> <span class="s1">'-log'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Directory to dump log files.&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--ss_id_col&#39;</span><span class="p">,</span> <span class="s1">&#39;-ssid&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">&quot;poi_gid&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Directory to dump log files.'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--ss_id_col'</span><span class="p">,</span> <span class="s1">'-ssid'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s2">"poi_gid"</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name of column used to unqiuely identify substations. &#39;</span>
-                   <span class="s1">&#39;Used for reinforcement calcaultions only. &#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--verbose&#39;</span><span class="p">,</span> <span class="s1">&#39;-v&#39;</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Flag to turn on debug logging. Default is not verbose.&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--li-cost-layers&#39;</span><span class="p">,</span> <span class="s1">&#39;-licl&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">multiple</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Name of column used to unqiuely identify substations. '</span>
+                   <span class="s1">'Used for reinforcement calcaultions only. '</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--verbose'</span><span class="p">,</span> <span class="s1">'-v'</span><span class="p">,</span> <span class="n">is_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Flag to turn on debug logging. Default is not verbose.'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--li-cost-layers'</span><span class="p">,</span> <span class="s1">'-licl'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">multiple</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="n">default</span><span class="o">=</span><span class="p">(),</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Length-invariant cost layer in H5 to add to total cost &#39;</span>
-                   <span class="s1">&#39;raster used for routing. These costs do not scale with &#39;</span>
-                   <span class="s1">&#39;distance traversed acroiss the cell. Multiple layers may &#39;</span>
-                   <span class="s1">&#39;be specified.&#39;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--tracked_layers&#39;</span><span class="p">,</span> <span class="s1">&#39;-trl&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Length-invariant cost layer in H5 to add to total cost '</span>
+                   <span class="s1">'raster used for routing. These costs do not scale with '</span>
+                   <span class="s1">'distance traversed acroiss the cell. Multiple layers may '</span>
+                   <span class="s1">'be specified.'</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--tracked_layers'</span><span class="p">,</span> <span class="s1">'-trl'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;Dictionary mapping layer names to strings, where the &#39;</span>
-                    <span class="s1">&#39;strings are numpy methods that should be applied to &#39;</span>
-                    <span class="s1">&#39;the layer along the LCP.&#39;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--cell_size&#39;</span><span class="p">,</span> <span class="s1">&#39;-cs&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">INT</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s1">'Dictionary mapping layer names to strings, where the '</span>
+                    <span class="s1">'strings are numpy methods that should be applied to '</span>
+                    <span class="s1">'the layer along the LCP.'</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--cell_size'</span><span class="p">,</span> <span class="s1">'-cs'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">INT</span><span class="p">,</span>
               <span class="n">show_default</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="n">CELL_SIZE</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Side length of a single cell in meters. Cells are &quot;</span>
-                    <span class="s2">&quot;assumed to be square. Default is&quot;</span><span class="p">))</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Side length of a single cell in meters. Cells are "</span>
+                    <span class="s2">"assumed to be square. Default is"</span><span class="p">))</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">pass_context</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">local</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span> <span class="n">cost_layers</span><span class="p">,</span> <span class="n">network_nodes_fpath</span><span class="p">,</span>
           <span class="n">transmission_lines_fpath</span><span class="p">,</span> <span class="n">xmission_config</span><span class="p">,</span> <span class="n">capacity_class</span><span class="p">,</span>
           <span class="n">clip_buffer</span><span class="p">,</span> <span class="n">start_index</span><span class="p">,</span> <span class="n">step_index</span><span class="p">,</span> <span class="n">tb_layer_name</span><span class="p">,</span> <span class="n">barrier_mult</span><span class="p">,</span>
           <span class="n">max_workers</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">,</span> <span class="n">save_paths</span><span class="p">,</span> <span class="n">out_dir</span><span class="p">,</span> <span class="n">log_dir</span><span class="p">,</span>
           <span class="n">ss_id_col</span><span class="p">,</span> <span class="n">verbose</span><span class="p">,</span> <span class="n">li_cost_layers</span><span class="p">,</span> <span class="n">tracked_layers</span><span class="p">,</span> <span class="n">cell_size</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Run Least Cost Paths on local hardware</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span>
-    <span class="k">if</span> <span class="s1">&#39;VERBOSE&#39;</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">:</span>
-        <span class="n">verbose</span> <span class="o">=</span> <span class="nb">any</span><span class="p">((</span><span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">&#39;VERBOSE&#39;</span><span class="p">],</span> <span class="n">verbose</span><span class="p">))</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">'NAME'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="s1">'VERBOSE'</span> <span class="ow">in</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">:</span>
+        <span class="n">verbose</span> <span class="o">=</span> <span class="nb">any</span><span class="p">((</span><span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="p">[</span><span class="s1">'VERBOSE'</span><span class="p">],</span> <span class="n">verbose</span><span class="p">))</span>
 
-    <span class="n">log_modules</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">&#39;reVX&#39;</span><span class="p">,</span> <span class="s1">&#39;reV&#39;</span><span class="p">,</span> <span class="s1">&#39;rex&#39;</span><span class="p">]</span>
+    <span class="n">log_modules</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">'reVX'</span><span class="p">,</span> <span class="s1">'reV'</span><span class="p">,</span> <span class="s1">'rex'</span><span class="p">]</span>
     <span class="n">init_mult</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">log_dir</span><span class="p">,</span> <span class="n">modules</span><span class="o">=</span><span class="n">log_modules</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="n">verbose</span><span class="p">)</span>
 
     <span class="n">create_dirs</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Computing Least Cost Paths connections and writing them to </span><span class="si">{}</span><span class="s1">&#39;</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Computing Least Cost Paths connections and writing them to </span><span class="si">{}</span><span class="s1">'</span>
                 <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_dir</span><span class="p">))</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Tracked layers input: </span><span class="si">%r</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">tracked_layers</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Tracked layers input: </span><span class="si">%r</span><span class="s2">"</span><span class="p">,</span> <span class="n">tracked_layers</span><span class="p">)</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tracked_layers</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
         <span class="n">tracked_layers</span> <span class="o">=</span> <span class="n">dict_str_load</span><span class="p">(</span><span class="n">tracked_layers</span><span class="p">)</span>
     <span class="n">cost_layers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">cost_layers</span><span class="p">)</span>
@@ -898,27 +915,27 @@
     <span class="n">is_reinforcement_run</span> <span class="o">=</span> <span class="p">(</span><span class="n">network_nodes_fpath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
                             <span class="ow">and</span> <span class="n">transmission_lines_fpath</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span>
 
-    <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;clip_buffer&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">clip_buffer</span><span class="p">),</span>
-              <span class="s2">&quot;tb_layer_name&quot;</span><span class="p">:</span> <span class="n">tb_layer_name</span><span class="p">,</span>
-              <span class="s2">&quot;barrier_mult&quot;</span><span class="p">:</span> <span class="n">barrier_mult</span><span class="p">,</span>
-              <span class="s2">&quot;save_paths&quot;</span><span class="p">:</span> <span class="n">save_paths</span><span class="p">,</span>
-              <span class="s2">&quot;max_workers&quot;</span><span class="p">:</span> <span class="n">max_workers</span><span class="p">,</span>
-              <span class="s2">&quot;length_invariant_cost_layers&quot;</span><span class="p">:</span> <span class="n">li_cost_layers</span><span class="p">,</span>
-              <span class="s2">&quot;tracked_layers&quot;</span><span class="p">:</span> <span class="n">tracked_layers</span><span class="p">,</span>
-              <span class="s2">&quot;cell_size&quot;</span><span class="p">:</span> <span class="n">cell_size</span><span class="p">}</span>
+    <span class="n">kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"clip_buffer"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">clip_buffer</span><span class="p">),</span>
+              <span class="s2">"tb_layer_name"</span><span class="p">:</span> <span class="n">tb_layer_name</span><span class="p">,</span>
+              <span class="s2">"barrier_mult"</span><span class="p">:</span> <span class="n">barrier_mult</span><span class="p">,</span>
+              <span class="s2">"save_paths"</span><span class="p">:</span> <span class="n">save_paths</span><span class="p">,</span>
+              <span class="s2">"max_workers"</span><span class="p">:</span> <span class="n">max_workers</span><span class="p">,</span>
+              <span class="s2">"length_invariant_cost_layers"</span><span class="p">:</span> <span class="n">li_cost_layers</span><span class="p">,</span>
+              <span class="s2">"tracked_layers"</span><span class="p">:</span> <span class="n">tracked_layers</span><span class="p">,</span>
+              <span class="s2">"cell_size"</span><span class="p">:</span> <span class="n">cell_size</span><span class="p">}</span>
 
     <span class="k">if</span> <span class="n">is_reinforcement_run</span><span class="p">:</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Detected reinforcement run!&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Detected reinforcement run!'</span><span class="p">)</span>
         <span class="n">xmission_config</span> <span class="o">=</span> <span class="n">XmissionConfig</span><span class="p">(</span><span class="n">config</span><span class="o">=</span><span class="n">xmission_config</span><span class="p">)</span>
-        <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;xmission_config&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">xmission_config</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s2">"xmission_config"</span><span class="p">]</span> <span class="o">=</span> <span class="n">xmission_config</span>
         <span class="n">cc_str</span> <span class="o">=</span> <span class="n">xmission_config</span><span class="o">.</span><span class="n">_parse_cap_class</span><span class="p">(</span><span class="n">capacity_class</span><span class="p">)</span>
-        <span class="n">cap</span> <span class="o">=</span> <span class="n">xmission_config</span><span class="p">[</span><span class="s1">&#39;power_classes&#39;</span><span class="p">][</span><span class="n">cc_str</span><span class="p">]</span>
+        <span class="n">cap</span> <span class="o">=</span> <span class="n">xmission_config</span><span class="p">[</span><span class="s1">'power_classes'</span><span class="p">][</span><span class="n">cc_str</span><span class="p">]</span>
         <span class="n">cost_layers</span> <span class="o">=</span> <span class="p">[</span><span class="n">layer</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cap</span><span class="p">)</span> <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">cost_layers</span><span class="p">]</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Xmission Config: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">xmission_config</span><span class="p">))</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Xmission Config: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">xmission_config</span><span class="p">))</span>
         <span class="n">features</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="p">)</span>
         <span class="n">features</span><span class="p">,</span> <span class="o">*</span><span class="n">__</span> <span class="o">=</span> <span class="n">LeastCostPaths</span><span class="o">.</span><span class="n">_map_to_costs</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span>
-        <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;indices&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">start_index</span><span class="p">::</span><span class="n">step_index</span><span class="p">]</span>
-        <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;ss_id_col&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ss_id_col</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s2">"indices"</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">start_index</span><span class="p">::</span><span class="n">step_index</span><span class="p">]</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s2">"ss_id_col"</span><span class="p">]</span> <span class="o">=</span> <span class="n">ss_id_col</span>
         <span class="n">least_costs</span> <span class="o">=</span> <span class="n">ReinforcementPaths</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span>
                                              <span class="n">network_nodes_fpath</span><span class="p">,</span>
                                              <span class="n">region_identifier_column</span><span class="p">,</span>
@@ -928,43 +945,43 @@
     <span class="k">else</span><span class="p">:</span>
         <span class="n">features</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">features_fpath</span><span class="p">)</span>
         <span class="n">features</span><span class="p">,</span> <span class="o">*</span><span class="n">__</span> <span class="o">=</span> <span class="n">LeastCostPaths</span><span class="o">.</span><span class="n">_map_to_costs</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span>
-        <span class="n">kwargs</span><span class="p">[</span><span class="s2">&quot;indices&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">start_index</span><span class="p">::</span><span class="n">step_index</span><span class="p">]</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s2">"indices"</span><span class="p">]</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="n">start_index</span><span class="p">::</span><span class="n">step_index</span><span class="p">]</span>
         <span class="n">least_costs</span> <span class="o">=</span> <span class="n">LeastCostPaths</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span>
                                          <span class="n">cost_layers</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
 
-    <span class="n">fpath_out</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">_lcp&#39;</span><span class="p">)</span>
+    <span class="n">fpath_out</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s1">'</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">_lcp'</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">save_paths</span><span class="p">:</span>
-        <span class="n">fpath_out</span> <span class="o">+=</span> <span class="s1">&#39;.gpkg&#39;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Writing output to </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">fpath_out</span><span class="p">)</span>
-        <span class="n">least_costs</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">fpath_out</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&quot;GPKG&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+        <span class="n">fpath_out</span> <span class="o">+=</span> <span class="s1">'.gpkg'</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Writing output to </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">fpath_out</span><span class="p">)</span>
+        <span class="n">least_costs</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">fpath_out</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">"GPKG"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">fpath_out</span> <span class="o">+=</span> <span class="s1">&#39;.csv&#39;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Writing output to </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">fpath_out</span><span class="p">)</span>
+        <span class="n">fpath_out</span> <span class="o">+=</span> <span class="s1">'.csv'</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Writing output to </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">fpath_out</span><span class="p">)</span>
         <span class="n">least_costs</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">fpath_out</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Writing output complete&#39;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Writing output complete'</span><span class="p">)</span>
     <span class="n">elapsed_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span> <span class="o">/</span> <span class="mi">60</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Processing took </span><span class="si">%.2f</span><span class="s2"> minutes&quot;</span><span class="p">,</span> <span class="n">elapsed_time</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Processing took </span><span class="si">%.2f</span><span class="s2"> minutes"</span><span class="p">,</span> <span class="n">elapsed_time</span><span class="p">)</span>
 
 
 <span class="nd">@main</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--features_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-feats&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--features_fpath'</span><span class="p">,</span> <span class="s1">'-feats'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Path to GeoPackage with substation and transmission &quot;</span>
-                   <span class="s2">&quot;features&quot;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--regions_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-regs&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s2">"Path to GeoPackage with substation and transmission "</span>
+                   <span class="s2">"features"</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--regions_fpath'</span><span class="p">,</span> <span class="s1">'-regs'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to reinforcement regions GeoPackage.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--region_identifier_column&#39;</span><span class="p">,</span> <span class="s1">&#39;-rid&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to reinforcement regions GeoPackage."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--region_identifier_column'</span><span class="p">,</span> <span class="s1">'-rid'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Name of column in reinforcement regions GeoPackage&quot;</span>
-                    <span class="s2">&quot;containing a unique identifier for each region.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--out_file&#39;</span><span class="p">,</span> <span class="s1">&#39;-of&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name for output GeoPackage file.&#39;</span><span class="p">)</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Name of column in reinforcement regions GeoPackage"</span>
+                    <span class="s2">"containing a unique identifier for each region."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--out_file'</span><span class="p">,</span> <span class="s1">'-of'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Name for output GeoPackage file.'</span><span class="p">)</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">pass_context</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">map_ss_to_rr</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span> <span class="n">regions_fpath</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">,</span>
                  <span class="n">out_file</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Map substation locations to reinforcement regions.</span>
 
 <span class="sd">    Reinforcement regions are user-defined. Typical regions are</span>
@@ -973,7 +990,7 @@
 <span class="sd">    the input file.</span>
 
 <span class="sd">    This method also removes substations that do not meet the min 69 kV</span>
-<span class="sd">    voltage requirement and adds {&#39;min_volts&#39;, &#39;max_volts&#39;} fields to</span>
+<span class="sd">    voltage requirement and adds {'min_volts', 'max_volts'} fields to</span>
 <span class="sd">    the remaining substations.</span>
 
 <span class="sd">    .. Important:: This method DOES NOT clip the substations to the</span>
@@ -985,66 +1002,66 @@
 <span class="sd">    Doing the pre-processing step avoids any issues with substations</span>
 <span class="sd">    being left out or double counted if they were simply clipped to the</span>
 <span class="sd">    reinforcement region shapes.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">log_level</span> <span class="o">=</span> <span class="s2">&quot;DEBUG&quot;</span> <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;VERBOSE&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;INFO&quot;</span>
-    <span class="n">init_logger</span><span class="p">(</span><span class="s1">&#39;reVX&#39;</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
+<span class="sd">    """</span>
+    <span class="n">log_level</span> <span class="o">=</span> <span class="s2">"DEBUG"</span> <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'VERBOSE'</span><span class="p">)</span> <span class="k">else</span> <span class="s2">"INFO"</span>
+    <span class="n">init_logger</span><span class="p">(</span><span class="s1">'reVX'</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
 
     <span class="n">features</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">features_fpath</span><span class="p">)</span>
     <span class="n">substations</span> <span class="o">=</span> <span class="p">(</span><span class="n">features</span><span class="p">[</span><span class="n">features</span><span class="o">.</span><span class="n">category</span> <span class="o">==</span> <span class="n">SUBSTATION_CAT</span><span class="p">]</span>
                    <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-                   <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;all&quot;</span><span class="p">))</span>
+                   <span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"all"</span><span class="p">))</span>
 
     <span class="n">regions</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">regions_fpath</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">features</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Mapping </span><span class="si">{:,d}</span><span class="s2"> substation locations to </span><span class="si">{:,d}</span><span class="s2"> &quot;</span>
-                <span class="s2">&quot;reinforcement regions&quot;</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Mapping </span><span class="si">{:,d}</span><span class="s2"> substation locations to </span><span class="si">{:,d}</span><span class="s2"> "</span>
+                <span class="s2">"reinforcement regions"</span>
                 <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">substations</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">regions</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]))</span>
 
     <span class="n">map_func</span> <span class="o">=</span> <span class="n">region_mapper</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">)</span>
     <span class="n">centroids</span> <span class="o">=</span> <span class="n">substations</span><span class="o">.</span><span class="n">centroid</span>
     <span class="n">substations</span><span class="p">[</span><span class="n">region_identifier_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">centroids</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">map_func</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Calculating min/max voltage for each substation...&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Calculating min/max voltage for each substation..."</span><span class="p">)</span>
     <span class="n">bad_subs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">substations</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">substations</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-        <span class="n">lines</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;trans_gids&#39;</span><span class="p">]</span>
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">'trans_gids'</span><span class="p">]</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">lines</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
             <span class="n">lines</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
 
-        <span class="n">lines_mask</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s1">&#39;gid&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
-        <span class="n">voltage</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">lines_mask</span><span class="p">,</span> <span class="s1">&#39;voltage&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+        <span class="n">lines_mask</span> <span class="o">=</span> <span class="n">features</span><span class="p">[</span><span class="s1">'gid'</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+        <span class="n">voltage</span> <span class="o">=</span> <span class="n">features</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">lines_mask</span><span class="p">,</span> <span class="s1">'voltage'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 
         <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">voltage</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">69</span><span class="p">:</span>
-            <span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;min_volts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">voltage</span><span class="p">)</span>
-            <span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;max_volts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">voltage</span><span class="p">)</span>
+            <span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">'min_volts'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">voltage</span><span class="p">)</span>
+            <span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">idx</span><span class="p">,</span> <span class="s1">'max_volts'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">voltage</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">bad_subs</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
 
     <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">bad_subs</span><span class="p">):</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;The following sub-stations do not have the minimum &quot;</span>
-               <span class="s2">&quot;required voltage of 69 kV and will be dropped:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">&quot;</span>
-               <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bad_subs</span><span class="p">,</span> <span class="s1">&#39;gid&#39;</span><span class="p">]))</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"The following sub-stations do not have the minimum "</span>
+               <span class="s2">"required voltage of 69 kV and will be dropped:</span><span class="se">\n</span><span class="si">{}</span><span class="s2">"</span>
+               <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">bad_subs</span><span class="p">,</span> <span class="s1">'gid'</span><span class="p">]))</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="n">substations</span> <span class="o">=</span> <span class="n">substations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="o">~</span><span class="n">bad_subs</span><span class="p">]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing substation output to </span><span class="si">{!r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_file</span><span class="p">))</span>
-    <span class="n">substations</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&quot;GPKG&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Writing substation output to </span><span class="si">{!r}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_file</span><span class="p">))</span>
+    <span class="n">substations</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">"GPKG"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
 <span class="nd">@main</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--connections_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-con&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--connections_fpath'</span><span class="p">,</span> <span class="s1">'-con'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Path to GeoPackage with substation and transmission &quot;</span>
-                   <span class="s2">&quot;features&quot;</span><span class="p">)</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--region_identifier_column&#39;</span><span class="p">,</span> <span class="s1">&#39;-rid&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s2">"Path to GeoPackage with substation and transmission "</span>
+                   <span class="s2">"features"</span><span class="p">)</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--region_identifier_column'</span><span class="p">,</span> <span class="s1">'-rid'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Name of column in reinforcement regions GeoPackage&quot;</span>
-                    <span class="s2">&quot;containing a unique identifier for each region.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--out_file&#39;</span><span class="p">,</span> <span class="s1">&#39;-of&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name for output GeoPackage file.&#39;</span><span class="p">)</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Name of column in reinforcement regions GeoPackage"</span>
+                    <span class="s2">"containing a unique identifier for each region."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--out_file'</span><span class="p">,</span> <span class="s1">'-of'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Name for output GeoPackage file.'</span><span class="p">)</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">pass_context</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">ss_from_conn</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">connections_fpath</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">,</span> <span class="n">out_file</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Extract substations from connections table output by LCP.</span>
+<span class="w">    </span><span class="sd">"""Extract substations from connections table output by LCP.</span>
 
 <span class="sd">    Substations extracted by this method can be usef for reinforcement</span>
 <span class="sd">    calculations.</span>
@@ -1066,118 +1083,118 @@
 <span class="sd">    Doing the pre-processing step avoids any issues with substations</span>
 <span class="sd">    being left out or double counted if they were simply clipped to the</span>
 <span class="sd">    reinforcement region shapes.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">log_level</span> <span class="o">=</span> <span class="s2">&quot;DEBUG&quot;</span> <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;VERBOSE&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;INFO&quot;</span>
-    <span class="n">init_logger</span><span class="p">(</span><span class="s1">&#39;reVX&#39;</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
+<span class="sd">    """</span>
+    <span class="n">log_level</span> <span class="o">=</span> <span class="s2">"DEBUG"</span> <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'VERBOSE'</span><span class="p">)</span> <span class="k">else</span> <span class="s2">"INFO"</span>
+    <span class="n">init_logger</span><span class="p">(</span><span class="s1">'reVX'</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Reading in connection info...&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">connections_fpath</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.csv&quot;</span><span class="p">):</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Reading in connection info..."</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">connections_fpath</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".csv"</span><span class="p">):</span>
         <span class="n">connections</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">connections_fpath</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">connections_fpath</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.gpkg&quot;</span><span class="p">):</span>
+    <span class="k">elif</span> <span class="n">connections_fpath</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".gpkg"</span><span class="p">):</span>
         <span class="n">connections</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">connections_fpath</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Unknown file ending for features file (must be &quot;</span>
-                         <span class="sa">f</span><span class="s2">&quot;&#39;.csv&#39; or &#39;.gpkg&#39;): </span><span class="si">{</span><span class="n">connections_fpath</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">"Unknown file ending for features file (must be "</span>
+                         <span class="sa">f</span><span class="s2">"'.csv' or '.gpkg'): </span><span class="si">{</span><span class="n">connections_fpath</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Filtering out NaN&#39;s in connection info...&quot;</span><span class="p">)</span>
-    <span class="n">connections</span> <span class="o">=</span> <span class="n">connections</span><span class="p">[</span><span class="o">~</span><span class="n">connections</span><span class="p">[</span><span class="s2">&quot;poi_gid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
-    <span class="n">connections</span> <span class="o">=</span> <span class="n">connections</span><span class="p">[</span><span class="o">~</span><span class="n">connections</span><span class="p">[</span><span class="s2">&quot;poi_lat&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
-    <span class="n">connections</span> <span class="o">=</span> <span class="n">connections</span><span class="p">[</span><span class="o">~</span><span class="n">connections</span><span class="p">[</span><span class="s2">&quot;poi_lon&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Filtering out NaN's in connection info..."</span><span class="p">)</span>
+    <span class="n">connections</span> <span class="o">=</span> <span class="n">connections</span><span class="p">[</span><span class="o">~</span><span class="n">connections</span><span class="p">[</span><span class="s2">"poi_gid"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+    <span class="n">connections</span> <span class="o">=</span> <span class="n">connections</span><span class="p">[</span><span class="o">~</span><span class="n">connections</span><span class="p">[</span><span class="s2">"poi_lat"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
+    <span class="n">connections</span> <span class="o">=</span> <span class="n">connections</span><span class="p">[</span><span class="o">~</span><span class="n">connections</span><span class="p">[</span><span class="s2">"poi_lon"</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()]</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Extracting substation locations...&quot;</span><span class="p">)</span>
-    <span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;poi_gid&#39;</span><span class="p">,</span> <span class="s1">&#39;poi_lat&#39;</span><span class="p">,</span> <span class="s1">&#39;poi_lon&#39;</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">]</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Extracting substation locations..."</span><span class="p">)</span>
+    <span class="n">cols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'poi_gid'</span><span class="p">,</span> <span class="s1">'poi_lat'</span><span class="p">,</span> <span class="s1">'poi_lon'</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">]</span>
     <span class="n">poi_groups</span> <span class="o">=</span> <span class="n">connections</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">cols</span><span class="p">)</span>
     <span class="n">pois</span> <span class="o">=</span> <span class="p">[</span><span class="n">info</span> <span class="k">for</span> <span class="n">info</span><span class="p">,</span> <span class="n">__</span> <span class="ow">in</span> <span class="n">poi_groups</span><span class="p">]</span>
     <span class="n">pois</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">pois</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">cols</span><span class="p">)</span>
 
-    <span class="n">geo</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;poi_lon&quot;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s2">&quot;poi_lat&quot;</span><span class="p">])</span>
+    <span class="n">geo</span> <span class="o">=</span> <span class="p">[</span><span class="n">Point</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s2">"poi_lon"</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s2">"poi_lat"</span><span class="p">])</span>
            <span class="k">for</span> <span class="n">__</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">pois</span><span class="o">.</span><span class="n">iterrows</span><span class="p">()]</span>
-    <span class="n">substations</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">pois</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&quot;epsg:4326&quot;</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geo</span><span class="p">)</span>
+    <span class="n">substations</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">pois</span><span class="p">,</span> <span class="n">crs</span><span class="o">=</span><span class="s2">"epsg:4326"</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geo</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing substation output to </span><span class="si">{!r}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_file</span><span class="p">))</span>
-    <span class="n">substations</span><span class="p">[</span><span class="s2">&quot;poi_gid&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">substations</span><span class="p">[</span><span class="s2">&quot;poi_gid&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;Int64&quot;</span><span class="p">)</span>
-    <span class="n">substations</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&quot;GPKG&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Writing substation output to </span><span class="si">{!r}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">out_file</span><span class="p">))</span>
+    <span class="n">substations</span><span class="p">[</span><span class="s2">"poi_gid"</span><span class="p">]</span> <span class="o">=</span> <span class="n">substations</span><span class="p">[</span><span class="s2">"poi_gid"</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"Int64"</span><span class="p">)</span>
+    <span class="n">substations</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">"GPKG"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
 
 <span class="nd">@main</span><span class="o">.</span><span class="n">command</span><span class="p">()</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--network_nodes_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-nodes&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to network nodes GeoPackage. The &quot;</span>
-                    <span class="s2">&quot;`region_identifier_column` will be added to this file if &quot;</span>
-                    <span class="s2">&quot;it is missing.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--regions_fpath&#39;</span><span class="p">,</span> <span class="s1">&#39;-regs&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--network_nodes_fpath'</span><span class="p">,</span> <span class="s1">'-nodes'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to network nodes GeoPackage. The "</span>
+                    <span class="s2">"`region_identifier_column` will be added to this file if "</span>
+                    <span class="s2">"it is missing."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--regions_fpath'</span><span class="p">,</span> <span class="s1">'-regs'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">click</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">exists</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to reinforcement regions GeoPackage. The &quot;</span>
-                    <span class="s2">&quot;`region_identifier_column` from this file will be &quot;</span>
-                    <span class="s2">&quot;added to the `network_nodes_fpath` if needed.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--region_identifier_column&#39;</span><span class="p">,</span> <span class="s1">&#39;-rid&#39;</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to reinforcement regions GeoPackage. The "</span>
+                    <span class="s2">"`region_identifier_column` from this file will be "</span>
+                    <span class="s2">"added to the `network_nodes_fpath` if needed."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--region_identifier_column'</span><span class="p">,</span> <span class="s1">'-rid'</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
               <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Name of column in reinforcement regions GeoPackage&quot;</span>
-                    <span class="s2">&quot;containing a unique identifier for each region.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--crs_tempalate_file&#39;</span><span class="p">,</span> <span class="s1">&#39;-ctf&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Path to a fiel containing the CRS that should be used &quot;</span>
-                    <span class="s2">&quot;to perform the mapping. This input can be an exclusions &quot;</span>
-                    <span class="s2">&quot;HDF5 file, a GeoTIFF, or any file tha can be read with &quot;</span>
-                    <span class="s2">&quot;GeoPandas. If `None`, the `network_nodes_fpath` file &quot;</span>
-                    <span class="s2">&quot;CRS is used to perfom the mapping.&quot;</span><span class="p">))</span>
-<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">&#39;--out_file&#39;</span><span class="p">,</span> <span class="s1">&#39;-of&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
-              <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Name for output GeoPackage file. If `None`, the &#39;</span>
-                   <span class="s1">&#39;`network_nodes_fpath` file will be overwritten. &#39;</span><span class="p">)</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Name of column in reinforcement regions GeoPackage"</span>
+                    <span class="s2">"containing a unique identifier for each region."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--crs_tempalate_file'</span><span class="p">,</span> <span class="s1">'-ctf'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="p">(</span><span class="s2">"Path to a fiel containing the CRS that should be used "</span>
+                    <span class="s2">"to perform the mapping. This input can be an exclusions "</span>
+                    <span class="s2">"HDF5 file, a GeoTIFF, or any file tha can be read with "</span>
+                    <span class="s2">"GeoPandas. If `None`, the `network_nodes_fpath` file "</span>
+                    <span class="s2">"CRS is used to perfom the mapping."</span><span class="p">))</span>
+<span class="nd">@click</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s1">'--out_file'</span><span class="p">,</span> <span class="s1">'-of'</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">STR</span><span class="p">,</span>
+              <span class="n">help</span><span class="o">=</span><span class="s1">'Name for output GeoPackage file. If `None`, the '</span>
+                   <span class="s1">'`network_nodes_fpath` file will be overwritten. '</span><span class="p">)</span>
 <span class="nd">@click</span><span class="o">.</span><span class="n">pass_context</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">add_rr_to_nn</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">network_nodes_fpath</span><span class="p">,</span> <span class="n">regions_fpath</span><span class="p">,</span>
                  <span class="n">region_identifier_column</span><span class="p">,</span> <span class="n">crs_tempalate_file</span><span class="p">,</span> <span class="n">out_file</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Add reinforcement region column to network node file.</span>
+<span class="w">    </span><span class="sd">"""Add reinforcement region column to network node file.</span>
 
 <span class="sd">    Reinforcement regions are user-defined. Typical regions are</span>
 <span class="sd">    Balancing Areas, States, or Counties, though custom regions are also</span>
 <span class="sd">    allowed. Each region must be supplied with a unique identifier in</span>
 <span class="sd">    the input file.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">log_level</span> <span class="o">=</span> <span class="s2">&quot;DEBUG&quot;</span> <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;VERBOSE&#39;</span><span class="p">)</span> <span class="k">else</span> <span class="s2">&quot;INFO&quot;</span>
-    <span class="n">init_logger</span><span class="p">(</span><span class="s1">&#39;reVX&#39;</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
+<span class="sd">    """</span>
+    <span class="n">log_level</span> <span class="o">=</span> <span class="s2">"DEBUG"</span> <span class="k">if</span> <span class="n">ctx</span><span class="o">.</span><span class="n">obj</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'VERBOSE'</span><span class="p">)</span> <span class="k">else</span> <span class="s2">"INFO"</span>
+    <span class="n">init_logger</span><span class="p">(</span><span class="s1">'reVX'</span><span class="p">,</span> <span class="n">log_level</span><span class="o">=</span><span class="n">log_level</span><span class="p">)</span>
     <span class="n">crs_tempalate_file</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">crs_tempalate_file</span> <span class="ow">or</span> <span class="n">network_nodes_fpath</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Reading in network node info...&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Reading in network node info..."</span><span class="p">)</span>
     <span class="n">network_nodes_fpath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="p">)</span>
     <span class="n">network_nodes</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="p">)</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Reading in CRS template...&quot;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">crs_tempalate_file</span><span class="o">.</span><span class="n">suffix</span> <span class="o">==</span> <span class="s2">&quot;.h5&quot;</span><span class="p">:</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Reading in CRS template..."</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">crs_tempalate_file</span><span class="o">.</span><span class="n">suffix</span> <span class="o">==</span> <span class="s2">".h5"</span><span class="p">:</span>
         <span class="k">with</span> <span class="n">ExclusionLayers</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">crs_tempalate_file</span><span class="p">))</span> <span class="k">as</span> <span class="n">excl</span><span class="p">:</span>
             <span class="n">crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">excl</span><span class="o">.</span><span class="n">crs</span><span class="p">)</span>
-    <span class="k">elif</span> <span class="n">crs_tempalate_file</span><span class="o">.</span><span class="n">suffix</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">&quot;.tif&quot;</span><span class="p">,</span> <span class="s2">&quot;.tiff&quot;</span><span class="p">}:</span>
+    <span class="k">elif</span> <span class="n">crs_tempalate_file</span><span class="o">.</span><span class="n">suffix</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">".tif"</span><span class="p">,</span> <span class="s2">".tiff"</span><span class="p">}:</span>
         <span class="k">with</span> <span class="n">Geotiff</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">crs_tempalate_file</span><span class="p">))</span> <span class="k">as</span> <span class="n">geo</span><span class="p">:</span>
-            <span class="n">crs</span> <span class="o">=</span> <span class="n">geo</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s2">&quot;crs&quot;</span><span class="p">]</span>
+            <span class="n">crs</span> <span class="o">=</span> <span class="n">geo</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s2">"crs"</span><span class="p">]</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">crs</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">crs_tempalate_file</span><span class="p">)</span><span class="o">.</span><span class="n">crs</span>
 
     <span class="n">network_nodes</span> <span class="o">=</span> <span class="n">network_nodes</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
     <span class="n">regions</span> <span class="o">=</span> <span class="n">gpd</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="n">regions_fpath</span><span class="p">)</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">crs</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">region_identifier_column</span> <span class="ow">in</span> <span class="n">network_nodes</span><span class="p">:</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Network nodes file </span><span class="si">{!r}</span><span class="s2"> was specified but it &quot;</span>
-               <span class="s2">&quot;already contains the </span><span class="si">{!r}</span><span class="s2"> column. No data modified!&quot;</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"Network nodes file </span><span class="si">{!r}</span><span class="s2"> was specified but it "</span>
+               <span class="s2">"already contains the </span><span class="si">{!r}</span><span class="s2"> column. No data modified!"</span>
                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="p">),</span> <span class="n">region_identifier_column</span><span class="p">))</span>
         <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">return</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Adding regions to network nodes...&quot;</span><span class="p">)</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Adding regions to network nodes..."</span><span class="p">)</span>
     <span class="n">centroids</span> <span class="o">=</span> <span class="n">network_nodes</span><span class="o">.</span><span class="n">centroid</span>
     <span class="n">map_func</span> <span class="o">=</span> <span class="n">region_mapper</span><span class="p">(</span><span class="n">regions</span><span class="p">,</span> <span class="n">region_identifier_column</span><span class="p">)</span>
     <span class="n">network_nodes</span><span class="p">[</span><span class="n">region_identifier_column</span><span class="p">]</span> <span class="o">=</span> <span class="n">centroids</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">map_func</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">out_file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">out_fn</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2">.gpkg&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="o">.</span><span class="n">stem</span><span class="p">)</span>
+        <span class="n">out_fn</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{}</span><span class="s2">.gpkg"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">network_nodes_fpath</span><span class="o">.</span><span class="n">stem</span><span class="p">)</span>
         <span class="n">out_file</span> <span class="o">=</span> <span class="n">network_nodes_fpath</span><span class="o">.</span><span class="n">parent</span> <span class="o">/</span> <span class="n">out_fn</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Writing updated network node data to </span><span class="si">{!r}</span><span class="s2">&quot;</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Writing updated network node data to </span><span class="si">{!r}</span><span class="s2">"</span>
                 <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">out_file</span><span class="p">)))</span>
-    <span class="n">network_nodes</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">&quot;GPKG&quot;</span><span class="p">)</span>
+    <span class="n">network_nodes</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s2">"GPKG"</span><span class="p">)</span>
 
 
 <div class="viewcode-block" id="get_node_cmd">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths_cli.get_node_cmd.html#reVX.least_cost_xmission.least_cost_paths_cli.get_node_cmd">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_node_cmd</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">start_index</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Get the node CLI call for Least Cost Paths</span>
 
 <span class="sd">    Parameters</span>
@@ -1189,48 +1206,48 @@
 <span class="sd">    -------</span>
 <span class="sd">    cmd : str</span>
 <span class="sd">        CLI call to submit to SLURM execution.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-n </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">name</span><span class="p">)),</span>
-            <span class="s1">&#39;local&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;-cost </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">cost_fpath</span><span class="p">)),</span>
-            <span class="s1">&#39;-feats </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">features_fpath</span><span class="p">)),</span>
-            <span class="s1">&#39;-nn </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">network_nodes_fpath</span><span class="p">)),</span>
-            <span class="s1">&#39;-tl </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">transmission_lines_fpath</span><span class="p">)),</span>
-            <span class="s1">&#39;-rid </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">region_identifier_column</span><span class="p">)),</span>
-            <span class="s1">&#39;-cap </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">capacity_class</span><span class="p">)),</span>
-            <span class="s1">&#39;-cb </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">clip_buffer</span><span class="p">)),</span>
-            <span class="s1">&#39;-start </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">start_index</span><span class="p">)),</span>
-            <span class="s1">&#39;-step </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">nodes</span> <span class="ow">or</span> <span class="mi">1</span><span class="p">)),</span>
-            <span class="s1">&#39;-tbln </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">tb_layer_name</span><span class="p">)),</span>
-            <span class="s1">&#39;-bmult </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">barrier_mult</span><span class="p">)),</span>
-            <span class="s1">&#39;-ssid </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">ss_id_col</span><span class="p">)),</span>
-            <span class="s1">&#39;-mw </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">max_workers</span><span class="p">)),</span>
-            <span class="s1">&#39;-o </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">dirout</span><span class="p">)),</span>
-            <span class="s1">&#39;-log </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">log_directory</span><span class="p">)),</span>
-            <span class="s1">&#39;-cs </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">cell_size</span><span class="p">)),</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'-n </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">name</span><span class="p">)),</span>
+            <span class="s1">'local'</span><span class="p">,</span>
+            <span class="s1">'-cost </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">cost_fpath</span><span class="p">)),</span>
+            <span class="s1">'-feats </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">features_fpath</span><span class="p">)),</span>
+            <span class="s1">'-nn </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">network_nodes_fpath</span><span class="p">)),</span>
+            <span class="s1">'-tl </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">transmission_lines_fpath</span><span class="p">)),</span>
+            <span class="s1">'-rid </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">region_identifier_column</span><span class="p">)),</span>
+            <span class="s1">'-cap </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">capacity_class</span><span class="p">)),</span>
+            <span class="s1">'-cb </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">clip_buffer</span><span class="p">)),</span>
+            <span class="s1">'-start </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">start_index</span><span class="p">)),</span>
+            <span class="s1">'-step </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">nodes</span> <span class="ow">or</span> <span class="mi">1</span><span class="p">)),</span>
+            <span class="s1">'-tbln </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">tb_layer_name</span><span class="p">)),</span>
+            <span class="s1">'-bmult </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">barrier_mult</span><span class="p">)),</span>
+            <span class="s1">'-ssid </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">ss_id_col</span><span class="p">)),</span>
+            <span class="s1">'-mw </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">max_workers</span><span class="p">)),</span>
+            <span class="s1">'-o </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">dirout</span><span class="p">)),</span>
+            <span class="s1">'-log </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">log_directory</span><span class="p">)),</span>
+            <span class="s1">'-cs </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">cell_size</span><span class="p">)),</span>
             <span class="p">]</span>
 
     <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">cost_layers</span><span class="p">:</span>
-        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;-cl </span><span class="si">{</span><span class="n">layer</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">'-cl </span><span class="si">{</span><span class="n">layer</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">config</span><span class="o">.</span><span class="n">length_invariant_cost_layers</span><span class="p">:</span>
-        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;-licl </span><span class="si">{</span><span class="n">layer</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s1">'-licl </span><span class="si">{</span><span class="n">layer</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">save_paths</span><span class="p">:</span>
-        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-paths&#39;</span><span class="p">)</span>
+        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'-paths'</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">tracked_layers</span><span class="p">:</span>
-        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-trl </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">tracked_layers</span><span class="p">)))</span>
+        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'-trl </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">tracked_layers</span><span class="p">)))</span>
 
     <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">log_level</span> <span class="o">==</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">:</span>
-        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-v&#39;</span><span class="p">)</span>
+        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'-v'</span><span class="p">)</span>
 
     <span class="k">if</span> <span class="n">config</span><span class="o">.</span><span class="n">xmission_config</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;-xcfg </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">xmission_config</span><span class="p">)),)</span>
+        <span class="n">args</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'-xcfg </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SLURM</span><span class="o">.</span><span class="n">s</span><span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">xmission_config</span><span class="p">)),)</span>
 
-    <span class="n">cmd</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;python -m reVX.least_cost_xmission.least_cost_paths_cli </span><span class="si">{}</span><span class="s1">&#39;</span>
-           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)))</span>
-    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Submitting the following cli call:</span><span class="se">\n\t</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cmd</span><span class="p">))</span>
+    <span class="n">cmd</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'python -m reVX.least_cost_xmission.least_cost_paths_cli </span><span class="si">{}</span><span class="s1">'</span>
+           <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s1">' '</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">args</span><span class="p">)))</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Submitting the following cli call:</span><span class="se">\n\t</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">cmd</span><span class="p">))</span>
 
     <span class="k">return</span> <span class="n">cmd</span></div>
 
@@ -1239,24 +1256,24 @@
 <div class="viewcode-block" id="eagle">
 <a class="viewcode-back" href="../../../_autosummary/reVX.least_cost_xmission.least_cost_paths_cli.eagle.html#reVX.least_cost_xmission.least_cost_paths_cli.eagle">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">eagle</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">start_index</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Run Least Cost Paths on Eagle HPC.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    config : reVX.config.least_cost_xmission.LeastCostPathsConfig</span>
 <span class="sd">        Least Cost Paths config object.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">cmd</span> <span class="o">=</span> <span class="n">get_node_cmd</span><span class="p">(</span><span class="n">config</span><span class="p">,</span> <span class="n">start_index</span><span class="p">)</span>
     <span class="n">name</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">name</span>
     <span class="n">log_dir</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">log_directory</span>
-    <span class="n">stdout_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">log_dir</span><span class="p">,</span> <span class="s1">&#39;stdout/&#39;</span><span class="p">)</span>
+    <span class="n">stdout_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">log_dir</span><span class="p">,</span> <span class="s1">'stdout/'</span><span class="p">)</span>
 
     <span class="n">slurm_manager</span> <span class="o">=</span> <span class="n">SLURM</span><span class="p">()</span>
 
-    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Running Least Cost Paths on Eagle with &#39;</span>
-                <span class="s1">&#39;node name &quot;</span><span class="si">{}</span><span class="s1">&quot;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Running Least Cost Paths on Eagle with '</span>
+                <span class="s1">'node name "</span><span class="si">{}</span><span class="s1">"'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
     <span class="n">out</span> <span class="o">=</span> <span class="n">slurm_manager</span><span class="o">.</span><span class="n">sbatch</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span>
                                <span class="n">alloc</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">allocation</span><span class="p">,</span>
                                <span class="n">memory</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">memory</span><span class="p">,</span>
@@ -1266,12 +1283,12 @@
                                <span class="n">conda_env</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">conda_env</span><span class="p">,</span>
                                <span class="n">module</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">execution_control</span><span class="o">.</span><span class="n">module</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
     <span class="k">if</span> <span class="n">out</span><span class="p">:</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Kicked off Least Cost Paths &quot;</span><span class="si">{}</span><span class="s1">&quot; &#39;</span>
-               <span class="s1">&#39;(SLURM jobid #</span><span class="si">{}</span><span class="s1">) on Eagle.&#39;</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Kicked off Least Cost Paths "</span><span class="si">{}</span><span class="s1">" '</span>
+               <span class="s1">'(SLURM jobid #</span><span class="si">{}</span><span class="s1">) on Eagle.'</span>
                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">out</span><span class="p">))</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Was unable to kick off Least Cost Paths &#39;</span>
-               <span class="s1">&#39;&quot;</span><span class="si">{}</span><span class="s1">&quot;. Please see the stdout error messages&#39;</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Was unable to kick off Least Cost Paths '</span>
+               <span class="s1">'"</span><span class="si">{}</span><span class="s1">". Please see the stdout error messages'</span>
                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">))</span>
 
     <span class="n">click</span><span class="o">.</span><span class="n">echo</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -1279,11 +1296,11 @@
 
 
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">'__main__'</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">main</span><span class="p">(</span><span class="n">obj</span><span class="o">=</span><span class="p">{})</span>
     <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s1">&#39;Error running Least Cost Paths CLI&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s1">'Error running Least Cost Paths CLI'</span><span class="p">)</span>
         <span class="k">raise</span>
 </pre></div>
 

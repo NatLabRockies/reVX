@@ -17,19 +17,16 @@ reVX.config.rpm.RepProfilesConfigGroup
    
       ~RepProfilesConfigGroup.check_files
       ~RepProfilesConfigGroup.check_overwrite_keys
-      ~RepProfilesConfigGroup.clear
       ~RepProfilesConfigGroup.copy
       ~RepProfilesConfigGroup.fromkeys
       ~RepProfilesConfigGroup.get
       ~RepProfilesConfigGroup.items
       ~RepProfilesConfigGroup.keys
-      ~RepProfilesConfigGroup.pop
       ~RepProfilesConfigGroup.popitem
       ~RepProfilesConfigGroup.resolve_path
       ~RepProfilesConfigGroup.set_self_dict
       ~RepProfilesConfigGroup.setdefault
       ~RepProfilesConfigGroup.str_replace_and_resolve
-      ~RepProfilesConfigGroup.update
       ~RepProfilesConfigGroup.values
    
    

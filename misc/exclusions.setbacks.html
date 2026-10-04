@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX Setbacks &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX Setbacks &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -623,7 +640,7 @@
           <li class="breadcrumb-item"><a href="exclusions.html">reVX Exclusion Generation</a></li>
       <li class="breadcrumb-item active">reVX Setbacks</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/NatLabRockies/reVX/blob/main/docs/source/misc/exclusions.setbacks.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/NatLabRockies/reVX/blob/main/docs/source/misc/exclusions.setbacks.md" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -662,32 +679,32 @@ command (make sure your <code class="docutils literal notranslate"><span class="
 (e.g. <code class="docutils literal notranslate"><span class="pre">exclusions</span> <span class="pre">template-configs</span> <span class="pre">-t</span> <span class="pre">yaml</span></code>)</p>
 <p>Open the <code class="docutils literal notranslate"><span class="pre">config_setbacks.json</span></code> template file. It should look something like this:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[REQUIRED IF ON HPC]&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[REQUIRED IF ON HPC]&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;qos&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;normal&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;queue&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;feature&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;conda_env&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;module&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;sh_script&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;max_workers&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="nt">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"option"</span><span class="p">:</span><span class="w"> </span><span class="s2">"local"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[REQUIRED IF ON HPC]"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[REQUIRED IF ON HPC]"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"qos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"normal"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"memory"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"queue"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"feature"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"conda_env"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"module"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"sh_script"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"max_workers"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;log_directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./logs&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;excl_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[REQUIRED]&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;system_config&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generic_setback_dist&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;regulations_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;weights_calculation_upscale_factor&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;replace&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;hsds&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;out_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;feature_specs&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;features&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;[REQUIRED]&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generic_setback_multiplier&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<span class="w">    </span><span class="nt">"log_directory"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./logs"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INFO"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"excl_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[REQUIRED]"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"system_config"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"generic_setback_dist"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"regulations_fpath"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"weights_calculation_upscale_factor"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"replace"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"hsds"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"out_layers"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"feature_specs"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"features"</span><span class="p">:</span><span class="w"> </span><span class="s2">"[REQUIRED]"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"generic_setback_multiplier"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -721,21 +738,21 @@ evaluate local ordinances while using a separate <code class="docutils literal n
 <p>For solar-only runs, you can omit <code class="docutils literal notranslate"><span class="pre">generic_setback_dist</span></code> if the local ordinance calculation should use only the
 technology-specific PV dimension from <code class="docutils literal notranslate"><span class="pre">system_config</span></code>. For example:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;system_config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;pv_system_height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span>
+<span class="w">    </span><span class="nt">"system_config"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"pv_system_height"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.5</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;regulations_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./solar_regulations.csv&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;features&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;parcel&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./parcel_features.gpkg&quot;</span>
+<span class="w">    </span><span class="nt">"regulations_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./solar_regulations.csv"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"parcel"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./parcel_features.gpkg"</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The <code class="docutils literal notranslate"><span class="pre">regulations_fpath</span></code> should point to the <a class="reference internal" href="#ordinance-database"><span class="xref myst"><code class="docutils literal notranslate"><span class="pre">reVX</span></code> ordinance CSV file you generated above</span></a>
+<p>The <code class="docutils literal notranslate"><span class="pre">regulations_fpath</span></code> should point to the <a class="reference external" href="https://natlabrockies.github.io/reVX/misc/exclusions.setbacks.html#ordinance-database"><code class="docutils literal notranslate"><span class="pre">reVX</span></code> ordinance file you generated above</a>
 (path relative to the project directory are allowed). If you are not modeling any local regulations, you can leave this
 input as <code class="docutils literal notranslate"><span class="pre">None</span></code> (<code class="docutils literal notranslate"><span class="pre">null</span></code> in JSON).</p>
 <p>Basic execution of <code class="docutils literal notranslate"><span class="pre">reVX</span></code> setbacks will not require <code class="docutils literal notranslate"><span class="pre">weights_calculation_upscale_factor</span></code>, <code class="docutils literal notranslate"><span class="pre">out_layers</span></code>, or
-<code class="docutils literal notranslate"><span class="pre">feature_specs</span></code>, so we instead cover them in the <a class="reference internal" href="#advanced-topics"><span class="xref myst">Advanced Topics section below</span></a>. For now, these keys
+<code class="docutils literal notranslate"><span class="pre">feature_specs</span></code>, so we instead cover them in the <a class="reference external" href="https://natlabrockies.github.io/reVX/misc/exclusions.setbacks.html#advanced-topics">Advanced Topics section below</a>. For now, these keys
 are okay to remove from the configuration file entirely.</p>
 <p><code class="docutils literal notranslate"><span class="pre">replace</span></code> and <code class="docutils literal notranslate"><span class="pre">hsds</span></code> can be left with their default values, unless you would like <code class="docutils literal notranslate"><span class="pre">reVX</span></code> to replace any existing
 setbacks TIFFs in your project directory (<code class="docutils literal notranslate"><span class="pre">replace:</span> <span class="pre">true</span></code>) or your <code class="docutils literal notranslate"><span class="pre">excl_fpath</span></code> points to a file on AWS and you are
@@ -764,30 +781,30 @@ input may be a scalar applied to every feature, a feature-keyed dictionary, or a
 dictionary.</p>
 <p>At this point, your config file may look something like this:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eagle&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;revx&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="w">    </span><span class="nt">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"option"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eagle"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s2">"revx"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;excl_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/path/to/Exclusions.h5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;system_config&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;hub_height&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">116</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;rotor_diameter&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">163</span>
+<span class="w">    </span><span class="nt">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INFO"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"excl_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/path/to/Exclusions.h5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"system_config"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"hub_height"</span><span class="p">:</span><span class="w"> </span><span class="mi">116</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"rotor_diameter"</span><span class="p">:</span><span class="w"> </span><span class="mi">163</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;regulations_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./wind_regulations.csv&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generic_setback_dist&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;generic_setback_multiplier&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;rail&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;transmission&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;road&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span>
+<span class="w">    </span><span class="nt">"regulations_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./wind_regulations.csv"</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"generic_setback_dist"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"generic_setback_multiplier"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"rail"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"transmission"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.25</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"road"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;features&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;rail&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/absolute/path/to/rail_data.gpkg&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;transmission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;../../relative/path/to/transmission/data/*.gpkg&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;road&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="s2">&quot;../relative/path/to/first/road/data/file.gpkg&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s2">&quot;/path/to/another/road/data/directory/multiple_files*.gpkg&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"features"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"rail"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/absolute/path/to/rail_data.gpkg"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"transmission"</span><span class="p">:</span><span class="w"> </span><span class="s2">"../../relative/path/to/transmission/data/*.gpkg"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"road"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">"../relative/path/to/first/road/data/file.gpkg"</span><span class="p">,</span>
+<span class="w">            </span><span class="s2">"/path/to/another/road/data/directory/multiple_files*.gpkg"</span><span class="p">,</span>
 <span class="w">        </span><span class="p">]</span>
 
 <span class="w">    </span><span class="p">}</span>
@@ -901,10 +918,10 @@ an output TIFF file. This is rarely useful for setbacks, since the input feature
 and thus the output needs to be merged before writing to an exclusion layer. Nevertheless, if your features come in a
 single input file (or you really like having hundreds of layers in your h5 files), you can request to have the output data
 stored directly in the <code class="docutils literal notranslate"><span class="pre">excl_fpath</span></code> file by including the <code class="docutils literal notranslate"><span class="pre">out_layers</span></code> key in your config file:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;out_layers&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;rail_data.gpkg&quot;</span><span class="p">:</span> <span class="s2">&quot;rail_setbacks_116hh_163rd&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;transmission_az.gpkg&quot;</span><span class="p">:</span> <span class="s2">&quot;transmission_setbacks_116hh_167rd_az&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;transmission_il.gpkg&quot;</span><span class="p">:</span> <span class="s2">&quot;transmission_setbacks_116hh_167rd_il&quot;</span><span class="p">,</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">"out_layers"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">"rail_data.gpkg"</span><span class="p">:</span> <span class="s2">"rail_setbacks_116hh_163rd"</span><span class="p">,</span>
+    <span class="s2">"transmission_az.gpkg"</span><span class="p">:</span> <span class="s2">"transmission_setbacks_116hh_167rd_az"</span><span class="p">,</span>
+    <span class="s2">"transmission_il.gpkg"</span><span class="p">:</span> <span class="s2">"transmission_setbacks_116hh_167rd_il"</span><span class="p">,</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </pre></div>
@@ -917,15 +934,15 @@ stored directly in the <code class="docutils literal notranslate"><span class="p
 different configuration files with one feature type each, <code class="docutils literal notranslate"><span class="pre">reVX</span></code> lets you specify feature-specific generic multipliers
 in a separate config file. For example, suppose you create a file <code class="docutils literal notranslate"><span class="pre">generic_multipliers.json</span></code> with the following contents:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;road&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;parcel&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;structure&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
+<span class="w">    </span><span class="nt">"road"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"parcel"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"structure"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>Then, in your <code class="docutils literal notranslate"><span class="pre">config_setbacks.json</span></code> config file, instead of specifying a single value for <code class="docutils literal notranslate"><span class="pre">generic_setback_multiplier</span></code>,
 you can simply point to the new config:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;generic_setback_multiplier&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;./generic_multipliers.json&quot;</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">"generic_setback_multiplier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"./generic_multipliers.json"</span>
 </pre></div>
 </div>
 <p>With this configuration, reVX will use a multiplier of 1.5 for all generic road setbacks, a multiplier of 1.1 for all
@@ -940,13 +957,13 @@ does not provide explicit support for calculating setbacks from pipelines, even 
 <p>In order to compute such setbacks, users can create their own “feature types” using the <code class="docutils literal notranslate"><span class="pre">feature_specs</span></code> input.
 This input must be a dictionary where keys are the names of the new setback types, and the values are also dictionaries
 containing keyword-value pairs for the <a class="reference external" href="https://nrel.github.io/reVX/_autosummary/reVX.exclusions.setbacks.setbacks.setbacks_calculator.html#reVX.exclusions.setbacks.setbacks.setbacks_calculator"><code class="docutils literal notranslate"><span class="pre">setbacks_calculator</span></code></a> function. For example, the input:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;feature_specs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;oil_and_gas&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;feature_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Oil And Gas Pipelines&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;buffer_type&quot;</span><span class="p">:</span><span class="s2">&quot;default&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;feature_filter_type&quot;</span><span class="p">:</span><span class="s2">&quot;clip&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;feature_subtypes_to_exclude&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;num_features_per_worker&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">"feature_specs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"oil_and_gas"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"feature_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Oil And Gas Pipelines"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"buffer_type"</span><span class="p">:</span><span class="s2">"default"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"feature_filter_type"</span><span class="p">:</span><span class="s2">"clip"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"feature_subtypes_to_exclude"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"num_features_per_worker"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -960,36 +977,36 @@ may be quite far away depending on the shape of the pipeline). For more details 
 feature type, please see the documentation for the <a class="reference external" href="https://nrel.github.io/reVX/_autosummary/reVX.exclusions.setbacks.setbacks.setbacks_calculator.html#reVX.exclusions.setbacks.setbacks.setbacks_calculator"><code class="docutils literal notranslate"><span class="pre">setbacks_calculator</span></code></a> function.</p>
 <p>After adding the above input to the <code class="docutils literal notranslate"><span class="pre">config_setbacks.json</span></code> config file, you can use <code class="docutils literal notranslate"><span class="pre">&quot;oil_and_gas&quot;</span></code> just like
 any of the “standard” feature types. In particular, you can specify this feature in the <code class="docutils literal notranslate"><span class="pre">features</span></code> input:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;features&quot;</span><span class="p">:</span> <span class="p">{</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">"features"</span><span class="p">:</span> <span class="p">{</span>
     <span class="o">...</span>
-    <span class="s2">&quot;oil_and_gas&quot;</span><span class="p">:</span> <span class="s2">&quot;/path/to/oil_gas/pipelines.gpkg&quot;</span><span class="p">,</span>
+    <span class="s2">"oil_and_gas"</span><span class="p">:</span> <span class="s2">"/path/to/oil_gas/pipelines.gpkg"</span><span class="p">,</span>
     <span class="o">...</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>and the <code class="docutils literal notranslate"><span class="pre">generic_setback_multiplier</span></code> config input:</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;road&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;parcel&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;structure&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;oil_and_gas&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">    </span><span class="nt">"road"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.5</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"parcel"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"structure"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"oil_and_gas"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">feature_specs</span></code> input can also be used to calculate the same type of setback for two separate input datasets
 simultaneously:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;feature_specs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;water-nwi&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;feature_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;water&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;buffer_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;default&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;feature_filter_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clip&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;num_features_per_worker&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">"feature_specs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"water-nwi"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"feature_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"water"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"buffer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"feature_filter_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clip"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"num_features_per_worker"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nt">&quot;water-nhd&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;feature_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;water&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;buffer_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;default&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;feature_filter_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;clip&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;num_features_per_worker&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">"water-nhd"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"feature_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"water"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"buffer_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"feature_filter_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"clip"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"num_features_per_worker"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -1013,39 +1030,39 @@ scenarios. Here is a short python script to generate the CSV config file:</p>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 
 <span class="c1"># Define generic mults for the three different siting scenarios (open has no mults)</span>
-<span class="n">reference_access_generic_mults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;rail&quot;</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">,</span> <span class="s2">&quot;road&quot;</span><span class="p">:</span> <span class="mf">2.1</span><span class="p">,</span> <span class="s2">&quot;structure&quot;</span><span class="p">:</span> <span class="mf">3.2</span><span class="p">,</span> <span class="s2">&quot;transmission&quot;</span><span class="p">:</span> <span class="mf">1.7</span><span class="p">,</span> <span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
-<span class="n">limited_access_generic_mults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;rail&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;road&quot;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;structure&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">&quot;transmission&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;water&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+<span class="n">reference_access_generic_mults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"rail"</span><span class="p">:</span> <span class="mf">1.5</span><span class="p">,</span> <span class="s2">"road"</span><span class="p">:</span> <span class="mf">2.1</span><span class="p">,</span> <span class="s2">"structure"</span><span class="p">:</span> <span class="mf">3.2</span><span class="p">,</span> <span class="s2">"transmission"</span><span class="p">:</span> <span class="mf">1.7</span><span class="p">,</span> <span class="s2">"water"</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="n">limited_access_generic_mults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"rail"</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s2">"road"</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">"structure"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s2">"transmission"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">"water"</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
 
 <span class="c1"># Define generic mults config filepaths</span>
-<span class="n">ra_fp</span> <span class="o">=</span> <span class="s2">&quot;./reference_access_generic_mults.json&quot;</span>
-<span class="n">la_fp</span> <span class="o">=</span> <span class="s2">&quot;./limited_access_generic_mults.json&quot;</span>
+<span class="n">ra_fp</span> <span class="o">=</span> <span class="s2">"./reference_access_generic_mults.json"</span>
+<span class="n">la_fp</span> <span class="o">=</span> <span class="s2">"./limited_access_generic_mults.json"</span>
 
 <span class="c1"># Write generic mults to files</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ra_fp</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">ra_fp</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">reference_access_generic_mults</span><span class="p">,</span> <span class="n">fh</span><span class="p">)</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">la_fp</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">la_fp</span><span class="p">,</span> <span class="s2">"w"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
     <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">limited_access_generic_mults</span><span class="p">,</span> <span class="n">fh</span><span class="p">)</span>
 
 <span class="c1"># Define our parametrizations</span>
-<span class="n">mults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;open&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;reference&quot;</span><span class="p">:</span> <span class="n">ra_fp</span><span class="p">,</span> <span class="s2">&quot;limited&quot;</span><span class="p">:</span> <span class="n">la_fp</span><span class="p">}</span>
+<span class="n">mults</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"open"</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">"reference"</span><span class="p">:</span> <span class="n">ra_fp</span><span class="p">,</span> <span class="s2">"limited"</span><span class="p">:</span> <span class="n">la_fp</span><span class="p">}</span>
 <span class="n">turbines</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">120</span><span class="p">,</span> <span class="mi">90</span><span class="p">),</span> <span class="p">(</span><span class="mi">150</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">170</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="p">(</span><span class="mi">190</span><span class="p">,</span> <span class="mi">145</span><span class="p">),</span> <span class="p">(</span><span class="mi">190</span><span class="p">,</span> <span class="mi">160</span><span class="p">)]</span>  <span class="c1"># (rd, hh)</span>
 
 <span class="c1"># Generate our parametrizations</span>
 <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="p">(</span><span class="n">rd</span><span class="p">,</span> <span class="n">hh</span><span class="p">),</span> <span class="n">scenario</span> <span class="ow">in</span> <span class="n">product</span><span class="p">(</span><span class="n">turbines</span><span class="p">,</span> <span class="n">mults</span><span class="p">):</span>
-    <span class="n">tag</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">scenario</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">hh</span><span class="si">}</span><span class="s2">hh_</span><span class="si">{</span><span class="n">rd</span><span class="si">}</span><span class="s2">rd&quot;</span>  <span class="c1"># tag is used as the directory name for each run</span>
-    <span class="n">system_config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">&quot;hub_height&quot;</span><span class="p">:</span> <span class="n">hh</span><span class="p">,</span> <span class="s2">&quot;rotor_diameter&quot;</span><span class="p">:</span> <span class="n">rd</span><span class="p">})</span>
+    <span class="n">tag</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">scenario</span><span class="si">}</span><span class="s2">_</span><span class="si">{</span><span class="n">hh</span><span class="si">}</span><span class="s2">hh_</span><span class="si">{</span><span class="n">rd</span><span class="si">}</span><span class="s2">rd"</span>  <span class="c1"># tag is used as the directory name for each run</span>
+    <span class="n">system_config</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s2">"hub_height"</span><span class="p">:</span> <span class="n">hh</span><span class="p">,</span> <span class="s2">"rotor_diameter"</span><span class="p">:</span> <span class="n">rd</span><span class="p">})</span>
     <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="n">tag</span><span class="p">,</span> <span class="n">system_config</span><span class="p">,</span> <span class="n">mults</span><span class="p">[</span><span class="n">scenario</span><span class="p">]])</span>
 
 <span class="c1"># Generate a pandas DataFrame from our parametrizations</span>
-<span class="c1"># `batch` will update the &quot;system_config&quot; and &quot;generic_setback_multiplier&quot; inputs in our</span>
+<span class="c1"># `batch` will update the "system_config" and "generic_setback_multiplier" inputs in our</span>
 <span class="c1"># `config_compute.json` file to the required value for the parametric run</span>
-<span class="n">batch</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;set_tag&quot;</span><span class="p">,</span> <span class="s2">&quot;system_config&quot;</span><span class="p">,</span> <span class="s2">&quot;generic_setback_multiplier&quot;</span><span class="p">])</span>
+<span class="n">batch</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"set_tag"</span><span class="p">,</span> <span class="s2">"system_config"</span><span class="p">,</span> <span class="s2">"generic_setback_multiplier"</span><span class="p">])</span>
 
 <span class="c1"># Next two columns required by the `batch` command.</span>
-<span class="n">batch</span><span class="p">[</span><span class="s2">&quot;pipeline_config&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;./config_pipeline.json&quot;</span>  <span class="c1"># point to pipeline config file</span>
-<span class="n">batch</span><span class="p">[</span><span class="s2">&quot;files&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;[&#39;./config_setbacks.json&#39;]&quot;</span>  <span class="c1"># Python list of all the files batch should update, wrapped in quotes</span>
-<span class="n">batch</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">&quot;config_batch.csv&quot;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">batch</span><span class="p">[</span><span class="s2">"pipeline_config"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"./config_pipeline.json"</span>  <span class="c1"># point to pipeline config file</span>
+<span class="n">batch</span><span class="p">[</span><span class="s2">"files"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"['./config_setbacks.json']"</span>  <span class="c1"># Python list of all the files batch should update, wrapped in quotes</span>
+<span class="n">batch</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"config_batch.csv"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Running this script, we get the following table as output:</p>

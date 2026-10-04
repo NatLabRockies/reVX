@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.hybrid_stats.temporal_agg &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.hybrid_stats.temporal_agg &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for reVX.hybrid_stats.temporal_agg</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Module to temporaly aggregate solar and wind CF profiles</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
@@ -647,8 +664,8 @@
 <div class="viewcode-block" id="get_time_index">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.get_time_index.html#reVX.hybrid_stats.temporal_agg.get_time_index">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">get_time_index</span><span class="p">(</span><span class="n">h5_path</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Extract time_index from .h5 file. If &#39;year&#39; is</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    Extract time_index from .h5 file. If 'year' is</span>
 <span class="sd">    provided extact time_index for given year.</span>
 
 <span class="sd">    Parameters</span>
@@ -663,19 +680,19 @@
 <span class="sd">    -------</span>
 <span class="sd">    time_index: pandas.DatatimeIndex</span>
 <span class="sd">        Datetime Index</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="n">h5_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-        <span class="k">if</span> <span class="s1">&#39;time_index&#39;</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">'time_index'</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">time_index</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">time_index</span>
         <span class="k">elif</span> <span class="n">year</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">time_index</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="sa">f</span><span class="s1">&#39;time_index-</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">]</span>
+            <span class="n">time_index</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="sa">f</span><span class="s1">'time_index-</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s1">'</span><span class="p">]</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">ti_dsets</span> <span class="o">=</span> <span class="p">[</span><span class="n">dset</span> <span class="k">for</span> <span class="n">dset</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">datasets</span>
-                        <span class="k">if</span> <span class="n">dset</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;time_index&#39;</span><span class="p">)]</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;&#39;time_index&#39; is not available in </span><span class="si">{}</span><span class="s2">. The following &quot;</span>
-                   <span class="s2">&quot;potential annual time_index are available: </span><span class="si">{}</span><span class="s2">. Please &quot;</span>
-                   <span class="s2">&quot;specify a &#39;year&#39; to use the &#39;time_index&#39; for a &quot;</span>
-                   <span class="s2">&quot;specific year.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_path</span><span class="p">,</span> <span class="n">ti_dsets</span><span class="p">))</span>
+                        <span class="k">if</span> <span class="n">dset</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'time_index'</span><span class="p">)]</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"'time_index' is not available in </span><span class="si">{}</span><span class="s2">. The following "</span>
+                   <span class="s2">"potential annual time_index are available: </span><span class="si">{}</span><span class="s2">. Please "</span>
+                   <span class="s2">"specify a 'year' to use the 'time_index' for a "</span>
+                   <span class="s2">"specific year."</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">h5_path</span><span class="p">,</span> <span class="n">ti_dsets</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">ti_dsets</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -686,12 +703,12 @@
 <div class="viewcode-block" id="DatasetAgg">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.DatasetAgg.html#reVX.hybrid_stats.temporal_agg.DatasetAgg">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">DatasetAgg</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Temporaly Aggregate Dataset</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">local_time</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        h5_fpath : str</span>
@@ -707,7 +724,7 @@
 <span class="sd">        local_time : bool</span>
 <span class="sd">            Flag to shift data to local time before aggregating temporal data.</span>
 <span class="sd">            Default is to stay in UTC.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_h5_fpath</span> <span class="o">=</span> <span class="n">h5_fpath</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dset</span> <span class="o">=</span> <span class="n">dset</span>
         <span class="k">if</span> <span class="n">time_index</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -718,20 +735,20 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_local_time</span> <span class="o">=</span> <span class="n">local_time</span>
 
         <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not present in </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1"> is not present in </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">)</span>
             <span class="k">assert</span> <span class="n">dset</span> <span class="ow">in</span> <span class="n">f</span><span class="p">,</span> <span class="n">msg</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> in </span><span class="si">{}</span><span class="s1">&#39;</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1"> in </span><span class="si">{}</span><span class="s1">'</span>
                <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dset</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_h5_fpath</span><span class="p">))</span>
 
         <span class="k">return</span> <span class="n">msg</span>
 
     <span class="nd">@staticmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">_aggregate_sites</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">site_slice</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1d&#39;</span><span class="p">,</span>
-                         <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_aggregate_sites</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">site_slice</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span>
+                         <span class="n">method</span><span class="o">=</span><span class="s1">'mean'</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                          <span class="n">local_time</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Aggregate given sites in dataset</span>
 
 <span class="sd">        Parameters</span>
@@ -743,9 +760,9 @@
 <span class="sd">        site_slice : slice, optional</span>
 <span class="sd">            Sites to aggregate, if None aggregate all sites, by default None</span>
 <span class="sd">        freq : str, optional</span>
-<span class="sd">            Aggregation frequency, by default &#39;1d&#39;</span>
+<span class="sd">            Aggregation frequency, by default '1d'</span>
 <span class="sd">        method : str, optional</span>
-<span class="sd">            Aggregation method, either &#39;mean&#39; or &#39;sum&#39;, by default &#39;mean&#39;</span>
+<span class="sd">            Aggregation method, either 'mean' or 'sum', by default 'mean'</span>
 <span class="sd">        time_index : pandas.DatetimeIndex, optional</span>
 <span class="sd">            Dataset datetime index, if None, extract from h5_fpath,</span>
 <span class="sd">            by default None</span>
@@ -760,7 +777,7 @@
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">site_slice</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">site_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
 
@@ -771,26 +788,26 @@
             <span class="n">arr</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="n">dset</span><span class="p">,</span> <span class="p">:,</span> <span class="n">site_slice</span><span class="p">]</span>
 
             <span class="k">if</span> <span class="n">local_time</span><span class="p">:</span>
-                <span class="n">timezones</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">get_meta_arr</span><span class="p">(</span><span class="s1">&#39;timezone&#39;</span><span class="p">,</span> <span class="n">rows</span><span class="o">=</span><span class="n">site_slice</span><span class="p">)</span>
+                <span class="n">timezones</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">get_meta_arr</span><span class="p">(</span><span class="s1">'timezone'</span><span class="p">,</span> <span class="n">rows</span><span class="o">=</span><span class="n">site_slice</span><span class="p">)</span>
                 <span class="n">arr</span> <span class="o">=</span> <span class="n">roll_timeseries</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">timezones</span><span class="p">)</span>
 
         <span class="n">agg_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">time_index</span><span class="p">)</span>
         <span class="n">agg_data</span> <span class="o">=</span> <span class="n">agg_data</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="n">method</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;mean&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">method</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'mean'</span><span class="p">:</span>
             <span class="n">agg_data</span> <span class="o">=</span> <span class="n">agg_data</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-        <span class="k">elif</span> <span class="n">method</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;sum&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">method</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'sum'</span><span class="p">:</span>
             <span class="n">agg_data</span> <span class="o">=</span> <span class="n">agg_data</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Invalid aggregation method </span><span class="si">{}</span><span class="s1">, must be &quot;mean&quot; or &#39;</span>
-                   <span class="s1">&#39;&quot;sum&quot;!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">method</span><span class="p">))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Invalid aggregation method </span><span class="si">{}</span><span class="s1">, must be "mean" or '</span>
+                   <span class="s1">'"sum"!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">method</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">agg_data</span><span class="o">.</span><span class="n">values</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_slices</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">chunks_per_slice</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get slices to extract</span>
 
 <span class="sd">        Parameters</span>
@@ -804,13 +821,13 @@
 <span class="sd">        -------</span>
 <span class="sd">        slices : list</span>
 <span class="sd">            List of slices to extract</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_h5_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="n">shape</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">chunks</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">get_dset_properties</span><span class="p">(</span><span class="n">dset</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Cannot aggregate dataset </span><span class="si">{}</span><span class="s1">, as it is &#39;</span>
-                   <span class="s1">&#39;not a timeseries dataset!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Cannot aggregate dataset </span><span class="si">{}</span><span class="s1">, as it is '</span>
+                   <span class="s1">'not a timeseries dataset!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -819,8 +836,8 @@
 
         <span class="k">return</span> <span class="n">slices</span><span class="p">,</span> <span class="n">shape</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">_create_agg_arr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1d&#39;</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">_create_agg_arr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Create empty aggregation array</span>
 
 <span class="sd">        Parameters</span>
@@ -828,7 +845,7 @@
 <span class="sd">        shape : tuple</span>
 <span class="sd">            Dataset shape</span>
 <span class="sd">        freq : str, optional</span>
-<span class="sd">            Aggregation frequency, by default &#39;1d&#39;</span>
+<span class="sd">            Aggregation frequency, by default '1d'</span>
 <span class="sd">        resample_kwargs : dict, optional</span>
 <span class="sd">            Kwargs for pandas.DataFrame.resample</span>
 
@@ -836,7 +853,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        out : ndarray</span>
 <span class="sd">            Output array for aggregated dataset</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">out</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span><span class="p">)</span>
         <span class="n">out</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">freq</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
         <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="n">out</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
@@ -845,17 +862,17 @@
 
 <div class="viewcode-block" id="DatasetAgg.aggregate">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.DatasetAgg.html#reVX.hybrid_stats.temporal_agg.DatasetAgg.aggregate">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1d&#39;</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'mean'</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                   <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Aggregate dataset to desired frequency using desired method</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        freq : str, optional</span>
-<span class="sd">            Aggregation frequency, by default &#39;1d&#39;</span>
+<span class="sd">            Aggregation frequency, by default '1d'</span>
 <span class="sd">        method : str, optional</span>
-<span class="sd">            Aggregation method, either &#39;mean&#39; or &#39;sum&#39;, by default &#39;mean&#39;</span>
+<span class="sd">            Aggregation method, either 'mean' or 'sum', by default 'mean'</span>
 <span class="sd">        max_workers : None | int, optional</span>
 <span class="sd">            Number of workers to use, if 1 run in serial, if None use all</span>
 <span class="sd">            available cores, by default None</span>
@@ -868,7 +885,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        dset_agg : ndarray</span>
 <span class="sd">            Aggregated dataset array</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">max_workers</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">max_workers</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">cpu_count</span><span class="p">()</span>
 
@@ -880,11 +897,11 @@
         <span class="n">dset_agg</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_agg_arr</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="n">freq</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">max_workers</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Aggregating </span><span class="si">{}</span><span class="s1"> in parallel using </span><span class="si">{}</span><span class="s1"> workers&#39;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Aggregating </span><span class="si">{}</span><span class="s1"> in parallel using </span><span class="si">{}</span><span class="s1"> workers'</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dset</span><span class="p">,</span> <span class="n">max_workers</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
-            <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">&#39;rex&#39;</span><span class="p">,</span> <span class="s1">&#39;reVX&#39;</span><span class="p">]</span>
+            <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">'rex'</span><span class="p">,</span> <span class="s1">'reVX'</span><span class="p">]</span>
             <span class="k">with</span> <span class="n">SpawnProcessPool</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>
                                   <span class="n">loggers</span><span class="o">=</span><span class="n">loggers</span><span class="p">)</span> <span class="k">as</span> <span class="n">exe</span><span class="p">:</span>
                 <span class="n">futures</span> <span class="o">=</span> <span class="p">[]</span>
@@ -903,10 +920,10 @@
 
                 <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">future</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">futures</span><span class="p">):</span>
                     <span class="n">dset_agg</span><span class="p">[:,</span> <span class="n">slices</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">future</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Completed </span><span class="si">{}</span><span class="s1"> out of </span><span class="si">{}</span><span class="s1"> workers&#39;</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Completed </span><span class="si">{}</span><span class="s1"> out of </span><span class="si">{}</span><span class="s1"> workers'</span>
                                  <span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">futures</span><span class="p">)))</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;Aggregating </span><span class="si">{}</span><span class="s1"> in serial&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dset</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s1">'Aggregating </span><span class="si">{}</span><span class="s1"> in serial'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dset</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">sites_slice</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">slices</span><span class="p">):</span>
                 <span class="n">dset_agg</span><span class="p">[:,</span> <span class="n">sites_slice</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_aggregate_sites</span><span class="p">(</span>
@@ -919,7 +936,7 @@
                     <span class="n">year</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_year</span><span class="p">,</span>
                     <span class="n">local_time</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_local_time</span><span class="p">,</span>
                     <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Completed </span><span class="si">{}</span><span class="s1"> out of </span><span class="si">{}</span><span class="s1"> sets of sites&#39;</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Completed </span><span class="si">{}</span><span class="s1"> out of </span><span class="si">{}</span><span class="s1"> sets of sites'</span>
                              <span class="o">.</span><span class="n">format</span><span class="p">((</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">slices</span><span class="p">)))</span>
 
         <span class="k">return</span> <span class="n">dset_agg</span></div>
@@ -928,10 +945,10 @@
 <div class="viewcode-block" id="DatasetAgg.run">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.DatasetAgg.html#reVX.hybrid_stats.temporal_agg.DatasetAgg.run">[docs]</a>
     <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1d&#39;</span><span class="p">,</span>
-            <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s1">'mean'</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
             <span class="n">local_time</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Temporally aggregate dataset to given frequency using given method</span>
 
 <span class="sd">        Parameters</span>
@@ -947,9 +964,9 @@
 <span class="sd">            Year to extract time-index for if running on a multi-year file,</span>
 <span class="sd">            by default None</span>
 <span class="sd">        freq : str, optional</span>
-<span class="sd">            Aggregation frequency, by default &#39;1d&#39;</span>
+<span class="sd">            Aggregation frequency, by default '1d'</span>
 <span class="sd">        method : str, optional</span>
-<span class="sd">            Aggregation method, either &#39;mean&#39; or &#39;sum&#39;, by default &#39;mean&#39;</span>
+<span class="sd">            Aggregation method, either 'mean' or 'sum', by default 'mean'</span>
 <span class="sd">        max_workers : None | int, optional</span>
 <span class="sd">            Number of workers to use, if 1 run in serial, if None use all</span>
 <span class="sd">            available cores, by default None</span>
@@ -965,8 +982,8 @@
 <span class="sd">        -------</span>
 <span class="sd">        agg_data : ndarray</span>
 <span class="sd">            Dataset aggregated do given frequency using given method</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Aggregating </span><span class="si">{}</span><span class="s1"> in </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1"> using </span><span class="si">{}</span><span class="s1">&#39;</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Aggregating </span><span class="si">{}</span><span class="s1"> in </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1"> using </span><span class="si">{}</span><span class="s1">'</span>
                     <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="n">method</span><span class="p">))</span>
         <span class="n">agg</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dset</span><span class="p">,</span> <span class="n">time_index</span><span class="o">=</span><span class="n">time_index</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
                   <span class="n">local_time</span><span class="o">=</span><span class="n">local_time</span><span class="p">)</span>
@@ -983,12 +1000,12 @@
 <div class="viewcode-block" id="TemporalAgg">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.TemporalAgg.html#reVX.hybrid_stats.temporal_agg.TemporalAgg">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">TemporalAgg</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Class to temporally aggregate time-series data</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src_fpath</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1d&#39;</span><span class="p">,</span> <span class="n">dsets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="sd">    """</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src_fpath</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span> <span class="n">dsets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">local_time</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        src_fpath : str</span>
@@ -996,7 +1013,7 @@
 <span class="sd">        dst_fpath : str</span>
 <span class="sd">            Path to destination h5 file to save aggregated datasets to.</span>
 <span class="sd">        freq : str, optional</span>
-<span class="sd">            Aggregation frequency, by default &#39;1d&#39;</span>
+<span class="sd">            Aggregation frequency, by default '1d'</span>
 <span class="sd">        dsets : list, optional</span>
 <span class="sd">            Datasets to aggregate, if None aggregate all datasets in src_fpath,</span>
 <span class="sd">            by default None</span>
@@ -1008,7 +1025,7 @@
 <span class="sd">            Default is to stay in UTC.</span>
 <span class="sd">        resample_kwargs : dict, optional</span>
 <span class="sd">            Kwargs for pandas.DataFrame.resample</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_src_fpath</span> <span class="o">=</span> <span class="n">src_fpath</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span> <span class="o">=</span> <span class="n">dst_fpath</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_freq</span> <span class="o">=</span> <span class="n">freq</span>
@@ -1020,24 +1037,24 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_init_agg_h5</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_src_fpath</span><span class="p">)</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="s1">'</span><span class="si">{}</span><span class="s1"> of </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_src_fpath</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">msg</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">dsets</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Datasets to aggregate</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        list</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dsets</span>
 
     <span class="nd">@staticmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_get_dsets</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">,</span> <span class="n">dsets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Get datasets to aggregate, or if given ensure they are in source</span>
 <span class="sd">        h5 file. Also extract time_index</span>
 
@@ -1056,14 +1073,14 @@
 <span class="sd">            List of datasets to aggregate</span>
 <span class="sd">        time_index : pandas.DatetimeIndex</span>
 <span class="sd">            DatetimeIndex of datasets being aggregated</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">dsets</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
                 <span class="n">res_dsets</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">resource_datasets</span>
                 <span class="k">if</span> <span class="n">year</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
                     <span class="n">res_dsets</span> <span class="o">=</span> <span class="p">[</span><span class="n">ds</span> <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">res_dsets</span>
                                  <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span> <span class="ow">in</span> <span class="n">ds</span>
-                                 <span class="ow">and</span> <span class="s1">&#39;time_index&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">]</span>
+                                 <span class="ow">and</span> <span class="s1">'time_index'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ds</span><span class="p">]</span>
 
                 <span class="n">dsets</span> <span class="o">=</span> <span class="p">[]</span>
                 <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">res_dsets</span><span class="p">:</span>
@@ -1072,7 +1089,7 @@
 
             <span class="k">else</span><span class="p">:</span>
                 <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">:</span>
-                    <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is not available in </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">)</span>
+                    <span class="n">msg</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{}</span><span class="s2"> is not available in </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">)</span>
                     <span class="k">assert</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">f</span><span class="p">,</span> <span class="n">msg</span>
 
         <span class="n">time_index</span> <span class="o">=</span> <span class="n">get_time_index</span><span class="p">(</span><span class="n">h5_fpath</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">)</span>
@@ -1080,7 +1097,7 @@
         <span class="k">return</span> <span class="n">dsets</span><span class="p">,</span> <span class="n">time_index</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_init_agg_h5</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Initialize the dst .h5 file that will contain the aggregated datasets</span>
 
 <span class="sd">        Parameter</span>
@@ -1088,37 +1105,37 @@
 <span class="sd">        year : str | int, optional</span>
 <span class="sd">            Year to extract time-index and datasets for, needed  if running</span>
 <span class="sd">            on a multi-year file, by default None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Initializing </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span><span class="p">))</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Initializing </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span><span class="p">))</span>
         <span class="n">time_index</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span><span class="p">)</span>
         <span class="n">time_index</span> <span class="o">=</span> <span class="n">time_index</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_freq</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">_resample_kwargs</span><span class="p">)</span>
         <span class="n">time_index</span> <span class="o">=</span> <span class="n">time_index</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">index</span>
         <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">time_index</span><span class="p">),</span> <span class="p">)</span>
-        <span class="n">ti_dset</span> <span class="o">=</span> <span class="s1">&#39;time_index&#39;</span>
+        <span class="n">ti_dset</span> <span class="o">=</span> <span class="s1">'time_index'</span>
 
         <span class="k">if</span> <span class="n">year</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">ti_dset</span> <span class="o">+=</span> <span class="s1">&#39;-</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+            <span class="n">ti_dset</span> <span class="o">+=</span> <span class="s1">'-</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
 
-        <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f_out</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f_out</span><span class="p">:</span>
             <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src_fpath</span><span class="p">)</span> <span class="k">as</span> <span class="n">f_in</span><span class="p">:</span>
                 <span class="n">meta</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">meta</span>
                 <span class="n">shape</span> <span class="o">+=</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">meta</span><span class="p">),</span> <span class="p">)</span>
                 <span class="n">f_out</span><span class="o">.</span><span class="n">_shape</span> <span class="o">=</span> <span class="n">shape</span>
-                <span class="k">if</span> <span class="s1">&#39;meta&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">f_out</span><span class="p">:</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Copying meta data&#39;</span><span class="p">)</span>
-                    <span class="n">f_out</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
+                <span class="k">if</span> <span class="s1">'meta'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">f_out</span><span class="p">:</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Copying meta data'</span><span class="p">)</span>
+                    <span class="n">f_out</span><span class="p">[</span><span class="s1">'meta'</span><span class="p">]</span> <span class="o">=</span> <span class="n">meta</span>
 
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Copying </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ti_dset</span><span class="p">))</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Copying </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ti_dset</span><span class="p">))</span>
                 <span class="n">f_out</span><span class="o">.</span><span class="n">_set_time_index</span><span class="p">(</span><span class="n">ti_dset</span><span class="p">,</span> <span class="n">time_index</span><span class="p">)</span>
 
                 <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">dsets</span><span class="p">:</span>
                     <span class="n">_</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">get_dset_properties</span><span class="p">(</span><span class="n">ds</span><span class="p">)</span>
                     <span class="n">attrs</span> <span class="o">=</span> <span class="n">f_in</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="n">ds</span><span class="p">]</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Initializing aggregated </span><span class="si">{}</span><span class="s1"> w/ properties:&#39;</span>
-                                 <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">shape: </span><span class="si">{}</span><span class="s1">&#39;</span>
-                                 <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">dtype: </span><span class="si">{}</span><span class="s1">&#39;</span>
-                                 <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">chunks: </span><span class="si">{}</span><span class="s1">&#39;</span>
-                                 <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">attrs: </span><span class="si">{}</span><span class="s1">&#39;</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Initializing aggregated </span><span class="si">{}</span><span class="s1"> w/ properties:'</span>
+                                 <span class="s1">'</span><span class="se">\n</span><span class="s1">shape: </span><span class="si">{}</span><span class="s1">'</span>
+                                 <span class="s1">'</span><span class="se">\n</span><span class="s1">dtype: </span><span class="si">{}</span><span class="s1">'</span>
+                                 <span class="s1">'</span><span class="se">\n</span><span class="s1">chunks: </span><span class="si">{}</span><span class="s1">'</span>
+                                 <span class="s1">'</span><span class="se">\n</span><span class="s1">attrs: </span><span class="si">{}</span><span class="s1">'</span>
                                  <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="p">,</span> <span class="n">attrs</span><span class="p">))</span>
 
                     <span class="n">f_out</span><span class="o">.</span><span class="n">_create_dset</span><span class="p">(</span><span class="n">ds</span><span class="p">,</span> <span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span>
@@ -1126,20 +1143,20 @@
 
 <div class="viewcode-block" id="TemporalAgg.aggregate">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.TemporalAgg.html#reVX.hybrid_stats.temporal_agg.TemporalAgg.aggregate">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'mean'</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Aggregate desired datasets and write to disk</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        method : str, optional</span>
-<span class="sd">            Aggregation method, either &#39;mean&#39; or &#39;sum&#39;, by default &#39;mean&#39;</span>
+<span class="sd">            Aggregation method, either 'mean' or 'sum', by default 'mean'</span>
 <span class="sd">        max_workers : None | int, optional</span>
 <span class="sd">            Number of workers to use, if 1 run in serial, if None use all</span>
 <span class="sd">            available cores, by default None</span>
 <span class="sd">        chunks_per_worker : int, optional</span>
 <span class="sd">            Number of chunks to extract on each worker, by default 5</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">dsets</span><span class="p">:</span>
             <span class="n">ds_agg</span> <span class="o">=</span> <span class="n">DatasetAgg</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_src_fpath</span><span class="p">,</span> <span class="n">ds</span><span class="p">,</span>
                                     <span class="n">time_index</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_time_index</span><span class="p">,</span>
@@ -1149,8 +1166,8 @@
                                     <span class="n">chunks_per_worker</span><span class="o">=</span><span class="n">chunks_per_worker</span><span class="p">,</span>
                                     <span class="n">local_time</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_local_time</span><span class="p">,</span>
                                     <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">_resample_kwargs</span><span class="p">)</span>
-            <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Writing aggregated data for </span><span class="si">{}</span><span class="s1"> to disk&#39;</span>
+            <span class="k">with</span> <span class="n">Outputs</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dst_fpath</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Writing aggregated data for </span><span class="si">{}</span><span class="s1"> to disk'</span>
                             <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">ds</span><span class="p">))</span>
                 <span class="n">f</span><span class="p">[</span><span class="n">ds</span><span class="p">]</span> <span class="o">=</span> <span class="n">ds_agg</span></div>
 
@@ -1158,10 +1175,10 @@
 <div class="viewcode-block" id="TemporalAgg.run">
 <a class="viewcode-back" href="../../../_autosummary/reVX.hybrid_stats.temporal_agg.TemporalAgg.html#reVX.hybrid_stats.temporal_agg.TemporalAgg.run">[docs]</a>
     <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">src_fpath</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;1d&#39;</span><span class="p">,</span> <span class="n">dsets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">method</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">src_fpath</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">'1d'</span><span class="p">,</span> <span class="n">dsets</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">method</span><span class="o">=</span><span class="s1">'mean'</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">chunks_per_worker</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
             <span class="n">local_time</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Temporally aggregate the desired datasets in the src .h5 file to the</span>
 <span class="sd">        given frequency using the given method. Save the aggregated datasets</span>
 <span class="sd">        to the dst .h5 file.</span>
@@ -1173,7 +1190,7 @@
 <span class="sd">        dst_fpath : str</span>
 <span class="sd">            Path to destination h5 file to save aggregated datasets to.</span>
 <span class="sd">        freq : str, optional</span>
-<span class="sd">            Aggregation frequency, by default &#39;1d&#39;</span>
+<span class="sd">            Aggregation frequency, by default '1d'</span>
 <span class="sd">        dsets : list, optional</span>
 <span class="sd">            Datasets to aggregate, if None aggregate all datasets in src_fpath,</span>
 <span class="sd">            by default None</span>
@@ -1181,7 +1198,7 @@
 <span class="sd">            Year to extract time-index and datasets for, needed  if running</span>
 <span class="sd">            on a multi-year file, by default None</span>
 <span class="sd">        method : str, optional</span>
-<span class="sd">            Aggregation method, either &#39;mean&#39; or &#39;sum&#39;, by default &#39;mean&#39;</span>
+<span class="sd">            Aggregation method, either 'mean' or 'sum', by default 'mean'</span>
 <span class="sd">        max_workers : None | int, optional</span>
 <span class="sd">            Number of workers to use, if 1 run in serial, if None use all</span>
 <span class="sd">            available cores, by default None</span>
@@ -1192,9 +1209,9 @@
 <span class="sd">            Default is to stay in UTC.</span>
 <span class="sd">        resample_kwargs : dict, optional</span>
 <span class="sd">            Kwargs for pandas.DataFrame.resample</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Aggregating datasets in </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1"> using </span><span class="si">{}</span><span class="s1"> and saving to &#39;</span>
-                    <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">src_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">))</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Aggregating datasets in </span><span class="si">{}</span><span class="s1"> to </span><span class="si">{}</span><span class="s1"> using </span><span class="si">{}</span><span class="s1"> and saving to '</span>
+                    <span class="s1">'</span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">src_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="p">,</span> <span class="n">method</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">))</span>
         <span class="n">agg</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">src_fpath</span><span class="p">,</span> <span class="n">dst_fpath</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="n">freq</span><span class="p">,</span> <span class="n">dsets</span><span class="o">=</span><span class="n">dsets</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="n">year</span><span class="p">,</span>
                   <span class="n">local_time</span><span class="o">=</span><span class="n">local_time</span><span class="p">,</span> <span class="o">**</span><span class="n">resample_kwargs</span><span class="p">)</span>
         <span class="n">agg</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="n">method</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>

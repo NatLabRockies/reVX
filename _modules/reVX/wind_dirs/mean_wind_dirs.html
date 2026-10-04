@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.wind_dirs.mean_wind_dirs &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.wind_dirs.mean_wind_dirs &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,9 +645,9 @@
              
   <h1>Source code for reVX.wind_dirs.mean_wind_dirs</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Compute the mean wind direction for each supply curve point</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 
@@ -647,16 +664,16 @@
 <div class="viewcode-block" id="MeanWindDirections">
 <a class="viewcode-back" href="../../../_autosummary/reVX.wind_dirs.mean_wind_dirs.MeanWindDirections.html#reVX.wind_dirs.mean_wind_dirs.MeanWindDirections">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">MeanWindDirections</span><span class="p">(</span><span class="n">Aggregation</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Average the wind direction via the wind vectors.</span>
 <span class="sd">    Then convert to equivalent sc_point_gid</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">excl_fpath</span><span class="p">,</span> <span class="n">wdir_dsets</span><span class="p">,</span>
-                 <span class="n">tm_dset</span><span class="o">=</span><span class="s1">&#39;techmap_wtk&#39;</span><span class="p">,</span> <span class="n">excl_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                 <span class="n">area_filter_kernel</span><span class="o">=</span><span class="s1">&#39;queen&#39;</span><span class="p">,</span> <span class="n">min_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">tm_dset</span><span class="o">=</span><span class="s1">'techmap_wtk'</span><span class="p">,</span> <span class="n">excl_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                 <span class="n">area_filter_kernel</span><span class="o">=</span><span class="s1">'queen'</span><span class="p">,</span> <span class="n">min_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                  <span class="n">resolution</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">excl_area</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        excl_fpath : str</span>
@@ -666,13 +683,13 @@
 <span class="sd">        tm_dset : str, optional</span>
 <span class="sd">            Dataset name in the techmap file containing the</span>
 <span class="sd">            exclusions-to-resource mapping data,</span>
-<span class="sd">            by default &#39;techmap_wtk&#39;</span>
+<span class="sd">            by default 'techmap_wtk'</span>
 <span class="sd">        excl_dict : dict | None, optional</span>
 <span class="sd">            Dictionary of exclusion LayerMask arugments {layer: {kwarg: value}}</span>
 <span class="sd">            by default None</span>
 <span class="sd">        area_filter_kernel : str, optional</span>
 <span class="sd">            Contiguous area filter method to use on final exclusions mask,</span>
-<span class="sd">            by default &#39;queen&#39;</span>
+<span class="sd">            by default 'queen'</span>
 <span class="sd">        min_area : float | None, optional</span>
 <span class="sd">            Minimum required contiguous area filter in sq-km, by default None</span>
 <span class="sd">        resolution : int | None, optional</span>
@@ -682,14 +699,14 @@
 <span class="sd">            Area of an exclusion pixel in km2. None will try to infer the area</span>
 <span class="sd">            from the profile transform attribute in excl_fpath,</span>
 <span class="sd">            by default None</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">log_versions</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">wdir_dsets</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
             <span class="n">wdir_dsets</span> <span class="o">=</span> <span class="p">[</span><span class="n">wdir_dsets</span><span class="p">]</span>
 
         <span class="k">for</span> <span class="n">dset</span> <span class="ow">in</span> <span class="n">wdir_dsets</span><span class="p">:</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">dset</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;winddirection&#39;</span><span class="p">):</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> is not a valid wind direction dataset!&#39;</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">dset</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">'winddirection'</span><span class="p">):</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> is not a valid wind direction dataset!'</span>
                        <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dset</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -706,10 +723,10 @@
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run_serial</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">excl_fpath</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">,</span> <span class="n">tm_dset</span><span class="p">,</span> <span class="o">*</span><span class="n">wind_dir_dset</span><span class="p">,</span>
                    <span class="n">excl_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">inclusion_mask</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                   <span class="n">area_filter_kernel</span><span class="o">=</span><span class="s1">&#39;queen&#39;</span><span class="p">,</span> <span class="n">min_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                   <span class="n">area_filter_kernel</span><span class="o">=</span><span class="s1">'queen'</span><span class="p">,</span> <span class="n">min_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                    <span class="n">resolution</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">excl_area</span><span class="o">=</span><span class="mf">0.0081</span><span class="p">,</span> <span class="n">gids</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
                    <span class="n">gen_index</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Standalone method to aggregate - can be parallelized.</span>
 
 <span class="sd">        Parameters</span>
@@ -729,7 +746,7 @@
 <span class="sd">            by default None</span>
 <span class="sd">        area_filter_kernel : str, optional</span>
 <span class="sd">            Contiguous area filter method to use on final exclusions mask,</span>
-<span class="sd">            by default &quot;queen&quot;</span>
+<span class="sd">            by default "queen"</span>
 <span class="sd">        min_area : float, optional</span>
 <span class="sd">            Minimum required contiguous area filter in sq-km,</span>
 <span class="sd">            by default None</span>
@@ -755,7 +772,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        agg_out : dict</span>
 <span class="sd">            Aggregated values for each aggregation dataset</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">with</span> <span class="n">SupplyCurveExtent</span><span class="p">(</span><span class="n">excl_fpath</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="n">resolution</span><span class="p">)</span> <span class="k">as</span> <span class="n">sc</span><span class="p">:</span>
             <span class="n">exclusion_shape</span> <span class="o">=</span> <span class="n">sc</span><span class="o">.</span><span class="n">exclusions</span><span class="o">.</span><span class="n">shape</span>
             <span class="k">if</span> <span class="n">gids</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -768,10 +785,10 @@
         <span class="bp">cls</span><span class="o">.</span><span class="n">_check_inclusion_mask</span><span class="p">(</span><span class="n">inclusion_mask</span><span class="p">,</span> <span class="n">gids</span><span class="p">,</span> <span class="n">exclusion_shape</span><span class="p">)</span>
 
         <span class="c1"># pre-extract handlers so they are not repeatedly initialized</span>
-        <span class="n">file_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;excl_dict&#39;</span><span class="p">:</span> <span class="n">excl_dict</span><span class="p">,</span>
-                       <span class="s1">&#39;area_filter_kernel&#39;</span><span class="p">:</span> <span class="n">area_filter_kernel</span><span class="p">,</span>
-                       <span class="s1">&#39;min_area&#39;</span><span class="p">:</span> <span class="n">min_area</span><span class="p">}</span>
-        <span class="n">dsets</span> <span class="o">=</span> <span class="n">wind_dir_dset</span> <span class="o">+</span> <span class="p">(</span><span class="s1">&#39;meta&#39;</span><span class="p">,</span> <span class="p">)</span>
+        <span class="n">file_kwargs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'excl_dict'</span><span class="p">:</span> <span class="n">excl_dict</span><span class="p">,</span>
+                       <span class="s1">'area_filter_kernel'</span><span class="p">:</span> <span class="n">area_filter_kernel</span><span class="p">,</span>
+                       <span class="s1">'min_area'</span><span class="p">:</span> <span class="n">min_area</span><span class="p">}</span>
+        <span class="n">dsets</span> <span class="o">=</span> <span class="n">wind_dir_dset</span> <span class="o">+</span> <span class="p">(</span><span class="s1">'meta'</span><span class="p">,</span> <span class="p">)</span>
         <span class="n">agg_out</span> <span class="o">=</span> <span class="p">{</span><span class="n">ds</span><span class="p">:</span> <span class="p">[]</span> <span class="k">for</span> <span class="n">ds</span> <span class="ow">in</span> <span class="n">dsets</span><span class="p">}</span>
         <span class="k">with</span> <span class="n">AggFileHandler</span><span class="p">(</span><span class="n">excl_fpath</span><span class="p">,</span> <span class="n">h5_fpath</span><span class="p">,</span> <span class="o">**</span><span class="n">file_kwargs</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
             <span class="n">n_finished</span> <span class="o">=</span> <span class="mi">0</span>
@@ -795,15 +812,15 @@
                         <span class="n">gen_index</span><span class="o">=</span><span class="n">gen_index</span><span class="p">)</span>
 
                 <span class="k">except</span> <span class="n">EmptySupplyCurvePointError</span><span class="p">:</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;SC gid </span><span class="si">{}</span><span class="s1"> is fully excluded or does not &#39;</span>
-                                 <span class="s1">&#39;have any valid source data!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gid</span><span class="p">))</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'SC gid </span><span class="si">{}</span><span class="s1"> is fully excluded or does not '</span>
+                                 <span class="s1">'have any valid source data!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gid</span><span class="p">))</span>
                 <span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s1">&#39;SC gid </span><span class="si">{}</span><span class="s1"> failed!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gid</span><span class="p">))</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="s1">'SC gid </span><span class="si">{}</span><span class="s1"> failed!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">gid</span><span class="p">))</span>
                     <span class="k">raise</span>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="n">n_finished</span> <span class="o">+=</span> <span class="mi">1</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Serial aggregation: &#39;</span>
-                                 <span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> out of </span><span class="si">{}</span><span class="s1"> points complete&#39;</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Serial aggregation: '</span>
+                                 <span class="s1">'</span><span class="si">{}</span><span class="s1"> out of </span><span class="si">{}</span><span class="s1"> points complete'</span>
                                  <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_finished</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">gids</span><span class="p">)))</span>
                     <span class="n">log_mem</span><span class="p">(</span><span class="n">logger</span><span class="p">)</span>
                     <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">gid_out</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -815,7 +832,7 @@
 <div class="viewcode-block" id="MeanWindDirections.aggregate">
 <a class="viewcode-back" href="../../../_autosummary/reVX.wind_dirs.mean_wind_dirs.MeanWindDirections.html#reVX.wind_dirs.mean_wind_dirs.MeanWindDirections.aggregate">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">aggregate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">res_h5_fpath</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">sites_per_worker</span><span class="o">=</span><span class="mi">1000</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Average wind directions to sc_points</span>
 
 <span class="sd">        Parameters</span>
@@ -833,7 +850,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        agg : dict</span>
 <span class="sd">            Aggregated values for each aggregation dataset</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">agg</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">aggregate</span><span class="p">(</span><span class="n">res_h5_fpath</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="n">max_workers</span><span class="p">,</span>
                                 <span class="n">sites_per_worker</span><span class="o">=</span><span class="n">sites_per_worker</span><span class="p">)</span>
 
@@ -844,11 +861,11 @@
 <a class="viewcode-back" href="../../../_autosummary/reVX.wind_dirs.mean_wind_dirs.MeanWindDirections.html#reVX.wind_dirs.mean_wind_dirs.MeanWindDirections.run">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">res_h5_fpath</span><span class="p">,</span> <span class="n">excl_fpath</span><span class="p">,</span> <span class="n">wdir_dsets</span><span class="p">,</span>
-            <span class="n">tm_dset</span><span class="o">=</span><span class="s1">&#39;techmap_wtk&#39;</span><span class="p">,</span> <span class="n">excl_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">area_filter_kernel</span><span class="o">=</span><span class="s1">&#39;queen&#39;</span><span class="p">,</span> <span class="n">min_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">tm_dset</span><span class="o">=</span><span class="s1">'techmap_wtk'</span><span class="p">,</span> <span class="n">excl_dict</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">area_filter_kernel</span><span class="o">=</span><span class="s1">'queen'</span><span class="p">,</span> <span class="n">min_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">resolution</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">excl_area</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
             <span class="n">sites_per_worker</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">out_fpath</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Aggregate powerrose to supply curve points, find neighboring supply</span>
 <span class="sd">        curve point gids and rank them based on prominent powerrose direction</span>
 
@@ -863,13 +880,13 @@
 <span class="sd">        tm_dset : str, optional</span>
 <span class="sd">            Dataset name in the techmap file containing the</span>
 <span class="sd">            exclusions-to-resource mapping data,</span>
-<span class="sd">            by default &#39;techmap_wtk&#39;</span>
+<span class="sd">            by default 'techmap_wtk'</span>
 <span class="sd">        excl_dict : dict | None, optional</span>
 <span class="sd">            Dictionary of exclusion LayerMask arugments {layer: {kwarg: value}}</span>
 <span class="sd">            by default None</span>
 <span class="sd">        area_filter_kernel : str, optional</span>
 <span class="sd">            Contiguous area filter method to use on final exclusions mask,</span>
-<span class="sd">            by default &#39;queen&#39;</span>
+<span class="sd">            by default 'queen'</span>
 <span class="sd">        min_area : float | None, optional</span>
 <span class="sd">            Minimum required contiguous area filter in sq-km, by default None</span>
 <span class="sd">        resolution : int | None, optional</span>
@@ -892,7 +909,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        agg : dict</span>
 <span class="sd">            Aggregated values for each aggregation dataset</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">wdir</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">excl_fpath</span><span class="p">,</span> <span class="n">wdir_dsets</span><span class="p">,</span> <span class="n">tm_dset</span><span class="o">=</span><span class="n">tm_dset</span><span class="p">,</span>
                    <span class="n">excl_dict</span><span class="o">=</span><span class="n">excl_dict</span><span class="p">,</span> <span class="n">area_filter_kernel</span><span class="o">=</span><span class="n">area_filter_kernel</span><span class="p">,</span>
                    <span class="n">min_area</span><span class="o">=</span><span class="n">min_area</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="n">resolution</span><span class="p">,</span>

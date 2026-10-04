@@ -17,19 +17,16 @@ reVX.config.wind\_dirs.MeanWindDirsConfig
    
       ~MeanWindDirsConfig.check_files
       ~MeanWindDirsConfig.check_overwrite_keys
-      ~MeanWindDirsConfig.clear
       ~MeanWindDirsConfig.copy
       ~MeanWindDirsConfig.fromkeys
       ~MeanWindDirsConfig.get
       ~MeanWindDirsConfig.items
       ~MeanWindDirsConfig.keys
-      ~MeanWindDirsConfig.pop
       ~MeanWindDirsConfig.popitem
       ~MeanWindDirsConfig.resolve_path
       ~MeanWindDirsConfig.set_self_dict
       ~MeanWindDirsConfig.setdefault
       ~MeanWindDirsConfig.str_replace_and_resolve
-      ~MeanWindDirsConfig.update
       ~MeanWindDirsConfig.values
    
    

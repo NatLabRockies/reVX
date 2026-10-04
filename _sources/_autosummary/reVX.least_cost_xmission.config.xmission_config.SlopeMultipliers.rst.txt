@@ -15,16 +15,13 @@ reVX.least\_cost\_xmission.config.xmission\_config.SlopeMultipliers
 
    .. autosummary::
    
-      ~SlopeMultipliers.clear
       ~SlopeMultipliers.copy
       ~SlopeMultipliers.fromkeys
       ~SlopeMultipliers.get
       ~SlopeMultipliers.items
       ~SlopeMultipliers.keys
-      ~SlopeMultipliers.pop
       ~SlopeMultipliers.popitem
       ~SlopeMultipliers.setdefault
-      ~SlopeMultipliers.update
       ~SlopeMultipliers.values
    
    

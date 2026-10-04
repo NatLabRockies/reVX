@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.plexos.simple_plant_builder &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.plexos.simple_plant_builder &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,11 +645,11 @@
              
   <h1>Source code for reVX.plexos.simple_plant_builder</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="sd">Created on Wed Aug 21 13:47:43 2019</span>
 
 <span class="sd">@author: gbuster</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">concurrent.futures</span><span class="w"> </span><span class="kn">import</span> <span class="n">as_completed</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
@@ -652,16 +669,16 @@
 <div class="viewcode-block" id="SimplePlantBuilder">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.simple_plant_builder.SimplePlantBuilder.html#reVX.plexos.simple_plant_builder.SimplePlantBuilder">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">SimplePlantBuilder</span><span class="p">(</span><span class="n">BaseProfileAggregation</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Class to build generation profiles for &quot;plants&quot; by aggregating resource</span>
+<span class="w">    </span><span class="sd">"""Class to build generation profiles for "plants" by aggregating resource</span>
 <span class="sd">    from nearest neighbor supply curve points.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plant_meta</span><span class="p">,</span> <span class="n">rev_sc</span><span class="p">,</span> <span class="n">cf_fpath</span><span class="p">,</span> <span class="n">forecast_fpath</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                 <span class="n">plant_name_col</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tech_tag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timezone</span><span class="o">=</span><span class="s1">&#39;UTC&#39;</span><span class="p">,</span>
+                 <span class="n">plant_name_col</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tech_tag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timezone</span><span class="o">=</span><span class="s1">'UTC'</span><span class="p">,</span>
                  <span class="n">share_resource</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                 <span class="n">sc_mean_cf_col</span><span class="o">=</span><span class="s1">&#39;mean_cf&#39;</span><span class="p">,</span> <span class="n">sc_cap_col</span><span class="o">=</span><span class="s1">&#39;capacity&#39;</span><span class="p">,</span>
+                 <span class="n">sc_mean_cf_col</span><span class="o">=</span><span class="s1">'mean_cf'</span><span class="p">,</span> <span class="n">sc_cap_col</span><span class="o">=</span><span class="s1">'capacity'</span><span class="p">,</span>
                  <span class="n">dset_tag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bespoke</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Run plexos aggregation.</span>
+<span class="w">        </span><span class="sd">"""Run plexos aggregation.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -703,7 +720,7 @@
 <span class="sd">            Supply curve point capacity column name in the rev_sc table</span>
 <span class="sd">        dset_tag : str</span>
 <span class="sd">            Dataset tag to append to dataset names in cf profile file. e.g. If</span>
-<span class="sd">            the cf profile file is a multi year file using dset_tag=&quot;-2008&quot;</span>
+<span class="sd">            the cf profile file is a multi year file using dset_tag="-2008"</span>
 <span class="sd">            will enable us to select the corresponding datasets</span>
 <span class="sd">            (cf_mean-2008, cf_profile-2008, etc)</span>
 <span class="sd">        bespoke : bool</span>
@@ -712,9 +729,9 @@
 <span class="sd">            profiles at the supply curve grid resolution which is different</span>
 <span class="sd">            than traditional reV generation outputs that are on the resource</span>
 <span class="sd">            grid resolution.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Initializing SimplePlantBuilder.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Initializing SimplePlantBuilder.'</span><span class="p">)</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_res_gids</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span> <span class="o">=</span> <span class="n">parse_table</span><span class="p">(</span><span class="n">plant_meta</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -730,22 +747,22 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">sc_mean_cf_col</span> <span class="o">=</span> <span class="n">sc_mean_cf_col</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">sc_cap_col</span> <span class="o">=</span> <span class="n">sc_cap_col</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_dset_tag</span> <span class="o">=</span> <span class="n">dset_tag</span> <span class="k">if</span> <span class="n">dset_tag</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dset_tag</span> <span class="o">=</span> <span class="n">dset_tag</span> <span class="k">if</span> <span class="n">dset_tag</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="k">else</span> <span class="s2">""</span>
 
-        <span class="n">required</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;sc_gid&#39;</span><span class="p">,</span> <span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;res_gids&#39;</span><span class="p">,</span>
-                    <span class="s1">&#39;gid_counts&#39;</span><span class="p">,</span> <span class="n">sc_mean_cf_col</span><span class="p">,</span> <span class="n">sc_cap_col</span><span class="p">)</span>
+        <span class="n">required</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'sc_gid'</span><span class="p">,</span> <span class="s1">'latitude'</span><span class="p">,</span> <span class="s1">'longitude'</span><span class="p">,</span> <span class="s1">'res_gids'</span><span class="p">,</span>
+                    <span class="s1">'gid_counts'</span><span class="p">,</span> <span class="n">sc_mean_cf_col</span><span class="p">,</span> <span class="n">sc_cap_col</span><span class="p">)</span>
         <span class="n">missing</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">required</span> <span class="k">if</span> <span class="n">r</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">]</span>
         <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">missing</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;SimplePlantBuilder needs the following missing columns &#39;</span>
-                   <span class="s1">&#39;in the rev_sc input: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">missing</span><span class="p">))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'SimplePlantBuilder needs the following missing columns '</span>
+                   <span class="s1">'in the rev_sc input: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">missing</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
-        <span class="n">required</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="s1">&#39;capacity&#39;</span><span class="p">)</span>
+        <span class="n">required</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'latitude'</span><span class="p">,</span> <span class="s1">'longitude'</span><span class="p">,</span> <span class="s1">'capacity'</span><span class="p">)</span>
         <span class="n">missing</span> <span class="o">=</span> <span class="p">[</span><span class="n">r</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">required</span><span class="p">]</span>
         <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">missing</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;SimplePlantBuilder needs the following missing columns &#39;</span>
-                   <span class="s1">&#39;in the plant_meta input: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">missing</span><span class="p">))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'SimplePlantBuilder needs the following missing columns '</span>
+                   <span class="s1">'in the plant_meta input: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">missing</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -754,30 +771,30 @@
                                                      <span class="bp">self</span><span class="o">.</span><span class="n">_forecast_fpath</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">bespoke</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">convert_bespoke_sc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">,</span> <span class="s1">&#39;gid&#39;</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">convert_bespoke_sc</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">,</span> <span class="s1">'gid'</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_compute_gid_capacities</span><span class="p">()</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="s1">&#39;potential_capacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">sc_cap_col</span><span class="p">]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="s1">'potential_capacity'</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">sc_cap_col</span><span class="p">]</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Finished initializing SimplePlantBuilder.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Finished initializing SimplePlantBuilder.'</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_compute_gid_capacities</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Compute the individual resource gid capacities and make a new</span>
-<span class="sd">        column in the SC table.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Compute the individual resource gid capacities and make a new</span>
+<span class="sd">        column in the SC table."""</span>
 
-        <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;res_gids&#39;</span><span class="p">,</span> <span class="s1">&#39;gid_counts&#39;</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">'res_gids'</span><span class="p">,</span> <span class="s1">'gid_counts'</span><span class="p">):</span>
             <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="n">label</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="n">label</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">)</span>
 
-        <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="s1">&#39;gid_capacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="s1">'gid_capacity'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-            <span class="n">gid_counts</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;gid_counts&#39;</span><span class="p">]</span>
+            <span class="n">gid_counts</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s1">'gid_counts'</span><span class="p">]</span>
             <span class="n">total_counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">gid_counts</span><span class="p">)</span>
             <span class="n">gid_capacity</span> <span class="o">=</span> <span class="n">gid_counts</span> <span class="o">/</span> <span class="n">total_counts</span> <span class="o">*</span> <span class="n">row</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">sc_cap_col</span><span class="p">]</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;gid_capacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">gid_capacity</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">'gid_capacity'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">gid_capacity</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_make_node_map</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Run haversine balltree to map plant locations to nearest supply</span>
+<span class="w">        </span><span class="sd">"""Run haversine balltree to map plant locations to nearest supply</span>
 <span class="sd">        supply curve points</span>
 
 <span class="sd">        Returns</span>
@@ -787,8 +804,8 @@
 <span class="sd">            mapped to the SC points where n is the number of plants, m is the</span>
 <span class="sd">            number of SC points, and each row in the array yields the sc points</span>
 <span class="sd">            m closest to the plant n.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Making node map...&#39;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Making node map...'</span><span class="p">)</span>
 
         <span class="n">plant_coord_labels</span> <span class="o">=</span> <span class="n">get_coord_labels</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span><span class="p">)</span>
         <span class="n">sc_coord_labels</span> <span class="o">=</span> <span class="n">get_coord_labels</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">)</span>
@@ -796,37 +813,37 @@
         <span class="c1"># pylint: disable=not-callable</span>
         <span class="n">sc_coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">[</span><span class="n">sc_coord_labels</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
         <span class="n">plant_coords</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span><span class="p">[</span><span class="n">plant_coord_labels</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-        <span class="n">tree</span> <span class="o">=</span> <span class="n">BallTree</span><span class="p">(</span><span class="n">sc_coords</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">&#39;haversine&#39;</span><span class="p">)</span>
+        <span class="n">tree</span> <span class="o">=</span> <span class="n">BallTree</span><span class="p">(</span><span class="n">sc_coords</span><span class="p">,</span> <span class="n">metric</span><span class="o">=</span><span class="s1">'haversine'</span><span class="p">)</span>
         <span class="n">ind</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">plant_coords</span><span class="p">,</span> <span class="n">return_distance</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                          <span class="n">k</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="p">))</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Finished mkaing node map.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Finished mkaing node map.'</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">ind</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">plant_meta</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Get plant meta data for the requested plant buildout</span>
+<span class="w">        </span><span class="sd">"""Get plant meta data for the requested plant buildout</span>
 <span class="sd">        with buildout information</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        pd.DataFrame</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
-            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">&#39;sc_gids&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">&#39;res_gids&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">&#39;gen_gids&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">&#39;res_built&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">'sc_gids'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">'res_gids'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">'gen_gids'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span><span class="p">[</span><span class="s1">'res_built'</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_output_meta</span>
 
 <div class="viewcode-block" id="SimplePlantBuilder.assign_plant_buildouts">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.simple_plant_builder.SimplePlantBuilder.html#reVX.plexos.simple_plant_builder.SimplePlantBuilder.assign_plant_buildouts">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">assign_plant_buildouts</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;March through the plant meta data and make subsets of the supply</span>
+<span class="w">        </span><span class="sd">"""March through the plant meta data and make subsets of the supply</span>
 <span class="sd">        curve table that will be built out for each plant. The supply curve</span>
 <span class="sd">        table attribute of this SimplePlantBuilder instance will be manipulated</span>
 <span class="sd">        such that total sc point capacity and resource gid capacity is reduced</span>
@@ -844,17 +861,17 @@
 <span class="sd">            of the SimplePlantBuilder instance, because the tables in this dict</span>
 <span class="sd">            show what should be built, and the sc table attribute will show</span>
 <span class="sd">            what is remaining.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">plant_sc_builds</span> <span class="o">=</span> <span class="p">{}</span>
         <span class="n">built_res_gids</span> <span class="o">=</span> <span class="p">[]</span>
 
         <span class="c1"># March through plant meta data table in order provided</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">plant_row</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Starting plant buildout assignment for plant </span><span class="si">{}</span><span class="s1"> &#39;</span>
-                         <span class="s1">&#39;out of </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span><span class="p">)))</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Starting plant buildout assignment for plant </span><span class="si">{}</span><span class="s1"> '</span>
+                         <span class="s1">'out of </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_plant_meta</span><span class="p">)))</span>
 
-            <span class="n">plant_cap_to_build</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">plant_row</span><span class="p">[</span><span class="s1">&#39;capacity&#39;</span><span class="p">])</span>
+            <span class="n">plant_cap_to_build</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">plant_row</span><span class="p">[</span><span class="s1">'capacity'</span><span class="p">])</span>
             <span class="n">single_plant_sc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()</span>
 
             <span class="c1"># March through the SC table in order of the node map</span>
@@ -866,8 +883,8 @@
                 <span class="k">if</span> <span class="n">sc_capacity</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
                     <span class="c1"># Make arrays of gid capacities that will be built</span>
                     <span class="c1"># for this plant and also saved for subsequent plants.</span>
-                    <span class="n">sc_point_res_gids</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sc_point</span><span class="p">[</span><span class="s1">&#39;res_gids&#39;</span><span class="p">])</span>
-                    <span class="n">cap_orig</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sc_point</span><span class="p">[</span><span class="s1">&#39;gid_capacity&#39;</span><span class="p">])</span>
+                    <span class="n">sc_point_res_gids</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sc_point</span><span class="p">[</span><span class="s1">'res_gids'</span><span class="p">])</span>
+                    <span class="n">cap_orig</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">sc_point</span><span class="p">[</span><span class="s1">'gid_capacity'</span><span class="p">])</span>
                     <span class="n">cap_remain</span> <span class="o">=</span> <span class="n">cap_orig</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
                     <span class="n">cap_build</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">cap_orig</span><span class="p">)</span>
 
@@ -877,9 +894,9 @@
                     <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">order</span><span class="p">:</span>
                         <span class="n">res_gid</span> <span class="o">=</span> <span class="n">sc_point_res_gids</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
                         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_share_res</span> <span class="ow">or</span> <span class="n">res_gid</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">built_res_gids</span><span class="p">:</span>
-                            <span class="c1"># add built capacity to the &quot;to build&quot; array</span>
+                            <span class="c1"># add built capacity to the "to build" array</span>
                             <span class="c1"># (on a resource point per sc point basis)</span>
-                            <span class="c1"># and remove from the &quot;remaining&quot; array</span>
+                            <span class="c1"># and remove from the "remaining" array</span>
                             <span class="n">built</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">minimum</span><span class="p">(</span><span class="n">plant_cap_to_build</span><span class="p">,</span> <span class="n">cap_orig</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
                             <span class="n">cap_build</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">built</span>
                             <span class="n">cap_remain</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">-=</span> <span class="n">built</span>
@@ -896,8 +913,8 @@
                         <span class="n">cap_orig</span> <span class="o">=</span> <span class="n">cap_orig</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
                         <span class="n">sc_point</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">sc_cap_col</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cap_build</span><span class="p">)</span>
-                        <span class="n">sc_point</span><span class="p">[</span><span class="s1">&#39;built_capacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cap_build</span><span class="p">)</span>
-                        <span class="n">sc_point</span><span class="p">[</span><span class="s1">&#39;gid_capacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_build</span>
+                        <span class="n">sc_point</span><span class="p">[</span><span class="s1">'built_capacity'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">cap_build</span><span class="p">)</span>
+                        <span class="n">sc_point</span><span class="p">[</span><span class="s1">'gid_capacity'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_build</span>
                         <span class="n">single_plant_sc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">single_plant_sc</span><span class="p">,</span>
                                                      <span class="n">sc_point</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">],</span>
                                                     <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -906,14 +923,14 @@
                         <span class="n">cap_remain</span> <span class="o">=</span> <span class="n">cap_remain</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
 
                         <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">sc_loc</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sc_cap_col</span><span class="p">]</span> <span class="o">-=</span> <span class="n">cap_built</span>
-                        <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">sc_loc</span><span class="p">,</span> <span class="s1">&#39;gid_capacity&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_remain</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">_sc_table</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">sc_loc</span><span class="p">,</span> <span class="s1">'gid_capacity'</span><span class="p">]</span> <span class="o">=</span> <span class="n">cap_remain</span>
 
                 <span class="c1"># buildout for this plant is fully complete</span>
                 <span class="k">if</span> <span class="n">plant_cap_to_build</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
                     <span class="n">plant_sc_builds</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">single_plant_sc</span>
                     <span class="k">break</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Finished plant buildout assignment.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Finished plant buildout assignment.'</span><span class="p">)</span>
 
         <span class="k">return</span> <span class="n">plant_sc_builds</span></div>
 
@@ -921,14 +938,14 @@
 <div class="viewcode-block" id="SimplePlantBuilder.check_valid_buildouts">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.simple_plant_builder.SimplePlantBuilder.html#reVX.plexos.simple_plant_builder.SimplePlantBuilder.check_valid_buildouts">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">check_valid_buildouts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plant_sc_builds</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Check that plant buildouts are mapped to valid resource data that</span>
-<span class="sd">        can be found in the cf_fpath input.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Check that plant buildouts are mapped to valid resource data that</span>
+<span class="sd">        can be found in the cf_fpath input."""</span>
 
         <span class="n">global_built_res_gids</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">single_plant_sc</span> <span class="ow">in</span> <span class="n">plant_sc_builds</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="n">sc_res_gids</span> <span class="o">=</span> <span class="n">single_plant_sc</span><span class="p">[</span><span class="s1">&#39;res_gids&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+            <span class="n">sc_res_gids</span> <span class="o">=</span> <span class="n">single_plant_sc</span><span class="p">[</span><span class="s1">'res_gids'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
             <span class="n">sc_res_gids</span> <span class="o">=</span> <span class="p">[</span><span class="n">g</span> <span class="k">for</span> <span class="n">subset</span> <span class="ow">in</span> <span class="n">sc_res_gids</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">subset</span><span class="p">]</span>
-            <span class="n">gid_caps</span> <span class="o">=</span> <span class="n">single_plant_sc</span><span class="p">[</span><span class="s1">&#39;gid_capacity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+            <span class="n">gid_caps</span> <span class="o">=</span> <span class="n">single_plant_sc</span><span class="p">[</span><span class="s1">'gid_capacity'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
             <span class="n">gid_caps</span> <span class="o">=</span> <span class="p">[</span><span class="n">g</span> <span class="k">for</span> <span class="n">subset</span> <span class="ow">in</span> <span class="n">gid_caps</span> <span class="k">for</span> <span class="n">g</span> <span class="ow">in</span> <span class="n">subset</span><span class="p">]</span>
             <span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">gid_caps</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">sc_res_gids</span><span class="p">)</span>
             <span class="n">plant_built_res_gids</span> <span class="o">=</span> <span class="p">[</span><span class="n">gid</span> <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">gid</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sc_res_gids</span><span class="p">)</span>
@@ -936,16 +953,16 @@
             <span class="n">missing</span> <span class="o">=</span> <span class="p">[</span><span class="n">gid</span> <span class="k">for</span> <span class="n">gid</span> <span class="ow">in</span> <span class="n">plant_built_res_gids</span>
                        <span class="k">if</span> <span class="n">gid</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">available_res_gids</span><span class="p">]</span>
             <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">missing</span><span class="p">):</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Plant index </span><span class="si">{}</span><span class="s1"> was mapped to resource gids that are &#39;</span>
-                       <span class="s1">&#39;missing from the cf file: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">missing</span><span class="p">))</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Plant index </span><span class="si">{}</span><span class="s1"> was mapped to resource gids that are '</span>
+                       <span class="s1">'missing from the cf file: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">missing</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
             <span class="n">shared</span> <span class="o">=</span> <span class="p">[</span><span class="n">gid</span> <span class="k">for</span> <span class="n">gid</span> <span class="ow">in</span> <span class="n">plant_built_res_gids</span>
                       <span class="k">if</span> <span class="n">gid</span> <span class="ow">in</span> <span class="n">global_built_res_gids</span><span class="p">]</span>
             <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">shared</span><span class="p">)</span> <span class="ow">and</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_share_res</span><span class="p">:</span>
-                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;SimplePlantBuilder shared resource gids when it &#39;</span>
-                       <span class="s1">&#39;should not have: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">shared</span><span class="p">))</span>
+                <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'SimplePlantBuilder shared resource gids when it '</span>
+                       <span class="s1">'should not have: </span><span class="si">{}</span><span class="s1">'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">shared</span><span class="p">))</span>
                 <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
                 <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
@@ -955,14 +972,14 @@
 <div class="viewcode-block" id="SimplePlantBuilder.make_profiles">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.simple_plant_builder.SimplePlantBuilder.html#reVX.plexos.simple_plant_builder.SimplePlantBuilder.make_profiles">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">make_profiles</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plant_sc_builds</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Make a 2D array of aggregated plant gen profiles.</span>
+<span class="w">        </span><span class="sd">"""Make a 2D array of aggregated plant gen profiles.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        profiles : np.ndarray</span>
 <span class="sd">            (t, n) array of plant  eneration profiles where t is the</span>
 <span class="sd">            timeseries length and n is the number of plants.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
             <span class="n">profiles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_profiles_parallel</span><span class="p">(</span><span class="n">plant_sc_builds</span><span class="p">)</span>
@@ -973,20 +990,20 @@
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_make_profiles_parallel</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plant_sc_builds</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Make a 2D array of aggregated plant gen profiles in parallel.</span>
+<span class="w">        </span><span class="sd">"""Make a 2D array of aggregated plant gen profiles in parallel.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        profiles : np.ndarray</span>
 <span class="sd">            (t, n) array of plant node generation profiles where t is the</span>
 <span class="sd">            timeseries length and n is the number of plants.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Starting plant profile buildout in parallel.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Starting plant profile buildout in parallel.'</span><span class="p">)</span>
         <span class="n">profiles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_init_output</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plant_meta</span><span class="p">))</span>
         <span class="n">progress</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="n">futures</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">&#39;reVX&#39;</span><span class="p">]</span>
+        <span class="n">loggers</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">'reVX'</span><span class="p">]</span>
         <span class="k">with</span> <span class="n">SpawnProcessPool</span><span class="p">(</span><span class="n">max_workers</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_workers</span><span class="p">,</span>
                               <span class="n">loggers</span><span class="o">=</span><span class="n">loggers</span><span class="p">)</span> <span class="k">as</span> <span class="n">exe</span><span class="p">:</span>
             <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">plant_sc_subset</span> <span class="ow">in</span> <span class="n">plant_sc_builds</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -1008,23 +1025,23 @@
                 <span class="n">current_prog</span> <span class="o">=</span> <span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">//</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">futures</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span><span class="p">)</span>
                 <span class="k">if</span> <span class="n">current_prog</span> <span class="o">&gt;</span> <span class="n">progress</span><span class="p">:</span>
                     <span class="n">progress</span> <span class="o">=</span> <span class="n">current_prog</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> </span><span class="si">% o</span><span class="s1">f plant node profiles built.&#39;</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> </span><span class="si">% o</span><span class="s1">f plant node profiles built.'</span>
                                 <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">progress</span><span class="p">))</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Finished plant profile buildout.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Finished plant profile buildout.'</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">profiles</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_make_profiles_serial</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">plant_sc_builds</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Make a 2D array of aggregated plexos gen profiles in serial.</span>
+<span class="w">        </span><span class="sd">"""Make a 2D array of aggregated plexos gen profiles in serial.</span>
 
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">        profiles : np.ndarray</span>
 <span class="sd">            (t, n) array of Plexos node generation profiles where t is the</span>
 <span class="sd">            timeseries length and n is the number of plexos nodes.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Starting plant profile buildout in serial.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Starting plant profile buildout in serial.'</span><span class="p">)</span>
         <span class="n">profiles</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_init_output</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">plant_meta</span><span class="p">))</span>
         <span class="n">progress</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">plant_sc_subset</span> <span class="ow">in</span> <span class="n">plant_sc_builds</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
@@ -1042,21 +1059,21 @@
                             <span class="o">//</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">node_map</span><span class="p">))</span> <span class="o">/</span> <span class="mi">100</span><span class="p">))</span>
             <span class="k">if</span> <span class="n">current_prog</span> <span class="o">&gt;</span> <span class="n">progress</span><span class="p">:</span>
                 <span class="n">progress</span> <span class="o">=</span> <span class="n">current_prog</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;</span><span class="si">{}</span><span class="s1"> </span><span class="si">% o</span><span class="s1">f plant profiles built.&#39;</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'</span><span class="si">{}</span><span class="s1"> </span><span class="si">% o</span><span class="s1">f plant profiles built.'</span>
                             <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">progress</span><span class="p">))</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Finished plant profile buildout.&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Finished plant profile buildout.'</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">profiles</span>
 
 <div class="viewcode-block" id="SimplePlantBuilder.run">
 <a class="viewcode-back" href="../../../_autosummary/reVX.plexos.simple_plant_builder.SimplePlantBuilder.html#reVX.plexos.simple_plant_builder.SimplePlantBuilder.run">[docs]</a>
     <span class="nd">@classmethod</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">plant_meta</span><span class="p">,</span> <span class="n">rev_sc</span><span class="p">,</span> <span class="n">cf_fpath</span><span class="p">,</span> <span class="n">forecast_fpath</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">plant_name_col</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tech_tag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timezone</span><span class="o">=</span><span class="s1">&#39;UTC&#39;</span><span class="p">,</span>
+            <span class="n">plant_name_col</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tech_tag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">timezone</span><span class="o">=</span><span class="s1">'UTC'</span><span class="p">,</span>
             <span class="n">share_resource</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">max_workers</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">out_fpath</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-            <span class="n">sc_mean_cf_col</span><span class="o">=</span><span class="s1">&#39;mean_cf&#39;</span><span class="p">,</span> <span class="n">sc_cap_col</span><span class="o">=</span><span class="s1">&#39;capacity&#39;</span><span class="p">,</span>
+            <span class="n">sc_mean_cf_col</span><span class="o">=</span><span class="s1">'mean_cf'</span><span class="p">,</span> <span class="n">sc_cap_col</span><span class="o">=</span><span class="s1">'capacity'</span><span class="p">,</span>
             <span class="n">dset_tag</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bespoke</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Build profiles and meta data.</span>
+<span class="w">        </span><span class="sd">"""Build profiles and meta data.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1102,7 +1119,7 @@
 <span class="sd">            Supply curve point capacity column name in the rev_sc table</span>
 <span class="sd">        dset_tag : str</span>
 <span class="sd">            Dataset tag to append to dataset names in cf profile file. e.g. If</span>
-<span class="sd">            the cf profile file is a multi year file using dset_tag=&quot;-2008&quot;</span>
+<span class="sd">            the cf profile file is a multi year file using dset_tag="-2008"</span>
 <span class="sd">            will enable us to select the corresponding datasets</span>
 <span class="sd">            (cf_mean-2008, cf_profile-2008, etc)</span>
 <span class="sd">        bespoke : bool</span>
@@ -1121,7 +1138,7 @@
 <span class="sd">            Time index for the profiles.</span>
 <span class="sd">        profiles : np.ndarray</span>
 <span class="sd">            Generation profile timeseries in MW at each plant.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">pb</span> <span class="o">=</span> <span class="bp">cls</span><span class="p">(</span><span class="n">plant_meta</span><span class="p">,</span> <span class="n">rev_sc</span><span class="p">,</span> <span class="n">cf_fpath</span><span class="p">,</span> <span class="n">forecast_fpath</span><span class="o">=</span><span class="n">forecast_fpath</span><span class="p">,</span>
                  <span class="n">plant_name_col</span><span class="o">=</span><span class="n">plant_name_col</span><span class="p">,</span> <span class="n">tech_tag</span><span class="o">=</span><span class="n">tech_tag</span><span class="p">,</span>

@@ -51,5 +51,6 @@ reVX.offshore.offshore\_inputs.OffshoreInputs
       ~OffshoreInputs.profile
       ~OffshoreInputs.row_ids
       ~OffshoreInputs.shape
+      ~OffshoreInputs.transform
    
    

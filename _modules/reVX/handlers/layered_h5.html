@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.handlers.layered_h5 &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.handlers.layered_h5 &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -628,7 +645,7 @@
              
   <h1>Source code for reVX.handlers.layered_h5</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">&quot;&quot;&quot;Handler for H5 file containing GeoTIFF layers. &quot;&quot;&quot;</span>
+<span class="sd">"""Handler for H5 file containing GeoTIFF layers. """</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
@@ -652,26 +669,26 @@
 <div class="viewcode-block" id="LayeredH5">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LayeredH5</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Handler for HDF5 file containing GeTIFF layers.</span>
+<span class="w">    </span><span class="sd">"""Handler for HDF5 file containing GeTIFF layers.</span>
 
 <span class="sd">    This handler represents an HDF5 file that stores various layers</span>
 <span class="sd">    (i.e. exclusion layers, setback layers, transmission layers, etc).</span>
 <span class="sd">    This file contains profile information, and this handler can be used</span>
 <span class="sd">    to convert to and from such files.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">SUPPORTED_FILE_ENDINGS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;.h5&quot;</span><span class="p">,</span> <span class="s2">&quot;.tif&quot;</span><span class="p">,</span> <span class="s2">&quot;.tiff&quot;</span><span class="p">}</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Supported template file endings.&quot;&quot;&quot;</span>
+    <span class="n">SUPPORTED_FILE_ENDINGS</span> <span class="o">=</span> <span class="p">{</span><span class="s2">".h5"</span><span class="p">,</span> <span class="s2">".tif"</span><span class="p">,</span> <span class="s2">".tiff"</span><span class="p">}</span>
+<span class="w">    </span><span class="sd">"""Supported template file endings."""</span>
 
-    <span class="n">LATITUDE</span> <span class="o">=</span> <span class="s2">&quot;latitude&quot;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Name of latitude values layer in HDF5 file.&quot;&quot;&quot;</span>
+    <span class="n">LATITUDE</span> <span class="o">=</span> <span class="s2">"latitude"</span>
+<span class="w">    </span><span class="sd">"""Name of latitude values layer in HDF5 file."""</span>
 
-    <span class="n">LONGITUDE</span> <span class="o">=</span> <span class="s2">&quot;longitude&quot;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Name of longitude values layer in HDF5 file.&quot;&quot;&quot;</span>
+    <span class="n">LONGITUDE</span> <span class="o">=</span> <span class="s2">"longitude"</span>
+<span class="w">    </span><span class="sd">"""Name of longitude values layer in HDF5 file."""</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h5_file</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span>
                  <span class="n">template_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">block_size</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -681,7 +698,7 @@
 <span class="sd">            Otherwise, the `template_file` input can be ignored and this</span>
 <span class="sd">            input will be used as the template file.</span>
 <span class="sd">        hsds : bool, optional</span>
-<span class="sd">            Boolean flag to use h5pyd to handle HDF5 &#39;files&#39; hosted on</span>
+<span class="sd">            Boolean flag to use h5pyd to handle HDF5 'files' hosted on</span>
 <span class="sd">            AWS behind HSDS. By default, ``False``.</span>
 <span class="sd">        chunks : tuple, optional</span>
 <span class="sd">            Chunk size of exclusions in HDF5 file and any output</span>
@@ -696,7 +713,7 @@
 <span class="sd">            Setting this value can help reduce memory issues when</span>
 <span class="sd">            building a ``LayeredH5`` file. If ``None``, the lat/lon</span>
 <span class="sd">            arrays are processed in full. By default, ``None``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span> <span class="o">=</span> <span class="n">h5_file</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_hsds</span> <span class="o">=</span> <span class="n">hsds</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span> <span class="o">=</span> <span class="n">chunks</span>
@@ -705,20 +722,20 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_block_size</span> <span class="o">=</span> <span class="n">block_size</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> for </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+        <span class="k">return</span> <span class="s2">"</span><span class="si">{}</span><span class="s2"> for </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">):</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">write_geotiff_to_h5</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">layer</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is not present in </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{}</span><span class="s2"> is not present in </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Extracting </span><span class="si">%s</span><span class="s1"> from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">layer</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Extracting </span><span class="si">%s</span><span class="s1"> from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">layer</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
         <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_hsds</span><span class="p">)</span> <span class="k">as</span> <span class="n">h5</span><span class="p">:</span>
-            <span class="n">profile</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">get_attrs</span><span class="p">(</span><span class="n">dset</span><span class="o">=</span><span class="n">layer</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;profile&#39;</span><span class="p">)</span>
+            <span class="n">profile</span> <span class="o">=</span> <span class="n">h5</span><span class="o">.</span><span class="n">get_attrs</span><span class="p">(</span><span class="n">dset</span><span class="o">=</span><span class="n">layer</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'profile'</span><span class="p">)</span>
             <span class="n">values</span> <span class="o">=</span> <span class="n">h5</span><span class="p">[</span><span class="n">layer</span><span class="p">]</span>
 
         <span class="k">if</span> <span class="n">profile</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
@@ -727,35 +744,35 @@
         <span class="k">return</span> <span class="n">profile</span><span class="p">,</span> <span class="n">values</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_validate_template</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Validate template file. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Validate template file. """</span>
         <span class="n">valid_file_ending</span> <span class="o">=</span> <span class="nb">any</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">fe</span><span class="p">)</span>
                                 <span class="k">for</span> <span class="n">fe</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">SUPPORTED_FILE_ENDINGS</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">valid_file_ending</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Template file </span><span class="si">{!r}</span><span class="s2"> format is not supported! File must end &quot;</span>
-                   <span class="s2">&quot;in one of: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"Template file </span><span class="si">{!r}</span><span class="s2"> format is not supported! File must end "</span>
+                   <span class="s2">"in one of: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span>
                                           <span class="bp">self</span><span class="o">.</span><span class="n">SUPPORTED_FILE_ENDINGS</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hsds</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Template file </span><span class="si">{!r}</span><span class="s2"> not found on disk!&quot;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"Template file </span><span class="si">{!r}</span><span class="s2"> not found on disk!"</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_extract_profile</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Extract template profile. &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.h5&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Extract template profile. """</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".h5"</span><span class="p">):</span>
             <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_hsds</span><span class="p">)</span> <span class="k">as</span> <span class="n">h5</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">global_attrs</span><span class="p">[</span><span class="s1">&#39;profile&#39;</span><span class="p">])</span>
+                <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">global_attrs</span><span class="p">[</span><span class="s1">'profile'</span><span class="p">])</span>
 
         <span class="k">with</span> <span class="n">Geotiff</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span> <span class="k">as</span> <span class="n">geo</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">geo</span><span class="o">.</span><span class="n">profile</span>
 
     <span class="c1"># pylint: disable=unpacking-non-sequence</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">_extract_lat_lon</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Extract template lat/lons. &quot;&quot;&quot;</span>
-        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.h5&quot;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Extract template lat/lons. """</span>
+        <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">".h5"</span><span class="p">):</span>
             <span class="k">with</span> <span class="n">Resource</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_hsds</span><span class="p">)</span> <span class="k">as</span> <span class="n">h5</span><span class="p">:</span>
                 <span class="k">return</span> <span class="n">h5</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">LATITUDE</span><span class="p">],</span> <span class="n">h5</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">LONGITUDE</span><span class="p">]</span>
 
@@ -764,15 +781,15 @@
                 <span class="k">return</span> <span class="n">geo</span><span class="o">.</span><span class="n">lat_lon</span>
 
             <span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span> <span class="o">=</span> <span class="n">geo</span><span class="o">.</span><span class="n">shape</span>
-            <span class="n">out_lat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
-            <span class="n">out_lon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;float32&quot;</span><span class="p">)</span>
+            <span class="n">out_lat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">"float32"</span><span class="p">)</span>
+            <span class="n">out_lon</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">nrows</span><span class="p">,</span> <span class="n">ncols</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">"float32"</span><span class="p">)</span>
             <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">nrows</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_block_size</span><span class="p">):</span>
                 <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">ncols</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_block_size</span><span class="p">):</span>
-                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">&quot;Loading lat/lon starting at inds </span><span class="si">%d</span><span class="s2">, </span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">,</span>
+                    <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s2">"Loading lat/lon starting at inds </span><span class="si">%d</span><span class="s2">, </span><span class="si">%d</span><span class="s2">"</span><span class="p">,</span>
                                  <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
                     <span class="n">r_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_block_size</span><span class="p">)</span>
                     <span class="n">c_slice</span> <span class="o">=</span> <span class="nb">slice</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">y</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">_block_size</span><span class="p">)</span>
-                    <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">geo</span><span class="p">[</span><span class="s2">&quot;lat_lon&quot;</span><span class="p">,</span> <span class="n">r_slice</span><span class="p">,</span> <span class="n">c_slice</span><span class="p">]</span>
+                    <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">geo</span><span class="p">[</span><span class="s2">"lat_lon"</span><span class="p">,</span> <span class="n">r_slice</span><span class="p">,</span> <span class="n">c_slice</span><span class="p">]</span>
                     <span class="n">out_lat</span><span class="p">[</span><span class="n">r_slice</span><span class="p">,</span> <span class="n">c_slice</span><span class="p">]</span> <span class="o">=</span> <span class="n">lat</span>
                     <span class="n">out_lon</span><span class="p">[</span><span class="n">r_slice</span><span class="p">,</span> <span class="n">c_slice</span><span class="p">]</span> <span class="o">=</span> <span class="n">lon</span>
 
@@ -780,7 +797,7 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">template_file</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;str: Path to template file. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""str: Path to template file. """</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_template_file</span>
 
     <span class="nd">@template_file</span><span class="o">.</span><span class="n">setter</span>
@@ -790,21 +807,21 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">profile</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;dict: Template layer profile. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""dict: Template layer profile. """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_profile</span><span class="p">()</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_profile</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">shape</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;tuple: Template layer shape. &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;height&#39;</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;width&#39;</span><span class="p">]</span>
+<span class="w">        </span><span class="sd">"""tuple: Template layer shape. """</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'height'</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'width'</span><span class="p">]</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">layers</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;list: Available layers in HDF5 file. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""list: Available layers in HDF5 file. """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="si">!r}</span><span class="s2"> not found&quot;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"File </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="si">!r}</span><span class="s2"> not found"</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -814,58 +831,58 @@
 <div class="viewcode-block" id="LayeredH5.create_new">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.create_new">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">create_new</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Create a new layered HDF5 file.</span>
+<span class="w">        </span><span class="sd">"""Create a new layered HDF5 file.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        overwrite : bool, optional</span>
 <span class="sd">            Overwrite HDF5 file if is exists. By default, ``False``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">overwrite</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;File </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="si">!r}</span><span class="s2"> exits and overwrite=False&quot;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"File </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="si">!r}</span><span class="s2"> exits and overwrite=False"</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">FileExistsError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Must provide template file to initialize </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="si">}</span><span class="s2">!&quot;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"Must provide template file to initialize </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="si">}</span><span class="s2">!"</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_validate_template</span><span class="p">()</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Initializing </span><span class="si">%s</span><span class="s1"> from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Initializing </span><span class="si">%s</span><span class="s1"> from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                      <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span>
 
         <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_extract_lat_lon</span><span class="p">()</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Coordinates extracted from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Coordinates extracted from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span><span class="p">)</span>
 
         <span class="k">try</span><span class="p">:</span>
-            <span class="k">with</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">dst</span><span class="p">:</span>
+            <span class="k">with</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">dst</span><span class="p">:</span>
                 <span class="n">profile</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">)</span>
-                <span class="n">profile</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">&quot;dtype&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
-                <span class="n">dst</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;profile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Default profile:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+                <span class="n">profile</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="s2">"dtype"</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+                <span class="n">dst</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'profile'</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Default profile:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                              <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
-                <span class="n">dst</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Default shape:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
-                <span class="n">dst</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;chunks&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Default chunks:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">)</span>
+                <span class="n">dst</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'shape'</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Default shape:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+                <span class="n">dst</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'chunks'</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Default chunks:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">)</span>
 
-                <span class="n">profile</span><span class="p">[</span><span class="s1">&#39;dtype&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
-                <span class="n">profile</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+                <span class="n">profile</span><span class="p">[</span><span class="s1">'dtype'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
+                <span class="n">profile</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
                 <span class="n">ds</span> <span class="o">=</span> <span class="n">dst</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">LATITUDE</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">lat</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
                                         <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">lat</span><span class="p">,</span>
                                         <span class="n">chunks</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">)</span>
-                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;profile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- latitude coordinates created&#39;</span><span class="p">)</span>
+                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'profile'</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- latitude coordinates created'</span><span class="p">)</span>
 
                 <span class="n">ds</span> <span class="o">=</span> <span class="n">dst</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">LONGITUDE</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">lon</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
                                         <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">lon</span><span class="p">,</span>
                                         <span class="n">chunks</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">)</span>
-                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;profile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- longitude coordinates created&#39;</span><span class="p">)</span>
+                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'profile'</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- longitude coordinates created'</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">&quot;Error initializing </span><span class="si">%s</span><span class="s2">&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="s2">"Error initializing </span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">e</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">):</span>
                 <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span></div>
@@ -874,8 +891,8 @@
 <div class="viewcode-block" id="LayeredH5.write_layer_to_h5">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.write_layer_to_h5">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">write_layer_to_h5</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">profile</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                          <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scale_factor</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Write a layer to the HDF5 file.</span>
+                          <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scale_factor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Write a layer to the HDF5 file.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -893,7 +910,11 @@
 <span class="sd">            Scale factor to use to scale geotiff data when added to the</span>
 <span class="sd">            HDF5 file. By default, ``None``, which does not scale the</span>
 <span class="sd">            values.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        attrs : dict, optional</span>
+<span class="sd">            Additional metadata stored as layer dataset attributes.</span>
+<span class="sd">            Values must be supported by HDF5 attributes.</span>
+<span class="sd">            By default, ``None``.</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">create_new</span><span class="p">(</span><span class="n">overwrite</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 
@@ -901,47 +922,51 @@
             <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">expand_dims</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">values</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Shape of provided data </span><span class="si">{</span><span class="n">values</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="si">}</span><span class="s1"> does &#39;</span>
-                             <span class="sa">f</span><span class="s1">&#39;not match template raster </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Shape of provided data </span><span class="si">{</span><span class="n">values</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span><span class="si">}</span><span class="s1"> does '</span>
+                             <span class="sa">f</span><span class="s1">'not match template raster </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="si">}</span><span class="s1">.'</span><span class="p">)</span>
 
         <span class="n">chunks</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span>
         <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">chunks</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
             <span class="n">chunks</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">)</span> <span class="o">+</span> <span class="n">chunks</span>
 
-        <span class="k">with</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">h5py</span><span class="o">.</span><span class="n">File</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">'a'</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">layer_name</span> <span class="ow">in</span> <span class="n">f</span><span class="p">:</span>
                 <span class="n">ds</span> <span class="o">=</span> <span class="n">f</span><span class="p">[</span><span class="n">layer_name</span><span class="p">]</span>
                 <span class="n">ds</span><span class="p">[</span><span class="o">...</span><span class="p">]</span> <span class="o">=</span> <span class="n">values</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- </span><span class="si">%s</span><span class="s1"> values replaced&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- </span><span class="si">%s</span><span class="s1"> values replaced'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">ds</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">values</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span>
                                       <span class="n">dtype</span><span class="o">=</span><span class="n">values</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span>
                                       <span class="n">data</span><span class="o">=</span><span class="n">values</span><span class="p">)</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- </span><span class="si">%s</span><span class="s1"> created and loaded&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- </span><span class="si">%s</span><span class="s1"> created and loaded'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
 
             <span class="n">profile</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">profile</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">)</span>
-            <span class="n">profile</span><span class="p">[</span><span class="s1">&#39;dtype&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">values</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-            <span class="n">profile</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-            <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;profile&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Unique profile for </span><span class="si">%s</span><span class="s1"> added:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+            <span class="n">profile</span><span class="p">[</span><span class="s1">'dtype'</span><span class="p">]</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">values</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+            <span class="n">profile</span><span class="p">[</span><span class="s1">'count'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+            <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'profile'</span><span class="p">]</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Unique profile for </span><span class="si">%s</span><span class="s1"> added:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                          <span class="n">layer_name</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">))</span>
             <span class="k">if</span> <span class="n">description</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">description</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Description for </span><span class="si">%s</span><span class="s1"> added:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'description'</span><span class="p">]</span> <span class="o">=</span> <span class="n">description</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Description for </span><span class="si">%s</span><span class="s1"> added:</span><span class="se">\n</span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                              <span class="n">layer_name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span>
 
             <span class="k">if</span> <span class="n">scale_factor</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">&#39;scale_factor&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">scale_factor</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- scale_factor for </span><span class="si">%s</span><span class="s1"> added:</span><span class="se">\n</span><span class="si">%.2f</span><span class="s1">&#39;</span><span class="p">,</span>
-                             <span class="n">layer_name</span><span class="p">,</span> <span class="n">scale_factor</span><span class="p">)</span></div>
+                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="p">[</span><span class="s1">'scale_factor'</span><span class="p">]</span> <span class="o">=</span> <span class="n">scale_factor</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- scale_factor for </span><span class="si">%s</span><span class="s1"> added:</span><span class="se">\n</span><span class="si">%.2f</span><span class="s1">'</span><span class="p">,</span>
+                             <span class="n">layer_name</span><span class="p">,</span> <span class="n">scale_factor</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="n">attrs</span><span class="p">:</span>
+                <span class="n">ds</span><span class="o">.</span><span class="n">attrs</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">attrs</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="LayeredH5.write_geotiff_to_h5">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.write_geotiff_to_h5">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">write_geotiff_to_h5</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">check_tiff</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                             <span class="n">transform_atol</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                            <span class="n">scale_factor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;int16&#39;</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Transfer GeoTIFF to HDF5 confirming it matches existing layers.</span>
+                            <span class="n">scale_factor</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">'int16'</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                            <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Transfer GeoTIFF to HDF5 confirming it matches existing layers.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -963,11 +988,15 @@
 <span class="sd">        dtype : str, optional</span>
 <span class="sd">            Dtype to save GeoTIFF data as in the layered HDF5 file. Only</span>
 <span class="sd">            used when `scale_factor` input is not ``None``.</span>
-<span class="sd">            By default, ``&quot;int16&quot;``.</span>
+<span class="sd">            By default, ``"int16"``.</span>
 <span class="sd">        replace : bool, optional</span>
 <span class="sd">            Option to replace existing layer (if any).</span>
 <span class="sd">            By default, ``True``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        attrs : dict, optional</span>
+<span class="sd">            Additional metadata stored as layer dataset attributes.</span>
+<span class="sd">            Values must be supported by HDF5 attributes.</span>
+<span class="sd">            By default, ``None``.</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
             <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">:</span>
                 <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span> <span class="o">=</span> <span class="n">geotiff</span>
@@ -975,7 +1004,7 @@
 
         <span class="bp">self</span><span class="o">.</span><span class="n">_warn_or_error_for_existing_layer</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">replace</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- </span><span class="si">%s</span><span class="s1"> being extracted from </span><span class="si">%s</span><span class="s1"> and added to </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- </span><span class="si">%s</span><span class="s1"> being extracted from </span><span class="si">%s</span><span class="s1"> and added to </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span>
                      <span class="n">layer_name</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">check_tiff</span><span class="p">:</span>
@@ -986,34 +1015,34 @@
             <span class="n">profile</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">,</span> <span class="n">tif</span><span class="o">.</span><span class="n">values</span>
 
         <span class="k">if</span> <span class="n">scale_factor</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;scale_factor&#39;</span><span class="p">:</span> <span class="n">scale_factor</span><span class="p">}</span>
+            <span class="n">scaling_attrs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'scale_factor'</span><span class="p">:</span> <span class="n">scale_factor</span><span class="p">}</span>
             <span class="n">values</span> <span class="o">=</span> <span class="n">Outputs</span><span class="o">.</span><span class="n">_check_data_dtype</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">values</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span>
-                                               <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span>
+                                               <span class="n">attrs</span><span class="o">=</span><span class="n">scaling_attrs</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">write_layer_to_h5</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">profile</span><span class="o">=</span><span class="n">profile</span><span class="p">,</span>
                                <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
-                               <span class="n">scale_factor</span><span class="o">=</span><span class="n">scale_factor</span><span class="p">)</span></div>
+                               <span class="n">scale_factor</span><span class="o">=</span><span class="n">scale_factor</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="p">)</span></div>
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_warn_or_error_for_existing_layer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">replace</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Warn about existing layers. &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""Warn about existing layers. """</span>
         <span class="k">if</span> <span class="n">layer_name</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">layers</span><span class="p">:</span>
             <span class="k">return</span>
 
-        <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> is already present in </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+        <span class="n">msg</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{}</span><span class="s2"> is already present in </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">replace</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">+=</span> <span class="s2">&quot; and will be replaced&quot;</span>
+            <span class="n">msg</span> <span class="o">+=</span> <span class="s2">" and will be replaced"</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">+=</span> <span class="s2">&quot;, to &#39;replace&#39; set to True&quot;</span>
+            <span class="n">msg</span> <span class="o">+=</span> <span class="s2">", to 'replace' set to True"</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
 <div class="viewcode-block" id="LayeredH5.layer_to_geotiff">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.layer_to_geotiff">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">layer_to_geotiff</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layer</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Extract layer from HDF5 file and write to GeoTIFF file.</span>
+<span class="w">        </span><span class="sd">"""Extract layer from HDF5 file and write to GeoTIFF file.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1021,16 +1050,16 @@
 <span class="sd">            Layer to extract,</span>
 <span class="sd">        geotiff : str</span>
 <span class="sd">            Path to output GeoTIFF file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">profile</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="bp">self</span><span class="p">[</span><span class="n">layer</span><span class="p">]</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">- Writing </span><span class="si">%s</span><span class="s1"> to </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">layer</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'</span><span class="se">\t</span><span class="s1">- Writing </span><span class="si">%s</span><span class="s1"> to </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">layer</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">)</span>
         <span class="n">Geotiff</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">profile</span><span class="p">,</span> <span class="n">values</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="LayeredH5.save_data_using_h5_profile">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.save_data_using_h5_profile">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">save_data_using_h5_profile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Write to GeoTIFF file.</span>
+<span class="w">        </span><span class="sd">"""Write to GeoTIFF file.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1038,10 +1067,10 @@
 <span class="sd">            Layer to extract,</span>
 <span class="sd">        geotiff : str</span>
 <span class="sd">            Path to output GeoTIFF file.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">dtype</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="o">.</span><span class="n">name</span>
-        <span class="k">if</span> <span class="n">dtype</span> <span class="o">==</span> <span class="s1">&#39;bool&#39;</span><span class="p">:</span>
-            <span class="n">dtype</span> <span class="o">=</span> <span class="s1">&#39;uint8&#39;</span>
+        <span class="k">if</span> <span class="n">dtype</span> <span class="o">==</span> <span class="s1">'bool'</span><span class="p">:</span>
+            <span class="n">dtype</span> <span class="o">=</span> <span class="s1">'uint8'</span>
         <span class="n">profile</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">)</span>
 
         <span class="n">Geotiff</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">profile</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span></div>
@@ -1051,7 +1080,7 @@
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.load_data_using_h5_profile">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">load_data_using_h5_profile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">,</span> <span class="n">band</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                    <span class="n">skip_profile_test</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Load GeoTIFF data, converting to H5 profile if necessary.</span>
+<span class="w">        </span><span class="sd">"""Load GeoTIFF data, converting to H5 profile if necessary.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1070,7 +1099,7 @@
 <span class="sd">        -------</span>
 <span class="sd">        array-like</span>
 <span class="sd">            Raster data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">with</span> <span class="n">Geotiff</span><span class="p">(</span><span class="n">geotiff</span><span class="p">)</span> <span class="k">as</span> <span class="n">geo</span><span class="p">:</span>
             <span class="n">data</span> <span class="o">=</span> <span class="n">geo</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="n">band</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
@@ -1083,8 +1112,8 @@
             <span class="n">check_geotiff</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_chunks</span><span class="p">)</span>
         <span class="k">except</span> <span class="n">ProfileCheckError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">reproject</span><span class="p">:</span>
-                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Profile of </span><span class="si">%s</span><span class="s1"> does not match template, &#39;</span>
-                             <span class="s1">&#39;reprojecting&#39;</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Profile of </span><span class="si">%s</span><span class="s1"> does not match template, '</span>
+                             <span class="s1">'reprojecting'</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">)</span>
                 <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">reproject</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">src_profile</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span>
                                       <span class="n">init_dest</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
             <span class="k">else</span><span class="p">:</span>
@@ -1095,9 +1124,9 @@
 
 <div class="viewcode-block" id="LayeredH5.reproject">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.reproject">[docs]</a>
-    <span class="k">def</span><span class="w"> </span><span class="nf">reproject</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src_raster</span><span class="p">,</span> <span class="n">src_profile</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;float32&#39;</span><span class="p">,</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">reproject</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">src_raster</span><span class="p">,</span> <span class="n">src_profile</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">'float32'</span><span class="p">,</span>
                   <span class="n">init_dest</span><span class="o">=-</span><span class="mf">1.0</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Reproject a raster onto the template raster and transform.</span>
+<span class="w">        </span><span class="sd">"""Reproject a raster onto the template raster and transform.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1106,7 +1135,7 @@
 <span class="sd">        src_profile : dict</span>
 <span class="sd">            Source raster profile.</span>
 <span class="sd">        dtype : np.dtype, optional</span>
-<span class="sd">            Data type for destination raster. By default, ``&quot;float32&quot;``.</span>
+<span class="sd">            Data type for destination raster. By default, ``"float32"``.</span>
 <span class="sd">        init_des : float, optional</span>
 <span class="sd">            Value for cells outside of boundary of src_raster.</span>
 <span class="sd">            By default, ``-1.0``.</span>
@@ -1115,14 +1144,14 @@
 <span class="sd">        -------</span>
 <span class="sd">        array-like</span>
 <span class="sd">            Source data reprojected into the template projection.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">dest_raster</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">)</span>
         <span class="n">reproject</span><span class="p">(</span><span class="n">src_raster</span><span class="p">,</span>
                   <span class="n">destination</span><span class="o">=</span><span class="n">dest_raster</span><span class="p">,</span>
-                  <span class="n">src_transform</span><span class="o">=</span><span class="n">src_profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">],</span>
-                  <span class="n">src_crs</span><span class="o">=</span><span class="n">src_profile</span><span class="p">[</span><span class="s1">&#39;crs&#39;</span><span class="p">],</span>
-                  <span class="n">dst_transform</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">],</span>
-                  <span class="n">dst_crs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;crs&#39;</span><span class="p">],</span>
+                  <span class="n">src_transform</span><span class="o">=</span><span class="n">src_profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">],</span>
+                  <span class="n">src_crs</span><span class="o">=</span><span class="n">src_profile</span><span class="p">[</span><span class="s1">'crs'</span><span class="p">],</span>
+                  <span class="n">dst_transform</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">],</span>
+                  <span class="n">dst_crs</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'crs'</span><span class="p">],</span>
                   <span class="n">num_threads</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span>
                   <span class="n">resampling</span><span class="o">=</span><span class="n">Resampling</span><span class="o">.</span><span class="n">nearest</span><span class="p">,</span>
                   <span class="n">INIT_DEST</span><span class="o">=</span><span class="n">init_dest</span><span class="p">)</span>
@@ -1133,8 +1162,8 @@
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.layers_to_h5">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">layers_to_h5</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layers</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">check_tiff</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                      <span class="n">transform_atol</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">descriptions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                     <span class="n">scale_factors</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Transfer GeoTIFF layers into layered HDF5 file.</span>
+                     <span class="n">scale_factors</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">attrs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Transfer GeoTIFF layers into layered HDF5 file.</span>
 
 <span class="sd">        If layered HDF5 file does not exist, it is created and</span>
 <span class="sd">        populated.</span>
@@ -1160,9 +1189,12 @@
 <span class="sd">            Scale factors and dtypes to use when scaling given layers.</span>
 <span class="sd">            By default, ``None``, which does not apply any scale</span>
 <span class="sd">            factors.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        attrs : dict, optional</span>
+<span class="sd">            Mapping of layer names to dictionaries of HDF5 dataset</span>
+<span class="sd">            attributes. By default, ``None``.</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">layers</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-            <span class="n">layers</span> <span class="o">=</span> <span class="p">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">lyr</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]:</span> <span class="n">lyr</span>
+            <span class="n">layers</span> <span class="o">=</span> <span class="p">{</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">lyr</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)[</span><span class="mi">0</span><span class="p">]:</span> <span class="n">lyr</span>
                       <span class="k">for</span> <span class="n">lyr</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">}</span>
 
         <span class="k">if</span> <span class="n">descriptions</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
@@ -1171,14 +1203,16 @@
         <span class="k">if</span> <span class="n">scale_factors</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">scale_factors</span> <span class="o">=</span> <span class="p">{}</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Moving layers to </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+        <span class="n">attrs</span> <span class="o">=</span> <span class="n">attrs</span> <span class="ow">or</span> <span class="p">{}</span>
+
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Moving layers to </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">geotiff</span> <span class="ow">in</span> <span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;- Transferring </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'- Transferring </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
             <span class="n">description</span> <span class="o">=</span> <span class="n">descriptions</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
             <span class="n">scale</span> <span class="o">=</span> <span class="n">scale_factors</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
             <span class="k">if</span> <span class="n">scale</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">scale_factor</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="s1">&#39;scale_factor&#39;</span><span class="p">]</span>
-                <span class="n">dtype</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="s1">&#39;dtype&#39;</span><span class="p">]</span>
+                <span class="n">scale_factor</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="s1">'scale_factor'</span><span class="p">]</span>
+                <span class="n">dtype</span> <span class="o">=</span> <span class="n">scale</span><span class="p">[</span><span class="s1">'dtype'</span><span class="p">]</span>
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">scale_factor</span> <span class="o">=</span> <span class="kc">None</span>
                 <span class="n">dtype</span> <span class="o">=</span> <span class="kc">None</span>
@@ -1188,29 +1222,30 @@
                                      <span class="n">transform_atol</span><span class="o">=</span><span class="n">transform_atol</span><span class="p">,</span>
                                      <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">,</span>
                                      <span class="n">scale_factor</span><span class="o">=</span><span class="n">scale_factor</span><span class="p">,</span>
-                                     <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="n">replace</span><span class="p">)</span></div>
+                                     <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="n">replace</span><span class="p">,</span>
+                                     <span class="n">attrs</span><span class="o">=</span><span class="n">attrs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">layer_name</span><span class="p">))</span></div>
 
 
 <div class="viewcode-block" id="LayeredH5.extract_layers">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.extract_layers">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">extract_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layers</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Extract layers from HDF5 file and save to disk as GeoTIFFs.</span>
+<span class="w">        </span><span class="sd">"""Extract layers from HDF5 file and save to disk as GeoTIFFs.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        layers : dict</span>
 <span class="sd">            Dictionary mapping layer names to GeoTIFF files to create.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;Extracting layers from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'Extracting layers from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">layer_name</span><span class="p">,</span> <span class="n">geotiff</span> <span class="ow">in</span> <span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">&#39;- Extracting </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s1">'- Extracting </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">layer_to_geotiff</span><span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="LayeredH5.extract_all_layers">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredH5.html#reVX.handlers.layered_h5.LayeredH5.extract_all_layers">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">extract_all_layers</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">out_dir</span><span class="p">,</span> <span class="n">extract_lat_lon</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Extract all layers from HDF5 file and save to disk as GeoTIFFs.</span>
+<span class="w">        </span><span class="sd">"""Extract all layers from HDF5 file and save to disk as GeoTIFFs.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1220,7 +1255,7 @@
 <span class="sd">        extract_lat_lon : bool, default=False</span>
 <span class="sd">            Option to extract latitude and longitude layers in addition</span>
 <span class="sd">            to all other layers. By default, ``False``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">out_dir</span><span class="p">):</span>
             <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">out_dir</span><span class="p">)</span>
 
@@ -1229,7 +1264,7 @@
             <span class="n">layer_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">layer</span> <span class="k">for</span> <span class="n">layer</span> <span class="ow">in</span> <span class="n">layer_names</span>
                            <span class="k">if</span> <span class="n">layer</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">LATITUDE</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LONGITUDE</span><span class="p">}]</span>
 
-        <span class="n">layers</span> <span class="o">=</span> <span class="p">{</span><span class="n">layer_name</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2">.tif&quot;</span><span class="p">)</span>
+        <span class="n">layers</span> <span class="o">=</span> <span class="p">{</span><span class="n">layer_name</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">out_dir</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">layer_name</span><span class="si">}</span><span class="s2">.tif"</span><span class="p">)</span>
                   <span class="k">for</span> <span class="n">layer_name</span> <span class="ow">in</span> <span class="n">layer_names</span><span class="p">}</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">extract_layers</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span></div>
 </div>
@@ -1239,13 +1274,13 @@
 <div class="viewcode-block" id="LayeredTransmissionH5">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredTransmissionH5.html#reVX.handlers.layered_h5.LayeredTransmissionH5">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LayeredTransmissionH5</span><span class="p">(</span><span class="n">LayeredH5</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Handle reading and writing H5 files and GeoTiffs</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h5_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span>
-                 <span class="n">template_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">layer_dir</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">block_size</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+                 <span class="n">template_file</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">layer_dir</span><span class="o">=</span><span class="s1">'.'</span><span class="p">,</span> <span class="n">block_size</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1258,7 +1293,7 @@
 <span class="sd">            utilities are required, but the `template_file` input must</span>
 <span class="sd">            be provided in this case. By default, ``None``.</span>
 <span class="sd">        hsds : bool, optional</span>
-<span class="sd">            Boolean flag to use h5pyd to handle HDF5 &#39;files&#39; hosted on</span>
+<span class="sd">            Boolean flag to use h5pyd to handle HDF5 'files' hosted on</span>
 <span class="sd">            AWS behind HSDS. By default, ``False``.</span>
 <span class="sd">        chunks : tuple, optional</span>
 <span class="sd">            Chunk size of exclusions in HDF5 file and any output</span>
@@ -1272,18 +1307,18 @@
 <span class="sd">            By default, ``None``.</span>
 <span class="sd">        layer_dir : path-like, optional</span>
 <span class="sd">            Directory to search for layers in, if not found in current</span>
-<span class="sd">            directory. By default, ``&#39;.&#39;``.</span>
+<span class="sd">            directory. By default, ``'.'``.</span>
 <span class="sd">        block_size : int, optional</span>
 <span class="sd">            Optional block size to use when building lat/lon datasets.</span>
 <span class="sd">            Setting this value can help reduce memory issues when</span>
 <span class="sd">            building a ``LayeredH5`` file. If ``None``, the lat/lon</span>
 <span class="sd">            arrays are processed in full. By default, ``None``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">h5_file</span><span class="o">=</span><span class="n">h5_file</span><span class="p">,</span> <span class="n">hsds</span><span class="o">=</span><span class="n">hsds</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">,</span>
                          <span class="n">template_file</span><span class="o">=</span><span class="n">template_file</span><span class="p">,</span> <span class="n">block_size</span><span class="o">=</span><span class="n">block_size</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_layer_dir</span> <span class="o">=</span> <span class="n">layer_dir</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">h5_file</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">template_file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;One of `h5_file` or `template_file` must be provided!&quot;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s2">"One of `h5_file` or `template_file` must be provided!"</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
@@ -1291,7 +1326,7 @@
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.LayeredTransmissionH5.html#reVX.handlers.layered_h5.LayeredTransmissionH5.load_data_using_h5_profile">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">load_data_using_h5_profile</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">,</span> <span class="n">band</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">reproject</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
                                    <span class="n">skip_profile_test</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;Load GeoTIFF data, converting to H5 profile if necessary.</span>
+<span class="w">        </span><span class="sd">"""Load GeoTIFF data, converting to H5 profile if necessary.</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
@@ -1312,12 +1347,12 @@
 <span class="sd">        -------</span>
 <span class="sd">        array-like</span>
 <span class="sd">            Raster data.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">full_fname</span> <span class="o">=</span> <span class="n">geotiff</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="n">full_fname</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
             <span class="n">full_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_layer_dir</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">)</span>
             <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="n">full_fname</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-                <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Unable to find file </span><span class="si">{</span><span class="n">geotiff</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+                <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Unable to find file </span><span class="si">{</span><span class="n">geotiff</span><span class="si">}</span><span class="s1">'</span><span class="p">)</span>
 
         <span class="n">skip_test</span> <span class="o">=</span> <span class="n">skip_profile_test</span>
         <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span><span class="n">geotiff</span><span class="o">=</span><span class="n">full_fname</span><span class="p">,</span>
@@ -1331,7 +1366,7 @@
 <div class="viewcode-block" id="check_geotiff">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.check_geotiff.html#reVX.handlers.layered_h5.check_geotiff">[docs]</a>
 <span class="k">def</span><span class="w"> </span><span class="nf">check_geotiff</span><span class="p">(</span><span class="n">h5</span><span class="p">,</span> <span class="n">geotiff</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="p">(</span><span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="n">transform_atol</span><span class="o">=</span><span class="mf">0.01</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Compare GeoTIFF with exclusion layer and raise errors if mismatch.</span>
+<span class="w">    </span><span class="sd">"""Compare GeoTIFF with exclusion layer and raise errors if mismatch.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -1358,33 +1393,33 @@
 <span class="sd">    ProfileCheckError</span>
 <span class="sd">        If shape, profile, or transform don;t match between HDF5 and</span>
 <span class="sd">        GeoTIFF file.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="k">with</span> <span class="n">Geotiff</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">chunks</span><span class="o">=</span><span class="n">chunks</span><span class="p">)</span> <span class="k">as</span> <span class="n">tif</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">tif</span><span class="o">.</span><span class="n">bands</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">{}</span><span class="s2"> contains more than one band!&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="s2">"</span><span class="si">{}</span><span class="s2"> contains more than one band!"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">ProfileCheckError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">tif</span><span class="o">.</span><span class="n">shape</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Shape of exclusion data in </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1"> do not &#39;</span>
-                   <span class="s1">&#39;match!&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">template_file</span><span class="p">))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Shape of exclusion data in </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1"> do not '</span>
+                   <span class="s1">'match!'</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">template_file</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">ProfileCheckError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
-        <span class="n">h5_crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;crs&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
-        <span class="n">tif_crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;crs&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="n">h5_crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'crs'</span><span class="p">])</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+        <span class="n">tif_crs</span> <span class="o">=</span> <span class="n">CRS</span><span class="o">.</span><span class="n">from_string</span><span class="p">(</span><span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'crs'</span><span class="p">])</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">crs_match</span><span class="p">(</span><span class="n">h5_crs</span><span class="p">,</span> <span class="n">tif_crs</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Geospatial &quot;CRS&quot; in </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1"> do not match!</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1"> !=</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Geospatial "CRS" in </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1"> do not match!</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1"> !=</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">'</span>
                    <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span> <span class="n">tif_crs</span><span class="p">,</span> <span class="n">h5_crs</span><span class="p">))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">ProfileCheckError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">],</span> <span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">],</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">h5</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">],</span> <span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">],</span>
                            <span class="n">atol</span><span class="o">=</span><span class="n">transform_atol</span><span class="p">):</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;Geospatial &quot;transform&quot; in </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1"> do not match!&#39;</span>
-                   <span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1"> !=</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">&#39;</span>
-                   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">],</span>
-                           <span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">&#39;transform&#39;</span><span class="p">]))</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'Geospatial "transform" in </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1"> do not match!'</span>
+                   <span class="s1">'</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1"> !=</span><span class="se">\n</span><span class="s1"> </span><span class="si">{}</span><span class="s1">'</span>
+                   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geotiff</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">template_file</span><span class="p">,</span> <span class="n">h5</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">],</span>
+                           <span class="n">tif</span><span class="o">.</span><span class="n">profile</span><span class="p">[</span><span class="s1">'transform'</span><span class="p">]))</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="n">ProfileCheckError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span></div>
 
@@ -1392,8 +1427,8 @@
 
 <div class="viewcode-block" id="crs_match">
 <a class="viewcode-back" href="../../../_autosummary/reVX.handlers.layered_h5.crs_match.html#reVX.handlers.layered_h5.crs_match">[docs]</a>
-<span class="k">def</span><span class="w"> </span><span class="nf">crs_match</span><span class="p">(</span><span class="n">baseline_crs</span><span class="p">,</span> <span class="n">test_crs</span><span class="p">,</span> <span class="n">ignore_keys</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;no_defs&#39;</span><span class="p">,)):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Compare baseline and test CRS values.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">crs_match</span><span class="p">(</span><span class="n">baseline_crs</span><span class="p">,</span> <span class="n">test_crs</span><span class="p">,</span> <span class="n">ignore_keys</span><span class="o">=</span><span class="p">(</span><span class="s1">'no_defs'</span><span class="p">,)):</span>
+<span class="w">    </span><span class="sd">"""Compare baseline and test CRS values.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
@@ -1402,13 +1437,13 @@
 <span class="sd">    test_crs : dict</span>
 <span class="sd">        Test CRS to compare with baseline, must be a dictionary.</span>
 <span class="sd">    ignore_keys : tuple, optional</span>
-<span class="sd">        Keys to not check. By default, ``(&#39;no_defs&#39;,)``.</span>
+<span class="sd">        Keys to not check. By default, ``('no_defs',)``.</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
 <span class="sd">    crs_match : bool</span>
-<span class="sd">        ``True`` if crs&#39; match, ``False`` otherwise</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">        ``True`` if crs' match, ``False`` otherwise</span>
+<span class="sd">    """</span>
     <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">true_v</span> <span class="ow">in</span> <span class="n">baseline_crs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="k">if</span> <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ignore_keys</span><span class="p">:</span>
             <span class="n">test_v</span> <span class="o">=</span> <span class="n">test_crs</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">true_v</span><span class="p">)</span>

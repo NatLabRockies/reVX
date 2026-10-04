@@ -35,6 +35,7 @@ reVX.wind\_dirs.mean\_wind\_dirs\_point.MeanWindDirectionsPoint
    .. autosummary::
    
       ~MeanWindDirectionsPoint.area
+      ~MeanWindDirectionsPoint.area_based_pixel_side_length_meters
       ~MeanWindDirectionsPoint.bool_mask
       ~MeanWindDirectionsPoint.centroid
       ~MeanWindDirectionsPoint.cols

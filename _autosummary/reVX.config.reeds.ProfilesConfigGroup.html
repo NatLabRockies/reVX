@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.config.reeds.ProfilesConfigGroup &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.config.reeds.ProfilesConfigGroup &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,8 +653,8 @@
 <h1>reVX.config.reeds.ProfilesConfigGroup<a class="headerlink" href="#revx-config-reeds-profilesconfiggroup" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">ProfilesConfigGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/config/reeds.html#ProfilesConfigGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.config.base_config.BaseConfig.html#reV.config.base_config.BaseConfig" title="(in reV v0.15.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConfig</span></code></a></p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">ProfilesConfigGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/config/reeds.html#ProfilesConfigGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.config.base_config.BaseConfig.html#reV.config.base_config.BaseConfig" title="(in reV v0.19.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConfig</span></code></a></p>
 <p>Subclass for handling the Reeds config input group for the reVX-REEDS
 representative profiles framework.</p>
 <dl class="field-list simple">
@@ -654,26 +671,20 @@ representative profiles framework.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.check_overwrite_keys" title="reVX.config.reeds.ProfilesConfigGroup.check_overwrite_keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_overwrite_keys</span></code></a>(primary_key, ...)</p></td>
 <td><p>Check for overwrite keys and raise a ConfigError if present</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.clear" title="reVX.config.reeds.ProfilesConfigGroup.clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.copy" title="reVX.config.reeds.ProfilesConfigGroup.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.copy" title="reVX.config.reeds.ProfilesConfigGroup.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.fromkeys" title="reVX.config.reeds.ProfilesConfigGroup.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.fromkeys" title="reVX.config.reeds.ProfilesConfigGroup.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
 <td><p>Create a new dictionary with keys from iterable and values set to value.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.get" title="reVX.config.reeds.ProfilesConfigGroup.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.get" title="reVX.config.reeds.ProfilesConfigGroup.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
 <td><p>Return the value for key if key is in the dictionary, else default.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.items" title="reVX.config.reeds.ProfilesConfigGroup.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.items" title="reVX.config.reeds.ProfilesConfigGroup.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.keys" title="reVX.config.reeds.ProfilesConfigGroup.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.keys" title="reVX.config.reeds.ProfilesConfigGroup.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
 <td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.pop" title="reVX.config.reeds.ProfilesConfigGroup.pop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code></a>(k[,d])</p></td>
-<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.popitem" title="reVX.config.reeds.ProfilesConfigGroup.popitem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code></a>()</p></td>
 <td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
@@ -690,10 +701,7 @@ representative profiles framework.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.str_replace_and_resolve" title="reVX.config.reeds.ProfilesConfigGroup.str_replace_and_resolve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str_replace_and_resolve</span></code></a>(d, str_rep)</p></td>
 <td><p>Perform a deep string replacement and path resolve in d.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.update" title="reVX.config.reeds.ProfilesConfigGroup.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>([E, ]**F)</p></td>
-<td><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.values" title="reVX.config.reeds.ProfilesConfigGroup.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.reeds.ProfilesConfigGroup.values" title="reVX.config.reeds.ProfilesConfigGroup.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -747,69 +755,69 @@ representative profiles framework.</p>
 </table>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.REQUIREMENTS">
-<span class="sig-name descname"><span class="pre">REQUIREMENTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('reeds_table',</span> <span class="pre">'cf_profiles')</span></em><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.REQUIREMENTS" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">REQUIREMENTS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('reeds_table',</span> <span class="pre">'cf_profiles')</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.REQUIREMENTS" title="Link to this definition"></a></dt>
 <dd><p>Required keys for config</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.reeds_table">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reeds_table</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.reeds_table" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">reeds_table</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.reeds_table" title="Link to this definition"></a></dt>
 <dd><p>Get the ReEDS classification table (required).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.cf_profiles">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cf_profiles</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.cf_profiles" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cf_profiles</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.cf_profiles" title="Link to this definition"></a></dt>
 <dd><p>Get the filepath input to h5 cf profiles file (reV gen out).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.n_profiles">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_profiles</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.n_profiles" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">n_profiles</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.n_profiles" title="Link to this definition"></a></dt>
 <dd><p>Get the number of profiles to get.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.profiles_dset">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">profiles_dset</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.profiles_dset" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">profiles_dset</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.profiles_dset" title="Link to this definition"></a></dt>
 <dd><p>Profiles dataset name in cf_profiles file.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.rep_method">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rep_method</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.rep_method" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rep_method</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.rep_method" title="Link to this definition"></a></dt>
 <dd><p>Get the representative profile method (meanoid or medianoid).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.err_method">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">err_method</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.err_method" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">err_method</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.err_method" title="Link to this definition"></a></dt>
 <dd><p>Get the representative profile error method (mae, mbe, rmse).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.weight">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">weight</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.weight" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">weight</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.weight" title="Link to this definition"></a></dt>
 <dd><p>Get column label containing weight data to calculate the weighted
 meanoid for the representative profile calculation.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.reg_cols">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">reg_cols</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.reg_cols" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">reg_cols</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.reg_cols" title="Link to this definition"></a></dt>
 <dd><p>Get the representative profile region columns to run groups on.</p>
 </dd></dl>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.STR_REP">
-<span class="sig-name descname"><span class="pre">STR_REP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'REVDIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/reV',</span> <span class="pre">'TESTDATADIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tests/data'}</span></em><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.STR_REP" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">STR_REP</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'REVDIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/reV',</span> <span class="pre">'TESTDATADIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/tests/data'}</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.STR_REP" title="Link to this definition"></a></dt>
 <dd><p>Mapping of config inputs (keys) to desired replacements (values) in
 addition to relative file paths as demarcated by ./ and ../</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.check_files">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.check_files" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">check_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.check_files" title="Link to this definition"></a></dt>
 <dd><p>Make sure all files in the input file list exist.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -832,14 +840,9 @@ addition to relative file paths as demarcated by ./ and ../</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Remove</span> <span class="pre">all</span> <span class="pre">items</span> <span class="pre">from</span> <span class="pre">D.</span></span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.clear" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.config_dir">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_dir</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.config_dir" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">config_dir</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.config_dir" title="Link to this definition"></a></dt>
 <dd><p>Get the directory that the config file is in.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -850,7 +853,7 @@ addition to relative file paths as demarcated by ./ and ../</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.config_keys">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_keys</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.config_keys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">config_keys</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.config_keys" title="Link to this definition"></a></dt>
 <dd><p>List of valid config keys</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -866,7 +869,7 @@ addition to relative file paths as demarcated by ./ and ../</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.fromkeys">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.fromkeys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.fromkeys" title="Link to this definition"></a></dt>
 <dd><p>Create a new dictionary with keys from iterable and values set to value.</p>
 </dd></dl>
 
@@ -888,7 +891,7 @@ addition to relative file paths as demarcated by ./ and ../</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.log_level">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.log_level" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.log_level" title="Link to this definition"></a></dt>
 <dd><p>Get user-specified “log_level” (DEBUG, INFO, WARNING, etc…).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -900,20 +903,13 @@ config-specified log level string.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.name">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.name" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.name" title="Link to this definition"></a></dt>
 <dd><p>Get the job name, defaults to ‘rev’.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – reV job name.</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.pop">
-<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">v,</span> <span class="pre">remove</span> <span class="pre">specified</span> <span class="pre">key</span> <span class="pre">and</span> <span class="pre">return</span> <span class="pre">the</span> <span class="pre">corresponding</span> <span class="pre">value.</span></span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.pop" title="Link to this definition"></a></dt>
-<dd><p>If the key is not found, return the default if given; otherwise,
-raise a KeyError.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -985,14 +981,6 @@ values are the new values.</p></li>
 <dd class="field-even"><p><strong>d</strong> (<em>dict</em>) – Config dictionary with updated strings.</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.reeds.ProfilesConfigGroup.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">E</span></span></em>, <span class="optional">]</span><em class="sig-param"><span class="n"><span class="pre">**F</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Update</span> <span class="pre">D</span> <span class="pre">from</span> <span class="pre">dict/iterable</span> <span class="pre">E</span> <span class="pre">and</span> <span class="pre">F.</span></span></span><a class="headerlink" href="#reVX.config.reeds.ProfilesConfigGroup.update" title="Link to this definition"></a></dt>
-<dd><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
-If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
-In either case, this is followed by: for k in F:  D[k] = F[k]</p>
 </dd></dl>
 
 <dl class="py method">

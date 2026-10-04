@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,8 +653,8 @@
 <h1>reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint<a class="headerlink" href="#revx-wind-dirs-mean-wind-dirs-point-meanwinddirectionspoint" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MeanWindDirectionsPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg_h5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inclusion_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apply_exclusions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/wind_dirs/mean_wind_dirs_point.html#MeanWindDirectionsPoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.supply_curve.points.AggregationSupplyCurvePoint.html#reV.supply_curve.points.AggregationSupplyCurvePoint" title="(in reV v0.15.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggregationSupplyCurvePoint</span></code></a></p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">MeanWindDirectionsPoint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg_h5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inclusion_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">apply_exclusions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zone_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/wind_dirs/mean_wind_dirs_point.html#MeanWindDirectionsPoint"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.supply_curve.points.AggregationSupplyCurvePoint.html#reV.supply_curve.points.AggregationSupplyCurvePoint" title="(in reV v0.19.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">AggregationSupplyCurvePoint</span></code></a></p>
 <p>SC point class to compute mean wind directions</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -716,92 +733,95 @@ specified, no zone mask will be applied.</p></li>
 <tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area</span></code></a></p></td>
 <td><p>Get the non-excluded resource area of the supply curve point in the current resource class.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool_mask</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area_based_pixel_side_length_meters" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area_based_pixel_side_length_meters"><code class="xref py py-obj docutils literal notranslate"><span class="pre">area_based_pixel_side_length_meters</span></code></a></p></td>
+<td><p>Get the length of a single exclusion pixel side (meters)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">bool_mask</span></code></a></p></td>
 <td><p>Get a boolean inclusion mask (True if excl point is not excluded).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">centroid</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">centroid</span></code></a></p></td>
 <td><p>Get the supply curve point centroid coordinate.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cols</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cols</span></code></a></p></td>
 <td><p>Get the cols of the exclusions layer associated with this SC point.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country"><code class="xref py py-obj docutils literal notranslate"><span class="pre">country</span></code></a></p></td>
 <td><p>Get the SC point country based on the resource meta data.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county"><code class="xref py py-obj docutils literal notranslate"><span class="pre">county</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county"><code class="xref py py-obj docutils literal notranslate"><span class="pre">county</span></code></a></p></td>
 <td><p>Get the SC point county based on the resource meta data.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elevation</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">elevation</span></code></a></p></td>
 <td><p>Get the SC point elevation based on the resource meta data.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exclusions</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">exclusions</span></code></a></p></td>
 <td><p>Get the exclusions object.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gid</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gid</span></code></a></p></td>
 <td><p>Supply curve point gid</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gid_counts</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts"><code class="xref py py-obj docutils literal notranslate"><span class="pre">gid_counts</span></code></a></p></td>
 <td><p>Get the sum of the inclusion values in each resource/generation gid corresponding to this sc point.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5"><code class="xref py py-obj docutils literal notranslate"><span class="pre">h5</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5"><code class="xref py py-obj docutils literal notranslate"><span class="pre">h5</span></code></a></p></td>
 <td><p>h5 Resource handler object</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set"><code class="xref py py-obj docutils literal notranslate"><span class="pre">h5_gid_set</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set"><code class="xref py py-obj docutils literal notranslate"><span class="pre">h5_gid_set</span></code></a></p></td>
 <td><p>Get list of unique h5 gids corresponding to this sc point.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">include_mask</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">include_mask</span></code></a></p></td>
 <td><p>[0, 1] where 1 is included and 0 is excluded).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">include_mask_flat</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat"><code class="xref py py-obj docutils literal notranslate"><span class="pre">include_mask_flat</span></code></a></p></td>
 <td><p>Get the flattened inclusion mask (normalized with expected range: [0, 1] where 1 is included and 0 is excluded).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">latitude</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">latitude</span></code></a></p></td>
 <td><p>Get the SC point latitude</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">longitude</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude"><code class="xref py py-obj docutils literal notranslate"><span class="pre">longitude</span></code></a></p></td>
 <td><p>Get the SC point longitude</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n_gids</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n_gids</span></code></a></p></td>
 <td><p>Get the total number of not fully excluded pixels associated with the available resource/generation gids at the given sc gid.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">offshore</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore"><code class="xref py py-obj docutils literal notranslate"><span class="pre">offshore</span></code></a></p></td>
 <td><p>Get the SC point offshore flag based on the resource meta data (if offshore column is present).</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pixel_area</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pixel_area</span></code></a></p></td>
 <td><p>The area in km2 of a single exclusion pixel.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resolution</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resolution</span></code></a></p></td>
 <td><p>Get the supply curve grid aggregation resolution</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rows</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rows</span></code></a></p></td>
 <td><p>Get the rows of the exclusions layer associated with this SC point.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_col_ind</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_col_ind</span></code></a></p></td>
 <td><p>Supply curve column index</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_point_gid</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_point_gid</span></code></a></p></td>
 <td><p>Supply curve point gid</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_row_ind</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sc_row_ind</span></code></a></p></td>
 <td><p>Supply curve row index</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state"><code class="xref py py-obj docutils literal notranslate"><span class="pre">state</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state"><code class="xref py py-obj docutils literal notranslate"><span class="pre">state</span></code></a></p></td>
 <td><p>Get the SC point state based on the resource meta data.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">summary</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary"><code class="xref py py-obj docutils literal notranslate"><span class="pre">summary</span></code></a></p></td>
 <td><p>Supply curve point's meta data summary</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timezone</span></code></a></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone"><code class="xref py py-obj docutils literal notranslate"><span class="pre">timezone</span></code></a></p></td>
 <td><p>Get the SC point timezone based on the resource meta data.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zone_mask</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask" title="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask"><code class="xref py py-obj docutils literal notranslate"><span class="pre">zone_mask</span></code></a></p></td>
 <td><p>Get the 2D zone mask, where 1 is included and 0 is excluded.</p></td>
 </tr>
 </tbody>
 </table>
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">h5</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">h5</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5" title="Link to this definition"></a></dt>
 <dd><p>h5 Resource handler object</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -826,7 +846,7 @@ specified, no zone mask will be applied.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.run">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg_h5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">wind_dir_dsets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inclusion_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0081</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/wind_dirs/mean_wind_dirs_point.html#MeanWindDirectionsPoint.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.run" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agg_h5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">wind_dir_dsets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inclusion_mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0081</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gen_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/wind_dirs/mean_wind_dirs_point.html#MeanWindDirectionsPoint.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.run" title="Link to this definition"></a></dt>
 <dd><p>Compute exclusions weight mean for the sc point from data</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -901,7 +921,7 @@ each data layer is added.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">area</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">area</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area" title="Link to this definition"></a></dt>
 <dd><p>Get the non-excluded resource area of the supply curve point in the
 current resource class.</p>
 <dl class="field-list simple">
@@ -912,8 +932,19 @@ current resource class.</p>
 </dd></dl>
 
 <dl class="py property">
+<dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area_based_pixel_side_length_meters">
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">area_based_pixel_side_length_meters</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.area_based_pixel_side_length_meters" title="Link to this definition"></a></dt>
+<dd><p>Get the length of a single exclusion pixel side (meters)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><em>float</em></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">bool_mask</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">bool_mask</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.bool_mask" title="Link to this definition"></a></dt>
 <dd><p>Get a boolean inclusion mask (True if excl point is not excluded).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -924,7 +955,7 @@ current resource class.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">centroid</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">centroid</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.centroid" title="Link to this definition"></a></dt>
 <dd><p>Get the supply curve point centroid coordinate.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -941,7 +972,7 @@ current resource class.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">cols</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">cols</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.cols" title="Link to this definition"></a></dt>
 <dd><p>Get the cols of the exclusions layer associated with this SC point.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -953,19 +984,19 @@ gid in the agg layer (supply curve layer).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">country</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">country</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.country" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point country based on the resource meta data.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">county</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">county</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.county" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point county based on the resource meta data.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">elevation</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">elevation</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.elevation" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point elevation based on the resource meta data.</p>
 </dd></dl>
 
@@ -991,7 +1022,7 @@ input data is a 2D numpy array (averaged along axis=1)</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exclusions</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">exclusions</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.exclusions" title="Link to this definition"></a></dt>
 <dd><p>Get the exclusions object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1002,7 +1033,7 @@ input data is a 2D numpy array (averaged along axis=1)</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.get_agg_slices">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_agg_slices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.get_agg_slices" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_agg_slices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.get_agg_slices" title="Link to this definition"></a></dt>
 <dd><p>Get the row, col slices of an aggregation gid.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1025,13 +1056,13 @@ aggregated.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">gid</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">gid</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid" title="Link to this definition"></a></dt>
 <dd><p>Supply curve point gid</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">gid_counts</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">gid_counts</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.gid_counts" title="Link to this definition"></a></dt>
 <dd><p>Get the sum of the inclusion values in each resource/generation gid
 corresponding to this sc point. The sum of the gid counts can be less
 than the value provided by n_gids if fractional exclusion/inclusions
@@ -1045,7 +1076,7 @@ are provided.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">h5_gid_set</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">h5_gid_set</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.h5_gid_set" title="Link to this definition"></a></dt>
 <dd><p>Get list of unique h5 gids corresponding to this sc point.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1056,7 +1087,7 @@ are provided.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">include_mask</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">include_mask</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask" title="Link to this definition"></a></dt>
 <dd><p>[0, 1]
 where 1 is included and 0 is excluded).</p>
 <dl class="field-list simple">
@@ -1071,7 +1102,7 @@ where 1 is included and 0 is excluded).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">include_mask_flat</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">include_mask_flat</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.include_mask_flat" title="Link to this definition"></a></dt>
 <dd><p>Get the flattened inclusion mask (normalized with expected
 range: [0, 1] where 1 is included and 0 is excluded).</p>
 <dl class="field-list simple">
@@ -1083,19 +1114,19 @@ range: [0, 1] where 1 is included and 0 is excluded).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">latitude</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">latitude</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.latitude" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point latitude</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">longitude</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">longitude</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.longitude" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point longitude</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_gids</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">n_gids</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.n_gids" title="Link to this definition"></a></dt>
 <dd><p>Get the total number of not fully excluded pixels associated with the
 available resource/generation gids at the given sc gid.</p>
 <dl class="field-list simple">
@@ -1107,14 +1138,14 @@ available resource/generation gids at the given sc gid.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">offshore</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">offshore</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.offshore" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point offshore flag based on the resource meta data
 (if offshore column is present).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">pixel_area</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">pixel_area</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.pixel_area" title="Link to this definition"></a></dt>
 <dd><p>The area in km2 of a single exclusion pixel. If this value was not
 provided on initialization, it is determined from the profile of the
 exclusion file.</p>
@@ -1127,13 +1158,13 @@ exclusion file.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">resolution</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">resolution</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.resolution" title="Link to this definition"></a></dt>
 <dd><p>Get the supply curve grid aggregation resolution</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rows</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rows</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.rows" title="Link to this definition"></a></dt>
 <dd><p>Get the rows of the exclusions layer associated with this SC point.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1145,18 +1176,18 @@ gid in the agg layer (supply curve layer).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_col_ind</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sc_col_ind</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_col_ind" title="Link to this definition"></a></dt>
 <dd><p>Supply curve column index</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.14)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_mean">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_mean" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sc_mean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_mean" title="Link to this definition"></a></dt>
 <dd><p>Compute exclusions weight mean for the sc point from data</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1187,7 +1218,7 @@ will speed things up considerably.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_point_gid</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sc_point_gid</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_point_gid" title="Link to this definition"></a></dt>
 <dd><p>Supply curve point gid</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1198,18 +1229,18 @@ will speed things up considerably.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_row_ind</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sc_row_ind</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_row_ind" title="Link to this definition"></a></dt>
 <dd><p>Supply curve row index</p>
 <dl class="field-list simple">
 <dt class="field-odd">Type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.14)">int</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/builtins/functions.html#int" title="(in Python v3.14)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_sum">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_sum" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sc_sum</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tm_dset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excl_dict</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.sc_sum" title="Link to this definition"></a></dt>
 <dd><p>Compute the aggregate (sum) of data for the sc point</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -1240,7 +1271,7 @@ will speed things up considerably.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">state</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.state" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point state based on the resource meta data.</p>
 </dd></dl>
 
@@ -1276,7 +1307,7 @@ sum each chunk and return the reduced chunk-sum summary statistics.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">summary</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">summary</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.summary" title="Link to this definition"></a></dt>
 <dd><p>Supply curve point’s meta data summary</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1287,13 +1318,13 @@ sum each chunk and return the reduced chunk-sum summary statistics.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">timezone</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">timezone</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.timezone" title="Link to this definition"></a></dt>
 <dd><p>Get the SC point timezone based on the resource meta data.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">zone_mask</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">zone_mask</span></span><a class="headerlink" href="#reVX.wind_dirs.mean_wind_dirs_point.MeanWindDirectionsPoint.zone_mask" title="Link to this definition"></a></dt>
 <dd><p>Get the 2D zone mask, where 1 is included and 0 is excluded.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>

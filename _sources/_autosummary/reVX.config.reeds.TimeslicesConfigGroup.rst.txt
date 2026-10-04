@@ -17,19 +17,16 @@ reVX.config.reeds.TimeslicesConfigGroup
    
       ~TimeslicesConfigGroup.check_files
       ~TimeslicesConfigGroup.check_overwrite_keys
-      ~TimeslicesConfigGroup.clear
       ~TimeslicesConfigGroup.copy
       ~TimeslicesConfigGroup.fromkeys
       ~TimeslicesConfigGroup.get
       ~TimeslicesConfigGroup.items
       ~TimeslicesConfigGroup.keys
-      ~TimeslicesConfigGroup.pop
       ~TimeslicesConfigGroup.popitem
       ~TimeslicesConfigGroup.resolve_path
       ~TimeslicesConfigGroup.set_self_dict
       ~TimeslicesConfigGroup.setdefault
       ~TimeslicesConfigGroup.str_replace_and_resolve
-      ~TimeslicesConfigGroup.update
       ~TimeslicesConfigGroup.values
    
    

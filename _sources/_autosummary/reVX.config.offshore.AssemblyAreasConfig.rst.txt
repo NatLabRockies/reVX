@@ -17,19 +17,16 @@ reVX.config.offshore.AssemblyAreasConfig
    
       ~AssemblyAreasConfig.check_files
       ~AssemblyAreasConfig.check_overwrite_keys
-      ~AssemblyAreasConfig.clear
       ~AssemblyAreasConfig.copy
       ~AssemblyAreasConfig.fromkeys
       ~AssemblyAreasConfig.get
       ~AssemblyAreasConfig.items
       ~AssemblyAreasConfig.keys
-      ~AssemblyAreasConfig.pop
       ~AssemblyAreasConfig.popitem
       ~AssemblyAreasConfig.resolve_path
       ~AssemblyAreasConfig.set_self_dict
       ~AssemblyAreasConfig.setdefault
       ~AssemblyAreasConfig.str_replace_and_resolve
-      ~AssemblyAreasConfig.update
       ~AssemblyAreasConfig.values
    
    

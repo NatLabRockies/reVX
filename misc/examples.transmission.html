@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX LCP &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX LCP &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -622,7 +639,7 @@
           <li class="breadcrumb-item"><a href="examples.html">Examples</a></li>
       <li class="breadcrumb-item active">reVX LCP</li>
       <li class="wy-breadcrumbs-aside">
-              <a href="https://github.com/NatLabRockies/reVX/blob/main/docs/source/misc/examples.transmission.rst" class="fa fa-github"> Edit on GitHub</a>
+              <a href="https://github.com/NatLabRockies/reVX/blob/main/docs/source/misc/examples.transmission.md" class="fa fa-github"> Edit on GitHub</a>
       </li>
   </ul>
   <hr/>
@@ -707,93 +724,93 @@
 <h2>Layer Creation Config File Examples<a class="headerlink" href="#layer-creation-config-file-examples" title="Link to this heading"></a></h2>
 <p>The below example JSON file shows all possible keys with example values. The formal config file definition is the <code class="docutils literal notranslate"><span class="pre">TransmissionLayerCreationConfig</span></code> class in the <a class="reference external" href="https://github.com/NatLabRockies/reVX/tree/main/reVX/config/transmission_layer_creation.py"><code class="docutils literal notranslate"><span class="pre">transmission_layer_creation.py</span></code></a> file.</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;template_raster_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bathymetry.tif&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;h5_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./new_xmission_routing_layers.h5&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"template_raster_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"bathymetry.tif"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"h5_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./new_xmission_routing_layers.h5"</span><span class="p">,</span>
 
-<span class="w">    </span><span class="nv">&quot;masks_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./masks&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;layer_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/projects/rev/projects/wowts/data/final_friction_tifs/&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;output_tiff_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/projects/rev/projects/wowts/data/output_tifs/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"masks_dir"</span><span class="p">:</span><span class="w"> </span><span class="s">"./masks"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"layer_dir"</span><span class="p">:</span><span class="w"> </span><span class="s">"/projects/rev/projects/wowts/data/final_friction_tifs/"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"output_tiff_dir"</span><span class="p">:</span><span class="w"> </span><span class="s">"/projects/rev/projects/wowts/data/output_tifs/"</span><span class="p">,</span>
 
-<span class="w">    </span><span class="nv">&quot;layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="nv">"layers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nv">&quot;layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;wet_costs&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;include_in_h5&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nv">&quot;bathymetry.tif&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;wet+&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="nv">&quot;bins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">                        </span><span class="p">{</span><span class="w">              </span><span class="nv">&quot;max&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-2500</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">80526</span><span class="p">},</span>
-<span class="w">                        </span><span class="p">{</span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-2500</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;max&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-2000</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">73205</span><span class="p">},</span>
-<span class="w">                        </span><span class="p">{</span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-2000</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;max&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-1500</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">66550</span><span class="p">},</span>
-<span class="w">                        </span><span class="p">{</span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-1500</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;max&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-1000</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">60500</span><span class="p">},</span>
-<span class="w">                        </span><span class="p">{</span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-1000</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;max&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-500</span><span class="p">,</span><span class="w">  </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">55000</span><span class="p">},</span>
-<span class="w">                        </span><span class="p">{</span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">-500</span><span class="p">,</span><span class="w">                </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">50000</span><span class="p">}</span>
+<span class="w">            </span><span class="nv">"layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"wet_costs"</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"description"</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"include_in_h5"</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nv">"bathymetry.tif"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"wet+"</span><span class="p">,</span>
+<span class="w">                    </span><span class="nv">"bins"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                        </span><span class="p">{</span><span class="w">              </span><span class="nv">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">-2500</span><span class="p">,</span><span class="w"> </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">80526</span><span class="p">},</span>
+<span class="w">                        </span><span class="p">{</span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">-2500</span><span class="p">,</span><span class="w"> </span><span class="nv">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">-2000</span><span class="p">,</span><span class="w"> </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">73205</span><span class="p">},</span>
+<span class="w">                        </span><span class="p">{</span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">-2000</span><span class="p">,</span><span class="w"> </span><span class="nv">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">-1500</span><span class="p">,</span><span class="w"> </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">66550</span><span class="p">},</span>
+<span class="w">                        </span><span class="p">{</span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">-1500</span><span class="p">,</span><span class="w"> </span><span class="nv">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">-1000</span><span class="p">,</span><span class="w"> </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">60500</span><span class="p">},</span>
+<span class="w">                        </span><span class="p">{</span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">-1000</span><span class="p">,</span><span class="w"> </span><span class="nv">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">-500</span><span class="p">,</span><span class="w">  </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">55000</span><span class="p">},</span>
+<span class="w">                        </span><span class="p">{</span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">-500</span><span class="p">,</span><span class="w">                </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">50000</span><span class="p">}</span>
 <span class="w">                    </span><span class="p">]</span>
 <span class="w">                </span><span class="p">},</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nv">&quot;layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;landfall_costs&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;include_in_h5&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nv">&quot;bathymetry.tif&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;wet+&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="nv">&quot;global_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">450e6</span>
+<span class="w">            </span><span class="nv">"layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"landfall_costs"</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"description"</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"include_in_h5"</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nv">"bathymetry.tif"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"wet+"</span><span class="p">,</span>
+<span class="w">                    </span><span class="nv">"global_value"</span><span class="p">:</span><span class="w"> </span><span class="mf">450e6</span>
 <span class="w">                </span><span class="p">},</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nv">&quot;layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;barrier&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;include_in_h5&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">false</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nv">&quot;CAN_MEX_boundary_20240131.gpkg&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;all&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="nv">&quot;rasterize&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                        </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">106</span><span class="p">,</span>
-<span class="w">                        </span><span class="nv">&quot;reproject&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span>
+<span class="w">            </span><span class="nv">"layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"barrier"</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"description"</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"include_in_h5"</span><span class="p">:</span><span class="w"> </span><span class="k">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nv">"CAN_MEX_boundary_20240131.gpkg"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"all"</span><span class="p">,</span>
+<span class="w">                    </span><span class="nv">"rasterize"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                        </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">106</span><span class="p">,</span>
+<span class="w">                        </span><span class="nv">"reproject"</span><span class="p">:</span><span class="w"> </span><span class="k">true</span>
 <span class="w">                    </span><span class="p">}</span>
 <span class="w">                </span><span class="p">},</span>
-<span class="w">                </span><span class="nv">&quot;west_coast_slope.tif&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;wet&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="nv">&quot;bins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">101</span><span class="w"> </span><span class="p">}]</span>
+<span class="w">                </span><span class="nv">"west_coast_slope.tif"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"wet"</span><span class="p">,</span>
+<span class="w">                    </span><span class="nv">"bins"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">101</span><span class="w"> </span><span class="p">}]</span>
 <span class="w">                </span><span class="p">},</span>
-<span class="w">                </span><span class="nv">&quot;/projects/rev/data/conus/rasters/swca_cultural_resources_risk.tif&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;all&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="nv">&quot;map&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">&quot;4&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">102</span><span class="w"> </span><span class="p">}</span>
+<span class="w">                </span><span class="nv">"/projects/rev/data/conus/rasters/swca_cultural_resources_risk.tif"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"all"</span><span class="p">,</span>
+<span class="w">                    </span><span class="nv">"map"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">"4"</span><span class="p">:</span><span class="w"> </span><span class="mf">102</span><span class="w"> </span><span class="p">}</span>
 <span class="w">                </span><span class="p">}</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">        </span><span class="p">{</span>
-<span class="w">            </span><span class="nv">&quot;layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;friction&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;include_in_h5&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">false</span><span class="p">,</span>
-<span class="w">            </span><span class="nv">&quot;build&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                </span><span class="nv">&quot;west_coast_slope.tif&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                    </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;wet&quot;</span><span class="p">,</span>
-<span class="w">                    </span><span class="nv">&quot;bins&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nv">&quot;min&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;max&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="p">}]</span>
+<span class="w">            </span><span class="nv">"layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"friction"</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"description"</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"include_in_h5"</span><span class="p">:</span><span class="w"> </span><span class="k">false</span><span class="p">,</span>
+<span class="w">            </span><span class="nv">"build"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nv">"west_coast_slope.tif"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                    </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"wet"</span><span class="p">,</span>
+<span class="w">                    </span><span class="nv">"bins"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w"> </span><span class="nv">"min"</span><span class="p">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="nv">"max"</span><span class="p">:</span><span class="w"> </span><span class="mf">15</span><span class="p">,</span><span class="w"> </span><span class="nv">"value"</span><span class="p">:</span><span class="w"> </span><span class="mf">5</span><span class="w"> </span><span class="p">}]</span>
 <span class="w">                </span><span class="p">},</span>
-<span class="w">                </span><span class="nv">&quot;mpa.tif&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">&quot;map&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nv">&quot;2&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nv">&quot;3&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">7</span><span class="p">},</span><span class="w"> </span><span class="nv">&quot;extent&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;all&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">                </span><span class="nv">"mpa.tif"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">"map"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nv">"2"</span><span class="p">:</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span><span class="w"> </span><span class="nv">"3"</span><span class="p">:</span><span class="w"> </span><span class="mf">7</span><span class="p">},</span><span class="w"> </span><span class="nv">"extent"</span><span class="p">:</span><span class="w"> </span><span class="s">"all"</span><span class="w"> </span><span class="p">},</span>
 <span class="w">            </span><span class="p">}</span>
 <span class="w">        </span><span class="p">},</span>
 <span class="w">    </span><span class="p">],</span>
 
-<span class="w">    </span><span class="nv">&quot;merge_friction_and_barriers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nv">&quot;friction_layer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;friction&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;barrier_layer&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;barrier&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;barrier_multiplier&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1e6</span>
+<span class="w">    </span><span class="nv">"merge_friction_and_barriers"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">"friction_layer"</span><span class="p">:</span><span class="w"> </span><span class="s">"friction"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"barrier_layer"</span><span class="p">:</span><span class="w"> </span><span class="s">"barrier"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"barrier_multiplier"</span><span class="p">:</span><span class="w"> </span><span class="mf">1e6</span>
 <span class="w">    </span><span class="p">},</span>
 
-<span class="w">    </span><span class="nv">&quot;dry_costs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nv">&quot;iso_region_tiff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/nlcd/ISO/regions/iso_regions.tif&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;nlcd_tiff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/nlcd/raster.tiff&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;slope_tiff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/slope/raster.tiff&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;cost_configs&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/optional/path/to/xmission/cost/config.json&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;extra_tiffs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="s">&quot;/optional/path/to/extra/layer1.tif&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s">&quot;/optional/path/to/extra/layer2.tif&quot;</span>
+<span class="w">    </span><span class="nv">"dry_costs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">"iso_region_tiff"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/nlcd/ISO/regions/iso_regions.tif"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"nlcd_tiff"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/nlcd/raster.tiff"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"slope_tiff"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/slope/raster.tiff"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"cost_configs"</span><span class="p">:</span><span class="w"> </span><span class="s">"/optional/path/to/xmission/cost/config.json"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"extra_tiffs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s">"/optional/path/to/extra/layer1.tif"</span><span class="p">,</span>
+<span class="w">            </span><span class="s">"/optional/path/to/extra/layer2.tif"</span>
 <span class="w">        </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">}</span>
@@ -819,25 +836,26 @@ the layer creation tool can be run from the command-line, e.g.:</p>
 </div>
 <p>With an appropriate config file, this will result in all layers required for a transmission routing analysis being created and saved in the specified H5 file.</p>
 </section>
+</section>
 <section id="conus-onshore-example">
-<h2>CONUS (Onshore) Example<a class="headerlink" href="#conus-onshore-example" title="Link to this heading"></a></h2>
+<h1>CONUS (Onshore) Example<a class="headerlink" href="#conus-onshore-example" title="Link to this heading"></a></h1>
 <p>All examples assume that reVX was installed using <code class="docutils literal notranslate"><span class="pre">pip</span></code> so that the CLI commands are available.</p>
 <section id="costs">
-<h3>Costs<a class="headerlink" href="#costs" title="Link to this heading"></a></h3>
+<h2>Costs<a class="headerlink" href="#costs" title="Link to this heading"></a></h2>
 <p>The below file can be used as a template to compute the costs to be used in a Least Cost Path analysis described in more detail below.</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;h5_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./new_transmission_cost_file_name.h5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;template_raster_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/template/raster.tif&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;output_tiff_dir&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./output_transmission_tiffs&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"h5_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./new_transmission_cost_file_name.h5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"template_raster_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/template/raster.tif"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"output_tiff_dir"</span><span class="p">:</span><span class="w"> </span><span class="s">"./output_transmission_tiffs"</span><span class="p">,</span>
 
-<span class="w">    </span><span class="nv">&quot;dry_costs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nv">&quot;iso_region_tiff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/iso_regions.tif&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;nlcd_tiff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/nlcd.tif&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;slope_tiff&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/slope.tif&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nv">&quot;extra_tiffs&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="s">&quot;/path/to/transmission_barrier.tif&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s">&quot;/path/to/tie_line_multipliers.tif&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="s">&quot;/path/to/another_extra_layer.tif&quot;</span>
+<span class="w">    </span><span class="nv">"dry_costs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nv">"iso_region_tiff"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/iso_regions.tif"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"nlcd_tiff"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/nlcd.tif"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"slope_tiff"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/slope.tif"</span><span class="p">,</span>
+<span class="w">        </span><span class="nv">"extra_tiffs"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s">"/path/to/transmission_barrier.tif"</span><span class="p">,</span>
+<span class="w">            </span><span class="s">"/path/to/tie_line_multipliers.tif"</span><span class="p">,</span>
+<span class="w">            </span><span class="s">"/path/to/another_extra_layer.tif"</span>
 <span class="w">        </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
@@ -860,7 +878,7 @@ the layer creation tool can be run from the command-line, e.g.:</p>
 </pre></div>
 </div>
 <section id="find-conus-least-cost-paths-on-a-local-eagle-node">
-<h4>Find CONUS least cost paths on a local eagle node<a class="headerlink" href="#find-conus-least-cost-paths-on-a-local-eagle-node" title="Link to this heading"></a></h4>
+<h3>Find CONUS least cost paths on a local eagle node<a class="headerlink" href="#find-conus-least-cost-paths-on-a-local-eagle-node" title="Link to this heading"></a></h3>
 <p>Find least cost paths, costs, and connection costs on eagle login node for 1000MW capacity and all SC points, saving results in current directory. These examples will overload the login nodes and should be run on a debug node.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ least-cost-xmission local \
     --cost_fpath /shared-projects/rev/exclusions/xmission_costs.h5 \
@@ -871,25 +889,25 @@ the layer creation tool can be run from the command-line, e.g.:</p>
 </div>
 </section>
 <section id="run-onshore-analysis-from-a-config-file">
-<h4>Run onshore analysis from a config file<a class="headerlink" href="#run-onshore-analysis-from-a-config-file" title="Link to this heading"></a></h4>
+<h3>Run onshore analysis from a config file<a class="headerlink" href="#run-onshore-analysis-from-a-config-file" title="Link to this heading"></a></h3>
 <p>The below file can be used to start a full CONUS analysis for the 1000MW power class. The setting <code class="docutils literal notranslate"><span class="pre">nodes</span></code> in <code class="docutils literal notranslate"><span class="pre">execution_control</span></code> will split the processing across five eagle nodes.</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">  </span><span class="nv">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;feature&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;--qos=high&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">178</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eagle&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4</span>
+<span class="w">  </span><span class="nv">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nv">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"feature"</span><span class="p">:</span><span class="w"> </span><span class="s">"--qos=high"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"memory"</span><span class="p">:</span><span class="w"> </span><span class="mf">178</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"nodes"</span><span class="p">:</span><span class="w"> </span><span class="mf">5</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"option"</span><span class="p">:</span><span class="w"> </span><span class="s">"eagle"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="mf">4</span>
 <span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="nv">&quot;cost_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/shared-projects/rev/exclusions/xmission_costs.h5&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nv">&quot;features_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/projects/rev/data/transmission/shapefiles/conus_allconns.gpkg&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nv">&quot;capacity_class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1000&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nv">&quot;cost_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;tie_line_costs_{}MW&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="nv">&quot;iso_regions_layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;iso_regions&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nv">&quot;barrier_mult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;100&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nv">&quot;log_directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/scratch/USER_NAME/log&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nv">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;INFO&quot;</span>
+<span class="w">  </span><span class="nv">"cost_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/shared-projects/rev/exclusions/xmission_costs.h5"</span><span class="p">,</span>
+<span class="w">  </span><span class="nv">"features_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/projects/rev/data/transmission/shapefiles/conus_allconns.gpkg"</span><span class="p">,</span>
+<span class="w">  </span><span class="nv">"capacity_class"</span><span class="p">:</span><span class="w"> </span><span class="s">"1000"</span><span class="p">,</span>
+<span class="w">  </span><span class="nv">"cost_layers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">"tie_line_costs_{}MW"</span><span class="p">],</span>
+<span class="w">  </span><span class="nv">"iso_regions_layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"iso_regions"</span><span class="p">,</span>
+<span class="w">  </span><span class="nv">"barrier_mult"</span><span class="p">:</span><span class="w"> </span><span class="s">"100"</span><span class="p">,</span>
+<span class="w">  </span><span class="nv">"log_directory"</span><span class="p">:</span><span class="w"> </span><span class="s">"/scratch/USER_NAME/log"</span><span class="p">,</span>
+<span class="w">  </span><span class="nv">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s">"INFO"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -904,10 +922,10 @@ lowercase).</p>
 </section>
 </section>
 <section id="reinforced-transmission">
-<h2>Reinforced Transmission<a class="headerlink" href="#reinforced-transmission" title="Link to this heading"></a></h2>
+<h1>Reinforced Transmission<a class="headerlink" href="#reinforced-transmission" title="Link to this heading"></a></h1>
 <p>In this methodology, total interconnection costs are comprised of two components: <em>point-of-interconnection costs</em> and <em>network upgrade costs</em>. Point-of-interconnection costs include the cost of the spur line between the RE facility (SC point) and the connected substation, as well as the cost to upgrade the substation itself. Network upgrade costs are represented by costs to increase the transmission capacity between the connected substation and the main network node in a given reinforcement region. Network upgrade costs are assumed to be 50% of the cost of a new greenfield transmission of the same voltage as the existing transmission lines along the same path. The 50% heuristic represents cost for reconductoring or increasing the number of circuits along those lines. <code class="docutils literal notranslate"><span class="pre">reVX</span></code> (and any derivative products, e.g. <code class="docutils literal notranslate"><span class="pre">reV</span></code>) do not include estimates for longer-distance transmission that may be needed to export the renewable energy between one reinforcement region and another.</p>
 <section id="key-assumptions-under-this-approach">
-<h3>Key assumptions under this approach:<a class="headerlink" href="#key-assumptions-under-this-approach" title="Link to this heading"></a></h3>
+<h2>Key assumptions under this approach:<a class="headerlink" href="#key-assumptions-under-this-approach" title="Link to this heading"></a></h2>
 <ul class="simple">
 <li><p>Area of interest (e.g. CONUS) is broken up into “Reinforcement Regions” (i.e. Balancing Areas, States, Counties, etc.)</p></li>
 <li><p>Each reinforcement region has one or more “Network Node” (typically a city or highly populated area)</p></li>
@@ -920,36 +938,37 @@ lowercase).</p>
 </li>
 </ul>
 </section>
-</section>
+<section id="calculating-reinforced-transmission-tables">
+<h2>Calculating Reinforced Transmission Tables<a class="headerlink" href="#calculating-reinforced-transmission-tables" title="Link to this heading"></a></h2>
 <p>Reinforcement costs can be computes in several ways. The older but simpler approach is to allow supply curve points to only connect to existing substations.
 The newer but more complex approach allows supply curve points to connect to existing substations or transmission lines, simulating the build of a new
 substation at the connection point for the latter case.</p>
 <section id="substation-connections-only-old">
-<h2>Substation connections only (OLD)<a class="headerlink" href="#substation-connections-only-old" title="Link to this heading"></a></h2>
+<h3>Substation connections only (OLD)<a class="headerlink" href="#substation-connections-only-old" title="Link to this heading"></a></h3>
 <p>First, map the substations in your data set to the reinforcement regions using the following reVX command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ least-cost-paths map-ss-to-rr --features_fpath ./conus_allconns.gpkg --regions_fpath ./regions.gpkg --region_identifier_column rr_id --out_file ./substations_with_ba.gpkg
 </pre></div>
 </div>
 <p>Next, compute the reinforcement paths on multiple nodes. Use the file below as a template (<code class="docutils literal notranslate"><span class="pre">reinforcement_path_costs_config.json</span></code>):</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nv">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">178</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eagle&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;max_workers&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">    </span><span class="nv">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nv">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"memory"</span><span class="p">:</span><span class="w"> </span><span class="mf">178</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"option"</span><span class="p">:</span><span class="w"> </span><span class="s">"eagle"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"max_workers"</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"nodes"</span><span class="p">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nv">&quot;cost_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/cost.h5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;features_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./substations_with_ba.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;network_nodes_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./nn.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;transmission_lines_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/substations_and_tlines.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;region_identifier_column&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rr_id&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;capacity_class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;400&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;cost_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;tie_line_costs_{}MW&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nv">&quot;barrier_mult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;100&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./logs&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;INFO&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"cost_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/cost.h5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"features_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./substations_with_ba.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"network_nodes_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./nn.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"transmission_lines_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/substations_and_tlines.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"region_identifier_column"</span><span class="p">:</span><span class="w"> </span><span class="s">"rr_id"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"capacity_class"</span><span class="p">:</span><span class="w"> </span><span class="s">"400"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"cost_layers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">"tie_line_costs_{}MW"</span><span class="p">],</span>
+<span class="w">    </span><span class="nv">"barrier_mult"</span><span class="p">:</span><span class="w"> </span><span class="s">"100"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_directory"</span><span class="p">:</span><span class="w"> </span><span class="s">"./logs"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s">"INFO"</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -966,26 +985,26 @@ only the substations for which you computed reinforcement costs in the previous 
 </div>
 <p>You should now have a file containing all of the reinforcement costs for the substations in your dataset. Next, compute the spur line transmission costs for these substations using the following template config (<code class="docutils literal notranslate"><span class="pre">least_cost_transmission_1000MW.json</span></code>):</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nv">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">500</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eagle&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;max_workers&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">36</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">    </span><span class="nv">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nv">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"memory"</span><span class="p">:</span><span class="w"> </span><span class="mf">500</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"nodes"</span><span class="p">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"option"</span><span class="p">:</span><span class="w"> </span><span class="s">"eagle"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"max_workers"</span><span class="p">:</span><span class="w"> </span><span class="mf">36</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nv">&quot;cost_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/cost.h5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;features_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./substations_with_ba.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;regions_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./regions.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;region_identifier_column&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rr_id&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;capacity_class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1000&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;cost_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;tie_line_costs_{}MW&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nv">&quot;iso_regions_layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;iso_regions&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;barrier_mult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;100&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./logs&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;INFO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;min_line_length&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;least_cost_transmission&quot;</span>
+<span class="w">    </span><span class="nv">"cost_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/cost.h5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"features_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./substations_with_ba.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"regions_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./regions.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"region_identifier_column"</span><span class="p">:</span><span class="w"> </span><span class="s">"rr_id"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"capacity_class"</span><span class="p">:</span><span class="w"> </span><span class="s">"1000"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"cost_layers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">"tie_line_costs_{}MW"</span><span class="p">],</span>
+<span class="w">    </span><span class="nv">"iso_regions_layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"iso_regions"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"barrier_mult"</span><span class="p">:</span><span class="w"> </span><span class="s">"100"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_directory"</span><span class="p">:</span><span class="w"> </span><span class="s">"./logs"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s">"INFO"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"min_line_length"</span><span class="p">:</span><span class="w"> </span><span class="mf">0</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"name"</span><span class="p">:</span><span class="w"> </span><span class="s">"least_cost_transmission"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1006,32 +1025,32 @@ As before the data will come split into multiple files (in this case 100, since 
 <p>The resulting tables can be passed directly to <code class="docutils literal notranslate"><span class="pre">reV</span></code>, which will automatically detect reinforcement costs and take them into account during the supply curve computation.</p>
 </section>
 <section id="substation-and-tie-line-connections-new">
-<h2>Substation and tie-line connections (New)<a class="headerlink" href="#substation-and-tie-line-connections-new" title="Link to this heading"></a></h2>
+<h3>Substation and tie-line connections (New)<a class="headerlink" href="#substation-and-tie-line-connections-new" title="Link to this heading"></a></h3>
 <p>Since we want to allow tie-line connecitons, we must first run LCP to determine where new substation will be built:</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nv">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">500</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eagle&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;max_workers&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">36</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">    </span><span class="nv">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nv">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"memory"</span><span class="p">:</span><span class="w"> </span><span class="mf">500</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"nodes"</span><span class="p">:</span><span class="w"> </span><span class="mf">100</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"option"</span><span class="p">:</span><span class="w"> </span><span class="s">"eagle"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"max_workers"</span><span class="p">:</span><span class="w"> </span><span class="mf">36</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nv">&quot;cost_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/cost.h5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;features_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/substations_and_tlines.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;regions_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/regions.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;region_identifier_column&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rr_id&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;capacity_class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;200&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">// 138 kV</span>
-<span class="w">    </span><span class="nv">&quot;barrier_mult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;5000&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;cost_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;tie_line_costs_{}MW&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;swca_cultural_resources_risk&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;swca_natural_resources_risk&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nv">&quot;iso_regions_layer_name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;iso_regions&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./logs&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;INFO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;resolution&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">128</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;radius&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">278</span><span class="p">,</span><span class="w">  </span><span class="c1">// 25 km in pixels: 25,000m / 90m = 277.777777777777778</span>
-<span class="w">    </span><span class="nv">&quot;clipping_buffer&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span><span class="w">  </span><span class="c1">// default is 1.05 but since we go down to 25km radius, we can make this slightly bigger</span>
-<span class="w">    </span><span class="nv">&quot;expand_radius&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;min_line_length&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0</span>
+<span class="w">    </span><span class="nv">"cost_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/cost.h5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"features_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/substations_and_tlines.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"regions_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/regions.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"region_identifier_column"</span><span class="p">:</span><span class="w"> </span><span class="s">"rr_id"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"capacity_class"</span><span class="p">:</span><span class="w"> </span><span class="s">"200"</span><span class="p">,</span><span class="w">  </span><span class="c1">// 138 kV</span>
+<span class="w">    </span><span class="nv">"barrier_mult"</span><span class="p">:</span><span class="w"> </span><span class="s">"5000"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"cost_layers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">"tie_line_costs_{}MW"</span><span class="p">,</span><span class="w"> </span><span class="s">"swca_cultural_resources_risk"</span><span class="p">,</span><span class="w"> </span><span class="s">"swca_natural_resources_risk"</span><span class="p">],</span>
+<span class="w">    </span><span class="nv">"iso_regions_layer_name"</span><span class="p">:</span><span class="w"> </span><span class="s">"iso_regions"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_directory"</span><span class="p">:</span><span class="w"> </span><span class="s">"./logs"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s">"INFO"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"resolution"</span><span class="p">:</span><span class="w"> </span><span class="mf">128</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"radius"</span><span class="p">:</span><span class="w"> </span><span class="mf">278</span><span class="p">,</span><span class="w">  </span><span class="c1">// 25 km in pixels: 25,000m / 90m = 277.777777777777778</span>
+<span class="w">    </span><span class="nv">"clipping_buffer"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="p">,</span><span class="w">  </span><span class="c1">// default is 1.05 but since we go down to 25km radius, we can make this slightly bigger</span>
+<span class="w">    </span><span class="nv">"expand_radius"</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"min_line_length"</span><span class="p">:</span><span class="w"> </span><span class="mf">0</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1049,25 +1068,25 @@ As before the data will come split into multiple files (in this case 100, since 
 </div>
 <p>Now you can cpmpute the reinforcement paths the same way as the method above:</p>
 <div class="highlight-JSON5 notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nv">&quot;execution_control&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">      </span><span class="nv">&quot;allocation&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;memory&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">178</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;option&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;eagle&quot;</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;max_workers&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;nodes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
-<span class="w">      </span><span class="nv">&quot;walltime&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
+<span class="w">    </span><span class="nv">"execution_control"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nv">"allocation"</span><span class="p">:</span><span class="w"> </span><span class="s">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"memory"</span><span class="p">:</span><span class="w"> </span><span class="mf">178</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"option"</span><span class="p">:</span><span class="w"> </span><span class="s">"eagle"</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"max_workers"</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"nodes"</span><span class="p">:</span><span class="w"> </span><span class="mf">10</span><span class="p">,</span>
+<span class="w">      </span><span class="nv">"walltime"</span><span class="p">:</span><span class="w"> </span><span class="mf">1</span>
 <span class="w">    </span><span class="p">},</span>
-<span class="w">    </span><span class="nv">&quot;cost_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/cost.h5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;features_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./ss_from_conns_200_128.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;network_nodes_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./nn.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;transmission_lines_fpath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/substations_and_tlines.gpkg&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;region_identifier_column&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;rr_id&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;capacity_class&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;200&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;cost_layers&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;tie_line_costs_{}MW&quot;</span><span class="p">],</span>
-<span class="w">    </span><span class="nv">&quot;barrier_mult&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;5000&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_directory&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;./logs&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;log_level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;INFO&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nv">&quot;save_paths&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"cost_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/cost.h5"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"features_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./ss_from_conns_200_128.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"network_nodes_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"./nn.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"transmission_lines_fpath"</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/substations_and_tlines.gpkg"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"region_identifier_column"</span><span class="p">:</span><span class="w"> </span><span class="s">"rr_id"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"capacity_class"</span><span class="p">:</span><span class="w"> </span><span class="s">"200"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"cost_layers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s">"tie_line_costs_{}MW"</span><span class="p">],</span>
+<span class="w">    </span><span class="nv">"barrier_mult"</span><span class="p">:</span><span class="w"> </span><span class="s">"5000"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_directory"</span><span class="p">:</span><span class="w"> </span><span class="s">"./logs"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"log_level"</span><span class="p">:</span><span class="w"> </span><span class="s">"INFO"</span><span class="p">,</span>
+<span class="w">    </span><span class="nv">"save_paths"</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1088,14 +1107,16 @@ Finally, combine the spur line transmission costs and the reinforcement costs in
 </div>
 <p>The resulting tables can be passed directly to <code class="docutils literal notranslate"><span class="pre">reV</span></code>, which will automatically detect reinforcement costs and take them into account during the supply curve computation.</p>
 </section>
+</section>
+</section>
 <section id="offshore-least-cost-paths">
-<h2>Offshore Least Cost Paths<a class="headerlink" href="#offshore-least-cost-paths" title="Link to this heading"></a></h2>
+<h1>Offshore Least Cost Paths<a class="headerlink" href="#offshore-least-cost-paths" title="Link to this heading"></a></h1>
 <section id="nomenclature-note">
-<h3>Nomenclature Note<a class="headerlink" href="#nomenclature-note" title="Link to this heading"></a></h3>
+<h2>Nomenclature Note<a class="headerlink" href="#nomenclature-note" title="Link to this heading"></a></h2>
 <p>The offshore least cost paths analysis was initially performed for the Atlantic OffShore Wind Transmission (AOSWT). Some references to the AOSWT acronym still remain.</p>
 </section>
 <section id="offshore-workflow">
-<h3>Offshore Workflow<a class="headerlink" href="#offshore-workflow" title="Link to this heading"></a></h3>
+<h2>Offshore Workflow<a class="headerlink" href="#offshore-workflow" title="Link to this heading"></a></h2>
 <p>General steps to run an offshore analysis:</p>
 <ol class="arabic simple">
 <li><p>Create cost, friction, and barrier layers as described above.</p></li>
@@ -1107,14 +1128,14 @@ Finally, combine the spur line transmission costs and the reinforcement costs in
 </ol>
 </section>
 <section id="offshore-examples">
-<h3>Offshore Examples<a class="headerlink" href="#offshore-examples" title="Link to this heading"></a></h3>
+<h2>Offshore Examples<a class="headerlink" href="#offshore-examples" title="Link to this heading"></a></h2>
 <p>All examples assume that reVX was installed using <code class="docutils literal notranslate"><span class="pre">pip</span></code> so that the CLI commands are available.</p>
 <section id="creating-poi-transmission-features-from-points">
-<h4>Creating POI transmission features from points<a class="headerlink" href="#creating-poi-transmission-features-from-points" title="Link to this heading"></a></h4>
+<h3>Creating POI transmission features from points<a class="headerlink" href="#creating-poi-transmission-features-from-points" title="Link to this heading"></a></h3>
 <p>The onshore point of interconnections (POIs) have typically been provided in a CSV file. These must be converted to very short lines in a GeoPackage to work with the LCP code. The input CSV must have the following fields: ‘POI Name’, ‘State’, ‘Voltage (kV)’, ‘Lat’, ‘Long’. Note that the POIs must also be connected to a transmission line.  The <code class="docutils literal notranslate"><span class="pre">transmission-layer-creator</span> <span class="pre">convert-pois</span></code> command-line function will perform all necessary operations to convert the CSV file to a properly configured GeoPackage.  Paths from POIs to the fake transmission line can be removed in post processing using the <code class="docutils literal notranslate"><span class="pre">--drop</span> <span class="pre">TransLine</span></code> option with the <code class="docutils literal notranslate"><span class="pre">least-cost-xmission</span> <span class="pre">merge-output</span></code> command.</p>
 </section>
 <section id="find-offshore-least-cost-paths-on-a-local-eagle-node">
-<h4>Find offshore least cost paths on a local eagle node<a class="headerlink" href="#find-offshore-least-cost-paths-on-a-local-eagle-node" title="Link to this heading"></a></h4>
+<h3>Find offshore least cost paths on a local eagle node<a class="headerlink" href="#find-offshore-least-cost-paths-on-a-local-eagle-node" title="Link to this heading"></a></h3>
 <p>Find least cost paths, costs, and connection costs on eagle login node for 100MW capacity, saving results in current directory. These examples will overload the login nodes and should be run on a debug node.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ least-cost-xmission local \
     --cost_fpath /shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_costs.h5 \
@@ -1133,31 +1154,31 @@ Finally, combine the spur line transmission costs and the reinforcement costs in
 </div>
 </section>
 <section id="run-aoswt-from-a-config-file">
-<h4>Run AOSWT from a config file<a class="headerlink" href="#run-aoswt-from-a-config-file" title="Link to this heading"></a></h4>
+<h3>Run AOSWT from a config file<a class="headerlink" href="#run-aoswt-from-a-config-file" title="Link to this heading"></a></h3>
 <p>Using a config file is the preferred method of running an analysis. The below file processes a single SC point (sc_point_gid = 40139) on a debug node. Note that SLURM high quality of service on a standard node can be requested with <code class="docutils literal notranslate"><span class="pre">&quot;feature&quot;:</span> <span class="pre">&quot;--qos=high&quot;</span></code>. This file also uses the optional <code class="docutils literal notranslate"><span class="pre">save_paths</span></code> and <code class="docutils literal notranslate"><span class="pre">radius</span></code> options to save the least coasts paths to a GeoPackage and force a cost raster clipping radius of 5000 pixels, versus determining the radius from the nearest sinks. Memory usage increases with the square of radius. Since this is an offshore analysis, the resolution SC point resolution is set to 118. The <code class="docutils literal notranslate"><span class="pre">simplify_geo</span></code> key is set to <code class="docutils literal notranslate"><span class="pre">100</span></code>. Be default, the saved paths will have vertices for each raster cell, resulting in very large output files. Using <code class="docutils literal notranslate"><span class="pre">simplify_geo</span></code> simplifies the geometry, greatly reduces output file sizes, and improves run times. Large number will result in less vertices and smaller files sizes.</p>
 <p>The value for <code class="docutils literal notranslate"><span class="pre">allocation</span></code> should be set to the desired SLURM allocation. The <code class="docutils literal notranslate"><span class="pre">max_workers</span></code> key can be used to reduce the workers on each node if memory issues are encountered, but can typically be left out.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;execution_control&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;allocation&quot;</span><span class="p">:</span> <span class="s2">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;feature&quot;</span><span class="p">:</span> <span class="s2">&quot;-p debug&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;memory&quot;</span><span class="p">:</span> <span class="mi">178</span><span class="p">,</span>
-    <span class="s2">&quot;nodes&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
-    <span class="s2">&quot;option&quot;</span><span class="p">:</span> <span class="s2">&quot;eagle&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;walltime&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&quot;max_workers&quot;</span><span class="p">:</span> <span class="mi">36</span>
+  <span class="s2">"execution_control"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">"allocation"</span><span class="p">:</span> <span class="s2">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+    <span class="s2">"feature"</span><span class="p">:</span> <span class="s2">"-p debug"</span><span class="p">,</span>
+    <span class="s2">"memory"</span><span class="p">:</span> <span class="mi">178</span><span class="p">,</span>
+    <span class="s2">"nodes"</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="s2">"option"</span><span class="p">:</span> <span class="s2">"eagle"</span><span class="p">,</span>
+    <span class="s2">"walltime"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="s2">"max_workers"</span><span class="p">:</span> <span class="mi">36</span>
   <span class="p">},</span>
-  <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;cost_fpath&quot;</span><span class="p">:</span> <span class="s2">&quot;/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_costs.h5&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;features_fpath&quot;</span><span class="p">:</span> <span class="s2">&quot;/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_pois.gpkg&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;capacity_class&quot;</span><span class="p">:</span> <span class="s2">&quot;100&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;barrier_mult&quot;</span><span class="p">:</span> <span class="s2">&quot;100&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;log_directory&quot;</span><span class="p">:</span> <span class="s2">&quot;/scratch/USER_NAME/log&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;log_level&quot;</span><span class="p">:</span> <span class="s2">&quot;DEBUG&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;sc_point_gids&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">40139</span><span class="p">],</span>
-  <span class="s2">&quot;resolution&quot;</span><span class="p">:</span> <span class="mi">118</span><span class="p">,</span>
-  <span class="s2">&quot;save_paths&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-  <span class="s2">&quot;radius&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
-  <span class="s2">&quot;simplify_geo&quot;</span><span class="p">:</span> <span class="mi">100</span>
+  <span class="s2">"name"</span><span class="p">:</span> <span class="s2">"test"</span><span class="p">,</span>
+  <span class="s2">"cost_fpath"</span><span class="p">:</span> <span class="s2">"/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_costs.h5"</span><span class="p">,</span>
+  <span class="s2">"features_fpath"</span><span class="p">:</span> <span class="s2">"/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_pois.gpkg"</span><span class="p">,</span>
+  <span class="s2">"capacity_class"</span><span class="p">:</span> <span class="s2">"100"</span><span class="p">,</span>
+  <span class="s2">"barrier_mult"</span><span class="p">:</span> <span class="s2">"100"</span><span class="p">,</span>
+  <span class="s2">"log_directory"</span><span class="p">:</span> <span class="s2">"/scratch/USER_NAME/log"</span><span class="p">,</span>
+  <span class="s2">"log_level"</span><span class="p">:</span> <span class="s2">"DEBUG"</span><span class="p">,</span>
+  <span class="s2">"sc_point_gids"</span><span class="p">:</span> <span class="p">[</span><span class="mi">40139</span><span class="p">],</span>
+  <span class="s2">"resolution"</span><span class="p">:</span> <span class="mi">118</span><span class="p">,</span>
+  <span class="s2">"save_paths"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">"radius"</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+  <span class="s2">"simplify_geo"</span><span class="p">:</span> <span class="mi">100</span>
 <span class="p">}</span>
 </pre></div>
 </div>
@@ -1167,33 +1188,33 @@ Finally, combine the spur line transmission costs and the reinforcement costs in
 </div>
 <p>A sample config for WOWTS would look very similar:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;execution_control&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;allocation&quot;</span><span class="p">:</span> <span class="s2">&quot;YOUR_SLURM_ALLOCATION&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;memory&quot;</span><span class="p">:</span> <span class="mi">249</span><span class="p">,</span>
-    <span class="s2">&quot;nodes&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-    <span class="s2">&quot;option&quot;</span><span class="p">:</span> <span class="s2">&quot;kestrel&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;walltime&quot;</span><span class="p">:</span> <span class="mi">4</span>
+  <span class="s2">"execution_control"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">"allocation"</span><span class="p">:</span> <span class="s2">"YOUR_SLURM_ALLOCATION"</span><span class="p">,</span>
+    <span class="s2">"memory"</span><span class="p">:</span> <span class="mi">249</span><span class="p">,</span>
+    <span class="s2">"nodes"</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="s2">"option"</span><span class="p">:</span> <span class="s2">"kestrel"</span><span class="p">,</span>
+    <span class="s2">"walltime"</span><span class="p">:</span> <span class="mi">4</span>
   <span class="p">},</span>
-  <span class="s2">&quot;log_directory&quot;</span><span class="p">:</span> <span class="s2">&quot;/scratch/USER_NAME/log&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;log_level&quot;</span><span class="p">:</span> <span class="s2">&quot;INFO&quot;</span>
-  <span class="s2">&quot;cost_fpath&quot;</span><span class="p">:</span> <span class="s2">&quot;/projects/rev/data/transmission/north_america/conus/least_cost/offshore/processing/conus_20240221.h5&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;features_fpath&quot;</span><span class="p">:</span> <span class="s2">&quot;/projects/rev/projects/wowts/data/20240223_poi_trans_feats.gpkg&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;capacity_class&quot;</span><span class="p">:</span> <span class="s2">&quot;1000&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;cost_layers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;tie_line_costs_</span><span class="si">{}</span><span class="s2">MW&quot;</span><span class="p">,</span> <span class="s2">&quot;wet_costs&quot;</span><span class="p">],</span>
-  <span class="s2">&quot;length_invariant_cost_layers&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;landfall_costs&quot;</span><span class="p">],</span>
-  <span class="s2">&quot;barrier_mult&quot;</span><span class="p">:</span> <span class="s2">&quot;5000&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;resolution&quot;</span><span class="p">:</span> <span class="mi">157</span><span class="p">,</span>
-  <span class="s2">&quot;radius&quot;</span><span class="p">:</span> <span class="mi">777</span><span class="p">,</span>
-  <span class="s2">&quot;expand_radius&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-  <span class="s2">&quot;save_paths&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-  <span class="s2">&quot;simplify_geo&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
-  <span class="s2">&quot;sc_point_gids&quot;</span><span class="p">:</span> <span class="s2">&quot;sc_points.csv&quot;</span>
+  <span class="s2">"log_directory"</span><span class="p">:</span> <span class="s2">"/scratch/USER_NAME/log"</span><span class="p">,</span>
+  <span class="s2">"log_level"</span><span class="p">:</span> <span class="s2">"INFO"</span>
+  <span class="s2">"cost_fpath"</span><span class="p">:</span> <span class="s2">"/projects/rev/data/transmission/north_america/conus/least_cost/offshore/processing/conus_20240221.h5"</span><span class="p">,</span>
+  <span class="s2">"features_fpath"</span><span class="p">:</span> <span class="s2">"/projects/rev/projects/wowts/data/20240223_poi_trans_feats.gpkg"</span><span class="p">,</span>
+  <span class="s2">"capacity_class"</span><span class="p">:</span> <span class="s2">"1000"</span><span class="p">,</span>
+  <span class="s2">"cost_layers"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"tie_line_costs_</span><span class="si">{}</span><span class="s2">MW"</span><span class="p">,</span> <span class="s2">"wet_costs"</span><span class="p">],</span>
+  <span class="s2">"length_invariant_cost_layers"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"landfall_costs"</span><span class="p">],</span>
+  <span class="s2">"barrier_mult"</span><span class="p">:</span> <span class="s2">"5000"</span><span class="p">,</span>
+  <span class="s2">"resolution"</span><span class="p">:</span> <span class="mi">157</span><span class="p">,</span>
+  <span class="s2">"radius"</span><span class="p">:</span> <span class="mi">777</span><span class="p">,</span>
+  <span class="s2">"expand_radius"</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+  <span class="s2">"save_paths"</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">"simplify_geo"</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+  <span class="s2">"sc_point_gids"</span><span class="p">:</span> <span class="s2">"sc_points.csv"</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </section>
 <section id="post-processing">
-<h4>Post processing<a class="headerlink" href="#post-processing" title="Link to this heading"></a></h4>
+<h3>Post processing<a class="headerlink" href="#post-processing" title="Link to this heading"></a></h3>
 <p>Running an analysis on multiple nodes will result in multiple output files. These can be collected via several means. The below command will combine all output files into a single GeoPackage, assuming <code class="docutils literal notranslate"><span class="pre">save_paths</span></code> was enabled. If paths are not saved, the output will consist of multiple CSV files that must be merged manually.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ least-cost-xmission merge-output --out-file combined.gpkg \
     output_files_*.gpkg
@@ -1211,35 +1232,34 @@ Finally, combine the spur line transmission costs and the reinforcement costs in
 </div>
 </section>
 <section id="locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">
-<h4>Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage<a class="headerlink" href="#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage" title="Link to this heading"></a></h4>
+<h3>Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage<a class="headerlink" href="#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage" title="Link to this heading"></a></h3>
 <p>The processing can also be run within Python. This example uses <code class="docutils literal notranslate"><span class="pre">contextily</span></code> to add a base map to the plot, but is not required. Offshore needs an aggregation “resolution” of 118.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">contextily</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cx</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">rex.utilities.loggers</span><span class="w"> </span><span class="kn">import</span> <span class="n">init_mult</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">reVX.least_cost_xmission.least_cost_xmission</span><span class="w"> </span><span class="kn">import</span> <span class="n">LeastCostXmission</span>
 
 <span class="c1"># Start the logger</span>
-<span class="n">log_modules</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">&#39;reVX&#39;</span><span class="p">,</span> <span class="s1">&#39;reV&#39;</span><span class="p">,</span> <span class="s1">&#39;rex&#39;</span><span class="p">]</span>
-<span class="n">init_mult</span><span class="p">(</span><span class="s1">&#39;run_aoswt&#39;</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="n">modules</span><span class="o">=</span><span class="n">log_modules</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">log_modules</span> <span class="o">=</span> <span class="p">[</span><span class="vm">__name__</span><span class="p">,</span> <span class="s1">'reVX'</span><span class="p">,</span> <span class="s1">'reV'</span><span class="p">,</span> <span class="s1">'rex'</span><span class="p">]</span>
+<span class="n">init_mult</span><span class="p">(</span><span class="s1">'run_aoswt'</span><span class="p">,</span> <span class="s1">'.'</span><span class="p">,</span> <span class="n">modules</span><span class="o">=</span><span class="n">log_modules</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
-<span class="n">cost_fpath</span> <span class="o">=</span> <span class="s1">&#39;/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_costs.h5&#39;</span>
-<span class="n">features_fpath</span> <span class="o">=</span> <span class="s1">&#39;/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_pois.gpkg&#39;</span>
+<span class="n">cost_fpath</span> <span class="o">=</span> <span class="s1">'/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_costs.h5'</span>
+<span class="n">features_fpath</span> <span class="o">=</span> <span class="s1">'/shared-projects/rev/transmission_tables/least_cost/offshore/aoswt_pois.gpkg'</span>
 <span class="n">sc_point_gid</span> <span class="o">=</span> <span class="mi">51085</span>
 
 <span class="c1"># Calculate paths</span>
 <span class="n">lcx</span> <span class="o">=</span> <span class="n">LeastCostXmission</span><span class="p">(</span><span class="n">cost_fpath</span><span class="p">,</span> <span class="n">features_fpath</span><span class="p">,</span> <span class="n">resolution</span><span class="o">=</span><span class="mi">118</span><span class="p">)</span>
-<span class="n">paths</span> <span class="o">=</span> <span class="n">lcx</span><span class="o">.</span><span class="n">process_sc_points</span><span class="p">(</span><span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="n">sc_point_gids</span><span class="o">=</span><span class="p">[</span><span class="n">sc_point_gid</span><span class="p">],</span> <span class="n">save_paths</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="n">paths</span> <span class="o">=</span> <span class="n">lcx</span><span class="o">.</span><span class="n">process_sc_points</span><span class="p">(</span><span class="s1">'100'</span><span class="p">,</span> <span class="n">sc_point_gids</span><span class="o">=</span><span class="p">[</span><span class="n">sc_point_gid</span><span class="p">],</span> <span class="n">save_paths</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                <span class="n">max_workers</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="mi">5000</span><span class="p">)</span>
 
 <span class="c1"># Plot the paths</span>
 <span class="n">paths</span> <span class="o">=</span> <span class="n">paths</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
-<span class="n">ax</span> <span class="o">=</span> <span class="n">paths</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">paths</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">edgecolor</span><span class="o">=</span><span class="s1">'red'</span><span class="p">)</span>
 <span class="n">cx</span><span class="o">.</span><span class="n">add_basemap</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="n">cx</span><span class="o">.</span><span class="n">providers</span><span class="o">.</span><span class="n">Stamen</span><span class="o">.</span><span class="n">TonerLite</span><span class="p">)</span>
 
 <span class="c1"># Save to a GeoPackage</span>
-<span class="n">paths</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">&#39;example.gpkg&#39;</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">&#39;GPKG&#39;</span><span class="p">)</span>
+<span class="n">paths</span><span class="o">.</span><span class="n">to_file</span><span class="p">(</span><span class="s1">'example.gpkg'</span><span class="p">,</span> <span class="n">driver</span><span class="o">=</span><span class="s1">'GPKG'</span><span class="p">)</span>
 </pre></div>
 </div>
-</section>
 </section>
 </section>
 </section>

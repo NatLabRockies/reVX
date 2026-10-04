@@ -16,7 +16,6 @@ reVX.least\_cost\_xmission.config.xmission\_config.XmissionConfig
    .. autosummary::
    
       ~XmissionConfig.capacity_to_kv
-      ~XmissionConfig.clear
       ~XmissionConfig.copy
       ~XmissionConfig.fromkeys
       ~XmissionConfig.get
@@ -24,11 +23,9 @@ reVX.least\_cost\_xmission.config.xmission\_config.XmissionConfig
       ~XmissionConfig.keys
       ~XmissionConfig.kv_to_capacity
       ~XmissionConfig.new_sub_cost
-      ~XmissionConfig.pop
       ~XmissionConfig.popitem
       ~XmissionConfig.setdefault
       ~XmissionConfig.sub_upgrade_cost
-      ~XmissionConfig.update
       ~XmissionConfig.values
       ~XmissionConfig.xformer_cost
    

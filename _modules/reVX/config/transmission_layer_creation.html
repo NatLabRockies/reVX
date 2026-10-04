@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.config.transmission_layer_creation &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.config.transmission_layer_creation &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -627,9 +644,9 @@
            <div itemprop="articleBody">
              
   <h1>Source code for reVX.config.transmission_layer_creation</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">"""</span>
 <span class="sd">Definition of friction, barrier, and costs processing JSON config file</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Optional</span><span class="p">,</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">List</span><span class="p">,</span> <span class="n">Literal</span>
 
@@ -641,279 +658,293 @@
                                                        <span class="n">BARRIER_H5_LAYER_NAME</span><span class="p">)</span>
 
 
-<span class="c1"># Terms for specifying masks. &#39;wet+&#39; and &#39;dry+&#39; indicated &#39;wet&#39; + &#39;landfall&#39;</span>
-<span class="c1"># and &#39;dry&#39; + &#39;landfall&#39;, respectively.</span>
-<span class="n">Extents</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">&#39;all&#39;</span><span class="p">,</span> <span class="s1">&#39;wet&#39;</span><span class="p">,</span> <span class="s1">&#39;wet+&#39;</span><span class="p">,</span> <span class="s1">&#39;landfall&#39;</span><span class="p">,</span> <span class="s1">&#39;dry+&#39;</span><span class="p">,</span> <span class="s1">&#39;dry&#39;</span><span class="p">]</span>
+<span class="c1"># Terms for specifying masks. 'wet+' and 'dry+' indicated 'wet' + 'landfall'</span>
+<span class="c1"># and 'dry' + 'landfall', respectively.</span>
+<span class="n">Extents</span> <span class="o">=</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">,</span> <span class="s1">'wet'</span><span class="p">,</span> <span class="s1">'wet+'</span><span class="p">,</span> <span class="s1">'landfall'</span><span class="p">,</span> <span class="s1">'dry+'</span><span class="p">,</span> <span class="s1">'dry'</span><span class="p">]</span>
 
 
 <div class="viewcode-block" id="RangeConfig">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.RangeConfig.html#reVX.config.transmission_layer_creation.RangeConfig">[docs]</a>
-<span class="k">class</span><span class="w"> </span><span class="nc">RangeConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">&#39;forbid&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">RangeConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">'forbid'</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Config for defining a range and a value to assign to cells matching that</span>
-<span class="sd">    range. Cells with values &gt;= than &#39;min&#39; and &lt; &#39;max&#39; will be assigned</span>
-<span class="sd">    &#39;value&#39;. One or both of &#39;min&#39; and &#39;max&#39; can be specified.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="nb">min</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;-inf&#39;</span><span class="p">)</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Minimum value to get a cost assigned (inclusive)&quot;&quot;&quot;</span>
+<span class="sd">    range. Cells with values &gt;= than 'min' and &lt; 'max' will be assigned</span>
+<span class="sd">    'value'. One or both of 'min' and 'max' can be specified.</span>
+<span class="sd">    """</span>
+    <span class="nb">min</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'-inf'</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">"""Minimum value to get a cost assigned (inclusive)"""</span>
 
-    <span class="nb">max</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Maximum value to get a cost assigned (exclusive)&quot;&quot;&quot;</span>
+    <span class="nb">max</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">'inf'</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">"""Maximum value to get a cost assigned (exclusive)"""</span>
 
     <span class="n">value</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Value to assign to the range defined by `min` and `max`.&quot;&quot;&quot;</span></div>
+<span class="w">    </span><span class="sd">"""Value to assign to the range defined by `min` and `max`."""</span></div>
 
 
 
 <div class="viewcode-block" id="Rasterize">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.Rasterize.html#reVX.config.transmission_layer_creation.Rasterize">[docs]</a>
-<span class="k">class</span><span class="w"> </span><span class="nc">Rasterize</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">&#39;forbid&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">Rasterize</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">'forbid'</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Rasterize a vector layer and apply a value to it.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
     <span class="n">value</span><span class="p">:</span> <span class="nb">float</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Value to burn in to raster&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Value to burn in to raster"""</span>
 
     <span class="n">buffer</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Value to buffer by (can be negative)&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Value to buffer by (can be negative)"""</span>
 
     <span class="n">reproject</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Reproject vector to raster CRS if ``True``&quot;&quot;&quot;</span></div>
+<span class="w">    </span><span class="sd">"""Reproject vector to raster CRS if ``True``"""</span></div>
 
 
 
 <div class="viewcode-block" id="LayerBuildConfig">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.LayerBuildConfig.html#reVX.config.transmission_layer_creation.LayerBuildConfig">[docs]</a>
-<span class="k">class</span><span class="w"> </span><span class="nc">LayerBuildConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">&#39;forbid&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">LayerBuildConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">'forbid'</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Friction and barrier layers config model.</span>
-<span class="sd">    &#39;global_value&#39;, &#39;map&#39;, &#39;bins&#39;, &#39;rasterize&#39;, and &#39;forced_inclusion&#39;</span>
+<span class="sd">    'global_value', 'map', 'bins', 'rasterize', and 'forced_inclusion'</span>
 <span class="sd">    are exclusive, but exactly one must be specified. Example configs</span>
 <span class="sd">    can be seen in `test_xmission_barrier_friction_builder.py` in the</span>
 <span class="sd">    tests directory.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">extent</span><span class="p">:</span> <span class="n">Extents</span> <span class="o">=</span> <span class="n">ALL</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Extent to apply map or range to.</span>
+<span class="w">    </span><span class="sd">"""Extent to apply map or range to.</span>
 
 <span class="sd">    Must be one of the following:</span>
 
-<span class="sd">        - &#39;all&#39;: Full extent, including offshore, onshore, and landfall</span>
-<span class="sd">        - &#39;wet&#39;: offshore extent only</span>
-<span class="sd">        - &#39;wet+&#39;: offshore extent + landfall extent</span>
-<span class="sd">        - &#39;landfall&#39;: landfall extent (area between wet and dry extents)</span>
-<span class="sd">        - &#39;dry+&#39;: onshore extent + landfall extent</span>
-<span class="sd">        - &#39;dry&#39;: onshore extent only</span>
+<span class="sd">        - 'all': Full extent, including offshore, onshore, and landfall</span>
+<span class="sd">        - 'wet': offshore extent only</span>
+<span class="sd">        - 'wet+': offshore extent + landfall extent</span>
+<span class="sd">        - 'landfall': landfall extent (area between wet and dry extents)</span>
+<span class="sd">        - 'dry+': onshore extent + landfall extent</span>
+<span class="sd">        - 'dry': onshore extent only</span>
 
-<span class="sd">    By default, &#39;all&#39;.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    By default, 'all'.</span>
+<span class="sd">    """</span>
 
     <span class="n">global_value</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Global value to use for entire layer extent. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Global value to use for entire layer extent. """</span>
 
     <span class="nb">map</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">float</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Values in raster (keys) and values to use layer.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Values in raster (keys) and values to use layer."""</span>
 
     <span class="n">bins</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">RangeConfig</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Ranges of raster values.</span>
+<span class="w">    </span><span class="sd">"""Ranges of raster values.</span>
 
 <span class="sd">    This input can be one or more ranges of raster values to apply to</span>
-<span class="sd">    barrier/friction. The value of overlapping ranges are added together.&quot;&quot;&quot;</span>
+<span class="sd">    barrier/friction. The value of overlapping ranges are added together."""</span>
 
     <span class="n">pass_through</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Pass cost data through without estra processing.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Pass cost data through without estra processing."""</span>
 
     <span class="n">rasterize</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Rasterize</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Rasterize a vector and save as layer&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Rasterize a vector and save as layer"""</span>
 
     <span class="n">forced_inclusion</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Force inclusion.</span>
+<span class="w">    </span><span class="sd">"""Force inclusion.</span>
 
 <span class="sd">    If `forced_inclusion` is ``True``, any cells with a value &gt; 0 will</span>
 <span class="sd">    force the final value of corresponding cells to 0. Multiple forced</span>
-<span class="sd">    inclusions are allowed.&quot;&quot;&quot;</span></div>
+<span class="sd">    inclusions are allowed."""</span></div>
 
 
 
 <div class="viewcode-block" id="DryCosts">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.DryCosts.html#reVX.config.transmission_layer_creation.DryCosts">[docs]</a>
-<span class="k">class</span><span class="w"> </span><span class="nc">DryCosts</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">&#39;forbid&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot; Config items required to generate dry costs &quot;&quot;&quot;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">DryCosts</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">'forbid'</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">""" Config items required to generate dry costs """</span>
     <span class="n">iso_region_tiff</span><span class="p">:</span> <span class="n">FilePath</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Filename of ISO region GeoTIFF&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Filename of ISO region GeoTIFF"""</span>
 
     <span class="n">nlcd_tiff</span><span class="p">:</span> <span class="n">FilePath</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;File name of NLCD GeoTiff&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""File name of NLCD GeoTiff"""</span>
 
     <span class="n">slope_tiff</span><span class="p">:</span> <span class="n">FilePath</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;File name of slope GeoTiff&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""File name of slope GeoTiff"""</span>
 
     <span class="n">cost_configs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">FilePath</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Path to json file with Xmission cost configuration values.</span>
+<span class="w">    </span><span class="sd">"""Path to json file with Xmission cost configuration values.</span>
 
 <span class="sd">    Path to json file contianing dictionary with Xmission cost</span>
 <span class="sd">    configuration values. Valid configuration keysare:</span>
 
-<span class="sd">        - &quot;base_line_costs&quot;</span>
-<span class="sd">        - &quot;iso_lookup&quot;</span>
-<span class="sd">        - &quot;iso_multipliers&quot;</span>
-<span class="sd">        - &quot;land_use_classes&quot;</span>
-<span class="sd">        - &quot;new_substation_costs&quot;</span>
-<span class="sd">        - &quot;power_classes&quot;</span>
-<span class="sd">        - &quot;power_to_voltage&quot;</span>
-<span class="sd">        - &quot;transformer_costs&quot;</span>
-<span class="sd">        - &quot;upgrade_substation_costs&quot;</span>
+<span class="sd">        - "base_line_costs"</span>
+<span class="sd">        - "iso_lookup"</span>
+<span class="sd">        - "iso_multipliers"</span>
+<span class="sd">        - "land_use_classes"</span>
+<span class="sd">        - "new_substation_costs"</span>
+<span class="sd">        - "power_classes"</span>
+<span class="sd">        - "power_to_voltage"</span>
+<span class="sd">        - "transformer_costs"</span>
+<span class="sd">        - "upgrade_substation_costs"</span>
 
 <span class="sd">    Each of these keys should point to a dictionary or a path to</span>
 <span class="sd">    a separate json file contianing a dictionary of</span>
-<span class="sd">    configurations for each section.&quot;&quot;&quot;</span>
+<span class="sd">    configurations for each section."""</span>
 
     <span class="n">default_mults</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">IsoMultipliers</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Multipliers to be used for default region.</span>
+<span class="w">    </span><span class="sd">"""Multipliers to be used for default region.</span>
 
 <span class="sd">    This input should be a dictionary with three keys:</span>
 
-<span class="sd">        - &quot;iso&quot;: Thie key is ignored, but is required. Can set to</span>
-<span class="sd">          &quot;default&quot; and move on.</span>
-<span class="sd">        - &quot;land_use&quot;: A dictionary where keys are the land use types</span>
-<span class="sd">          (e.g. &quot;cropland&quot;, &quot;forest&quot;, &quot;wetland&quot;, etc.) and values are</span>
+<span class="sd">        - "iso": Thie key is ignored, but is required. Can set to</span>
+<span class="sd">          "default" and move on.</span>
+<span class="sd">        - "land_use": A dictionary where keys are the land use types</span>
+<span class="sd">          (e.g. "cropland", "forest", "wetland", etc.) and values are</span>
 <span class="sd">          the multipliers for those land uses.</span>
-<span class="sd">        - &quot;slope&quot;: A dictionary where keys are the slope types/mults</span>
-<span class="sd">          (e.g. &quot;hill_mult&quot;, &quot;hill_slope&quot;, &quot;mtn_mult&quot;, &quot;mtn_slope&quot;,</span>
+<span class="sd">        - "slope": A dictionary where keys are the slope types/mults</span>
+<span class="sd">          (e.g. "hill_mult", "hill_slope", "mtn_mult", "mtn_slope",</span>
 <span class="sd">          etc.) and values are the slopes/multipliers.</span>
 
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">extra_tiffs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="n">FilePath</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional list of extra GeoTIFFs to add to cost H5 file. &quot;&quot;&quot;</span></div>
+<span class="w">    </span><span class="sd">"""Optional list of extra GeoTIFFs to add to cost H5 file. """</span>
+
+    <span class="n">attrs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Dict</span><span class="p">]]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="w">    </span><span class="sd">"""H5 dataset attributes keyed by layer name.</span>
+
+<span class="sd">    Input and extra GeoTIFF layer names are their filename stems. Generated</span>
+<span class="sd">    layers include ``dry_multipliers`` and ``tie_line_costs_&lt;capacity&gt;MW``.</span>
+<span class="sd">    Layers omitted from this mapping receive no additional attributes.</span>
+<span class="sd">    """</span></div>
 
 
 
 <div class="viewcode-block" id="MergeFrictionBarriers">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.MergeFrictionBarriers.html#reVX.config.transmission_layer_creation.MergeFrictionBarriers">[docs]</a>
-<span class="k">class</span><span class="w"> </span><span class="nc">MergeFrictionBarriers</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">&#39;forbid&#39;</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MergeFrictionBarriers</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="s1">'forbid'</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Combine friction and barriers and save to H5. Multiple all barrier values</span>
 <span class="sd">    by a factor. The multiplier should be large enough that all barriers have</span>
 <span class="sd">    a higher value than any possible friction.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">friction_layer</span><span class="p">:</span> <span class="nb">str</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Name of friction layer.</span>
+<span class="w">    </span><span class="sd">"""Name of friction layer.</span>
 
 <span class="sd">    Must be a layer that has just been created or already exists in the</span>
-<span class="sd">    tiff directory with the same name and &#39;.tif&#39; extension.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    tiff directory with the same name and '.tif' extension.</span>
+<span class="sd">    """</span>
 
     <span class="n">barrier_layer</span><span class="p">:</span> <span class="nb">str</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Name of barrier layer.</span>
+<span class="w">    </span><span class="sd">"""Name of barrier layer.</span>
 
 <span class="sd">    Must be a layer that has just been created or already exists in the</span>
-<span class="sd">    tiff directory with the same name and &#39;.tif&#39; extension.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    tiff directory with the same name and '.tif' extension.</span>
+<span class="sd">    """</span>
 
     <span class="n">output_layer_name</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="n">BARRIER_H5_LAYER_NAME</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Name of combined output layer.</span>
+<span class="w">    </span><span class="sd">"""Name of combined output layer.</span>
 
-<span class="sd">    By default, :obj:`BARRIER_H5_LAYER_NAME`.&quot;&quot;&quot;</span>
+<span class="sd">    By default, :obj:`BARRIER_H5_LAYER_NAME`."""</span>
 
     <span class="n">barrier_multiplier</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e6</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Value to multiply barrier layer by during merge with friction.</span>
+<span class="w">    </span><span class="sd">"""Value to multiply barrier layer by during merge with friction.</span>
 
 <span class="sd">    The multiplier should be large enough that all barriers have</span>
-<span class="sd">    a higher value than any possible friction.&quot;&quot;&quot;</span></div>
+<span class="sd">    a higher value than any possible friction."""</span>
+
+    <span class="n">attrs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="w">    </span><span class="sd">"""Additional H5 dataset attributes for the combined output layer."""</span></div>
 
 
 
 <span class="n">LayerBuildComponents</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">LayerBuildConfig</span><span class="p">]</span>
-<span class="sd">&quot;&quot;&quot;Mapping of layer components to use for building the final layer.</span>
+<span class="sd">"""Mapping of layer components to use for building the final layer.</span>
 
 <span class="sd">Keys are GeoTIFF or vector filepaths. Values are the LayerBuildConfig</span>
-<span class="sd">to use for that file.&quot;&quot;&quot;</span>
+<span class="sd">to use for that file."""</span>
 
 
 <div class="viewcode-block" id="LayerConfig">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.LayerConfig.html#reVX.config.transmission_layer_creation.LayerConfig">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">LayerConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Definition of friction, barrier, and costs processing JSON config file.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">layer_name</span><span class="p">:</span> <span class="nb">str</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Name of layer in H5 file. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Name of layer in H5 file. """</span>
 
     <span class="n">description</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional description to store in attrs for layer. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Optional description to store in attrs for layer. """</span>
+
+    <span class="n">attrs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="w">    </span><span class="sd">"""Additional H5 dataset attributes for this layer."""</span>
 
     <span class="n">include_in_h5</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Flag to specify whether layer should be stored in H5 or not. &quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Flag to specify whether layer should be stored in H5 or not. """</span>
 
     <span class="n">values_are_costs_per_mile</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Option to specify that the values given represent $/mile.</span>
+<span class="w">    </span><span class="sd">"""Option to specify that the values given represent $/mile.</span>
 
 <span class="sd">    If ``True``, the values will be converted to $/CELL_DIST, which is</span>
 <span class="sd">    what is ultimately used for routing.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">build</span><span class="p">:</span> <span class="n">LayerBuildComponents</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Mapping of layer components used to build this layer.</span>
+<span class="w">    </span><span class="sd">"""Mapping of layer components used to build this layer.</span>
 
 <span class="sd">    Keys are GeoTIFF or vector filepaths. Values are the</span>
-<span class="sd">    LayerBuildConfig to use for that file.&quot;&quot;&quot;</span></div>
+<span class="sd">    LayerBuildConfig to use for that file."""</span></div>
 
 
 
 <span class="n">Layers</span> <span class="o">=</span> <span class="n">List</span><span class="p">[</span><span class="n">LayerConfig</span><span class="p">]</span>
-<span class="sd">&quot;&quot;&quot;Layer configs to build and potentially add to H5 file. &quot;&quot;&quot;</span>
+<span class="sd">"""Layer configs to build and potentially add to H5 file. """</span>
 
 
 <div class="viewcode-block" id="TransmissionLayerCreationConfig">
 <a class="viewcode-back" href="../../../_autosummary/reVX.config.transmission_layer_creation.TransmissionLayerCreationConfig.html#reVX.config.transmission_layer_creation.TransmissionLayerCreationConfig">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">TransmissionLayerCreationConfig</span><span class="p">(</span><span class="n">BaseModel</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Definition of friction, barrier, and costs processing JSON config file.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">template_raster_fpath</span><span class="p">:</span> <span class="n">FilePath</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Template raster GeoTIFF for shape and profile&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""Template raster GeoTIFF for shape and profile"""</span>
 
     <span class="n">h5_fpath</span><span class="p">:</span> <span class="n">FilePath</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;H5 to store results in.&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""H5 to store results in."""</span>
 
-    <span class="n">layer_dir</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Directory to look for GeoTIFFs in, in addition to &#39;.&#39;&quot;&quot;&quot;</span>
+    <span class="n">layer_dir</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">"""Directory to look for GeoTIFFs in, in addition to '.'"""</span>
 
-    <span class="n">masks_dir</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional path for mask GeoTIFFs.&quot;&quot;&quot;</span>
+    <span class="n">masks_dir</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">"""Optional path for mask GeoTIFFs."""</span>
 
-    <span class="n">output_tiff_dir</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Directory to store output tiff files in. &quot;&quot;&quot;</span>
+    <span class="n">output_tiff_dir</span><span class="p">:</span> <span class="n">DirectoryPath</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s1">'.'</span><span class="p">)</span>
+<span class="w">    </span><span class="sd">"""Directory to store output tiff files in. """</span>
 
     <span class="n">layers</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Layers</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional configuration for layers to be built.</span>
+<span class="w">    </span><span class="sd">"""Optional configuration for layers to be built.</span>
 
 <span class="sd">    At least one of `layers`, `dry_costs`, or</span>
 <span class="sd">    `merge_friction_and_barriers` must be defined.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">dry_costs</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">DryCosts</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional dry cost layer.</span>
+<span class="w">    </span><span class="sd">"""Optional dry cost layer.</span>
 
 <span class="sd">    At least one of `layers`, `dry_costs`, or</span>
 <span class="sd">    `merge_friction_and_barriers` must be defined.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">merge_friction_and_barriers</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">MergeFrictionBarriers</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Optional config to merge friction barriers.</span>
+<span class="w">    </span><span class="sd">"""Optional config to merge friction barriers.</span>
 
 <span class="sd">    At least one of `layers`, `dry_costs`, or</span>
 <span class="sd">    `merge_friction_and_barriers` must be defined.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
     <span class="n">cell_size</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">CELL_SIZE</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Side length of each cell, in meters.</span>
+<span class="w">    </span><span class="sd">"""Side length of each cell, in meters.</span>
 
-<span class="sd">    Cells are assumed to be square. By default, :obj:`CELL_SIZE`.&quot;&quot;&quot;</span></div>
+<span class="sd">    Cells are assumed to be square. By default, :obj:`CELL_SIZE`."""</span></div>
 
 </pre></div>
 

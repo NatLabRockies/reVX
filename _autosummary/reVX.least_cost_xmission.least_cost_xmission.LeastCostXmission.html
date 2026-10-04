@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,7 +653,7 @@
 <h1>reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission<a class="headerlink" href="#revx-least-cost-xmission-least-cost-xmission-leastcostxmission" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">LeastCostXmission</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmission_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_line_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tb_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'transmission_barrier'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iso_regions_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ISO_regions'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/least_cost_xmission/least_cost_xmission.html#LeastCostXmission"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">LeastCostXmission</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmission_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_line_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tb_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'transmission_barrier'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iso_regions_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ISO_regions'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/least_cost_xmission/least_cost_xmission.html#LeastCostXmission"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="reVX.least_cost_xmission.least_cost_paths.LeastCostPaths.html#reVX.least_cost_xmission.least_cost_paths.LeastCostPaths" title="reVX.least_cost_xmission.least_cost_paths.LeastCostPaths"><code class="xref py py-class docutils literal notranslate"><span class="pre">LeastCostPaths</span></code></a></p>
 <p>Compute Least Cost tie-line paths and full transmission cap cost
 for all possible connections to all supply curve points</p>
@@ -704,7 +721,7 @@ By default, <code class="xref py py-obj docutils literal notranslate"><span clas
 </table>
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sc_points">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sc_points</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sc_points" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sc_points</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sc_points" title="Link to this definition"></a></dt>
 <dd><p>Table of supply curve points</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -715,7 +732,7 @@ By default, <code class="xref py py-obj docutils literal notranslate"><span clas
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.features">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">features</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.features" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">features</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.features" title="Link to this definition"></a></dt>
 <dd><p>Table of features to compute paths for</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -726,7 +743,7 @@ By default, <code class="xref py py-obj docutils literal notranslate"><span clas
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sub_lines_mapping">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sub_lines_mapping</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sub_lines_mapping" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sub_lines_mapping</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sub_lines_mapping" title="Link to this definition"></a></dt>
 <dd><p>Series mapping substations  to the transmission lines connected
 to each substation</p>
 <dl class="field-list simple">
@@ -738,7 +755,7 @@ to each substation</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sink_coords">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sink_coords</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sink_coords" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sink_coords</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sink_coords" title="Link to this definition"></a></dt>
 <dd><p>Inf sink coordinates (row, col)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -749,7 +766,7 @@ to each substation</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sink_tree">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">sink_tree</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sink_tree" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">sink_tree</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.sink_tree" title="Link to this definition"></a></dt>
 <dd><p>cKDTree for infinite sinks</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -837,7 +854,7 @@ are within “nn_sink” nearest infinite sinks</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.run">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmission_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_line_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_point_gids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nn_sinks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clipping_buffer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tb_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'transmission_barrier'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">barrier_mult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iso_regions_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ISO_regions'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expand_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mp_delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simplify_geo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_invariant_cost_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracked_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_mult_kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/least_cost_xmission/least_cost_xmission.html#LeastCostXmission.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.run" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cost_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capacity_class</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cost_layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resolution</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xmission_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_line_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_point_gids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nn_sinks</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clipping_buffer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.05</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tb_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'transmission_barrier'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">barrier_mult</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">iso_regions_layer_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'ISO_regions'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">save_paths</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expand_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mp_delay</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">simplify_geo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_invariant_cost_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracked_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length_mult_kind</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'linear'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">90</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/least_cost_xmission/least_cost_xmission.html#LeastCostXmission.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.run" title="Link to this definition"></a></dt>
 <dd><p>Find Least Cost Transmission connections between desired
 sc_points to given transmission features for desired capacity
 class</p>
@@ -929,7 +946,7 @@ are within “nn_sink” nearest infinite sinks</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.end_features">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end_features</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.end_features" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">end_features</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.end_features" title="Link to this definition"></a></dt>
 <dd><p>GeoDataFrame containing the transmission features to compute the
 least cost paths to, starting from the <cite>start_indices</cite>
 (typically the centroid of the supply curve cell under
@@ -943,7 +960,7 @@ consideration).</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.end_indices">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">end_indices</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.end_indices" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">end_indices</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.end_indices" title="Link to this definition"></a></dt>
 <dd><p>Tuple (row, col) index or list of (row, col) indices in the
 cost array indicating the end location(s) to compute least
 cost paths to (typically transmission feature locations).
@@ -1014,7 +1031,7 @@ of length, cost, and geometry for each path</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.start_indices">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">start_indices</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.start_indices" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">start_indices</span></span><a class="headerlink" href="#reVX.least_cost_xmission.least_cost_xmission.LeastCostXmission.start_indices" title="Link to this definition"></a></dt>
 <dd><p>Tuple of (row_idx, col_idx) in the cost array indicating the
 start position of all paths to compute (typically, this is
 the centroid of the supply curve cell under consideration).

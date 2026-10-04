@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.config.rpm.RepProfilesConfigGroup &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.config.rpm.RepProfilesConfigGroup &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,8 +653,8 @@
 <h1>reVX.config.rpm.RepProfilesConfigGroup<a class="headerlink" href="#revx-config-rpm-repprofilesconfiggroup" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">RepProfilesConfigGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/config/rpm.html#RepProfilesConfigGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.config.base_config.BaseConfig.html#reV.config.base_config.BaseConfig" title="(in reV v0.15.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConfig</span></code></a></p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">RepProfilesConfigGroup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/config/rpm.html#RepProfilesConfigGroup"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://natlabrockies.github.io/reV/_autosummary/reV.config.base_config.BaseConfig.html#reV.config.base_config.BaseConfig" title="(in reV v0.19.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseConfig</span></code></a></p>
 <p>Subclass for handling the RPM config input group for the reVX-RPM
 representative profiles framework.</p>
 <dl class="field-list simple">
@@ -654,26 +671,20 @@ representative profiles framework.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.check_overwrite_keys" title="reVX.config.rpm.RepProfilesConfigGroup.check_overwrite_keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_overwrite_keys</span></code></a>(primary_key, ...)</p></td>
 <td><p>Check for overwrite keys and raise a ConfigError if present</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.clear" title="reVX.config.rpm.RepProfilesConfigGroup.clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.copy" title="reVX.config.rpm.RepProfilesConfigGroup.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.copy" title="reVX.config.rpm.RepProfilesConfigGroup.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.fromkeys" title="reVX.config.rpm.RepProfilesConfigGroup.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.fromkeys" title="reVX.config.rpm.RepProfilesConfigGroup.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
 <td><p>Create a new dictionary with keys from iterable and values set to value.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.get" title="reVX.config.rpm.RepProfilesConfigGroup.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.get" title="reVX.config.rpm.RepProfilesConfigGroup.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
 <td><p>Return the value for key if key is in the dictionary, else default.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.items" title="reVX.config.rpm.RepProfilesConfigGroup.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.items" title="reVX.config.rpm.RepProfilesConfigGroup.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.keys" title="reVX.config.rpm.RepProfilesConfigGroup.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.keys" title="reVX.config.rpm.RepProfilesConfigGroup.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
 <td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.pop" title="reVX.config.rpm.RepProfilesConfigGroup.pop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code></a>(k[,d])</p></td>
-<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.popitem" title="reVX.config.rpm.RepProfilesConfigGroup.popitem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code></a>()</p></td>
 <td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
@@ -690,10 +701,7 @@ representative profiles framework.</p>
 <tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.str_replace_and_resolve" title="reVX.config.rpm.RepProfilesConfigGroup.str_replace_and_resolve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">str_replace_and_resolve</span></code></a>(d, str_rep)</p></td>
 <td><p>Perform a deep string replacement and path resolve in d.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.update" title="reVX.config.rpm.RepProfilesConfigGroup.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>([E, ]**F)</p></td>
-<td><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.values" title="reVX.config.rpm.RepProfilesConfigGroup.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.config.rpm.RepProfilesConfigGroup.values" title="reVX.config.rpm.RepProfilesConfigGroup.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -747,33 +755,33 @@ representative profiles framework.</p>
 </table>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.REQUIREMENTS">
-<span class="sig-name descname"><span class="pre">REQUIREMENTS</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('rpm_clusters',)</span></em><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.REQUIREMENTS" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">REQUIREMENTS</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('rpm_clusters',)</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.REQUIREMENTS" title="Link to this definition"></a></dt>
 <dd><p>Required keys for config</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.rpm_clusters">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">rpm_clusters</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.rpm_clusters" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">rpm_clusters</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.rpm_clusters" title="Link to this definition"></a></dt>
 <dd><p>Pre-existing RPM cluster results .csv with
 (gid, gen_gid, cluster_id, rank) (required).</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.n_profiles">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_profiles</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.n_profiles" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">n_profiles</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.n_profiles" title="Link to this definition"></a></dt>
 <dd><p>Get the number of profiles to get.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.exclusions">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">exclusions</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.exclusions" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">exclusions</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.exclusions" title="Link to this definition"></a></dt>
 <dd><p>Filepath to exclusions data (must match the techmap grid),
 None will not apply exclusions.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.excl_dict">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">excl_dict</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.excl_dict" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">excl_dict</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.excl_dict" title="Link to this definition"></a></dt>
 <dd><p>String representation of a dictionary of exclusion LayerMask arguments
 {layer: {kwarg: value}} where layer is a dataset in excl_fpath and
 kwarg can be “inclusion_range”, “exclude_values”, “include_values”,
@@ -782,26 +790,26 @@ kwarg can be “inclusion_range”, “exclude_values”, “include_values”,
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.techmap_dset">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">techmap_dset</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.techmap_dset" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">techmap_dset</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.techmap_dset" title="Link to this definition"></a></dt>
 <dd><p>Dataset name in the techmap file containing the exclusions-to-resource
 mapping data.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.trg_bins">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trg_bins</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.trg_bins" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">trg_bins</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.trg_bins" title="Link to this definition"></a></dt>
 <dd><p>Filepath to a single-column CSV containing ordered TRG bin edges.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.trg_dset">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">trg_dset</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.trg_dset" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">trg_dset</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.trg_dset" title="Link to this definition"></a></dt>
 <dd><p>TRG dataset found in cf_fpath that is associated with the TRG bins</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.forecast_fpath">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forecast_fpath</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.forecast_fpath" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">forecast_fpath</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.forecast_fpath" title="Link to this definition"></a></dt>
 <dd><p>reV generation output file for forecast data. If this is input,
 profiles will be taken from forecast file instead of the cf file,
 based on a NN mapping.</p>
@@ -809,14 +817,14 @@ based on a NN mapping.</p>
 
 <dl class="py attribute">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.STR_REP">
-<span class="sig-name descname"><span class="pre">STR_REP</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'REVDIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/reV',</span> <span class="pre">'TESTDATADIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.15/x64/lib/python3.11/site-packages/tests/data'}</span></em><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.STR_REP" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">STR_REP</span></span><span class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'REVDIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/reV',</span> <span class="pre">'TESTDATADIR':</span> <span class="pre">'/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/tests/data'}</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.STR_REP" title="Link to this definition"></a></dt>
 <dd><p>Mapping of config inputs (keys) to desired replacements (values) in
 addition to relative file paths as demarcated by ./ and ../</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.check_files">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">check_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.check_files" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">check_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.check_files" title="Link to this definition"></a></dt>
 <dd><p>Make sure all files in the input file list exist.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -839,14 +847,9 @@ addition to relative file paths as demarcated by ./ and ../</p>
 </dl>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Remove</span> <span class="pre">all</span> <span class="pre">items</span> <span class="pre">from</span> <span class="pre">D.</span></span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.clear" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.config_dir">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_dir</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.config_dir" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">config_dir</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.config_dir" title="Link to this definition"></a></dt>
 <dd><p>Get the directory that the config file is in.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -857,7 +860,7 @@ addition to relative file paths as demarcated by ./ and ../</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.config_keys">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">config_keys</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.config_keys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">config_keys</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.config_keys" title="Link to this definition"></a></dt>
 <dd><p>List of valid config keys</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -873,7 +876,7 @@ addition to relative file paths as demarcated by ./ and ../</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.fromkeys">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.fromkeys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.fromkeys" title="Link to this definition"></a></dt>
 <dd><p>Create a new dictionary with keys from iterable and values set to value.</p>
 </dd></dl>
 
@@ -895,7 +898,7 @@ addition to relative file paths as demarcated by ./ and ../</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.log_level">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.log_level" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">log_level</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.log_level" title="Link to this definition"></a></dt>
 <dd><p>Get user-specified “log_level” (DEBUG, INFO, WARNING, etc…).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -907,20 +910,13 @@ config-specified log level string.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.name">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.name" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.name" title="Link to this definition"></a></dt>
 <dd><p>Get the job name, defaults to ‘rev’.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – reV job name.</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.pop">
-<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">v,</span> <span class="pre">remove</span> <span class="pre">specified</span> <span class="pre">key</span> <span class="pre">and</span> <span class="pre">return</span> <span class="pre">the</span> <span class="pre">corresponding</span> <span class="pre">value.</span></span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.pop" title="Link to this definition"></a></dt>
-<dd><p>If the key is not found, return the default if given; otherwise,
-raise a KeyError.</p>
 </dd></dl>
 
 <dl class="py method">
@@ -992,14 +988,6 @@ values are the new values.</p></li>
 <dd class="field-even"><p><strong>d</strong> (<em>dict</em>) – Config dictionary with updated strings.</p>
 </dd>
 </dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.config.rpm.RepProfilesConfigGroup.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">E</span></span></em>, <span class="optional">]</span><em class="sig-param"><span class="n"><span class="pre">**F</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Update</span> <span class="pre">D</span> <span class="pre">from</span> <span class="pre">dict/iterable</span> <span class="pre">E</span> <span class="pre">and</span> <span class="pre">F.</span></span></span><a class="headerlink" href="#reVX.config.rpm.RepProfilesConfigGroup.update" title="Link to this definition"></a></dt>
-<dd><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
-If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
-In either case, this is followed by: for k in F:  D[k] = F[k]</p>
 </dd></dl>
 
 <dl class="py method">

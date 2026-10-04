@@ -15,16 +15,13 @@ reVX.least\_cost\_xmission.config.xmission\_config.IsoMultipliers
 
    .. autosummary::
    
-      ~IsoMultipliers.clear
       ~IsoMultipliers.copy
       ~IsoMultipliers.fromkeys
       ~IsoMultipliers.get
       ~IsoMultipliers.items
       ~IsoMultipliers.keys
-      ~IsoMultipliers.pop
       ~IsoMultipliers.popitem
       ~IsoMultipliers.setdefault
-      ~IsoMultipliers.update
       ~IsoMultipliers.values
    
    

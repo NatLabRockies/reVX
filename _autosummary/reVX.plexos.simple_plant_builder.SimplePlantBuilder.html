@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.plexos.simple_plant_builder.SimplePlantBuilder &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.plexos.simple_plant_builder.SimplePlantBuilder &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -636,7 +653,7 @@
 <h1>reVX.plexos.simple_plant_builder.SimplePlantBuilder<a class="headerlink" href="#revx-plexos-simple-plant-builder-simpleplantbuilder" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">SimplePlantBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plant_meta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev_sc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forecast_fpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plant_name_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tech_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UTC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">share_resource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_mean_cf_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean_cf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_cap_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'capacity'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dset_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bespoke</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/plexos/simple_plant_builder.html#SimplePlantBuilder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">SimplePlantBuilder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plant_meta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev_sc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forecast_fpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plant_name_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tech_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UTC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">share_resource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_mean_cf_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean_cf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_cap_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'capacity'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dset_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bespoke</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/plexos/simple_plant_builder.html#SimplePlantBuilder"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder" title="Link to this definition"></a></dt>
 <dd><p>Bases: <a class="reference internal" href="reVX.plexos.base.BaseProfileAggregation.html#reVX.plexos.base.BaseProfileAggregation" title="reVX.plexos.base.BaseProfileAggregation"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseProfileAggregation</span></code></a></p>
 <p>Class to build generation profiles for “plants” by aggregating resource
 from nearest neighbor supply curve points.</p>
@@ -735,7 +752,7 @@ grid resolution.</p></li>
 </table>
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.plant_meta">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">plant_meta</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.plant_meta" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">plant_meta</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.plant_meta" title="Link to this definition"></a></dt>
 <dd><p>Get plant meta data for the requested plant buildout
 with buildout information</p>
 <dl class="field-list simple">
@@ -789,7 +806,7 @@ timeseries length and n is the number of plants.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.available_res_gids">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">available_res_gids</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.available_res_gids" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">available_res_gids</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.available_res_gids" title="Link to this definition"></a></dt>
 <dd><p>Resource gids available in the cf file.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -800,7 +817,7 @@ timeseries length and n is the number of plants.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.convert_bespoke_sc">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">convert_bespoke_sc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gid_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.convert_bespoke_sc" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">convert_bespoke_sc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gid_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.convert_bespoke_sc" title="Link to this definition"></a></dt>
 <dd><p>Convert a bespoke supply curve table to reference resource gids
 (res_gids) based on the bespoke generation outputs that are on the
 supply curve grid not the resource grid</p>
@@ -840,7 +857,7 @@ By default None.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.forecast_map">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">forecast_map</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.forecast_map" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">forecast_map</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.forecast_map" title="Link to this definition"></a></dt>
 <dd><p>An array mapping the reV “actuals” generation data to forecast data
 of a different resolution (if input). This is an (n, 1) array where n
 is the number of “actuals” generation data points. So
@@ -855,7 +872,7 @@ index 9 in the cf_fpath reV generation output.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.get_unique_plant_names">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_unique_plant_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tech_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.get_unique_plant_names" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">get_unique_plant_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tech_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.get_unique_plant_names" title="Link to this definition"></a></dt>
 <dd><p>Get a list of ordered unique plant names</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -873,7 +890,7 @@ index 9 in the cf_fpath reV generation output.</p>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.node_map">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">node_map</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.node_map" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">node_map</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.node_map" title="Link to this definition"></a></dt>
 <dd><p>Nearest neighbor output mapping rev supply curve points to plants
 or plexos nodes.</p>
 <dl class="field-list simple">
@@ -885,7 +902,7 @@ or plexos nodes.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.run">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plant_meta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev_sc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forecast_fpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plant_name_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tech_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UTC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">share_resource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_fpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_mean_cf_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean_cf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_cap_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'capacity'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dset_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bespoke</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/plexos/simple_plant_builder.html#SimplePlantBuilder.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.run" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plant_meta</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rev_sc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cf_fpath</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forecast_fpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plant_name_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tech_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'UTC'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">share_resource</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_workers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_fpath</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_mean_cf_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean_cf'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sc_cap_col</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'capacity'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dset_tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bespoke</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/plexos/simple_plant_builder.html#SimplePlantBuilder.run"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.run" title="Link to this definition"></a></dt>
 <dd><p>Build profiles and meta data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -943,7 +960,7 @@ resource used.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.time_index">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">time_index</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.time_index" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">time_index</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.time_index" title="Link to this definition"></a></dt>
 <dd><p>Get the generation profile time index.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -954,7 +971,7 @@ resource used.</p></li>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.tz_alias">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tz_alias</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.tz_alias" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tz_alias</span></span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.tz_alias" title="Link to this definition"></a></dt>
 <dd><p>Get a short 3-char tz alias if the timezone is common in the US
 (pst, mst, cst, est)</p>
 <dl class="field-list simple">
@@ -966,7 +983,7 @@ resource used.</p></li>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.plexos.simple_plant_builder.SimplePlantBuilder.tz_convert_profiles">
-<em class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">tz_convert_profiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">profiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.tz_convert_profiles" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">static</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">tz_convert_profiles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">profiles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timezone</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.plexos.simple_plant_builder.SimplePlantBuilder.tz_convert_profiles" title="Link to this definition"></a></dt>
 <dd><p>Convert profiles to local time and forward/back fill missing data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>

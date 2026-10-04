@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.config.xmission_config.XmissionConfig &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.config.xmission_config.XmissionConfig &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -14,9 +14,9 @@
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/js/theme.js"></script>
@@ -97,20 +97,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -579,6 +593,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -593,6 +608,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -601,6 +617,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -637,8 +654,8 @@
 <h1>reVX.least_cost_xmission.config.xmission_config.XmissionConfig<a class="headerlink" href="#revx-least-cost-xmission-config-xmission-config-xmissionconfig" title="Link to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig">
-<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">XmissionConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/least_cost_xmission/config/xmission_config.html#XmissionConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig" title="Link to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">XmissionConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/reVX/least_cost_xmission/config/xmission_config.html#XmissionConfig"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig" title="Link to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/builtins/stdtypes.html#dict" title="(in Python v3.14)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
 <p>Load default tie lines configuration</p>
 <p>Use default values for all parameters if None.</p>
 <dl class="field-list simple">
@@ -656,32 +673,26 @@ if None use defaults in ‘./config.json’</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.capacity_to_kv" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.capacity_to_kv"><code class="xref py py-obj docutils literal notranslate"><span class="pre">capacity_to_kv</span></code></a>(capacity)</p></td>
 <td><p>Convert capacity class to line voltage</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.clear" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.clear"><code class="xref py py-obj docutils literal notranslate"><span class="pre">clear</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.copy" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.copy" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.copy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">copy</span></code></a>()</p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">fromkeys</span></code></a>(iterable[, value])</p></td>
 <td><p>Create a new dictionary with keys from iterable and values set to value.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.get" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.get" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.get"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get</span></code></a>(key[, default])</p></td>
 <td><p>Return the value for key if key is in the dictionary, else default.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.items" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.items" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.items"><code class="xref py py-obj docutils literal notranslate"><span class="pre">items</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.keys" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.keys" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.keys"><code class="xref py py-obj docutils literal notranslate"><span class="pre">keys</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.kv_to_capacity" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.kv_to_capacity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kv_to_capacity</span></code></a>(kv)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.kv_to_capacity" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.kv_to_capacity"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kv_to_capacity</span></code></a>(kv)</p></td>
 <td><p>Convert line voltage to capacity class</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.new_sub_cost" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.new_sub_cost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">new_sub_cost</span></code></a>(region, tie_line_voltage)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.new_sub_cost" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.new_sub_cost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">new_sub_cost</span></code></a>(region, tie_line_voltage)</p></td>
 <td><p>Extract new substation costs in $ for given region and tie-line voltage rating</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.pop" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.pop"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pop</span></code></a>(k[,d])</p></td>
-<td><p>If the key is not found, return the default if given; otherwise, raise a KeyError.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.popitem" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.popitem"><code class="xref py py-obj docutils literal notranslate"><span class="pre">popitem</span></code></a>()</p></td>
 <td><p>Remove and return a (key, value) pair as a 2-tuple.</p></td>
@@ -692,22 +703,14 @@ if None use defaults in ‘./config.json’</p>
 <tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.sub_upgrade_cost" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.sub_upgrade_cost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">sub_upgrade_cost</span></code></a>(region, tie_line_voltage)</p></td>
 <td><p>Extract substation upgrade costs in $ for given region and tie-line voltage rating</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.update" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.update"><code class="xref py py-obj docutils literal notranslate"><span class="pre">update</span></code></a>([E, ]**F)</p></td>
-<td><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k] If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v In either case, this is followed by: for k in F:  D[k] = F[k]</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.values" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.values" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.values"><code class="xref py py-obj docutils literal notranslate"><span class="pre">values</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.xformer_cost" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.xformer_cost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xformer_cost</span></code></a>(feature_voltage, tie_line_voltage)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.xformer_cost" title="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.xformer_cost"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xformer_cost</span></code></a>(feature_voltage, tie_line_voltage)</p></td>
 <td><p>Extract transformer costs in $ for given region and tie-line voltage rating</p></td>
 </tr>
 </tbody>
 </table>
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.clear">
-<span class="sig-name descname"><span class="pre">clear</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Remove</span> <span class="pre">all</span> <span class="pre">items</span> <span class="pre">from</span> <span class="pre">D.</span></span></span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.clear" title="Link to this definition"></a></dt>
-<dd></dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.copy">
 <span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">a</span> <span class="pre">shallow</span> <span class="pre">copy</span> <span class="pre">of</span> <span class="pre">D</span></span></span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.copy" title="Link to this definition"></a></dt>
@@ -715,7 +718,7 @@ if None use defaults in ‘./config.json’</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys">
-<em class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys" title="Link to this definition"></a></dt>
+<span class="property"><span class="k"><span class="pre">classmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">fromkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.fromkeys" title="Link to this definition"></a></dt>
 <dd><p>Create a new dictionary with keys from iterable and values set to value.</p>
 </dd></dl>
 
@@ -736,13 +739,6 @@ if None use defaults in ‘./config.json’</p>
 <dd></dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.pop">
-<span class="sig-name descname"><span class="pre">pop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">k</span></span></em><span class="optional">[</span>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="optional">]</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">v,</span> <span class="pre">remove</span> <span class="pre">specified</span> <span class="pre">key</span> <span class="pre">and</span> <span class="pre">return</span> <span class="pre">the</span> <span class="pre">corresponding</span> <span class="pre">value.</span></span></span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.pop" title="Link to this definition"></a></dt>
-<dd><p>If the key is not found, return the default if given; otherwise,
-raise a KeyError.</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.popitem">
 <span class="sig-name descname"><span class="pre">popitem</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.popitem" title="Link to this definition"></a></dt>
 <dd><p>Remove and return a (key, value) pair as a 2-tuple.</p>
@@ -755,14 +751,6 @@ Raises KeyError if the dict is empty.</p>
 <span class="sig-name descname"><span class="pre">setdefault</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="positional-only-separator o"><abbr title="Positional-only parameter separator (PEP 570)"><span class="pre">/</span></abbr></span></em><span class="sig-paren">)</span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.setdefault" title="Link to this definition"></a></dt>
 <dd><p>Insert key with a value of default if key is not in the dictionary.</p>
 <p>Return the value for key if key is in the dictionary, else default.</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="reVX.least_cost_xmission.config.xmission_config.XmissionConfig.update">
-<span class="sig-name descname"><span class="pre">update</span></span><span class="sig-paren">(</span><span class="optional">[</span><em class="sig-param"><span class="n"><span class="pre">E</span></span></em>, <span class="optional">]</span><em class="sig-param"><span class="n"><span class="pre">**F</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None.</span>&#160; <span class="pre">Update</span> <span class="pre">D</span> <span class="pre">from</span> <span class="pre">dict/iterable</span> <span class="pre">E</span> <span class="pre">and</span> <span class="pre">F.</span></span></span><a class="headerlink" href="#reVX.least_cost_xmission.config.xmission_config.XmissionConfig.update" title="Link to this definition"></a></dt>
-<dd><p>If E is present and has a .keys() method, then does:  for k in E: D[k] = E[k]
-If E is present and lacks a .keys() method, then does:  for k, v in E: D[k] = v
-In either case, this is followed by: for k in F:  D[k] = F[k]</p>
 </dd></dl>
 
 <dl class="py method">

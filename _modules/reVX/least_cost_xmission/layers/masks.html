@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>reVX.least_cost_xmission.layers.masks &mdash; reVX 0.8.0 documentation</title>
+  <title>reVX.least_cost_xmission.layers.masks &mdash; reVX 0.9.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/css/theme.css?v=9edc463e" />
       <link rel="stylesheet" type="text/css" href="../../../../_static/copybutton.css?v=76b2166b" />
@@ -13,9 +13,9 @@
   
       <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../../_static/documentation_options.js?v=486e5634"></script>
-      <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
-      <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../../_static/documentation_options.js?v=39bb1c6d"></script>
+      <script src="../../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
       <script src="../../../../_static/clipboard.min.js?v=a7894cd8"></script>
       <script src="../../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../../_static/js/theme.js"></script>
@@ -94,20 +94,34 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#layer-creation-config-file-examples">Layer Creation Config File Examples</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#running-the-layer-creator">Running the Layer Creator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#conus-onshore-example">CONUS (Onshore) Example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#costs">Costs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-conus-least-cost-paths-on-a-local-eagle-node">Find CONUS least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-onshore-analysis-from-a-config-file">Run onshore analysis from a config file</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#reinforced-transmission">Reinforced Transmission</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#key-assumptions-under-this-approach">Key assumptions under this approach:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#calculating-reinforced-transmission-tables">Calculating Reinforced Transmission Tables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-connections-only-old">Substation connections only (OLD)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#substation-and-tie-line-connections-new">Substation and tie-line connections (New)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-least-cost-paths">Offshore Least Cost Paths</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#nomenclature-note">Nomenclature Note</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-workflow">Offshore Workflow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../misc/examples.transmission.html#offshore-examples">Offshore Examples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#creating-poi-transmission-features-from-points">Creating POI transmission features from points</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#find-offshore-least-cost-paths-on-a-local-eagle-node">Find offshore least cost paths on a local eagle node</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#run-aoswt-from-a-config-file">Run AOSWT from a config file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#post-processing">Post processing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../misc/examples.transmission.html#locally-run-an-offshore-analysis-for-a-single-sc-point-plot-the-results-and-save-to-a-geopackage">Locally run an offshore analysis for a single SC point, plot the results, and save to a GeoPackage</a></li>
 </ul>
 </li>
 </ul>
@@ -576,6 +590,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/reVX.html#revx-rev-sc-to-tiff">rev-sc-to-tiff</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/reVX.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html">exclusions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-batch">batch</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-blade-clearance">blade-clearance</a></li>
@@ -590,6 +605,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/exclusions.html#exclusions-turbine-flicker">turbine-flicker</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/exclusions.html#dataset-attributes">Dataset Attributes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/simple-plant-builder.html">simple-plant-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html">transmission-layer-creator</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-convert-pois">convert-pois</a></li>
@@ -598,6 +614,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#transmission-layer-creator-from-config">from-config</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../_cli/transmission-layer-creator.html#dataset-attributes">Dataset Attributes</a></li>
 </ul>
 </li>
 </ul>
@@ -627,9 +644,9 @@
            <div itemprop="articleBody">
              
   <h1>Source code for reVX.least_cost_xmission.layers.masks</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">"""</span>
 <span class="sd">Create, load, and store masks to determine land and sea.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
@@ -646,35 +663,35 @@
 <span class="c1"># Mask array</span>
 <span class="n">MaskArr</span> <span class="o">=</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">bool_</span><span class="p">]</span>
 
-<span class="n">MASK_MSG</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;No mask available. Please run create_masks() or load_masks() &#39;</span>
-            <span class="s1">&#39;first.&#39;</span><span class="p">)</span>
+<span class="n">MASK_MSG</span> <span class="o">=</span> <span class="p">(</span><span class="s1">'No mask available. Please run create_masks() or load_masks() '</span>
+            <span class="s1">'first.'</span><span class="p">)</span>
 
 
 <div class="viewcode-block" id="Masks">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.layers.masks.Masks.html#reVX.least_cost_xmission.layers.masks.Masks">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Masks</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Create, load, and store masks to determine land and sea.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">LANDFALL_MASK_FNAME</span> <span class="o">=</span> <span class="s1">&#39;landfall_mask.tif&#39;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;One pixel width line at shore&quot;&quot;&quot;</span>
-    <span class="n">RAW_LAND_MASK_FNAME</span> <span class="o">=</span> <span class="s1">&#39;raw_land_mask.tif&#39;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Rasterized land vector&quot;&quot;&quot;</span>
-    <span class="n">LAND_MASK_FNAME</span> <span class="o">=</span> <span class="s1">&#39;land_mask.tif&#39;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Raw mask - landfall mask&quot;&quot;&quot;</span>
-    <span class="n">OFFSHORE_MASK_FNAME</span> <span class="o">=</span> <span class="s1">&#39;offshore_mask.tif&#39;</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Offshore mask filename&quot;&quot;&quot;</span>
+<span class="sd">    """</span>
+    <span class="n">LANDFALL_MASK_FNAME</span> <span class="o">=</span> <span class="s1">'landfall_mask.tif'</span>
+<span class="w">    </span><span class="sd">"""One pixel width line at shore"""</span>
+    <span class="n">RAW_LAND_MASK_FNAME</span> <span class="o">=</span> <span class="s1">'raw_land_mask.tif'</span>
+<span class="w">    </span><span class="sd">"""Rasterized land vector"""</span>
+    <span class="n">LAND_MASK_FNAME</span> <span class="o">=</span> <span class="s1">'land_mask.tif'</span>
+<span class="w">    </span><span class="sd">"""Raw mask - landfall mask"""</span>
+    <span class="n">OFFSHORE_MASK_FNAME</span> <span class="o">=</span> <span class="s1">'offshore_mask.tif'</span>
+<span class="w">    </span><span class="sd">"""Offshore mask filename"""</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_handler</span><span class="p">:</span> <span class="n">LayeredTransmissionH5</span><span class="p">,</span> <span class="n">masks_dir</span><span class="o">=</span><span class="s1">&#39;.&#39;</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">io_handler</span><span class="p">:</span> <span class="n">LayeredTransmissionH5</span><span class="p">,</span> <span class="n">masks_dir</span><span class="o">=</span><span class="s1">'.'</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""</span>
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 <span class="sd">        io_handler : :class:`LayeredTransmissionH5`</span>
 <span class="sd">            Transmission IO handler</span>
 <span class="sd">        masks_dir : path-like, optional</span>
-<span class="sd">            Directory for storing/finding mask GeoTIFFs. By default, ``&#39;.&#39;``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">            Directory for storing/finding mask GeoTIFFs. By default, ``'.'``.</span>
+<span class="sd">        """</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span> <span class="o">=</span> <span class="n">io_handler</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_masks_dir</span> <span class="o">=</span> <span class="n">masks_dir</span>
         <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">masks_dir</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -687,28 +704,28 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">landfall_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MaskArr</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;MaskArr: Landfalls cells mask, only one cell wide &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""MaskArr: Landfalls cells mask, only one cell wide """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_landfall_mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">MASK_MSG</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_landfall_mask</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">wet_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MaskArr</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;MaskArr: Wet cells mask, does not include landfall cells &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""MaskArr: Wet cells mask, does not include landfall cells """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wet_mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">MASK_MSG</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wet_mask</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">dry_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MaskArr</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;MaskArr: Dry cells mask, does not include landfall cells &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""MaskArr: Dry cells mask, does not include landfall cells """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dry_mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">MASK_MSG</span><span class="p">)</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dry_mask</span>
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">dry_plus_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MaskArr</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;MaskArr: Dry cells mask, includes landfall cells &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""MaskArr: Dry cells mask, includes landfall cells """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dry_plus_mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_dry_plus_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_or</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dry_mask</span><span class="p">,</span>
                                                 <span class="bp">self</span><span class="o">.</span><span class="n">landfall_mask</span><span class="p">)</span>
@@ -716,7 +733,7 @@
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">wet_plus_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">MaskArr</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;MaskArr: Wet cells mask, includes landfall cells &quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""MaskArr: Wet cells mask, includes landfall cells """</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_wet_plus_mask</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_wet_plus_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_or</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wet_mask</span><span class="p">,</span>
                                                 <span class="bp">self</span><span class="o">.</span><span class="n">landfall_mask</span><span class="p">)</span>
@@ -726,7 +743,7 @@
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.layers.masks.Masks.html#reVX.least_cost_xmission.layers.masks.Masks.create_masks">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">create_masks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">land_mask_shp_f</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">save_tiff</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
                      <span class="n">reproject_vector</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Create the offshore and land mask layers from a polygon land vector</span>
 <span class="sd">        file.</span>
 
@@ -739,15 +756,15 @@
 <span class="sd">        reproject_vector : bool, optional</span>
 <span class="sd">            Reproject CRS of vector to match template raster if True.</span>
 <span class="sd">            By default, ``True``.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Creating masks from </span><span class="si">%s</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">land_mask_shp_f</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Creating masks from </span><span class="si">%s</span><span class="s1">'</span><span class="p">,</span> <span class="n">land_mask_shp_f</span><span class="p">)</span>
 
         <span class="c1"># Raw land is all land cells, include landfall cells</span>
         <span class="n">raw_land</span> <span class="o">=</span> <span class="n">rasterize_shape_file</span><span class="p">(</span><span class="n">land_mask_shp_f</span><span class="p">,</span>
                                         <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">profile</span><span class="p">,</span>
                                         <span class="n">all_touched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
                                         <span class="n">reproject_vector</span><span class="o">=</span><span class="n">reproject_vector</span><span class="p">,</span>
-                                        <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;uint8&#39;</span><span class="p">)</span>
+                                        <span class="n">dtype</span><span class="o">=</span><span class="s1">'uint8'</span><span class="p">)</span>
 
         <span class="n">raw_land_mask</span><span class="p">:</span> <span class="n">MaskArr</span> <span class="o">=</span> <span class="n">raw_land</span> <span class="o">==</span> <span class="mi">1</span>
 
@@ -758,7 +775,7 @@
                                         <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">profile</span><span class="p">,</span>
                                         <span class="n">reproject_vector</span><span class="o">=</span><span class="n">reproject_vector</span><span class="p">,</span>
                                         <span class="n">all_touched</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">boundary_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-                                        <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;uint8&#39;</span><span class="p">)</span>
+                                        <span class="n">dtype</span><span class="o">=</span><span class="s1">'uint8'</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_landfall_mask</span> <span class="o">=</span> <span class="n">landfall</span> <span class="o">==</span> <span class="mi">1</span>
 
         <span class="c1"># XOR landfall and raw land to get all land cells, except landfall</span>
@@ -766,34 +783,34 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">_dry_mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">logical_xor</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">landfall_mask</span><span class="p">,</span>
                                         <span class="n">raw_land_mask</span><span class="p">)</span>
 
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Created all masks&#39;</span><span class="p">)</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Created all masks'</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">save_tiff</span><span class="p">:</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Saving masks to GeoTIFF&#39;</span><span class="p">)</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Saving masks to GeoTIFF'</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_save_mask</span><span class="p">(</span><span class="n">raw_land_mask</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">RAW_LAND_MASK_FNAME</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_save_mask</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">wet_mask</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">OFFSHORE_MASK_FNAME</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_save_mask</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dry_mask</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LAND_MASK_FNAME</span><span class="p">)</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_save_mask</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">landfall_mask</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">LANDFALL_MASK_FNAME</span><span class="p">)</span>
-            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Completed saving all masks&#39;</span><span class="p">)</span></div>
+            <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Completed saving all masks'</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="Masks.load_masks">
 <a class="viewcode-back" href="../../../../_autosummary/reVX.least_cost_xmission.layers.masks.Masks.html#reVX.least_cost_xmission.layers.masks.Masks.load_masks">[docs]</a>
     <span class="k">def</span><span class="w"> </span><span class="nf">load_masks</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Load the mask layers from GeoTIFFs. This does not need to be called if</span>
 <span class="sd">        self.create_masks() was run previously. Mask files must be in the</span>
 <span class="sd">        current directory.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Loading masks&#39;</span><span class="p">)</span>
+<span class="sd">        """</span>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Loading masks'</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_dry_mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_mask</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">LAND_MASK_FNAME</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_wet_mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_mask</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">OFFSHORE_MASK_FNAME</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_landfall_mask</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_mask</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">LANDFALL_MASK_FNAME</span><span class="p">)</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">&#39;Successfully loaded wet, dry, and landfall masks&#39;</span><span class="p">)</span></div>
+        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="s1">'Successfully loaded wet, dry, and landfall masks'</span><span class="p">)</span></div>
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_save_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">:</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Save mask to GeoTiff</span>
 
 <span class="sd">        Parameters</span>
@@ -802,12 +819,12 @@
 <span class="sd">            Data to save in GeoTiff</span>
 <span class="sd">        fname</span>
 <span class="sd">            Name of file to save</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">full_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_masks_dir</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">save_data_using_h5_profile</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">full_fname</span><span class="p">)</span>
 
     <span class="k">def</span><span class="w"> </span><span class="nf">_load_mask</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fname</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">npt</span><span class="o">.</span><span class="n">NDArray</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">bool_</span><span class="p">]:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Load mask from GeoTIFF with sanity checking</span>
 
 <span class="sd">        Parameters</span>
@@ -818,26 +835,26 @@
 <span class="sd">        Returns</span>
 <span class="sd">        -------</span>
 <span class="sd">            Mask data</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
         <span class="n">full_fname</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_masks_dir</span><span class="p">,</span> <span class="n">fname</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="ow">not</span> <span class="n">Path</span><span class="p">(</span><span class="n">full_fname</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-            <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Mask file at </span><span class="si">{</span><span class="n">full_fname</span><span class="si">}</span><span class="s1"> not found. &#39;</span>
-                                    <span class="s1">&#39;Please create masks first.&#39;</span><span class="p">)</span>
+            <span class="k">raise</span> <span class="ne">FileNotFoundError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Mask file at </span><span class="si">{</span><span class="n">full_fname</span><span class="si">}</span><span class="s1"> not found. '</span>
+                                    <span class="s1">'Please create masks first.'</span><span class="p">)</span>
 
         <span class="n">raster</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_io_handler</span><span class="o">.</span><span class="n">load_data_using_h5_profile</span><span class="p">(</span><span class="n">full_fname</span><span class="p">,</span>
                                                              <span class="n">reproject</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
         <span class="k">if</span> <span class="n">raster</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Maximum value in mask file </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> is </span><span class="si">{</span><span class="n">raster</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s1"> but&#39;</span>
-                   <span class="s1">&#39; should be 1. Mask file appears to be corrupt. Please &#39;</span>
-                   <span class="s1">&#39;recreate it.&#39;</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">'Maximum value in mask file </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> is </span><span class="si">{</span><span class="n">raster</span><span class="o">.</span><span class="n">max</span><span class="p">()</span><span class="si">}</span><span class="s1"> but'</span>
+                   <span class="s1">' should be 1. Mask file appears to be corrupt. Please '</span>
+                   <span class="s1">'recreate it.'</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
         <span class="k">if</span> <span class="n">raster</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Minimum value in mask file </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> is </span><span class="si">{</span><span class="n">raster</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s1"> but&#39;</span>
-                   <span class="s1">&#39; should be 0. Mask file appears to be corrupt. Please &#39;</span>
-                   <span class="s1">&#39;recreate it.&#39;</span><span class="p">)</span>
+            <span class="n">msg</span> <span class="o">=</span> <span class="p">(</span><span class="sa">f</span><span class="s1">'Minimum value in mask file </span><span class="si">{</span><span class="n">fname</span><span class="si">}</span><span class="s1"> is </span><span class="si">{</span><span class="n">raster</span><span class="o">.</span><span class="n">min</span><span class="p">()</span><span class="si">}</span><span class="s1"> but'</span>
+                   <span class="s1">' should be 0. Mask file appears to be corrupt. Please '</span>
+                   <span class="s1">'recreate it.'</span><span class="p">)</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
 
