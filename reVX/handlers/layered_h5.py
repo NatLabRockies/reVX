@@ -491,7 +491,7 @@ class LayeredH5:
 
     def layers_to_h5(self, layers, replace=True, check_tiff=True,
                      transform_atol=0.01, descriptions=None,
-                     scale_factors=None):
+                     scale_factors=None, attrs=None):
         """Transfer GeoTIFF layers into layered HDF5 file.
 
         If layered HDF5 file does not exist, it is created and
@@ -518,6 +518,9 @@ class LayeredH5:
             Scale factors and dtypes to use when scaling given layers.
             By default, ``None``, which does not apply any scale
             factors.
+        attrs : dict, optional
+            Mapping of layer names to dictionaries of HDF5 dataset
+            attributes. By default, ``None``.
         """
         if isinstance(layers, list):
             layers = {os.path.basename(lyr).split('.')[0]: lyr
@@ -528,6 +531,8 @@ class LayeredH5:
 
         if scale_factors is None:
             scale_factors = {}
+
+        attrs = attrs or {}
 
         logger.info('Moving layers to %s', self.h5_file)
         for layer_name, geotiff in layers.items():
@@ -546,7 +551,8 @@ class LayeredH5:
                                      transform_atol=transform_atol,
                                      description=description,
                                      scale_factor=scale_factor,
-                                     dtype=dtype, replace=replace)
+                                     dtype=dtype, replace=replace,
+                                     attrs=attrs.get(layer_name))
 
     def extract_layers(self, layers):
         """Extract layers from HDF5 file and save to disk as GeoTIFFs.
