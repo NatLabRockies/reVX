@@ -98,8 +98,8 @@ def compute_blade_clearance_exclusions(excl_fpath, out_dir,
         cores. By default, ``None``.
     attrs : dict, optional
         Mapping of output HDF5 layer names to attribute dictionaries.
-        Layers omitted from the mapping receive no additional attributes.
-        By default, ``None``.
+        Layers omitted from the mapping receive no additional
+        attributes. By default, ``None``.
 
     Returns
     -------
